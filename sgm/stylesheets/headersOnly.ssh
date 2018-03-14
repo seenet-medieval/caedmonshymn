@@ -1,0 +1,155 @@
+<!DOCTYPE STYLESHEET PUBLIC "-//SYNEX INFORMATION AB//DTD STYLESHEET EXPLORER//EN"[
+<!ELEMENT sheet (margins?)>
+<!ELEMENT margins EMPTY>
+<!ATTLIST margins
+	left CDATA #IMPLIED
+	right CDATA #IMPLIED
+	top CDATA #IMPLIED
+	bottom CDATA #IMPLIED>
+
+<!ELEMENT font-shadow EMPTY>
+<!ATTLIST font-shadow
+	v NUMBER #REQUIRED>
+
+<!ELEMENT shadow-color EMPTY>
+<!ATTLIST shadow-color
+	v CDATA #REQUIRED>
+
+]>
+
+<STYLESHEET NAME="headersOnly">
+
+<STYLE TAG="LIST">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="P">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="SEG">
+<A-TEXT V='<seg\ifatt(lang) lang="\att(lang)"\else\endif\ifatt(type) type="\att(type)"\else\endif\ifatt(subtype) subtype="\att(subtype)"\else\endif\ifatt(rend) rend="\att(rend)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Blue">
+</BEFORE>
+<Z-TEXT V='</seg>'>
+<AFTER>
+<FONT-COLOR V="Blue">
+</AFTER>
+</STYLE>
+
+<STYLE TAG="QUOTE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="TITLE">
+<A-TEXT V='<title level="\att(level)"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</title>'>
+<AFTER>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="MENTIONED">
+<A-TEXT V='<mentioned\ifatt(lang) lang="\att(lang)"\else\endif\ifatt(rend) rend="\att(rend)"\else\endif\ifatt(type) type="\att(type)"\else\endif>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</mentioned>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="NOTE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="TEIHEADER">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="LABEL">
+</STYLE>
+
+<STYLE TAG="LINKGRP">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="DIV1">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div3 id="CH\att(n).TOC.2" type="toc:chapter">\n;\t<list type="simple">\n;\t<item><ref target="CH\att(n)">Top</ref></item>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\t</list>\n;</div3>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="HEAD">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<item><ref target="\att(id)">'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</ref></item>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;DIV1&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SOCALLED">
+<A-TEXT V='<socalled>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</socalled>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+</STYLESHEET>

@@ -1,0 +1,370 @@
+<!--
+*******************************************************************
+*               The Electronic Caedmon&rsquo;s Hymn               *
+*                      Conventions and Encoding                   *
+*                                                                 *
+*                         Text and Encoding                       *
+*             (c) Daniel Paul O&rsquo;Donnell, 1997-2003          *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<tei.2 id="CONVENTIONS.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Conventions, symbols, and encoding</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition.</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>preliminary chapter from introduction to electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="CONVENTIONS">
+    <head id="CONVENTIONS.HEAD">Conventions, symbols, and encoding</head>
+    <div2 id="CONVENTIONS.TOC" type="toc">
+     <div3 id="CONVENTIONS.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="preface"><label rend="accesskey">P</label>revious (Preface)</xref></item>
+       <item><xref n="n" doc="ch1"><label rend="accesskey">N</label>ext (Chapter 1)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="CONVENTIONS.TOC.2" type="toc:chapter">
+      <list>
+       <item><ref target="CONVENTIONS.HEAD">Top</ref></item>
+       <item><ref target="CONVENTIONS.1.HEAD">Introduction</ref></item>
+       <item><ref target="CONVENTIONS.2.HEAD" n="symbols">Conventions and symbols</ref>
+	<list>
+	 <item><ref target="CONVENTIONS.2.1.HEAD">Typographical symbols and abbreviations</ref>
+	  <list>
+	   <item><ref target="CONVENTIONS.2.1.1.HEAD">Manuscript sigla (Print and CD-ROM)</ref></item>
+	   <item><ref target="CONVENTIONS.2.1.2.HEAD">Linguistic and palaeographic symbols (Print and CD-ROM)</ref></item>
+	   <item><ref target="CONVENTIONS.2.1.3.HEAD">Diplomatic and editorial symbols (Print and CD-ROM)</ref></item>
+	   <item><ref target="CONVENTIONS.2.1.4.HEAD">Textual apparatus symbols (CD-ROM only)</ref></item>
+	  </list></item>
+	 <item><ref target="CONVENTIONS.2.2.HEAD">Colour (CD-ROM only)</ref></item>
+	 <item><ref target="CONVENTIONS.3.HEAD" n="encoding">Encoding</ref>
+	  <list>
+	   <item><ref target="CONVENTIONS.3.1.HEAD">New elements</ref></item>
+	   <item><ref target="CONVENTIONS.3.2.HEAD">Changes in content model</ref>
+	    <list>
+	     <item><ref target="CONVENTIONS.3.2.1.HEAD">&lt;CELL&gt;</ref></item>
+	     <item><ref target="CONVENTIONS.3.2.2.HEAD">&lt;CORR&gt;</ref></item>
+	     <item><ref target="CONVENTIONS.3.2.3.HEAD">&lt;W&gt;</ref></item>
+	    </list></item>
+	   <item><ref target="CONVENTIONS.3.3.HEAD">Attributes</ref></item>
+	   <item><ref target="CONVENTIONS.3.4.HEAD" n="syntax">Syntax</ref>
+	    <list>
+	     <item><ref target="CONVENTIONS.3.4.1.HEAD">Element Nesting</ref>
+	      <list>
+	       <item><ref target="CONVENTIONS.3.4.1.1.HEAD">&lt;CORR&gt;, &lt;EMEND&gt;</ref></item>
+	       <item><ref target="CONVENTIONS.3.4.1.2.HEAD">Readings and reading groups</ref></item>
+	      </list></item>
+	    </list></item>
+	  </list></item>
+	</list></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="CONVENTIONS.1">
+     <head id="CONVENTIONS.1.HEAD">Introduction</head>
+     <p id="CONVENTIONS.010" n="ii.1">The following sections describe conventions, symbols, and encoding practices used in &ech;. Editorial principles are discussed in a separate introductory chapter (&ch7x;).</p>
+     <p id="CONVENTIONS.020" n="ii.2">This chapter is divided into two major sections. The first, <ref target="CONVENTIONS.2">Conventions and symbols</ref>, describes the conventions, symbols, and abbreviations used in formatting the text for human readers (print and CD-ROM). The second, <ref target="CONVENTIONS.3">Encoding</ref>, describes conventions used in the edition&rsquo;s &sgml; (computer) markup (CD-ROM only), concentrating particularly on aspects in which these conventions diverge from the standards of the &tei;. This section is intended for readers interested in technical aspects of humanities computing. It assumes a basic knowledge of the conventions of the &tei; and &sgml; or related languages.</p>
+    </div2>
+    <div2 id="CONVENTIONS.2">
+     <head id="CONVENTIONS.2.HEAD" n="symbols">Conventions and symbols</head>
+     <p id="CONVENTIONS.030" n="ii.3">&ech; uses a variety of symbols and abbreviations (Print and CD-ROM), and colour conventions (CD-ROM only) in its text, transcriptions, and editions.<note id="CONVENTIONS.note.0005" n="1"><p>In keeping with accessibility guidelines, colour is used on the CD-ROM as an enhancement only: all information conveyed by colour is also encoded on the title attribute of elements in the &xhtml; output.</p></note></p>
+     <div3 id="CONVENTIONS.2.1">
+      <head id="CONVENTIONS.2.1.HEAD">Typographical symbols and abbreviations</head>
+      <div4 id="CONVENTIONS.2.1.1">
+       <head id="CONVENTIONS.2.1.1.HEAD">Manuscript sigla (Print and CD-ROM)</head>
+       <p id="CONVENTIONS.060" n="ii.4">The following sigla are used in &ech; to refer to individual manuscripts. On the CD-ROM, manuscripts containing a copy of the vernacular text of &ch; are also coloured-coded to indicate their affiliation: <label rend="aelda">purple</label> for members of the &aelda;; <label rend="eordu">teal</label> for members of the &eordu;; <label rend="eorthan">green</label> for members of the &eorthan;; <label rend="ylda">navy</label> for members of the &ylda;; and <label rend="eorthe">olive</label> for members of the &eorthe;. Other manuscript sigla are displayed in black type.</p>
+       <list>
+	<item>&b1x; &b1mlx;</item>
+	<item>&bdx; &bdmlx;</item>
+	<item>&brx; &brmlx;</item>
+	<item>&carmsx; &carmsmlx;</item>
+	<item>&cax; &camlx;</item>
+	<item>&cccc201s; &cccc201ml;</item>
+	<item>&chronAs; &chronAml;</item>
+	<item>&chronBs; &chronBml;</item>
+	<item>&chronCs; &chronCml;</item>
+	<item>&chronDs; &chronDml;</item>
+	<item>&chronEs; &chronEml;</item>
+	<item>&chronFs; &chronFml;</item>
+	<item>&chronGs; &chronGml;</item>
+	<item>&cx; &cmlx; [see also &ns;]</item>
+	<item>&dix; &dimlx;</item>
+	<item>&epss; &epsml;</item>
+	<item>&hx; &hmlx;</item>
+	<item>&hrx; &hrmlx;</item>
+	<item>&ldx; &ldmlx;</item>
+	<item>&lnx; &lnmlx;</item>
+	<item>&mgx; &mgmlx;</item>
+	<item>&mx; &mmlx;</item>
+	<item>&nx; &nmlx; [see also &cs;]</item>
+	<item>&ox; &omlx;</item>
+	<item>&lx; &lmlx;</item>
+	<item>&p1x; &p1mlx;</item>
+	<item>&ppss; &ppsml;</item>
+	<item>&sanmx; &sanmmlx;</item>
+	<item>&t1x; &t1mlx;</item>
+	<item>&tox; &tomlx;</item>
+	<item>&tr1x; &tr1mlx;</item>
+	<item>&wx; &wmlx;</item>
+       </list>
+      </div4>
+      <div4 id="CONVENTIONS.2.1.2">
+       <head id="CONVENTIONS.2.1.2.HEAD">Linguistic and palaeographic symbols (Print and CD-ROM)</head>
+
+       <p id="CONVENTIONS.065" n="ii.5">The following symbols are used in linguistic and palaeographic contexts:</p>
+<p>
+       <table>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent">&lt;graphemic&gt;</p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Pointed brackets indicate that a text or character is being transcribed (and discussed) <term type="technicalterm">graphemically</term> (see &crystal1987;, 194-195). In such contexts, ligatures are indicated using a plus sign (&plus;). The ligature <foreign id="CONVENTIONS.foreign.0010" lang="LAT">&amp;</foreign> (i.e. Latin <gloss corresp="CONVENTIONS.foreign.0010" lang="LAT">et,</gloss> English <gloss corresp="CONVENTIONS.foreign.0010">and</gloss>), for example, would be transcribed graphemically <seg type="linguistic" subtype="graphemic">e&plus;t</seg>. Commas are used to separate forms in a list.</p></cell>
+	</row>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent">/phonemic/</p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Slanted brackets indicate that the enclosed text is being transcribed <term type="technicalterm">phonemically</term> (see &crystal1987;, 160-161). Phonemic transcriptions use the <abbr expan="International Phonetic Alphabet">IPA</abbr> (&ipa1999;). Commas are used to separate individual or groups of phonemes in a list.</p></cell>
+	</row>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent">[phonetic]</p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Square brackets indicate that the enclosed text is being transcribed <term type="technicalterm">phonetically</term> (see &crystal1987;, 152-159 and 160-161). Phonetic transcriptions use the <abbr expan="International Phonetic Alphabet">IPA</abbr> (&ipa1999;). Commas are used to separate individual or groups of phones in a list.</p></cell>
+	</row>
+       </table></p>
+      </div4>
+      <div4 id="CONVENTIONS.2.1.3">
+       <head id="CONVENTIONS.2.1.3.HEAD">Diplomatic and editorial symbols (Print and CD-ROM)</head>
+       <p id="CONVENTIONS.075" n="ii.6">The following symbols are used in editions and transcriptions. They are also used in other contexts when editorial or diplomatically transcribed forms are cited. On the CD-ROM, these symbols are further enhanced through the use of colour: <label rend="diplomatic" teiform="label"><w><corr>red</corr></w></label> is used to indicate the presence of a correction; <label rend="diplomatic" teiform="label"><w><damage>teal</damage></w></label> is used to indicate text that has been (physically) damaged in some way.</p>
+       <table>
+	<row role="data">
+	 <cell id="deletion" role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><corr><del>deletion</del></corr></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Strikethrough indicates the <term type="technicalterm">physical deletion</term> of text in a witness. Deletion may be by any method (underlining, <foreign lang="lat">punctum delens</foreign>, erasure, overwriting, etc). The precise method of deletion is usually indicated by a note in the transcription of the relevant witness. The deleted text is recorded whenever possible. If deleted text cannot be recovered, it is replaced by colons.</p></cell>
+	</row>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><corr><add place="superlinear">addition</add></corr></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Upward sloping brackets indicate that the enclosed text has been <term type="technicalterm">added above the manuscript line</term>. If a caret was used, this is indicated: <label rend="diplomatic"><w><corr><add rend="caret" place="superlinear">addition</add></corr></w></label>.</p></cell>
+	</row>
+	<row role="data">
+	 <cell id="intralinear" role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><corr><add place="interlinear">addition</add></corr></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Vertical brackets indicate that the enclosed text has been <term type="technicalterm">inserted between existing characters within the manuscript line</term>. Insertion is distinguished from overwriting (i.e. the conversion of one character to another or the addition of a new character in the space left by a previously deleted form).</p></cell>
+	</row>
+	<row role="data">
+	 <cell id="overwriting" role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><corr><add place="overwriting">addition</add></corr></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Brackets indicate that the enclosed text has been <term type="technicalterm">added over some pre-existing form</term>. This addition may involve the conversion of one letter to another (for example, the conversion of <seg type="linguistic" subtype="graphemic">o</seg> to <seg type="linguistic" subtype="graphemic">d</seg> by the addition of an ascender), or the addition of new text in the place of a previous erasure. The overwritten text is treated as a deletion.</p></cell>
+	</row>
+	<row role="data">
+	 <cell id="sublinear" role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><corr><add place="sublinear">addition</add></corr></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Downward sloping brackets indicate that the enclosed text has been <term type="technicalterm">added below the manuscript line</term>.</p></cell>
+	</row>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><corr><add place="left margin">addition</add></corr></w></label> or <label rend="diplomatic"><w><corr><add place="right margin">addition</add></corr></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">A single vertical bar indicates that the text has been <term type="technicalterm">added at the beginning or end of a manuscript line</term>. Text preceded by a single vertical bar has been added at the end of a manuscript line. Text followed by a single vertical bar has been added at the beginning of a manuscript line. Text between two vertical bars has been added <socalled>within the line</socalled> (i.e. between pre-existing letters or words).</p></cell>
+	</row>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><damage>damage</damage></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Underlining indicates that text has been <term type="technicalterm">damaged</term>. When damaged text is unclear or illegible, additional symbols are used. On the CD-ROM, damaged text is also <label rend="diplomatic" teiform="label"><w><damage>teal</damage></w></label> in colour.</p></cell>
+	</row>
+	<row role="data">
+	 <cell id="unclear" role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><unclear>unclear</unclear></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Angle brackets indicate that the enclosed text is <term type="technicalterm">unclear for some physical reason</term> (e.g. rubbing, flaking, staining, poorly executed script).</p></cell>
+	</row>
+	<row role="data">
+	 <cell id="supplied" role="data" rows="1" cols="1"><p rend="noindent"><label rend="diplomatic"><w><supplied>supplied</supplied></w></label> or <label><w><emend><add>emended</add></emend></w></label></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Square brackets indicate that the enclosed text is being <term type="technicalterm">supplied or emended</term>. <socalled>Supplied text</socalled> refers to the hypothetical restoration of original readings from a specific witness that have become lost or illegible due to some physical reason. <socalled>Emended text</socalled> refers to the replacement of legible text from extant witnesses by a modern editor or transcriber.</p></cell>
+	</row>
+	<row role="data">
+	 <cell id="gap" role="data" rows="1" cols="1"><p rend="noindent"><gap extent="2"></p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">Colons represent text that is <term type="technicalterm">completely effaced or illegible</term>. This symbol is not used in transcriptions and citations of the almost completely erased &bdx;. Here text has been simply supplied, based in most cases on the forms in &wx;.</p></cell>
+	</row>
+       </table>
+      </div4>
+      <div4 id="CONVENTIONS.2.1.4">
+       <head id="CONVENTIONS.2.1.4.HEAD">Textual apparatus symbols (CD-ROM only)</head>
+       <p id="CONVENTIONS.090" n="ii.7">As noted below, &sect;&nbsp;&ch7x823;, &ech; allows users of the CD-ROM to select from several different views of its textual apparatus. Most apparatus views follow traditional, print-based conventions; the exception is the <term>Analytic All witnesses view</term> (see &sect;&nbsp;&ch7x826;), where the following typographical symbols are used:</p>
+       <table>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent">[orthographic group]</p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">In the textual apparatus, square brackets indicate that the enclosed form(s) belong to a single <term type="technicalterm">orthographic group</term>. An orthographic group may consist of a single unique spelling or a group of identical spellings. Readings within a single orthographic group are always substantively identical and show identical potential significance.</p></cell>
+	</row>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent">(substantively identical group)</p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">In the textual apparatus, parentheses indicate that the enclosed forms are <term type="technicalterm">substantively identical</term>. Substantively identical groups always include one or more orthographic groups.</p></cell>
+	</row>
+	<row role="data">
+	 <cell role="data" rows="1" cols="1"><p rend="noindent">{identical potential significance}</p></cell>
+	 <cell role="data" rows="1" cols="4"><p rend="noindent">In the textual apparatus, brackets indicate that the enclosed forms show <term type="technicalterm">identical potential significance</term>. Groups showing identical potential significance always consist of one or more substantively identical groups.</p></cell>
+	</row>
+       </table>
+       <p rend="noindent">These symbols are always nested. The first word of the &aelda; (<mentioned lang="ANG">&copyOfae.1a.1;</mentioned>), for example, appears in orthographically identical forms in both surviving witnesses; in the analytic view of the All witness apparatus, this agreement is represented as follows:</p>
+       <quote lang="ang">
+	<p><label rend="bold">&copyOfae.1a.1]</label> {([<label rend="italic"><label rend="diplomatic">&copyOfm.1a.1;</label></label> &mx; <label rend="italic"><label rend="diplomatic">&copyOfl.1a.1;</label></label> &lx;])}.</p>
+       </quote>
+       <p rend="noindent">The first word of line 4b in the &eorthan; (<mentioned lang="ANG">&copyOfex.4b.1;</mentioned>), on the other hand, shows a variety or orthographic, substantive, and (potentially) significant variants; in the analytic view of the All witness apparatus, this variation is represented as follows:</p>
+       <quote>
+	<p><label rend="bold">&copyOfex.4b.1]</label> {([<label rend="italic"><label rend="diplomatic">&copyOft1.4b.1;</label></label> &t1x; <label rend="bold"><label rend="diplomatic">&copyOfn.4b.1;</label></label> &nx;][<label rend="italic"><seg rend="precorrection"><w>o&oacute;r</w></seg></label> &ox; Pre-Correction])}{([<label rend="italic"><label rend="diplomatic">&copyOfb1.4b.1;</label></label> &b1x; <label rend="italic"><label rend="diplomatic">&copyOfca.4b.1;</label></label> &cax;][<label rend="italic"><label rend="diplomatic">&copyOfo.4b.1;</label></label> &ox; Post-Correction])}{([<label rend="italic"><label rend="diplomatic">&copyOfto.4b.1;</label></label> &tox;])}</p>
+       </quote>
+       <p rend="noindent">I believe this system is unique to this edition. While it can seem overly complex at first, particularly for lemmas showing little or no variation, its ability to provide a concise overview of the poem&rsquo;s entire textual history also makes it quite powerful in more complex examples. I have found it to be the most useful apparatus view in my own textual studies.</p>
+      </div4>
+     </div3>
+     <div3 id="CONVENTIONS.2.2">
+      <head id="CONVENTIONS.2.2.HEAD">Colour (CD-ROM only)</head>
+       <p id="CONVENTIONS.050" n="ii.8">Colour is used on the CD-ROM to indicate the presence of hyperlinks and to associate individual witnesses with specific recensions of &ch;.</p>
+      <table>
+       <row role="data">
+	<cell role="data" rows="1" cols="1"><p rend="noindent"><xref doc="null" rend="blue">Blue</xref></p></cell>
+	<cell role="data" rows="1" cols="4"><p rend="noindent"><xref doc="null" rend="blue">Blue</xref> text indicates the presence of an <term type="technicalterm">unclassified hyperlink</term>. Unclassified hyperlinks include chapter and section cross-references, bibliographic cross-references, and links to notes or apparatus entries. The target of an unclassified hyperlink may be within the same document or in an external document. Hyperlinks change colour and become underlined whenever they are selected.</p></cell>
+       </row>
+       <row role="data">
+	<cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="purple">Purple</label></p></cell>
+	<cell role="data" rows="1" cols="4"><p rend="noindent"><label rend="purple">Purple</label> text indicates an association with the &aelda; of &ch;. The colour is used particularly with manuscript sigla in the introductory chapters and textual apparatus.</p></cell>
+       </row>
+       <row role="data">
+	<cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="teal">Teal</label></p></cell>
+	<cell role="data" rows="1" cols="4"><p rend="noindent"><label rend="teal">Teal</label> text indicates an association with the &eordu; of &ch;. The colour is used particularly with manuscript sigla in the introductory chapters and textual apparatus.</p><p rend="noindent"><label rend="eordu">Teal</label> is also used in diplomatic transcriptions to indicate text that is physically damaged or illegible.</p></cell>
+       </row>
+       <row role="data">
+	<cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="green">Green</label></p></cell>
+	<cell role="data" rows="1" cols="4"><p rend="noindent"><label rend="green">Green</label> text indicates an association with the &eorthan; of &ch;. The colour is used particularly with manuscript sigla in the introductory chapters and textual apparatus.</p></cell>
+       </row>
+       <row role="data">
+	<cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="olive">Olive</label></p></cell>
+	<cell role="data" rows="1" cols="4"><p rend="noindent"><label rend="olive">Olive</label> text indicates an association with the &eorthe; of &ch;. The colour is used particularly with manuscript sigla in the introductory chapters and textual apparatus.</p></cell>
+       </row>
+       <row role="data">
+	<cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="navy">Navy</label></p></cell>
+	<cell role="data" rows="1" cols="4"><p rend="noindent"><label rend="navy">Navy</label> text indicates an association with the &ylda; of &ch;. The colour is used particularly with manuscript sigla in the introductory chapters and textual apparatus.</p></cell>
+       </row>
+       <row role="data">
+	<cell role="data" rows="1" cols="1"><p rend="noindent"><label rend="red">Red</label></p></cell>
+	<cell role="data" rows="1" cols="4"><p rend="noindent"><label rend="red">Red</label> text indicates the presence of a correction.</p></cell>
+       </row>
+      </table>
+     </div3>
+    </div2>
+    <div2 id="CONVENTIONS.3">
+     <head id="CONVENTIONS.3.HEAD" n="encoding">Encoding</head>
+     <p id="CONVENTIONS.100" n="ii.9">&ech; is encoded in &sgml; following the &tei; P4 standard for the encoding of text (&sperbergmcqueenandburnard2001;).<note id="CONVENTIONS.note.0010" n="2"><p>The project was originally encoded according to the P3 standard. It has been corrected and validated against the P4 dtd, however.</p></note> Encoding is for the most part strictly conformant with this standard. The project uses one element not found in the P4 guidelines (&lt;EMEND&gt;), adjusts the content models of three elements (&lt;CELL&gt;, &lt;CORR&gt;, and &lt;W&gt;), and adds attributes to one element (&lt;W&gt;). The edition is noteworthy also for its use of three elements: the &tei; elements &lt;CORR&gt; and &lt;RDGGRP&gt;, and the non-&tei; element &lt;EMEND&gt;. A final subsection discusses the encoding of primary sources in this project.</p>
+     <div3 id="CONVENTIONS.3.1">
+      <head id="CONVENTIONS.3.1.HEAD">New elements</head>
+      <p id="CONVENTIONS.110" n="ii.10">&ech; adds one element to the &tei; standard: &lt;EMEND&gt;. The new element is identical to (a modified form of) the standard &tei; element &lt;CORR&gt; in content, attributes, and syntax. The main difference is conceptual: in this work &lt;CORR&gt; is used to encode physical alterations to the text as it appears in a source document; the &lt;EMEND&gt; element is used to encode alterations and corrections <emph>not</emph> involving the physical adaptation of a source document. An example of a correction is the (scribal) alteration of &ox; <mentioned rend="precorrection">&copyOfo.3a.1;</mentioned> to <mentioned rend="postcorrection">&copyOfo.3a.1;</mentioned>. An example of an emendation is the alteration of the nonsensical reading <mentioned rend="preEmendation">&copyOfyl.8b.2</mentioned> found in all manuscripts of the &ylda; to <mentioned rend="postemendation">&copyOfyl.8b.2;</mentioned> in the critical text.</p>
+     </div3>
+     <div3 id="CONVENTIONS.3.2">
+      <head id="CONVENTIONS.3.2.HEAD">Changes in content model</head>
+      <p id="CONVENTIONS.120" n="ii.11">&ech; alters the content models of three elements: &lt;CELL&gt;, &lt;CORR&gt;, and &lt;W&gt;. In the case of &lt;W&gt;, this change also involves a change in attributes.</p>
+      <div4 id="CONVENTIONS.3.2.1">
+       <head id="CONVENTIONS.3.2.1.HEAD">&lt;CELL&gt;</head>
+       <p id="CONVENTIONS.130" n="ii.12">The content model of &lt;CELL&gt; has been modified to allow specialPara content (specifically lines and paragraphs).</p>
+      </div4>
+      <div4 id="CONVENTIONS.3.2.2">
+       <head id="CONVENTIONS.3.2.2.HEAD">&lt;CORR&gt;</head>
+       <p id="CONVENTIONS.140" n="ii.13">The content model of &lt;CORR&gt; has been modified to exclude CDATA (the project-specific element &lt;EMEND&gt; shares this model). This change is in keeping with the syntax used in encoding corrections and emendations described below (<ref target="CONVENTIONS.3.4">Syntax</ref>).</p>
+      <div4 id="CONVENTIONS.3.2.3">
+       <head id="CONVENTIONS.3.2.3.HEAD">&lt;W&gt;</head>
+       <p id="CONVENTIONS.150" n="ii.14">The content model of &lt;W&gt; has been modified to allow the inclusion of textual critical elements such as &lt;DAMAGE&gt;, &lt;CORR&gt;, and &lt;UNCLEAR&gt;. This is to allow the encoding of words in diplomatic transcriptions, textual apparatus, and citations from individual manuscripts in the introductory chapters. &lt;W&gt; elements found in the main text of the critical editions are encoded in conformance with the &tei; P4 content model. Two new attributes, <term>basedOn</term> and <term>copiedFrom</term>, have also been added to the element. These are discussed below.</p>
+      </div4>
+     </div3>
+     <div3 id="CONVENTIONS.3.3">
+      <head id="CONVENTIONS.3.3.HEAD">Attributes</head>
+      <p id="CONVENTIONS.160" n="ii.15">The attributes <term>basedOn</term> and <term>copiedFrom</term> have been added to &lt;W&gt;. These elements take IDREF datatypes. <term>basedOn</term> is used to refer to the source of an editorially modified form. Modification may involve the removal of diplomatic information, alterations in the use of capital letters, or similar minor modifications. Most readings of the &aelda;, for example, are derived from &mx;; the association between the editorial and witness readings is indicated by the use of the specific IDREF for the relevant manuscript form on the <term>basedOn</term> attribute of the editorial reading. <term>copiedFrom</term> is used to indicate identity with a form used elsewhere in the project. Citations in the introductory chapters from individual witnesses, readings, or apparatus entries, for example, always have the IDREF of the source reading on the <term>copiedFrom</term> attribute.</p>
+     </div3>
+     <div3 id="CONVENTIONS.3.4">
+      <head id="CONVENTIONS.3.4.HEAD" n="syntax">Syntax</head>
+      <div4 id="CONVENTIONS.3.4.1">
+       <head id="CONVENTIONS.3.4.1.HEAD">Element Nesting</head>
+       <p id="CONVENTIONS.170" n="ii.16">Three elements in &ech; are always used with nested data: &lt;CORR&gt;, &lt;EMEND&gt;, and &lt;RDGGRP&gt;. In the case of the first two elements, this nesting involves a change in content model; in the case of the third, the nesting canonises a possible syntax.</p>
+       <div5 id="CONVENTIONS.3.4.1.1">
+	<head id="CONVENTIONS.3.4.1.1.HEAD">&lt;CORR&gt;, &lt;EMEND&gt;</head>
+	<p id="CONVENTIONS.180" n="ii.17">The &tei; element &lt;CORR&gt; and its project-specific cousin &lt;EMEND&gt; are used in a fashion at variance with that suggested by the &tei; guidelines. In &ech;, corrections and emendations are understood as processes by which an original form is altered by deletion and/or addition. For this reason, &lt;CORR&gt; and &lt;EMEND&gt; tags always contain at least one &lt;ADD&gt; or &lt;DEL&gt; element. Thus, for example, the &ox; reading <mentioned rend="diplomatic">&copyOfo.3a.1;</mentioned> is encoded as follows (attributes have been simplified for demonstration purposes):</p>
+	<quote>
+	 <p><c>&amp;#x01BF;</c>er&lt;corr&gt; &lt;del rend="overwriting"&gt;o&lt;/del&gt;&lt;add place="overwriting"&gt;a&lt;/add&gt;&lt;/corr&gt;</p>
+	</quote>
+	<p rend="noindent">The emended &ylda; reading <mentioned lang="ANG">&copyOfyl.8b.2;</mentioned>, similarly, is encoded as follows (attributes have been simplified for demonstration purposes):</p>
+	<quote>
+	 <p>t&lt;emend&gt;&lt;del&gt;i&lt;/del&gt; &lt;add&gt;eo&lt;/add&gt;&lt;/emend&gt;d&lt;emend&gt; &lt;del&gt;a&lt;/del&gt;&lt;add&gt;e&lt;/add&gt; &lt;/emend&gt;</p>
+	</quote>
+	<p id="CONVENTIONS.190" n="ii.18">This usage is an adaptation of the recommendations for the encoding of substitution given in &sperbergmcqueenandburnard2001; &sect; 18.1.5; it may indeed represent an improvement, since the nesting of &lt;DEL&gt; and &lt;ADD&gt; elements within &lt;CORR&gt; or &lt;EMEND&gt; makes their relationship explicit (cf. &sect; 18.1.5) and anticipates some aspects of the proposed (P5) &lt;CHOICE&gt; element. A potential problem with this usage, however, involves the change in scope. In the &tei; guidelines, &lt;CORR&gt; is understood as a <socalled>mirror image</socalled> of &lt;SIC&gt; and as sharing approximately the same scope as &lt;ADD&gt; and &lt;DEL&gt;. By seeing &lt;CORR&gt; as a process of addition and deletion rather than a state of correction, the modified syntax in this edition removes the equivalency with &lt;SIC&gt;; by nesting &lt;ADD&gt; and &lt;DEL&gt;, the project also requires the elements to have a difference in scope: &lt;CORR&gt; (and &lt;EMEND&gt;) are used to describe a process of correction or emendation; &lt;ADD&gt; and &lt;DEL&gt; are used to describe an actual state of deletion or addition.</p>
+       </div5>
+       <div5 id="CONVENTIONS.3.4.1.2">
+	<head id="CONVENTIONS.3.4.1.2.HEAD">Readings and reading groups</head>
+	<p id="CONVENTIONS.210" n="ii.19">With one exception, &lt;RDG&gt;s are always nested in three &lt;RDGGRP&gt; elements. The exception is the parallel witness apparatus (where &lt;RDG&gt; elements are collected in a single &lt;RDGGRP&gt;). Each reading group corresponds to a bracket in the analytic all witness view discussed above. The apparatus for <mentioned lang="ang">&copyOfex.4b.1;</mentioned> discussed above is thus encoded as in the following example ([&lt;<xref doc="ex4b1.htm">ex4b1.htm</xref>&gt;])</p>
+       </div5>
+      </div4>
+     </div3>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>

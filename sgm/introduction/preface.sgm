@@ -1,0 +1,149 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                             Preface                           *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+
+<tei.2 id="PREFACE.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Preface</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1K 3M4</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Preface to the electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="PREFACE">
+    <head id="PREFACE.HEAD">Preface</head>    
+    <div2 id="PREFACE.TOC" type="toc">
+     <div3 id="PREFACE.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="toc"><label rend="accesskey">P</label>revious (Table of Contents)</xref></item>
+       <item><xref n="n" doc="conventions"><label rend="accesskey">N</label>ext (Conventions)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="PREFACE.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="PREFACE.HEAD">Top</ref></item>    
+       <item><ref target="PREFACE.1.1.HEAD">About this book</ref></item>
+       <item><ref target="PREFACE.1.6.HEAD">Acknowledgements</ref></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="PREFACE.1">
+     <div3 id="PREFACE.1.1">
+      <head id="PREFACE.1.1.HEAD">About this book</head>
+      <p id="PREFACE.010" n="i.1">&ech; is a critical edition, scholarly study, and textual archive of the Old English poem &ch;, the only surviving text attributable to the Anglo-Saxon herdsman, poet, and monk, C&aelig;dmon (<foreign lang="LAT">floruit</foreign> CE 657-680). </p>
+      <p id="PREFACE.020" n="i.2">There is no need to apologise for a substantial new study and edition of this poem. Among the earliest recorded, best attested, and most cited examples of Old English verse, &ch; nevertheless long has been due a thorough re-examination. The last general book-length treatment of the poem, &schwab1972a;, was published in Italian more than thirty years ago; the standard study of the poem&rsquo;s textual and recensional history, &dobbie1937;, is almost seventy years old. Both works naturally have been superseded in part by subsequent discoveries and changing critical interest. While the poem has remained a central text in several of our most significant debates (e.g. &okeeffe1990;; &kiernan1990a;; &fulk1992;), scholars have in recent years missed the contextualisation only an up-to-date re-examination of the poem in its various textual, cultural, and literary aspects can provide.</p>
+      <p id="PREFACE.030" n="i.3">An equally important, though longer-standing, problem for students of the poem has been the lack of an adequate critical text. The most frequently cited edition, &dobbie1942;, is fundamentally flawed. It divides the &hymn; into ostensibly parallel <socalled>Northumbrian</socalled> and <socalled>West-Saxon</socalled> versions despite convincing evidence, presented in &dobbie1937; and never seriously questioned, to suggest that dialect played a relatively minor role in the &hymn;&rsquo;s recensional development; in doing so it also confuses accidental and significant recensional variants, and presents readers with an implicit view of the poem&rsquo;s textual history that is both unsupported by any surviving evidence and contradicted by Dobbie&rsquo;s own earlier work. Although the &hymn;&rsquo;s general textual development and transmission has been the subject of several significant studies over the last half-century (e.g. &cavill2002;; &cavill2000;; &orton1998;; &odonnell1996a;; &odonnell1996b;; &okeeffe1990;; &kiernan1990a;), no attempt appears to have been made to reflect this work in a comprehensive, multi-recension, critical text. With the exception of Dobbie, all editors of the &hymn; concentrated on individual witnesses or recensions (e.g. &smithah1978; [&aelda;]; &odonnell1996b; [&eordu;]; &mitchellandrobinsonfc2001; [&t1mlx;]). Given the attention the transmission and recensional division of the poem has received in recent years, a comprehensive critical edition also is long overdue.</p>
+      <p id="PREFACE.040" n="i.4">&ech; addresses these problems by offering readers a broad literary, historical, and textual study of &ch;, a complete archive of all known witnesses to the poem, and an edition containing critical texts of the &hymn; at significant points in its presumed textual history, including the written archetype presumed to underlie all surviving recensions of the &hymn;. As such the book updates and, where necessary, re-evaluates and replaces previous standard work on the poem. The introductory study is based on a thorough re-examination of the &hymn;&rsquo;s textual, cultural, literary, and linguistic evidence. Given the variety of ways in which the &hymn; has been discussed in the secondary literature and the importance of the poem in several key areas of enquiry in Anglo-Saxon studies, this re-examination of necessity has ranged widely: &ch; is as interesting to students of the reception of Old English poetry as it is to palaeographers; it is as useful a source of information about the history of the Northumbrian dialect as it is about the adoption of traditional Germanic formulae and diction by early vernacular Christian poets; it is as significant as a possible <socalled>case history</socalled> of a vernacular singer as it is as evidence for Bede&rsquo;s possible adaptation of an archetypal myth of poetic inspiration. While I cannot claim to have covered all areas of &ch; research<note id="chi.note.0010" n="1"><p>The theology of &ch; and the Old English translation of Bede&rsquo;s chapter on C&aelig;dmon, for example, each easily could have filled a chapter.</p></note> (or to be expert in all those areas I do discuss), my hope is that the re-examination will prove of use to scholars interested in pursuing more detailed research.</p>
+      <p id="PREFACE.050" n="i.5">The editorial and archival sections of the edition present the texts in what I hope will prove to be a useful format. &ch; is at the same time too complex to represent editorially through a single critical edition and too stable and consistently transmitted to avoid drawing conclusions about its probable original state and the relationships among its various recensions. &ech;, therefore, offers readers critical texts of the poem at all major points in its textual transmission: editions of the five major recensions, a critical reconstruction of the archetype as this is implied by the surviving witnesses, and two <socalled>scribal performances</socalled> of manuscripts that have become increasingly important in debates about the poem&rsquo;s transmission. The rationale for these editorial decisions is discussed in detail in the editorial introduction (&ch7x;). The textual archive contains transcriptions, new colour facsimiles (where possible), and semi-diplomatic editions of all evidence used in the construction of these editions. With two exceptions, these transcriptions and editions are based on my personal examination of the manuscripts in question.</p>
+      <p id="PREFACE.060" n="i.6">In addition to being what one hopes will prove a useful addition to Anglo-Saxon studies, &ech; is also an experiment in contemporary publishing. Distributed in a hybrid print-and-digital form, the book attempts to harness the particular strengths of the two media to produce a work that is more useful than either of its parts. The print text is designed for browsing and ready reference. It contains a complete text of the introductory study, basic editions of the main recensions, diplomatic transcriptions of all known witnesses, a list of references, index, and glossary. It is the version most users likely will consult first: to check a reference, discover the date of an individual witness, or cite from a particular recension or manuscript of the poem. The electronic text on the accompanying CD-ROM is designed to take advantage of the superior interactivity and storage capabilities of the digital medium. This version contains a complete text of the print edition. Intended for more detailed research, however, the CD-ROM also offers readers features impossible or prohibitively expensive to reproduce in print form. Manuscripts of the hymn are represented by high-quality digital facsimiles, in most cases full colour, and, where possible, with options for examining the &hymn; as a detail or in the context of the entire page upon which it is found. Critical editions and witness transcriptions can be manipulated interactively to display different types of information. Witness transcriptions can be viewed in diplomatic or semi-diplomatic (i.e. with modern lineation and word division) form; in some cases it is also possible to compare pre- and post-correction versions of the same text. The electronic critical editions offer users much greater flexibility in the presentation of textual variants: readers can adjust the apparatus to show various types of variation (e.g. <socalled>significant,</socalled> <socalled>substantive,</socalled> and <socalled>orthographic</socalled>), to display the readings of all manuscript witnesses to a given form, or to produce parallel text editions of the all known copies of a specific recension or the poem as a whole. Links within the apparatus readings, the introduction, index, glossary, and witness transcriptions allow users to navigate quickly from individual forms to parallel texts, definitions, or relevant sections of the introductory study. Colour is used liberally throughout to help users identify key relationships among manuscripts, recensions, and other relevant textual data.</p>
+     <div3 id="PREFACE.1.6">
+      <head id="PREFACE.1.6.HEAD">Acknowledgements</head>
+      <p id="PREFACE.180" n="i.7">This book has taken a long time to write. I began my study of &ch; as part of my dissertation research under Professor Fred C. Robinson of Yale University. I began work on this edition in earnest soon after taking up my position at the University of Lethbridge in 1997. I am grateful to both Professor Robinson and the current and former Deans of the Faculty of Arts and Science at the University of Lethbridge, Baghwan Dua and Chris Nicol, for their interest and patience with this project. I am also grateful to the University of Lethbridge, Faculty of Arts and Science, and the Curriculum Redevelopment Centre of the University of Lethbridge for their financial and in-kind help in completing this work.</p>
+      <p id="PREFACE.190" n="i.8">I first proposed writing an electronic edition of &ch; to the editorial board of SEENET in the fall of 1997. I am grateful to Hoyt N. Duggan and the board for their interest in and support of this project from my initial proposal for a small SGML edition to its final manifestation as a much larger, print-and-CD-ROM hybrid. I am especially thankful to the editorial board and anonymous readers at SEENET and the Medieval Academy for their suggestions for improvements. Needless to say all errors remain my own responsibility.</p>
+      <p id="PREFACE.200" n="i.9">I have also received intellectual support from numerous friends and colleagues. Information Services at the University of Lethbridge library has shown dedication far beyond the call of duty in tracking down literally hundreds of articles and books for me in libraries around the globe. I am particularly grateful to Rosemary Howard and Marina Crow who bore the brunt of my often very obscure requests. Inge Genee, Philip Rusche, and Shelley Stigter read and commented on the entire text of this edition in draft and saved me from numerous small and large errors. Dr. Rusche is also responsible for suggesting that I consider publishing in this multi-media format. My colleagues in the Department of English at the University of Lethbridge have dutifully shown up year after year for colloquium presentations on the finer points of electronic editing and manuscript transmission; I am grateful for their interest in this work, even if I suspect they may be glad to see the back of C&aelig;dmon and his nine-line hymn. I have also had the great fortune to have the support of my colleagues on the executive board of the Digital Medievalist Project, and fellow members of the mailing-lists Ansax-l, Medtext-l, Humanist-l, and Tei-l, all of whom have been very gracious with their time and advice in solving research problems. Manuscript librarians in the United Kingdom, France, Belgium, and Russia, have been helpful without exception in providing me with both access to the manuscripts and high quality digital facsimiles. Manuscript images on the CD-ROM are reproduced with permission of the following copyright holders:</p>
+<list>
+<item>Biblioth$00E8;que Municipale de Dijon: MS. 574, fol. 59v (&dix;)</item>
+<item>Biblioth$00E8;que Nationale du France: MS. lat. 5237, fol. 72v (&p1x;)</item>
+<item>Biblioth$00E8;que Royale, Brussels: MS. 8245-57, fol. 62r (&brx;)</item>
+<item>Bodleian Library, Oxford: MS. Bodley 163, fol. 152v (&bdx;); MS. Hatton 43, fol. 129r (&hx;); MS. Laud Misc. 243, fol. 82v (&ldx;); MS. Tanner 10, p. 195 (&t1x;)</item>
+<item>British Library, London: MS. Additional 43703, fol. 146r (&nx;)</item>
+<item>Syndics of Cambridge University Library: MS. Kk. 3. 18, fol. 72v (&cax;); MS. Kk. 5. 16, fol. 128v (&mx;; "The Moore Bede")</item>
+<item>The College of Arms, London: MS. Bedae s.n., fol. [84v] (&carmsx;)</item>
+<item>Master and Fellows, Corpus Christi College, Cambridge: MS. 41, p. 322 (&b1x;)</item>
+<item>Corpus Christi College, Oxford: MS. 279, B, f. 112v (&ox;)</item>
+<item>Dean and Chapter of Hereford Cathedral Library and the Hereford Mappa Mundi Trust: MS. P. 5. i, fol. 116v (&hrx;)</item>
+<item>Huntington Library, San Marino CA: MS. HM 35300, fol. 82r (&sanmx;)</item>
+<item>Lincoln College, University of Oxford: MS. lat. 31, fol. 83r (&lnx;)</item>
+<item>The President and Fellows of Magdalen College Oxford: MS. lat. 105, fol. 99r (&mgx;)</item>
+<item>National Library of Russia, St. Petersburg: MS. lat. Q. v. I. 18, fol. 107r (&lx; "The St. Petersburg Bede")</item>
+<item>Master and Fellows, Trinity College, University of Cambridge: MS. R. 5. 22, fol. 32v (&tr1x;)</item>
+<item>Dean and Chapter of Winchester/Winchester Cathedral Library: MS. I, fol. 81r (&wx;)</item>
+</list>
+      <p id="PREFACE.210" n="i.10">Finally I owe a deep debt to my family: my children, Bouke and Kaatje, my parents Pat and Maureen O&rsquo;Donnell, parents-in-law Piet Genee and Jeane Lek, and above all my wife, Inge Genee. All have endured my preoccupation with C&aelig;dmon with good humour and grace. I am particularly grateful to my wife, moreover, for her willingness to adjust her own research schedule to the needs of this project, and for her help in research, editing, and proof-reading.</p>
+      <p rend="citation">Lethbridge, January 30 (St. Bathildis), 2005.</p>
+     </div3>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>
+

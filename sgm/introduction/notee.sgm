@@ -1,0 +1,394 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                              Note E                           *
+*                         List of Analogues                        *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 id="NOTEE.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Note E: Proposed analogues to the C&aelig;dmon story</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Appendix to the introduction to the electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ARA">Arabic</language>
+   </langusage>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="DEU">German</language>
+   </langusage>
+   <langusage>
+    <language id="SGA">Irish, Old (to 900)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+   <langusage>
+    <language id="NON">Norse, Old</language>
+   </langusage>
+   <langusage>
+    <language id="FAS">Persian / Farsi</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="NOTEE" n="E">
+    <head id="NOTEE.HEAD">Index of proposed analogues to the C&aelig;dmon story</head>    
+    <div2 id="NOTEE.TOC" type="toc">
+     <div3 id="NOTEE.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="noted"><label rend="accesskey">P</label>revious (Note D)</xref></item>
+       <item><xref n="n" doc="northumbrianOriginalEdition"><label rend="accesskey">N</label>ext (&ch;)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="NOTEE.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="NOTEE">Top</ref></item>
+       <item><ref target="NOTEE.NOTEEENDIX.1.HEAD">Introduction</ref></item>
+       <item><ref target="NOTEE.NOTEEENDIX.2.HEAD">Analogues</ref></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="NOTEE.NOTEEENDIX">
+     <div3 id="NOTEE.NOTEEENDIX.1">
+      <head id="NOTEE.NOTEEENDIX.1.HEAD">Introduction</head>
+      <p id="NOTEE.470" n="E.1">The following contains a list of all published proposed <socalled>analogues</socalled> to the C&aelig;dmon story used in the preparation of &ch2x; (see &sect;&sect;&nbsp;&ch2x300;-&ch2x450; for a detailed discussion of analogues to the &hymn; itself). The list contains supposed narrative analogues only. Anthropological and sociological parallels to the C&aelig;dmon story have been excluded.<note id="NOTEE.NOTE.170" n="1"><p>Examples of such parallels include &fritz1969;, &fritz1974;, and &irvine1991; (in which C&aelig;dmon&rsquo;s training and career is compared to that of novice monks, exegetes, or religious poets); and &kleiner1988; and certain aspects of &magoun1955; and &orton1983; (in which C&aelig;dmon&rsquo;s training is compared to that of historical oral poets). I have also excluded a number of interesting but unpublished accounts of parallels suggested to me informally by colleagues, friends, and students. Examples include the Pentecost (suggested by Virgil Grandfield), Joseph Smith (Karen Hann), and William McGonagall, Poet and Tragedian (Philip Rusche).</p></note> Each entry contains a brief summary of the relevant details, in most cases quoted directly from the scholar responsible for proposing the analogue, and selected references to significant discussions in the secondary literature.<note id="NOTEE.NOTE.180" n="2"><p><socalled>Significant</socalled> in this context means work that adds new information to our knowledge of the analogue in question or its relationship to C&aelig;dmon&rsquo;s story or &hymn;. With the exception of the important review articles, &pound1929; and &lester1974;, I have not recorded bibliographic information on articles that simply summarise previous studies.</p></note> With a few exceptions (particularly, but not exclusively, the stories of Mohammed, Ntsikana, and Aldhelm discussed in &ch2x;), no attempt has been made to trace analogues back to their original sources. Readers interested in further details of these stories are encouraged to begin their research with the sources cited.</p>
+     </div3>
+     <div3 id="NOTEE.NOTEEENDIX.2">
+      <head id="NOTEE.NOTEEENDIX.2.HEAD">Analogues</head>
+      <div4 id="NOTEE.NOTEEENDIX.2.1">
+       <head id="ABID">Ab&imacr;d ben al-Abras (&lester1974;; &khafaji1972;)</head>
+       
+       <p>&ldquo;Ab&imacr;d ben al-Abras was a poor man with no possessions. One day he came with a small flock of sheep towards water. With him was his sister, Mawiyya. A man from the tribe of Malek ben Tha&rsquo;alaba confronted him and prevented him from leading his sheep to the water. Ab&imacr;d went away saddened by this challenge. He came to a small bush under the shade of which he slept. His sister also slept under those trees. It is said that the man from Malek, who had confronted him, came upon them and accused Ab&imacr;d of incest and expressed this accusation in three lines of poetry....</p>
+       <p>&ldquo;Ab&imacr;d, hearing this, raised his hands to heaven in supplication saying: &lsquo;O God, this man has done me a terrible wrong with his false accusation. Avenge me, and help me overcome him.&rsquo;.... Ab&imacr;d then went back to sleep. It is said that an apparition came to him in his sleep, with a big bundle of poems, which the apparition threw into Ab&imacr;d&rsquo;s mouth saying, &lsquo;Recite this, for you shall be the most eleoquent [&sic;] poet in Arabia, the most glorious among the Arabs. Your poverty is the result of your generosity and kindness to your kith and kin.&rsquo;  So Ab&imacr;d woke up, extemporaneously reciting poetry against the tribe of Malek. His fame as a great poet continued to glow [&sic;] among his people from that time, recognized by everybody until he was killed&rdquo; (translation by Mohammed T. Bujairami, quoted in &lester1974;, 227, n. 16).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.2">
+       <head id="AESCHYLUS">Aeschylus (&lester1974;; &pound1929;; &klaeber1927;; &aurner1926;)</head>
+       
+       <p>In Pausanias&rsquo; <title level="m">Description of Greece</title> I. 21: &ldquo;&AElig;schylus recounts that Dionysus appeared to him in his sleep, when he was a stripling, and bade him write tragedy, and later, on awakening, he found that he could do so&rdquo; (&pound1929;, 234).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.3">
+       <head id="ALDHELM">Aldhelm (&opland1980;)</head>
+       <p>See above, &sect;&sect;&nbsp;&ch2x180;-&ch2x200;.</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.4">
+       <head id="ANNUNCIATION">Annunciation and birth of Christ (&orton1983;)</head>
+       
+       <p>&ldquo;The most obvious parallel [to the biblical story of the annunciation and birth of Christ in the C&aelig;dmon story] is in the setting: C&aelig;dmon&rsquo;s vision and Christ&rsquo;s birth both take place in a stable. Both Mary and C&aelig;dmon are visited, Mary by an angel, C&aelig;dmon by an unnamed &lsquo;somebody&rsquo; (&lsquo;quidam&rsquo;). Mary, a virgin, is puzzled by the news that she will bear a child; C&aelig;dmon seems perplexed that he should be asked to sing after leaving the feast precisely because he is unable to do so. In Mary&rsquo;s case, pregnancy follows a natural course, whereas in C&aelig;dmon&rsquo;s, conception and delivery are, so to speak, one. To Mary&rsquo;s virginity corresponds C&aelig;dmon&rsquo;s inexperience in composing and learning poems. Just as the gospel, in Matthew, states that sexual relations between Joseph and Mary were delayed (to say the least) until after Christ&rsquo;s birth, so C&aelig;dmon&rsquo;s story stresses that his <title level="m">Hymn</title> and all subsequent works came into being through divine grace alone; that C&aelig;dmon had learnt nothing from the recitations of his fellows, despite his exposure to them. He was thus as pure in his way as Mary was in hers, and no more open to the charge of having rooted Christian English poetry in pagan soil than Mary is of having borne Joseph&rsquo;s son&rdquo; (&orton1983;, 165-166).</p>
+             </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.5">
+       <head id="BEOWULF">Feast scenes in &Beo; (&osborn1989;)</head>
+       
+	<p>&ldquo;At a formal ceremonial occasion like the banquet scenes in lines 612-64 and 1228-31 of &Beo;, a splendid cup might be passed around, with each person who receives it expected to make some sort of formal declaration, perhaps either praise for a king or hero or a heroic oath.... Despite the lack of evidence in Bede&rsquo;s sober text, I think that elderly Caedmon might have found himself at such a party, and foreseen the jovial group turning to look at him, when he knew himself incapable of taking his turn as the situation demanded&rdquo; (&osborn1989;, 16).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.6">
+       <head id="BLAKE">Blake (&pound1929;)</head>
+       
+	<p>&ldquo;Blake... saw a figure who impelled him to the composition of his <title level="m">Songs of Innocence</title>&rdquo; (&pound1929;, 236).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.7">
+       <head id="BOY">Boy speaking in tongues (&loomis1946;)</head>
+       
+	<p>Gregory recounts the following story in his <title level="m">Dialogues</title> (IV. 26): &ldquo;[A] certain boy fell into a trance and received the gift of speaking strange languages. When he awoke, he conversed in the Bulgarian and the Greek idioms with which he was previously unfamiliar&rdquo; (&loomis1946;, 410).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.8">
+       <head id="CENNFAELED">Cennfaeled mac Ailella (&ireland1986;; &dumville1981;)</head>
+       <p>Cennfaeled mac Ailella was a mid seventh-century ecclesiastic of aristocratic origin who was wounded at the battle of Magh Rath (c. 637) and removed to Tuaim Drecain to be healed. In the course of his treatment, Cennfaeled had his <foreign lang="SGA">ichinn dermait,</foreign> &ldquo;brain of forgetting,&rdquo; removed, leaving him with a prodigious memory (&ireland1986;, 113). He then began a course of study in which he was taught &ldquo;lore of <foreign id="NOTEE.FOREIGN.0030" lang="SGA">l&eacute;gend</foreign> (ecclesiastical learning), <foreign id="NOTEE.FOREIGN.0040" lang="SGA">f&eacute;nechas</foreign> (native law), and <foreign id="NOTEE.FOREIGN.0050" lang="SGA">filidecht</foreign> (native poetics and general literary, pseudo-historical, and topographical tradition)&rdquo; (&dumville1981;, 147). Because of his excellent memory, Cennfaeled was able to learn each day&rsquo;s lesson by heart and &ldquo;put a &lsquo;fine thread of poetry&rsquo;&rdquo; around it before writing it out on tablets and subsequently transcribing it into codices; he is said to have left &ldquo;a &lsquo;large number of well composed books&rsquo; after him&rdquo; (&dumville1981;, 147).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.9">
+       <head id="DREAMSONGS">Chippewa dream songs (&pound1929;)</head>
+       <p>Chippewa dream songs are composed &ldquo;during a dream or on waking from a dream&rdquo; (Frances Densmore, quoted in &pound1929;, 237):</p>
+       
+	<p>&ldquo;The story of one song... is that when the composer was a boy he had a dream, and in his dream he heard the trees singing as though they were alive. When he awoke he made up the song, in which he repeats what he heard the trees say. Another youth heard the crows in the trees and imagined he learned his song from them. The song was first a dream song and then a war-dance song&rdquo; (&pound1929;, 237).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.10">
+       <head id="COLMANMACLENENI">Colm&aacute;n mac L&eacute;n&eacute;ni (&ireland1997;; &ireland1986;)</head>
+       <p>Colm&aacute;n mac L&eacute;n&eacute;ni (&ob; &circa; 600) was a professional poet before he became a monk. He composed his poetry, including a surviving four line fragment in which he refers to his composition process, in an &ldquo;inspired sleep&rdquo; (&ireland1997;, 2-3).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.11">
+       <head id="CYNEWULF">Cynewulf (&orchard1996;)</head>
+      
+	<p>&ldquo;A[n]... oblique reference in Old English verse to the... theme of pious poetic inspiration, and to circumstances similar to those in which C&aelig;dmon found himself, appears in the course of the lengthy (and Latinate) rhyming passage which occurs towards the end of <title level="m">Elene</title> (lines 1236-51), where an aged man (in this case Cynewulf) claims to have been inspired to song, after a long period of night-time contemplation, by God, who has &lsquo;unlocked&rsquo; his song-craft&rdquo; (&orchard1996;, 410-411).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.12">
+       <head id="DREAM">Dream of Rhonabwy (&osborn1989;)</head>
+       
+	<p>&ldquo;[T]he Celtic hero of &lsquo;The Dream of Rhonabwy&rsquo; sleeps on a yellow calfskin in order to dream&mdash;and Caedmon&rsquo;s name is Celtic&rdquo; (&osborn1989;, 17).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.13">
+       <head id="DUNSTAN">St. Dunstan (&lester1974;; &shepherd1954;)</head>
+       
+	<p>&ldquo;After compline and pious devotion one night, Dunstan in sleep was rapt to heaven. There he saw his own mother joined in marriage to a mighty king amid great rejoicing. From all sides rose hymns and music. While Dunstan listened in delight and attended with all his heart to what was going on, a young man clad in white brilliance came up to him and said: &lsquo;When you see and hear these choirs in jubilation, why do you not join it?&rsquo; Dunstan replied that he did not know what to sing in honour of so great a king. So the young man taught him the antiphon, <title level="m">O rex gentium</title>. In his vision Dunstan repeated the antiphon many times and in the morning, when he had risen from sleep, had it copied down lest it pass out of memory&rdquo; (&shepherd1954;, 114).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.14">
+       <head id="EGIL">Egil Skalla-Gr&iacute;msson (&fry1975;; &magoun1955;)</head>
+       <p>Egil is already an accomplished poet. Trapped in York and threatened with death by Erik Bloodaxe, Egil is persuaded by his friend Arijbj&ocedil;rn to compose a poem in Erik&rsquo;s honour, in the hope that this will convince him to spare his life. Egil&rsquo;s attempts are frustrated, however, by a magical swallow that prevents him from composing by singing at his window. When Arijbj&ocedil;rn investigates, the bird flies away, allowing Egil to compose his song.</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.15">
+       <head id="ROMANTICPOETS">English Romantic poets (&pound1929;)</head>
+       <p>Dream or sleep inspiration plays a role in the work of several English Romantic poets. Examples cited by Pound include Young (&ldquo;Night Thoughts&rdquo;), Coleridge (<title level="m">Kubla Khan</title>), and Keats (&ldquo;Sleep and Poetry&rdquo;). See &pound1929;, 236.</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.16">
+       <head id="EQUITIUS">Equitius (&loomis1946;)</head>
+       
+	<p>Gregory recounts the following story in his <title level="m">Dialogues</title> (I. 4): &ldquo;A certain Equitius, although not in holy orders, nevertheless preached to many at various places. When he was questioned, he gave the explanation that a young man had appeared to him in a dream and touched his tongue with a lancet used for letting blood, saying, &lsquo;Behold, I have put my word into your mouth! Go forth to your preaching.&rsquo;  From that day, even though he wished, he could not keep silent concerning God&rdquo; (&loomis1946;, 410).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.17">
+       <head id="FINN">Finn MacCoul (&lerer1991;)</head>
+       
+	<p>&ldquo;Like many traditional accounts, Caedmon&rsquo;s naming represents the sanctioning of the poet or poetic figure by specially empowered authorities. In the story of Finn MacCoul, for example, the young hero is transformed into a poet through the eating of the cooked salmon and the sucking of his burned thumb. Allusively combining references to sacred food and spittle, this moment in the &lsquo;Boyhood Exploits of Finn&rsquo; announces that &lsquo;whenever he put his thumb into his mouth, and sang through <foreign id="NOTEE.FOREIGN.0060" lang="SGA">teinn laida</foreign> [illumination of song?], then whatever he had been ignorant of would be revealed to him....&rsquo; The new poet is then renamed: &lsquo;Finn is thy name, my lad&rsquo;. The narrator continues, &lsquo;It is then Finn made this lay to prove his poetry....&rsquo; Much like the Irish poet&rsquo;s performance of his lay&mdash;a pastoral of Creation&mdash;C&aelig;dmon, newly named, sings his own hymn of Creation to &lsquo;prove his poetry&rsquo; to himself and his angel&rdquo; (&lerer1991;, 43-44).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.18">
+       <head id="FOOL">Fool of Dunmore (&vincent1946;)</head>
+       
+	<p>&ldquo;In the old times, there was a half-fool living in Dunmore, in the county of Galway, and although he was excessively fond of music, he was unable to learn more than one tune, and that was the &lsquo;Black Rogue&rsquo;. ...One night the piper was coming home from a house where there had been a dance, and he was half drunk. When he came to a little bridge that was up by his mother&rsquo;s house, he squeezed the pipes on, and began playing the &lsquo;Black Rogue&rsquo;.... The P&uacute;ca came behind him, and flung him up on his own back. There were long horns on the P&uacute;ca, and the piper got a good grip of them...</p>
+	<p>&ldquo;Then the P&uacute;ca said to him, &lsquo;Play up for me the &ldquo;Shan Van Vocht&rdquo;...&rsquo;</p>
+	<p>&ldquo;&lsquo;I don&rsquo;t know it&rsquo;, said the piper.</p>
+	<p>&ldquo;&lsquo;Never mind whether you do or you don&rsquo;t&rsquo;, said the P&uacute;ca. &lsquo;Play up, and I&rsquo;ll make you know&rsquo;.</p>
+	<p>&ldquo;The piper put wind in his bag, and he played such music as made himself wonder... and from that day till the day of his death, there was never a piper in the county Galway was as good as he was&rdquo; (Douglas Hyde, cited in &vincent1946;, 61).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.19">
+       <head id="FURSEY">Abbot Fursey (&shepherd1954;)</head>
+       
+	<p>&ldquo;[T]he abbot Fursey, a holy man from Ireland, had been found worthy to see heavenly visions. In his infirmity, one day towards evening, while he was occupied in psalmody and prayer, suddenly he fell into a trance and was carried home as one dead. In his trance his soul was borne aloft by angels singing the half-verse, <mentioned lang="LAT">Ibunt sancti de virtute in virtutem</mentioned> (Ps. lxxxiv. 7). Now at the end of the flight, he heard another song, as it were unknown to him, sung by thousands of angels. Of this song he could grasp but a few words&mdash;<mentioned lang="LAT">Exierunt autem obviam Christo</mentioned>. For almost immediately, one of the heavenly host commanded the leading angelic guide to return the soul to the body. Returning, the angels sang the concluding half-verse, <mentioned lang="LAT">Videbitur deus deorum in Sion</mentioned> (Ps. lxxxiv. 7). In his delight at the sweetness of this song, Fursey could not understand how his soul re-entered his body&rdquo; (&shepherd1954;, 113).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.20">
+       <head id="GODRIC">Godric of Finchale (&lester1974;; &shepherd1954;)</head>
+       
+	<p>&ldquo;After a night of prayer, towards morning, Godric took a brief respite and looking above the altar saw two virgins. After contemplating them awhile, he completed the additions to the office in such a spirit of joy that his mind seemed almost freed from its earthly shell. At length the figures advanced towards him and the one revealed herself as the Blessed Virgin, and assured him of her patronage. She taught him a new song as if he were a boy at school. She sang it first and he sang it after her. The Virgin instructed him that whensoever he was troubled or tempted he should remember to soothe himself with this song&rdquo; (&shepherd1954;, 115).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.21">
+       <head id="GREGORY">Gregory the Great (&loomis1946;)</head>
+       
+	<p>&ldquo;The great learning of Gregory was thought to be divinely inspired. A white dove dictated at his ear&rdquo; (&loomis1946;, 411).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.22">
+       <head id="HALFDAN">Halfdan the Black (&osborn1989;)</head>
+       
+	<p>&ldquo;When Halfdan the Black of Norway complained to his seer Thorleifr about his inability to dream, Thorleifr advised him to sleep in a <foreign id="NOTEE.FOREIGN.0070" lang="NON">svinaboeli</foreign>, a pigsty, &lsquo;as he himself always did when he sought dreams&rsquo;&rdquo; (&osborn1989;, 17).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.23">
+       <head id="HALLBJORN">Hallbj&ouml;rn (&lester1974;; &pound1929;; &klaeber1927;; &plummer1975;; &bouterwek1849-1851;)</head>
+       <p>Hallbj&ouml;rn was &ldquo;a goatherd who sought vainly to sing of a dead bard, Thorleifr, buried under the barrow where his goats pastured. One night a huge figure arose from the opening barrow, touched his tongue with its fingers, spoke some poetical lines, and returned to its tomb... [Hallbj&ouml;rn] retained the verses in his memory and became a poet&rdquo; (&pound1929;, 235).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.24">
+       <head id="HELIAND"><title level="m">Heliand</title> Poet (&lester1974;; &smithah1978;; &pound1929;; &klaeber1927;; &plummer1975;; &palgrave1832;)</head>
+       
+	<p>The <title level="m">Heliand</title> Poet was &ldquo;a Saxon plowman, who, while in charge of a few cattle, slept under a tree and heard a voice from Heaven ordering him to sing of God. He then became a poet, beginning his career with a song of Creation&rdquo; (&pound1929;, 233-234).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.25">
+       <head id="HEREWARD">Hereward (&anderson1977;)</head>
+       
+	<p>&ldquo;Hereward goes in disguise to a wedding feast in Cornwall, intending to rescue the bride from an unwanted marriage.... During the feast, following the usual custom in this province, the bride went forth to offer drink to the guests and servants, and as she did so, <foreign lang="LAT">quodam praecedente cum cythara et unicuique cytharizante cum poculo, quoniam praecipuus illis in locis jocus erat et novus</foreign> (...one went before [the bride] with a harp, and offered a cup to each person as he played, for such was the peculiar and novel custom in those places).... When the bride and harp-bearer reach Hereward, he refuses the cup. The bride (who recognizes Hereward despite his disguise) excuses Hereward as being unfamiliar with the local customs, but the harp-bearer, now referred to as <foreign id="NOTEE.FOREIGN.0080" lang="LAT">joculator</foreign> (jester, minstrel), is not willing to endure Hereward&rsquo;s breach of etiquette....</p>
+	<p>&ldquo;Hereward, angered at the minstrel&rsquo;s behavior, boasts that he can better perform the minstrel&rsquo;s duties. He seizes the harp, and plays so skillfully that all the guests are struck with wonder. The minstrel is quite frightened at this occurrence, perhaps fearing that he might lose his office.... [He] repeatedly tries to retrieve his harp, but is unable to do so, and Hereward presides as entertainer at the feast for the rest of the evening&rdquo; (&anderson1977;, 3).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.26">
+       <head id="HESIOD">Hesiod (&lester1974;; &pound1929;; &klaeber1927;; &plummer1975;)</head>
+       <p>&ldquo;In the Exordium of the <title level="m">Theogony</title> (l. 23) we are told that Hesiod kept sheep upon the slopes of Helicon; for it was there that the Muse descended to visit him, and, after rebuking the shepherds for their idleness and grossness, gave him her sacred laurel branch and taught him song&rdquo; (&pound1929;, 234).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.27">
+       <head id="HOMER">Homer (&lester1974;; &klaeber1927;; &bouterwek1849-1851;)</head>
+       <p>Isocrates records that Helena appeared to Homer at night and urged him to compose a poem about the Trojan war (Grimm, <title lang="DEU" level="m">Deutsche Mythologie</title>, 859 [755]; reference as in &klaeber1927;, 390).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.28">
+       <head id="ISAIAH">Isaiah (Isaiah 6:3-9. &thundy1989;)</head>
+       
+	<l n="3">And one cried unto another, and said, Holy, holy, holy, is the Lord of hosts: the whole earth is full of his glory.</l>
+	<l n="4">And the posts of the door moved at the voice of him that cried, and the house was filled with smoke.</l><l n="5">Then said I, Woe is me! for I am undone; because I am a man of unclean lips, and I dwell in the midst of a people of unclean lips: for mine eyes have seen the King, the Lord of hosts.</l>
+	<l n="6">Then flew one of the seraphims unto me, having a live coal in his hand, which he had taken with the tongs from off the altar:</l>
+	<l n="7">And he laid it upon my mouth, and said, Lo, this hath touched thy lips; and thine iniquity is taken away, and thy sin purged.</l>
+	<l n="8">Also I heard the voice of the Lord, saying, Whom shall I send, and who will go for us? Then said I, Here am I; send me.</l>
+	<l n="9">And he said, Go, and tell this people, Hear ye indeed, but understand not; and see ye indeed, but perceive not.<note id="NOTEE.NOTE.190" n="3"><p>Thundy cites Isaiah 6:1-6. Verses 1-2 deal with the vision of the seraphims rather than the gift of speech <foreign lang="LAT">per se</foreign>, and, as a result, seem less relevant than 3-9, in which Isaiah reports on the instructions he received.</p></note></l>
+       	
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.29">
+       <head id="MANATWAKE">Man at wake (&lester1974;; &chappell1934;)</head>
+       <p>A man is ejected from a traditional Scottish wake because he had neither a tale nor a song to share with the gathered mourners. While outside he sees a procession of women in coloured dresses, followed by a woman and man on a horse. The woman gives the man a riddle and commands him to return to the wake to tell the assembled mourners.</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.30">
+       <head id="MILTON">Milton (&pound1929;)</head>
+       
+	<p>&ldquo;Milton&rsquo;s Urania is a supernatural figure who appears to him in nocturnal visitations and guides his poetry. To Milton, as to C&aelig;dmon, a figure appears who directly inspires his verse&rdquo; (&pound1929;, 236).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.31">
+       <head id="MOHAMMED">Mohammed (&thundy1989;; &vonsee1983;; &lester1974;; &magoun1955;)</head>
+       <p>See above, &sect;&sect;&ch2x100;.</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.32">
+       <head id="MONKOFMELROSE">Monk of Melrose (&lester1974;; &shepherd1954;)</head>
+       
+	<p>An &ldquo;... anonymous <foreign lang="LAT">conversus</foreign> of Melrose had been tempted by the devil and for many years had lost the intellectual light of truth, though he still lived as a religious. But one midday as he rested, he saw two splendid figures who led him away into a pleasant garden. There they charged him with his errors. Looking round for comfort, he saw the abbot Waltheow sitting in state upon a high place and the monk besought his aid. Waltheow bade the guides show the man the wheel of fate and the penal places. All this this monk saw. In a second vision shortly afterwards he was shown the seats of the blest. When Waltheow had explained the significance of both visions, suddenly the monk was set down at the gates of Melrose, a wiser and converted man.&rdquo; After this the monk, who had been a simple and ineloquent man before his visions, was able to compose greatly admired texts in English metre from the Gospels and works of church doctrine and history (&shepherd1954;, 115-116).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.33">
+       <head id="MOSES">Moses (Exodus 4:10-12. &thundy1989;)</head>
+       
+	<l n="10">And Moses said unto the Lord. O my Lord, I am not eloquent, neither heretofore, nor since thou hast spoken unto thy servant: but I am slow of speech, and of a slow tongue.</l>
+	<l n="11">And the Lord said unto him, Who hath made man&rsquo;s mouth? or who maketh the dumb or the deaf, or the seeing, or the blind? have not I the Lord?</l>
+	<l n="12">Now therefore go, and I will be with thy mouth, and teach thee what thou shalt say.</l>
+       	
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.34">
+       <head id="NTSIKANA">Ntsikana (&opland1980;; &opland1977;; &holt1954;)</head>
+       <p>See above, &sect;&sect;&nbsp;&ch2x210;-&ch2x220;.</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.35">
+       <head id="PINDAR">Pindar (&pound1929;; &klaeber1927;)</head>
+       
+	<p>&ldquo;Pausanias... narrates [in his <title level="m">Description of Greece</title>] (IX. 23) concerning the &lsquo;Hymn to Proserpina&rsquo;, composed by Pindar, that Proserpina appeared to Pindar in his sleep ten days before he died and told him that he should praise her in her own kingdom, though he had neglected her when on earth. The hymn was dictated to a Theban woman, a relation of Pausanias, by his ghost, and written down by her as soon as she awoke&rdquo; (&pound1929;, 234 n. 1).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.36">
+       <head id="SABIT">Sabit M&uuml;dam&icirc; Ataman (&lord1993;)</head>
+       <p>The Turkish minstrel Sabit M&uuml;dam&icirc; Ataman acquired the desire to become an <foreign lang="FAS">a&scedil;ik</foreign> (singer) in a recurring dream:</p>
+	
+	 <p>&ldquo;There was a chaotic upheaval. An enormous scale was erected in a meeting place where thousands of people had gathered.... All the people from the time of Adam to the present day had assembled. In the background there were shades twelve stories tall. That is, they were people, but they were so tall that a bird couldn&rsquo;t fly that high... To the right of the scale stood a man as tall as a minaret. He had on black clothes and a black hat. To the left side of the scales there stood a short man with a pock-marked face and a yellow complexion. In his hand he held a yellow book. The one with the yellow book in his hand would say a word about each of the people coming to the scale and the other, the impressive one, would say a verse about them.... The big one said to me, &lsquo;Have you learned it, my son?&rsquo; &lsquo;Yes&rsquo;, I answered, &lsquo;I have learned it&rsquo;.  &lsquo;Read it out and let me see&rsquo;.  And I recited it. He touched me on the shoulder with his left hand. &lsquo;Now you stand over there, my child. Let someone else approach&rsquo;.  Just then a short, old minstrel, some seventy to seventy-five years of age with a conical hat on his head, appeared. This minstrel had a <foreign lang="FAS">saz</foreign> in his hands....</p>
+	 <p>&ldquo;They showed me a yellow book, saying, &lsquo;Read the writing on this book, my child&rsquo;.  &lsquo;I don&rsquo;t know how to read&rsquo;, I said.... &lsquo;Look at it, my child&rsquo;, he said. It was writing in an old script, about two fingers high. What was written on the book was: H&acirc;z&acirc; Divan&icirc; A&scedil;ik M&uuml;dam&icirc;. They said, &lsquo;Your &ldquo;pen name&rdquo; is M&uuml;dam&icirc;. This is your minstrel book. It will become your <foreign lang="FAS">divan</foreign>.....&rsquo;</p>
+	 <p>&ldquo;I picked up the <foreign lang="FAS">c&uuml;z</foreign>. But now, I looked at the page and it seemed like the letters were talking to me.... I read through one piece. I looked at another one and it was like the piece had been my intimate friend for fifty years.... Later, when I was fourteen years old and I was working as a shepherd, that dream repeated itself... After that I made a <foreign lang="FAS">saz</foreign> by stretching horse hair across a board&rdquo; (Natalie Kononenko Moyle, as cited in &lord1993;, 123-125).</p>
+	
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.37">
+       <head id="SIOUX">Sioux ghost-dance songs (&pound1929;)</head>
+       <p>&ldquo;Mr Mooney reprints songs from the trance-visions of many singers, relating their trance-experiences. Some tell of messengers from the spirit world, and in some... the vision is of the Messiah and the song inspired by him&rdquo; (&pound1929;, 238).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.38">
+       <head id="SOCRATES">Socrates (&osborn1989;)</head>
+       
+	<p>&ldquo;In the <title level="m">Phaedo</title> we learn that... Socrates was bidden in a dream to compose, and so he wrote a hymn to Apollo&rdquo; (&osborn1989;, 17).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.39">
+       <head id="THIEF">Thief at the funeral of St. Hugh of Lincoln (&ward1976;)</head>
+       
+	<p>&ldquo;Roger of Hoveden tells how at the funeral of St. Hugh of Lincoln a thief tried to ply his trade; he was rooted to the spot, &lsquo;impelled to compose rather inferior Latin verses whether he would or no&rsquo;&rdquo; (&ward1976;, 74).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.40">
+       <head id="AUSTRALIA">Tribes of South East Australia (&pound1929;)</head>
+       
+	<p>&ldquo;[T]he Ngarigo tribe [of South East Australia] believed that they could see ghosts in dreams, and the Yuin Gommeras that they could get songs in dreams. One tribesman said that his uncle came to him during sleep and taught him songs (charms) against sickness and other evils&rdquo; (&pound1929;, 238).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.41">
+       <head id="VALMIKI">Valmiki (&lester1974;; &whitbread1939;)</head>
+       
+	<p>&ldquo;Valmiki, a celebrated Brahmin ascetic, received poetic inspiration as a divine gift and was instructed by the god Brahma to write the <title level="m">Ramayana</title>, a verse history of an Indian hero regarded as one of the greatest of the Sanskrit epics&rdquo; (&lester1974;, 226).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.42">
+       <head id="VELMA">Velema (&lord1993;)</head>
+       
+	<p>The Fijian poet Velema &ldquo;alone has inherited the right to practice occult arts in his land-group and bears the sacred tokens. He has the war-club and the axe of his maternal grandfather and uncle and their dancing spear wrapped carefully in barkcloth and secured from vulgar observation in the upper region of his house.... It is the ancient war club and the axe that give him the power to compose epic songs, &lsquo;true songs&rsquo;.... In trance or in sleep the songs come to him, taught him by his supernatural mentors. He takes no personal credit for his composition, does not even distinguish between those which he has composed himself and those old ones which his mother&rsquo;s brother must surely have taught him. All contribute to the glory of his ancestors. Ancestors chant the songs as they teach so that the rhythms implicit in the language are qualified by a musical style which can freely reduplicate syllables to change the stress in words&rdquo; (Buell H. Quain, quoted by &lord1993;, 125-126).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.43">
+       <head id="VOLSATHATTR"><title level="m">Volsa Thattr</title> (&osborn1989;)</head>
+       
+	<p>&ldquo;In the Old Norse <title level="m">Volsa Thattr</title>, an episode in the saga of St. Olaf, there is a peculiar ritual that has structural elements in common with the <foreign lang="LAT">convivium</foreign> that Bede describes. In this episode it is not a harp but an ossified horse&rsquo;s penis (<foreign lang="NON">vingull</foreign>) wrapped in cloths that is passed around, and each person in turn is expected to recite an appropriate verse&rdquo; (&osborn1989;, 16).</p>
+       
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.44">
+       <head id="WALTER">Walter, lay brother at Clairvaux (&ward1976;)</head>
+       
+	<p>&ldquo;Walter, a lay-brother at Clairvaux, was visited in his sleep by a saint who taught him the mass of the Holy Spirit; when he woke up, he remembered it, but had the ability neither to learn more nor to use what he had learnt&rdquo; (&ward1976;, 74).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.45">
+       <head id="WESLEY">Wesley (&osborn1989;)</head>
+       
+	<p>Charles Wesley began his hymn writing career by being bidden to compose songs praising the Lord in a dream by a little girl (&osborn1989;, 17, and n. 15).</p>
+      </div4>
+      <div4 id="NOTEE.NOTEEENDIX.2.46">
+       <head id="WILLIAM">William of Ford (&ward1976;)</head>
+       
+	<p>William of Ford was &ldquo;a dumb lay-brother... who had his speech restored at the prayers of a saint, only to find to his disgust that he spoke low-class English rather than aristocratic French&rdquo; (&ward1976;, 74).</p>
+      </div4>
+     </div3>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>
+

@@ -1,0 +1,173 @@
+<!--
+*******************************************************************
+*                              n.sgm                              *
+*   Diplomatic Transcription of the the Text of Caedmon's Hymn    *
+*                           as found in                           *
+*              London, British Library Additional 43703           *
+*   (Nowell's transcript of the now destroyed Cotton Otho.B.xi)   *
+*                                                                 *
+*                         Text and Encoding                       *
+*              (c) Daniel Paul O'Donnell, 1999-2002               *
+*                        All Rights Reserved                      *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers.  It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+
+<?STYLESPEC "Diplomatic Transcription" "../styleSheets/dipl.ssh">
+<?STYLESPEC "Normalised Lineation and Word Spacing" "../styleSheets/diplNorm.ssh">
+
+<tei.2 id="N.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">&ns; &nml;: A transcription and edition.</title>
+    <author>C&aelig;dmon (floruit 657-681)</author>
+    <editor>Daniel Paul O&rsquo;Donnell</editor>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 8 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <bibl>&nmlShort;</bibl>
+    <p>Original transcription and edition of &ns; &nml;.</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Transcription prepared for use in the &ech;.</p>
+   </projectdesc>
+   <samplingdecl>
+    <p>Transcription is restricted for the most part to text of the
+    &hymn;; minimal surrounding details (e.g. &ssr; or leading or
+    following Latin words) are provided when these are necessary for
+    understanding the material context in which the Old English text
+    of the &hymn; is found. No systematic attempt has been made to
+    record non-Old English text.</p>
+   </samplingdecl>
+   <editorialdecl>
+    <correction status="high" method="tags">
+     <p>Text based on transcriptions of facsimiles and personal
+      inspection of witness manuscripts by dpod. Each witness has
+      been proofread and checked (against FS or MS) at least four
+      times by dpod and either ls or mve.</p>
+    </correction>
+    <normalization default="yes" method="tags">
+     <p>Text has been described diplomatically with minimal silent
+     normalization. Manuscript word division and spacing,
+     line-division, corrections and erasures are indicated explicitly
+     by tagging and are reproduced as closely as posible to the form
+     in the manuscript. Anglo-Saxon characters (wynn, eth, thorn) and
+     abbreviations have been encoded using the appropriate unicode
+     code points. Modern editorial conventions such as word spacing,
+     line division, etc. are also indicated explictly using TEI tagging.</p> 
+    </normalization>
+    <segmentation>
+     <p>Transcription has been segmented according to modern editorial
+     convention (i.e. line boundaries mark modern editorial line
+     boundaries; caesura elements mark modern editorial
+     caesurae). Diplomatic information (word division and spacing,
+     etc.) has been marked using milestones.</p>
+    </segmentation>
+   </editorialdecl>
+   <metdecl>
+    <p>Prosody has not been marked explicitly; lines are encoded as
+    <socalled>long lines</socalled> with hemistichs marked by the
+    caesura element.</p>
+   </metdecl>
+  </encodingdesc>
+  <profiledesc teiform="profileDesc">
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="FRA">French</language>
+   </langusage>
+   <handlist teiform="handList">
+    <hand id="n.scribe.main" scribe="Laurence Nowell">
+   </handlist>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body>
+   <div1 id="N" n="n">
+    <head type="N.HEAD">&ns; &nml;</head>
+    <div2 id="N.TOC" type="toc">
+     <div3 id="N.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="mg" rend="Mg"><label rend="accesskey">P</label>revious (&mgs;)</xref></item>
+       <item><xref n="n" doc="o" rend="O"><label rend="accesskey">N</label>ext (&os;)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+<item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="N.TOC.2" type="toc:transcription">
+      <list type="simple">
+       <item>&ch4xnDescription;</item>
+       <item>&ch7xEorthan;</item>
+      </list>
+     </div3>
+    </div2>
+    <div2 type="poem">
+     <milestone n="n" rend="1" unit="f. 146r, line 25">
+     <l id="N.1" n="1"><gap lang="ang" desc="Omitted Old English material from beginning of the manuscript line. Material is from Prose translation of the Historia." reason="sampling" extent="18">&n.1a.1.orig;&n.1a.2.orig;&n.1a.3.orig;<caesura>&n.1b.1.orig;&n.1b.2.orig;</l>
+     <l id="N.2" n="2">&n.2a.1.orig;&n.2a.2.orig;<caesura>&n.2b.1.orig;&n.2b.2.orig;&n.2b.3.orig;</l>
+     <l id="N.3" n="3">&n.3a.1.orig;&n.3a.2.orig;<caesura>&n.3b.1.orig;&n.3b.2.orig;&n.3b.3.orig;&n.3b.4.orig;</l>
+     <l id="N.4" n="4">&n.4a.1.orig;&n.4a.2.orig;<caesura>&n.4b.1.orig;<lb>&n.4b.fw.orig;<milestone n="n" rend="2" unit="f.146v, line 1">&n.4b.2.orig;</l>
+     <l id="N.5" n="5">&n.5a.1.orig;&n.5a.2.orig;&n.5a.3.orig;<caesura>&n.5b.1.orig;&n.5b.2.orig;</l>
+     <l id="N.6" n="6">&n.6a.1.orig;&n.6a.2.orig;&n.6a.3.orig;<lb><caesura>&n.6b.1.orig;&n.6b.2.orig;</l>
+     <l id="N.7" n="7">&n.7a.1.orig;&n.7a.2.orig;<caesura>&n.7b.1.orig;&n.7b.2.orig;</l>
+     <l id="N.8" n="8">&n.8a.1.orig;<lb>&n.8a.2.orig;<caesura>&n.8b.1.orig;&n.8b.2.orig;</l>
+     <l id="N.9" n="9">&n.9a.1.orig;&n.9a.2.orig;<caesura>&n.9b.1.orig;&n.9b.2.orig;<gap lang="ang" desc="Omitted Old English material from end of the manuscript line. Material is from Prose translation of the Historia." reason="Sampling" extent="3"></l>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>

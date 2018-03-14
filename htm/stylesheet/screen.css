@@ -1,0 +1,305 @@
+/*
+			/htm/stylesheet/screen.css
+	This stylesheet controls aspects of layout and appearance that
+	are specific to screen media.  This involves for the most part
+	block layout and (font and background) colours, but also other
+	incidental features.
+	
+	The stylesheet is broken into {{}} main parts:
+	    a) @import(s): Imports stylesheet(s) containing core style
+	       information common to most stylesheets in the project.
+	    b) Screen Geography: Controls the size and location of
+	       the major content blocks).
+	    c) Element appearance: Controls the appearance (mostly
+	       colour) of elements of the screen.
+	    z) Temporary proofreading styles: Commented out section
+	       that contains styles used to check xhtml coding.
+
+*/
+/* a) @import(s) */
+
+@import url(core.css);
+
+
+
+
+/*
+b) Screen Geography
+*/
+
+div {					/* controls width and location of all blocks except div.toc and children */
+		    margin-left: 220px;
+		    max-width: 35em;
+}
+
+div.poem {					/* controls width and location of all blocks except div.toc and children*/
+		    margin-left: 220px;
+		    max-width: none;
+		    font-size: 110%;
+}
+
+
+div.toc {				/* controls width and location of div.toc */
+	margin-left: 0;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 200px;
+}
+
+div.quickmenu, div.thischapter {	/* controls width and location of div.toc children */
+	margin-left: 2px;
+}
+
+div.poem, div.chapter {
+	  margin-bottom: 3em;
+}
+
+
+hr {
+   display: none;
+}
+
+div.footnote {
+	     margin: 0;
+}
+div.footnote p {
+	      line-height: 1.2;
+	      padding: 0;
+	      margin-bottom: 0;
+}
+
+div.footnote p + p {
+	      text-indent: 2em;
+	      margin-top: 0;
+	      margin-bottom: 0;
+}
+
+/* c) General Styles */
+
+*[title] {
+	 cursor: help;
+}
+
+p.screenlink {
+     display: block;
+     text-align: right;
+     font-style: normal;
+}
+
+.correction, .redlabel {
+	    color: red;
+}
+
+
+.eordulabel, .eordu, .damaged, .teallabel {
+	    color: teal;
+}
+
+.aeldalabel, .aelda, .purplelabel {
+	    color: purple;
+}
+
+.eorthanlabel, .eorthan, .greenlabel {
+	      color: green;
+}
+
+.yldalabel, .ylda, .navylabel {
+	   color: navy;
+}
+
+.eorthelabel, .eorthe, .olivelabel {
+	     color: olive;
+}
+
+h1, h2, h3, h4, h5, h6, .technicalterm	{
+    color:maroon;
+}
+
+a[href]:hover	{
+	cursor: pointer;
+	text-decoration: underline;
+	background-color: #FFEFD5;
+	color:red;
+}
+
+a[href]:focus	{
+		font-weight: bold;
+		background-color: yellow;
+}
+
+img.thumbnail
+	{
+	border-width: thin;
+	height: 2em;
+}
+
+
+/*
+.accesskeylabel	{
+		background-color: yellow;
+		font-decoration: underline;
+		font-color: red;
+		font-weight: bold;
+}
+*/
+
+.gaptranscription {
+		  font-size: small;
+		  color: gray;
+}
+
+/* .diplomatictext {
+		vertical-align: auto;
+}
+*/
+
+/* table of contents (div.toc) element appearance */
+
+div.toc {
+	font-family: sans-serif;
+	border: thin solid gray;
+	font-size:70%;
+	background-color: #FFEFD5;
+	text-align: left;
+	padding: 2px;
+}
+
+div.quickmenu {
+	margin-bottom: 1ex;
+}
+div.toc h1, div.toc h2 {
+	display: none;
+	font-size: 110%;	
+}
+
+div.toc h3 {
+	font-size: 110%;	
+	text-align: left;
+	line-height: 90%;
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+}
+
+div.toc select {
+	width: 100%;
+	line-height: 90%;
+	font-size: smaller;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.toc ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.toc ul li {
+	margin-left: -23px;
+	margin-right: 0;
+	list-style-position: outside;
+	list-style: square;
+	line-height:1.2;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.toc ul li ul li {
+	margin-left: -23px;
+	margin-right: 0;
+	list-style: disc;
+	margin-top: 0;
+	margin-bottom: 0;	
+}
+
+div.toc ul li ul li ul li {
+	display: none;
+	margin-left: -23px;
+	margin-right: 0;
+	list-style: disc;
+	margin-top: 0;
+	margin-bottom: 0;	
+}
+
+div.toc ul li ul li ul li ul {
+	display: none;
+}
+
+div.toc ul li ul li ul li ul li ul {
+	display: none;
+}
+
+div.toc ul li ul li ul li ul li ul li {
+	display: none;
+}
+
+div.toc a[href]:hover {
+	background-color: white;
+	width: 100%;
+}
+
+td.uniquevariant, td.faciliorvariant {
+		       background-color: black;
+		       border: medium solid black;
+		       color: white;
+		       font-weight:bold;
+}
+
+td.crossrecensionalvariant1 {
+		       background-color: olive;
+		       border: medium solid black;
+		       font-weight:bold;
+}
+
+td.crossrecensionalvariant2, td.uncertainvariant {
+		       background-color: gray;
+		       border: medium solid black;
+		       font-weight:bold;
+}
+
+
+
+/* Z) TEMPORARY PROOF READING STYLES
+
+*[lang|="ANG"]	{
+		background-color: yellow;
+
+}
+
+*[lang|="LAT"]	{
+		background-color: pink;
+}
+
+*[lang|="ARA"]	{
+		background-color: green;
+}
+
+*[lang|="DEU"]	{
+		background-color: maroon;
+}
+
+*[lang|="GOH"]	{
+		background-color: brown;
+}
+
+*[lang|="SGA"]	{
+		background-color: cyan;
+}
+
+*[lang|="NON"]	{
+		background-color: gold;
+}
+
+*[lang|="FAS"]	{
+		background-color: olive;
+}
+*[lang|="SAN"]	{
+		background-color: gray;
+}
+
+*[lang|="XHO"]	{
+		background-color: blue;
+}
+
+
+*/

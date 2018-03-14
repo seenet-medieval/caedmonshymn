@@ -1,0 +1,12 @@
+This directory contains the projects critical texts. (Actual Old English content used in these files is
+encoded in the text database, sect. 8 of the file 
+< ../SGMRelatedFiles/extensionsHTML.ent >.  See the headers in
+sect. 2 and sect. 8 of that file for a discussion of how these
+references are used in the project).
+
+There is one file per edition.  Each file also invokes one or more
+.frag files from the directory < ../apparatusSGM/ >.  See the file 
+< ../apparatusSGM/_read.me.txt > for details. These are formatted for
+display using the stylesheets in 
+< ../HTMLStyleSheets/edition*.ssh > or < ../styleSheets/edition*.ssh >
+

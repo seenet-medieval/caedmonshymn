@@ -1,0 +1,3995 @@
+<!DOCTYPE STYLESHEET PUBLIC "-//SYNEX INFORMATION AB//DTD STYLESHEET EXPLORER//EN"[
+<!ELEMENT sheet (margins?)>
+<!ELEMENT margins EMPTY>
+<!ATTLIST margins
+	left CDATA #IMPLIED
+	right CDATA #IMPLIED
+	top CDATA #IMPLIED
+	bottom CDATA #IMPLIED>
+
+<!ELEMENT font-shadow EMPTY>
+<!ATTLIST font-shadow
+	v NUMBER #REQUIRED>
+
+<!ELEMENT shadow-color EMPTY>
+<!ATTLIST shadow-color
+	v CDATA #REQUIRED>
+
+]>
+
+<STYLESHEET NAME="Edition2HTML">
+
+<STYLE TAG="LIST">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(type="ordered")<ol>\else<ul>\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(type="ordered")</ol>\else</ul>\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TEXT">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<LINKSRC V=Suppress>
+</STYLE>
+
+<STYLE TAG="ABBR">
+<A-TEXT V='<abbr\ifatt(lang) lang="\att(lang)"\else\endif\ifatt(expan) title="\att(expan)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</abbr>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="CELL">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<td\ifatt(rows) rowspan="\att(rows)"\else\endif\ifatt(cols) colspan="\att(cols)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</td>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[rows]=&Q;0&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="PUBLICATIONSTMT,AVAILABILITY">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.rights" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGURE,HEAD,XREF,TERM">
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGDESC,XREF,TERM">
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TERM">
+<A-TEXT V='<span class=\ifatt(type)"\att(type)\else"term\endif"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,SPONSOR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.contributor" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FILEDESC,SOURCEDESC,P">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.content" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="NOTE,P" OCCUR=First>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</p>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[rend]=&Q;citation&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<cite>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</cite>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="PUBLICATIONSTMT,AVAILABILITY,P">
+</STYLE>
+
+<STYLE TAG="P">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(rend="citation")<cite>\else<p\ifatt(rend) class="\att(rend)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif>\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif\ifatt(n)<span class="paragraphnumber">$00A7; \att(n) <span class="hideme"><!-- this span positions paragraph numbers in nonCSS browsers -->&nbsp&nbsp&nbsp</span></span>\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(rend="citation")</cite>\else</p>\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;TABLE&Q; OR CHILD=&Q;LIST&Q; OR CHILD=&Q;FIGURE&Q; ">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=' '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[rend]=&Q;citation&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<cite>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</cite>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SEG">
+<A-TEXT V='\ifatt(type)<span class="\att(type)\ifatt(subtype):\att(subtype)\else\endif">\else\endif\ifatt(subtype="phonemic")/\else\endif\ifatt(subtype="phonetic")[\else\endif\ifatt(subtype="graphemic")$003C;\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(subtype="phonemic")/\else\endif\ifatt(subtype="phonetic")]\else\endif\ifatt(subtype="graphemic")$003E;\else\endif\ifatt(type)</span>\else\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV2">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(type="toc")</div>\else\endif\n;\ifatt(type="toc")<div class="toc">\ifatt(id)<p class="hideme">[<a href="#\att(id)">Skip to Content</a>]</p>\else\endif<h2>Contents</h2>\else<div>\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(id)<p class="hideme"><a id="\att(id)" name="\att(id)" />[<em><strong>Beginning of Content</strong></em>]</p>\else\endif</div>\ifatt(type="toc:chapter")</div>\else\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;HEAD&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div\ifatt(type) class="\att(type)"\else\endif><h2><a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR/PAR[id]=&Q;TITLEPAGE.TEI&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(type="toc")<div class="toc">\ifatt(id)<span class="hideme">[<a href="#\att(id)">Skip to Content</a>]</span>\else\endif<h2>Contents</h2>\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>\ifatt(type="toc:chapter")</div>\else\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="PUBLISHER">
+
+<QUAL-STYLE QUAL="PREV=&Q;pubplace&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=': '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="ITEM">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<li\ifatt(rend) class="\att(rend)"\else\endif\ifatt(n) value="\att(n)"\else\endif>\ifatt(id)<a id="\att(id)" name="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</li>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="UNCLEAR">
+<A-TEXT V='<span class="unclear" title="Text is unclear for some (physical) reason.">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="XPTR">
+<Z-TEXT V='$00A0;<a href="../../transcription/\att(doc)/index.htm#\att(from)" title="Link to original reading in diplomatic transcription of this witness (separate document)."><span class="\att(rend)label">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[doc]=&Q;aeldaEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$00A0;<a href="../edition/aelda/index.htm#\att(from)"
+title="Link to reading in reading text of Nb aelda edition (separate document)."><span class="aeldalabel">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;eorduEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$00A0;<a href="../edition/eordu/index.htm#\att(from)"
+title="Link to reading in reading text of Nb eordu edition (separate document)."><span class="eordulabel">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;eorthanEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$00A0;<a href="../edition/eorthan/index.htm#\att(from)"
+title="Link to reading in reading text of WS eor$00F0;an edition (separate document)."><span class="eorthanlabel">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;eorthanB1Edition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$00A0;<a href="../edition/b1/index.htm#\att(from)"
+title="Link to reading in reading text of the B1 performance of the WS eor$00F0;an edition (separate document)."><span class="eorthanlabel">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;eorthanOEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$00A0;<a href="../edition/o/index.htm#\att(from)"
+title="Link to reading in reading text of the O performance of the WS eor$00F0;an edition (separate document)."><span class="eorthanlabel">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;eortheEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$00A0;<a href="../edition/eorthe/index.htm#\att(from)"
+title="Link to reading in reading text of WS eor$00F0;e edition (separate document)."><span class="eorthelabel">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;yldaEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$00A0;<a href="../edition/ylda/index.htm#\att(from)"
+title="Link to reading in reading text of WS ylda edition (separate document)."><span class="yldalabel">\att(n)</span></a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="RDG,XREF,W">
+<A-TEXT V='$0020;<span class="glossaryinstance"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGDESC,MENTIONED,XREF,W">
+<A-TEXT V=' '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="W">
+<A-TEXT V='<span class="chword"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="QUOTE,QUOTE">
+<A-TEXT V='$2018;\ifatt(lang)<span class="quote" lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$2019;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;p&Q; or CHILD=&Q;l&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EG,CIT,QUOTE">
+</STYLE>
+
+<STYLE TAG="CIT,QUOTE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="QUOTE">
+<A-TEXT V='$201C;\ifatt(lang)<span class="quote" lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$201D;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;p&Q; or CHILD=&Q;l&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="GRAMGRP">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="grammaticalinformation">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Gray">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Gray">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PUBPLACE">
+</STYLE>
+
+<STYLE TAG="FIGDESC,MENTIONED,EMEND,ADD,C">
+</STYLE>
+
+<STYLE TAG="C">
+<A-TEXT V='<span class="junicode">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="BYLINE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h3\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h3>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="GEN">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PUBLICATIONSTMT,AUTHORITY">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.publisher" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="NUM">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TEI.2">
+<SPC-LEFT V="0">
+<SPC-RIGHT V="+=10">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"\n;\t;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n;\n;<html xmlns="http://www.w3.org/1999/xhtml">\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</html>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="QUOTE,TITLE">
+<A-TEXT V='\ifatt(level="m")<span class="titlem"\ifatt(lang) lang="\att(lang)">\else>\endif\else\endif\ifatt(level="a")$2018;\ifatt(lang)<span lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\ifatt(level="m")</span>\else\endif\ifatt(level="a")$2019;\else\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGURE,HEAD,TITLE">
+</STYLE>
+
+<STYLE TAG="FIGDESC,TITLE">
+<A-TEXT V=' '>
+<BEFORE>
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLE">
+<A-TEXT V='\ifatt(level="m")<span class="titlem"\ifatt(lang) lang="\att(lang)">\else>\endif\else\endif\ifatt(level="a")"\ifatt(lang)<span lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\ifatt(level="m")</span>\else\endif\ifatt(level="a")"\else\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;titlestmt&Q; and NEXT=&Q;title&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<title>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;titlestmt&Q; and PREV=&Q;title&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=' '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</title>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;titlestmt&Q; and [type]=&Q;main&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SPACE">
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</BEFORE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(extent="1") \else\ifatt(extent="0")\else\ifatt(extent="2")&nbsp&nbsp\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="FIGDESC">
+<Z-TEXT V='"'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="EG">
+<BREAK-BEFORE>
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV6">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;HEAD&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h6><a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="APP">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="QUOTE,GLOSS">
+<A-TEXT V='$2018;\ifatt(lang)<span class="gloss" lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$2019;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="GLOSS">
+<A-TEXT V='$201C;\ifatt(lang)<span class="gloss" lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$201D;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="MOOD">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="BODY">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<body\ifatt(lang) lang="\att(lang)"\else\endif>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='<hr /><div class="footnotes">\n;<h1>Notes</h1>\n;<!-- footnotes here -->\n;</div>\n;</body>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PREV=&Q;front&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="LANGUAGE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.language" scheme="DCTERM.ISO639-2" content="\att(id). '>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="LBL">
+<Z-TEXT V=' '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DOCEDITION">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h4>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h4>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PER">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,FUNDER">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.contributor" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="CIT,QUOTE,Q">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="QUOTE,Q">
+<A-TEXT V='$2018;\ifatt(lang)<span lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$2019;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;p&Q; or CHILD=&Q;l&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="Q">
+<A-TEXT V='$201C;\ifatt(lang)<span lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$201D;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;L&Q; OR CHILD=&Q;P&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="ENTRY">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<p class="glossaryentry"><a name="\att(ID)" id="\att(id)" href="#\att(ID)">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Blue">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</p>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Blue">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV3">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<BEFORE>
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+
+<QUAL-STYLE QUAL="CHILD=&Q;HEAD&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h3><a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:book&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="quickmenu">\n;<h3>General Navigation</h3>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:chapter&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="thischapter">\n;<h3>This Chapter:</h3>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:transcription&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="thischapter">\n;<h3>This Transcription:</h3>\n;<h4>Information about Manuscript</h4>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EMPH">
+<A-TEXT V='<em\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</em>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGURE">
+<A-TEXT V='<p><a id="\att(id)" name="\att(id)" /><img src="../../images/\att(entity).png" '>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' /></p>\ifatt(id="system.figure.2") \else<p class="caption">(<a href="../../images/\att(entity)-300.png" title="Link to higher resolution version of the above image.">Higher resolution image.</a>)</p>\endif'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="ENCODINGDESC">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="RDG">
+</STYLE>
+
+<STYLE TAG="FIGDESC,REF">
+</STYLE>
+
+<STYLE TAG="REF">
+<A-TEXT V='<a href="#\att(target)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to associated location in this document">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="#\att(target)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in this document. Member of WS ylda recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;eorthan&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="#\att(target)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in this document. Member of WS eor$00F0;an recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;eorthe&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="#\att(target)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in this document. Member of WS eor$00F0;e recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;aelda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="#\att(target)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in this document. Manuscript; member of Nb aelda recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;eordu&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="#\att(target)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in this document. Member of Nb eordu recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="XR">
+</STYLE>
+
+<STYLE TAG="FIGDESC,MENTIONED">
+<A-TEXT V=' '>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="MENTIONED">
+<A-TEXT V='<span class="mentioned"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="WIT">
+</STYLE>
+
+<STYLE TAG="FORM">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span \n;class="glossarylemma">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Fuchsia">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span></a>, '>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Fuchsia">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGURE,HEAD,NOTE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="NOTE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a class="footnoteinsertionmarker" name="ref_\att(id)" \n;id="ref_\att(id)" href="#note_\att(id)"  \n;title="Link to associated note at the end of this document"><span \n;class="hideme">[</span>\att(n)<span class="hideme">]</span></a>\n;<!-- begin footnote <p><a class="footnotetargetmarker" name="note_\att(id)" \n;href="#ref_\att(id)" \n;title="Link to insertion point for this note in the main text of this document."><span class="hideme">[</span>\att(n)<span class="hideme">]</span></a>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' end footnote -->'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="EDITIONSTMT,EDITION">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DCTERM.isPartOf" content="The Electronic C$00E6;dmon$2019;s Hymn" />\n;\t;<meta name="DCTERM.hasVersion" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,EDITOR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.creator" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,TITLE,XREF">
+</STYLE>
+
+<STYLE TAG="RDG,SEG,XREF">
+</STYLE>
+
+<STYLE TAG="REF,XREF">
+<A-TEXT V=' '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="RDG,XREF">
+</STYLE>
+
+<STYLE TAG="MENTIONED,XREF">
+</STYLE>
+
+<STYLE TAG="FIGURE,HEAD,XREF">
+<A-TEXT V=' '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGDESC,XREF">
+<A-TEXT V=' '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="XREF">
+<A-TEXT V='<a href="\att(doc).htm"\ifatt(type="external")\ifatt(n) accesskey="\att(n)"\else\endif title="Link to external website (will appear in separate browser window)." target="_blank"\else title="Link to separate document"\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[doc]=&Q;bibliography&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../backmatter/bibliography.htm#\att(from)" title="Link to record for this reference in Bibliography (separate document)."\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch1&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to \ifatt(from)referenced passage in \else\endifChapter 1 (separate document).">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch7&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to \ifatt(from)referenced passage in \else\endifChapter 7 (separate document).">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch2&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to \ifatt(from)referenced passage in \else\endifChapter 2 (separate document).">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch3&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to \ifatt(from)referenced passage in \else\endifChapter 3 (separate document).">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch4&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to \ifatt(from)referenced passage in \else\endifChapter 4 (separate document).">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch5&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to \ifatt(from)referenced passage in \else\endifChapter 5 (separate document).">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch6&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to \ifatt(from)referenced passage in \else\endifChapter 6 (separate document).">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;b1&Q; or [doc]=&Q;br&Q; or [doc]=&Q;tr1&Q; or [doc]=&Q;ca&Q; or [doc]=&Q;m&Q; or [doc]=&Q;di&Q; or [doc]=&Q;hr&Q; or [doc]=&Q;n&Q; or [doc]=&Q;c&Q; or [doc]=&Q;ar&Q; or [doc]=&Q;h&Q; or [doc]=&Q;bd&Q; or [doc]=&Q;t1&Q; or [doc]=&Q;ld&Q; or [doc]=&Q;o&Q; or [doc]=&Q;ln&Q; or [doc]=&Q;mg&Q; or [doc]=&Q;p1&Q; or [doc]=&Q;sn&Q; or [doc]=&Q;p&Q; or [doc]=&Q;to&Q; or [doc]=&Q;w&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../transcription/\att(doc)/index.htm" title="Link to transcription of this witness in separate document.">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm#\att(from)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in chapter 3. Member of WS ylda recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;eorthan&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm#\att(from)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in chapter 3. Member of WS eor$00F0;an recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;eorthe&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm#\att(from)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in chapter 3. Member of WS eor$00F0;e recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;aelda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm#\att(from)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in chapter 3. Member of Nb aelda recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD[rend]=&Q;eordu&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm#\att(from)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to manuscript description in chapter 3. Member of Nb eordu recension.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[n]=&Q;aelda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to editorial introduction to Nb aelda recension in Chapter 7 (separate document)." class="\att(n)">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[n]=&Q;eordu&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to editorial introduction to Nb eordu recension in Chapter 7 (separate document)." class="\att(n)">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[n]=&Q;eorthan&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to editorial introduction to WS eor$00F0;an recension in Chapter 7 (separate document)." class="\att(n)">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[n]=&Q;eorthe&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to editorial introduction to WS eor$00F0;e recension in Chapter 7 (separate document)." class="\att(n)">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[n]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to editorial introduction to WS ylda recension in Chapter 7 (separate document)." class="\att(n)">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;xref&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-WEIGHT V=Bold>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="GAP">
+<A-TEXT V='\ifatt(extent="1")*\else\endif\ifatt(extent="2")**\else\endif\ifatt(extent="3")***\else\endif\ifatt(extent="4")****\else\endif\ifatt(extent="5")*****\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</STYLE>
+
+<STYLE TAG="SUPPLIED">
+<A-TEXT V='['>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=']'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TABLE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</tbody>\n;</table>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="NOT (CHILD=&Q;HEAD&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<table>\n;<tbody>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="DOCIMPRINT">
+<A-TEXT V='<h5>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h5>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TEIHEADER">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<head  profile="http://dublincore.org/documents/dcq-html/">\n;\t;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\n;\t;<meta name="generator" content="newEditAllHTML.ssh and post-processing" />\n;\n;\t;<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n;\t;<style type="text/css" media="screen" title="default"> @import url(../stylesheet/screen.css); </style>\n;</head>\n;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;TITLEPAGE.TEI&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<head>\n;\t;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\n;\t;<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n;\t;<style type="text/css" media="screen" title="default"> @import url(../stylesheet/screentitlepage.css); </style>\n;\t;<style type="text/css" media="print" title="default"> @import url(../stylesheet/printtitlepage.css); </style>\n;\t;<style type="text/css" media="aural" title="default"> @import url(../stylesheet/auraltitlepage.css); </style>\n;\t;<style type="text/css" media="handheld" title="default"> @import url(../stylesheet/handheldtitlepage.css); </style>\n;</head>\n;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="REF,LABEL">
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif>\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="SOURCEDESC,P,LABEL">
+<A-TEXT V='<empty>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="LABEL">
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif>\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[rend]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif title="Member of the WS ylda recension.">\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[rend]=&Q;eorthan&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif title="Member of the WS eor$00F0;an recension.">\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[rend]=&Q;eorthe&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif title="Member of the WS eor$00F0;e recension.">\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[rend]=&Q;aelda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif title="Member of the Nb aelda recension.">\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[rend]=&Q;eordu&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif title="Member of the Nb eordu recension.">\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR=&Q;titlestmt&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=' '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EMEND">
+
+<QUAL-STYLE QUAL="PAR[rend]=&Q;postemendation&Q; or PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR/PAR/PAR[rend]=&Q;postemendation&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='['>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=']'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="FOREIGN">
+<A-TEXT V='<span class="foreign"\ifatt(lang) lang="\att(lang)">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="ROW">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<tr>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</tr>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DEL">
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q; ">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Show>
+<A-TEXT V='<del\ifatt(rend) class="\att(rend)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</del>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;emend&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Show>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR[rend]=&Q;postemendation&Q; or PAR[rend]=&Q;postemendation&Q; and PAR=&Q;emend&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[rend]=&Q;precorrection&Q; or PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR/PAR[rend]=&Q;precorrection&Q; ">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Show>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[rend]=&Q;postcorrection&Q; or PAR/PAR[rend]=&Q;postcorrection&Q; or PAR/PAR/PAR[rend]=&Q;postcorrection&Q; or PAR/PAR/PAR/PAR[rend]=&Q;postcorrection&Q; ">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="DOCAUTHOR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="docauthor">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV4">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;HEAD&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h4><a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="HAND">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.creator" content="\ifatt(id)\att(id) \else\endif\ifatt(scribe)(\att(scribe))\else\endif" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</STYLE>
+
+<STYLE TAG="COLLOC">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="LINKGRP">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</STYLE>
+
+<STYLE TAG="SENSE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="NAME">
+<A-TEXT V='<span class="name">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FRONT">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<body\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</body>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="ORTH" OCCUR=Non-First>
+<A-TEXT V=' ('>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=')'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="ORTH">
+</STYLE>
+
+<STYLE TAG="TNS">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="POS">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV1">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div\ifatt(type) class="\att(type)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;HEAD&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div\ifatt(type) class="\att(type)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif>\n;<h1><a id="\att(id)" name="\att(id)" />\ifatt(n)\ifatt(n="1")Chapter \att(n)<br />\else\endif\ifatt(n="2")Chapter \att(n)<br />\else\endif\ifatt(n="3")Chapter \att(n)<br />\else\endif\ifatt(n="4")Chapter \att(n)<br />\else\endif\ifatt(n="5")Chapter \att(n)<br />\else\endif\ifatt(n="6")Chapter \att(n)<br />\else\endif\ifatt(n="7")Chapter \att(n)<br />\else\endif\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR[id]=&Q;TITLEPAGE.TEI&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="HI">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<em>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</em>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="RDGGRP">
+</STYLE>
+
+<STYLE TAG="CASE">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLEPART" OCCUR=Non-First>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h2\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h2>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLEPART" OCCUR=First>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h1\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h1>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DAMAGE">
+<A-TEXT V='<span class="damaged" title="Text is (physically) damaged in some way">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="damage" title="Text has been physically damaged in some way.">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="CAESURA">
+<A-TEXT V=' <span class="caesura">&nbsp&nbsp&nbsp</span>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</STYLE>
+
+<STYLE TAG="FILEDESC,EXTENT">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DCTERM.extent" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TRANS">
+<A-TEXT V='<span class="translation">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Green">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DOCDATE">
+
+<QUAL-STYLE QUAL="PREV=&Q;publisher&Q; or PREV=&Q;pubplace&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=', '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SOURCEDESC,BIBL">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.source" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="CIT,BIBL">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<cite>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</cite>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="BIBL">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="[rend]=&Q;citation&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<cite>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</cite>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="L">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<p class="poetry"\ifatt(lang) lang="\att(lang)"else\endif>\ifatt(n)<span class="linenumber">\att(n)<span class="hideme"><!-- this span helps position line numbers in nonCSS browsers -->&nbsp&nbsp&nbsp</span></span>\else<span class="hideme">&nbsp&nbsp&nbsp&nbsp</span>\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</p>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PUBLICATIONSTMT,ADDRESS">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.publisher" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="CIT">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TABLE,HEAD">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<p class="tableheader">\ifatt(id)<a id="\att(id)" name="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</p>\n;<table>\n;<tbody>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FIGURE,HEAD">
+<A-TEXT V='alt="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" longdesc="'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV6,HEAD">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang)<span lang="\att(lang)">\else\endif\ifatt(id)<a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h6>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV5,HEAD">
+<A-TEXT V='\ifatt(lang)<span lang="\att(lang)">\else\endif\ifatt(id)<a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h5>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV4,HEAD">
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang)<span lang="\att(lang)">\else\endif\ifatt(id)<a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h4>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV3,HEAD">
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang)<span lang="\att(lang)">\else\endif\ifatt(id)<a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h3>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV2,HEAD">
+<A-TEXT V='\ifatt(lang)<span lang="\att(lang)">\else\endif\ifatt(id)<a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h2>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV1,HEAD">
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang)<span lang="\att(lang)">\else\endif\ifatt(id)<a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h1>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="HEAD">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;aelda&Q; or PAR[id]=&Q;eordu&Q; or PAR[id]=&Q;eorthan&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h2>A critical edition of the probable recension archetype</h2>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;DIV1&Q; and (PAR[id]=&Q;ch1&Q; or PAR[id]=&Q;ch2&Q; or PAR[id]=&Q;ch3&Q; or PAR[id]=&Q;ch3&Q; or PAR[id]=&Q;ch4&Q; or PAR[id]=&Q;ch5&Q; or PAR[id]=&Q;ch6&Q; or PAR[id]=&Q;ch7&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang)<span lang="\att(lang)">\else\endif\ifatt(id)<a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</h1>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h2>A critical reconstruction of the idealised recension archetype</h2>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;b1&Q; or PAR[id]=&Q;o&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h2>A critical edition of the scribal performance</h2>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;eorthe&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h2>A critical edition of the recension$2019;s latest text</h2>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;archetype&Q; or PAR[id]=&Q;archetype:witness&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h2>A reconstruction of the hypothetical written ancestor to all surviving recensions of the poem</h2>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="ITYPE">
+<Z-TEXT V='. '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PUBLICATIONSTMT,ADDRESS,ADDRLINE" OCCUR=Non-Last>
+<Z-TEXT V=', '>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PUBLICATIONSTMT,ADDRESS,ADDRLINE" OCCUR=Last>
+<BEFORE>
+</BEFORE>
+<Z-TEXT V='.'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PUBLICATIONSTMT,ADDRESS,ADDRLINE">
+<Z-TEXT V=','>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="SOCALLED">
+<A-TEXT V='$201C;\ifatt(lang)<span lang="\att(lang)">\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$201D;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLEPAGE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="LB">
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</BEFORE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="linebreak" title="Indicates the end of a manuscript line in the original witness">|</span>'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="ADD">
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;emend&Q; NOT PAR/PAR/PAR/PAR[rend]=&Q;postemendation&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR/PAR[rend]=&Q;precorrection&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<ins>\ifatt(rend="caret")<span class="junicode">$2041;</span>\else\endif\ifatt(place="overwriting"){\else\ifatt(place="superlinear")\\\else\ifatt(place="sublinear")/\else\ifatt(place="intralinear")|\else\ifatt(place="right margin")|\else\endif'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(place="overwriting")}\else\endif\ifatt(place="intralinear")|\else\endif\ifatt(place="superlinear")/\else\endif\ifatt(place="sublinear")\\\else\endif\ifatt(place="left margin")|\else\endif</ins>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR[rend]=&Q;postemendation&Q; or PAR[rend]=&Q;postemendation&Q; and PAR=&Q;emend&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Show>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="CORR">
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</BEFORE>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="correction" title="Scribal correction.">'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,AUTHOR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.creator" content="'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="DIV5">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;HEAD&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<h5><a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SUBC">
+<Z-TEXT V='. '>
+<AFTER>
+</AFTER>
+</STYLE>
+
+</STYLESHEET>

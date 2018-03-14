@@ -1,0 +1,954 @@
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.prose 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<TEI.2 id="INDEX.TEI">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titleStmt>
+   <editionStmt>
+    <edition>Beta 2.0</edition>
+   </editionStmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationStmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrLine>Department of English</addrLine>
+     <addrLine>University of Lethbridge</addrLine>
+     <addrLine>Lethbridge AB T1J 2X5</addrLine>
+     <addrLine>Canada</addrLine>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Original Composition</p>
+   </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+   <langUsage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langUsage>
+   <langUsage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langUsage>
+   <langUsage>
+    <language id="LAT">Latin</language>
+   </langUsage>
+   <langusage>
+    <language id="XHO">Xhosa</language>
+   </langusage>
+  </profileDesc>
+ </teiHeader>
+ <text>
+  <body lang="ENG">
+   <div1 id="INDEX">
+    <head id="INDEX.HEAD">Index</head>
+    <div2 id="INDEX.TOC" type="toc">
+     <div3 id="INDEX.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="bibliography"><label rend="accesskey">P</label>revious (Works cited)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="INDEX.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="INDEX">Top</ref></item>
+       <item><ref target="INDEX.1.HEAD">Conventions</ref></item>
+       <item><ref target="INDEX.1a.HEAD">General index</ref></item>
+       <item><ref target="INDEX.2.HEAD">Manuscript index</ref></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="INDEX.1">
+     <head id="INDEX.1.HEAD">Conventions</head>
+     <p>References in the index are by chapter/note and paragraph
+     number, separated by a point (e.g. 6.2 refers to chapter 6,
+     paragraph 2). When a single number or letter
+     appears, the whole chapter or note is being referred
+     to (e.g. D refers to all of note D). Endnotes are referred to by
+     the chapter/note and paragraph number of the reference point,
+     followed by the note number (e.g. 1.21n8 refers to endnote eight
+     in chapter 1; the note is associated with chapter 1, paragraph
+     21). If the material referred to is found in both endnote and the associated
+     paragraph, only the chapter and paragraph number are given.</p>
+    </div2>
+    <div2 id="INDEX.1a">
+     <head id="INDEX.1a.HEAD">General Index</head>
+     <list>
+      <item>
+       <seg type="indexhead">Ab&imacr;d ben al-Abras</seg>, <seg type="locater">&ch2.6;, &ch2.7;, &ch2.8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Accidental variants. See Orthographic variants.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Adram in Coimdid</title></seg>, <seg type="locater">&ch2.30;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Aeschylus</seg>, <seg type="locater">&ch2.6;, &ch2.8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Aldhelm</seg>, <seg type="locater">&ch1.n7, &ch1.n8;, &ch1.22;, &ch2.16;, &ch2.17;-&ch2.19;, &ch2.22;, &ch2.25;-&ch2.26;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Alfred</seg>, <seg type="locater">&ch1.n8;, &ch1.22;-&ch1.25;, &ch2.18;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">All witnesses view (definition)</seg>, <seg type="locater">&ch7.5;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Analogues to C&aelig;dmon&rsquo;s &hymn; and story.</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield1">Definition</seg>, <seg type="locater">&ch2.n1;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">(In)effectiveness of modern research</seg>, <seg type="locater">&ch2.1;-&ch2.10;, &ch2.29;, &ch2.46;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Typology</seg>, <seg type="locater">&ch2.5;-&ch2.9;, &ch2.16;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">See also individual names and titles: Ab&imacr;d ben al-Abras; <title level="m">Adram in Coimdid</title>; Aeschylus; Aldhelm; Alfred; <title level="m">Benedicite</title> (Song of the three Children); <title level="m">Benedictine office</title>; <title level="m">Benedictio Cerei</title>; &Beo;;  <title level="m">Christmas Carol</title>; Dunstan; Genesis (Biblical book); <title level="m">Genesis</title> (Old English poem); Godric of Finchale; Halfdan the Black; Hallbj&ouml;rn; <title level="m">Heliand</title> poet; Hesiod; Homer; <title level="m">Jesus Christ Superstar</title>; <title level="m">Kubla Khan</title>; Man at wake; Melrose monk; Mohammed; Ntsikana (poet); <title level="m">Preface</title> (Gregorian Sacramentary); Psalms; Sabit M&uuml;dam&icirc; Ataman; Scriptural and liturgical analogues; <title level="m">Wessobrunner Gebet</title>.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Anglo-Saxon poetry. See Old English poetry and individual poem titles: &Brun;, &BDS;, &Beo;, &ch;, &Deor;, &Dream;, &Gen;, &LRid;, &Met;, &MetPs;, &Phoen;, &Pr;, &SoulSR;, &Wid;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Anglo-Saxon poets</seg>, <seg type="locater">&ch1.21;-&ch1.25;.</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield1">See also individual poets: Aldhelm, Alfred, Anlaf, &AElig;duwen, Baldulf, Bede, C&aelig;dmon, Cnut, Cynewulf, Dunstan, Hereward, Wulfsige, Wulfstan.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Anlaf</seg>, <seg type="locater">&ch1.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Anthony of Bergen op Zoom (scribe)</seg>, <seg type="locater">&ch4.10;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Archetypal text (&ch;)</seg>, <seg type="locater">&ch5.22;-&ch5.32;, &ch7.13;-&ch7.16;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&AElig;duwen</seg>, <seg type="locater">&ch1.22;, &ch1.23;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Baldulf</seg>, <seg type="locater">&ch1.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&Brun; (Old English poem)</seg>, <seg type="locater">&ch5.12;-&ch5.13;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Bede</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield1">As Anglo-Saxon poet</seg>, <seg type="locater">&ch1.22;, &ch1.24;-&ch1.25;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">As translator of Old English verse</seg>, <seg type="locater">&ch2.40;-&ch2.41;, &ch3.10;, &ch3.30;-&ch3.35;, &ch3.36;, &ch5.n14;, &ch5.20;, &ch5.30;-&ch5.32;, &chb.6;-&chb.10;, &chc.9;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Attitude towards C&aelig;dmon&rsquo;s life and work</seg>, <seg type="locater">&ch1.9;, &ch1.12;, &ch1.26;-&ch1.27;, &ch1.28;-&ch1.29;, &ch1.32;-&ch1.33;, &ch1.34;, &ch2.10;, &ch2.24;-&ch2.25;, &ch2.28;, &ch2.46;, &ch3.9;-&ch3.10;, &ch3.26;, &ch3.30;-&ch3.35;, &ch3.36;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Belief in C&aelig;dmon story</seg>, <seg type="locater">&ch1.9;, &ch1.34;-&ch1.39;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Belief in miracles and supernatural</seg>, <seg type="locater">&ch1.35;-&ch1.38;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Compared to other (literary) historians</seg>, <seg type="locater">&ch1.21;, &ch1.24;-&ch1.26;, &ch1.38;, &ch2.24;, &ch2.25;-&ch2.28;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Compared to Wulfila</seg>, <seg type="locater">&ch3.10;, &ch3.32;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">On secular culture</seg>, <seg type="locater">&ch1.30;-&ch1.33;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield2">Reliability</seg>, <seg>&ch1.8;-&ch1.9;, &ch1.28;, &ch1.34;, &ch3.36;.</seg>
+	</item>
+	<item teiform="item"><seg part="n" teiform="seg">See also individual works: &BDS;, Commentary on 1 <title level="m">Sam</title> xiv, <title level="m" lang="LAT">De arte metrica</title>, <title level="m" lang="LAT">De orthographia</title>, <title level="m" lang="LAT">De schematibus et tropis</title>, &he;.</seg></item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">&BDS; (Old English poem)</seg>, <seg type="locater">&ch1.24;-&ch1.25;, &ch1.34;, &ch3.12;, &ch5.6;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="LAT">Benedicite</title> (Song of the three Children)</seg>, <seg type="locater">&ch2.43;-&ch2.44;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Benedictine office</title></seg>, <seg type="locater">&ch2.42;, &ch2.44;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="LAT">Benedictio Cerei</title>, naming of (Gelasian Sacramentary)</seg>, <seg type="locater">&ch2.42;, &ch2.44;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&Beo; (Old English poem)</seg>, <seg type="locater">&ch1.28;, &ch1.34;, &ch2.31;, &ch2.34;, &ch3.8;, &ch3.28;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Biblical Style</seg>, <seg type="locater">&chc.n3;, &chc.n4;, &chc.n5;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Brownlee, John</seg>, <seg type="locater">&ch2.21;, &ch2.24;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">C&aelig;dmon.</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield2">Connection to Strean&aelig;shalch</seg>, <seg>&ch1.18;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Contemporary response</seg>, <seg type="locater">&ch1.10;-&ch1.12;, &ch1.16;, &ch1.19;, &ch1.n8;, &ch2.44;, &ch3.2;, &ch3.9;, &ch3.30;, &ch3.36;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Dating</seg>, <seg type="locater">&ch1.n6;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Literacy</seg>, <seg type="locater">&ch2.n4;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Modern belief in</seg>, <seg type="locater">&ch1.n3;, &ch2.3;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Nature of gift</seg>, <seg type="locater">&ch1.8;-&ch1.9;, &ch1.18;-&ch1.19;, &ch1.33;, &ch1.37;, &ch2.13;-&ch2.15;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Nature of performance</seg>, <seg type="locater">&ch1.33;, &ch2.25;-&ch2.28;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Oeuvre</seg>, <seg type="locater">&ch1.12;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Origins of name</seg>, <seg type="locater">&ch1.n2;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Popular knowledge of (modern)</seg>, <seg type="locater">&ch1.6;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield2">Rationale explanations for</seg>, <seg>&ch1.n3;, &ch1.39;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Relationship to traditional culture</seg>, <seg type="locater">&ch1.33;, &ch2.16;, &ch2.25;-&ch2.28;, &ch2.39;, &ch3.2;, &ch3.10;, &ch3.22;-&ch2.35;, &ch3.36;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Role in the Christianisation of Germanic verse</seg>, <seg type="locater">&ch1.7;, &ch1.21;, &ch2.16;, &ch2.25;-&ch2.28;, &ch3.1;, &ch3.7;, &ch3.22;-&ch3.35;, &ch3.36;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Saintliness</seg>, <seg type="locater">&ch1.26;-&ch1.27;, &ch1.38;-&ch1.39;, &ch2.24;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Significance to modern scholarship</seg>, <seg type="locater">&ch1.6;-&ch1.9;, &ch1.39;, &ch3.1;, &ch3.22;-&ch3.25;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Sources for life</seg>, <seg type="locater">&ch1.n2;, &ch1.25;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Strean&aelig;shalch, connection to</seg>, <seg type="locater">&ch1.18;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Success as religious propagandist</seg>, <seg type="locater">&ch1.12;, &ch1.16;, &ch1.19;, &ch1.27;, &ch1.34;, &ch2.13;-&ch2.14;, &ch3.26;, &ch3.30;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Testing of</seg>, <seg type="locater">&ch1.11;, &ch2.8;, &ch2.13;-&ch2.14;, &ch3.30;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Training of</seg>, <seg type="locater">&ch1.8;, &ch1.33;, &ch2.25;, &ch3.2;.</seg>
+	</item>
+	<item>
+	 <seg>See also &ch;, &he;.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">&ch;</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield1">Alliteration in</seg>, <seg type="locater">&ch2.36;, &ch3.8;, &ch3.11;-&ch3.12;, &ch3.n16;, &ch5.14;, &chb.9;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Bede&rsquo;s &paraphrase; and. See &he;: Paraphrase of &ch;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Contemporary responses</seg>, <seg type="locater">&ch1.n8;, &ch2.44;, &ch2.46;, &ch3.2;, &ch3.9;, &ch3.26;, &ch3.30;, &ch3.36;, &chb.n3;, &chc.12;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Dating</seg>, <seg type="locater">&ch1.n6;, &ch3.22;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield2">Dialect</seg>, <seg>&ch5.1, &ch5.3;, &ch5.4;-&ch5.5;, &ch5.6;, &ch5.20;, &ch5.23;, &ch6.all; <foreign lang="LAT">passim</foreign>, &ch7.15;, &ch7.25;-&ch7.26;, &ch7.35;, &ch7.77;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Filiation and transmission</seg>, <seg>&ch5.all;, &ch7.18;-&ch7.22;, &ch7.29;-&ch7.33;, &ch7.45;-&ch7.50;, &ch7.57;, &ch7.62;, &ch7.74;-&ch7.81;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Formulae</seg>, <seg type="locater">&ch2.31;, &ch2.33;, &ch2.34;-&ch2.36;, &ch2.46;, &ch3.2;, &ch3.20;-&ch3.22;, &ch5.13;-&ch5.14;, &ch5.16;-&ch5.17;, &ch5.21;, &ch5.34;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Germanic tradition and</seg>, <seg type="locater">&ch1.33;, &ch3.all; <foreign lang="LAT">passim</foreign>.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Literary importance</seg>, <seg type="locater">&ch1.6;-&ch1.7;, &ch3.n1;, &ch3.22;-&ch3.28;, &ch3.36;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Manuscripts</seg>, <seg type="locater">&ch4.all;.</seg>
+	 <list>
+	  <item>
+	   <seg>See also Manuscript index.</seg>
+	  </item>
+	 </list>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Metre</seg>, <seg type="locater">&ch3.3;-&ch3.10;, &chc.11;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Modern responses and scholarship</seg>, <seg type="locater">&ch1.n19;, &ch3.1;, &ch3.25;-&ch3.35;, &ch5.n10;, &chc.1;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield2">Orality of</seg>, <seg>&ch5.4;, &ch7.n7;, &chc.1;, &chd.1;, &chd.7;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Poetic diction</seg>, <seg type="locater">&ch2.30;, &ch2.31;, &ch2.33;, &ch2.34;, &ch2.36;, &ch2.38;-&ch2.39;, &ch2.41;, &ch3.10;, &ch3.20;-&ch3.35;, &ch3.36;, &chc.7;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Poetic variation (apposition)</seg>, <seg type="locater">&ch3.16;-&ch3.19;, &ch3.34;-&ch3.35;, &ch3.36;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Rhyme</seg>, <seg type="locater">&ch3.13;-&ch3.15;, &chc.n5;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield2">Stemma.</seg>
+	 <list>
+	  <item>
+	   <seg>Alternative</seg>, <seg>&ch5.9;, &ch5.22;-&ch5.32;, &ch5.37;.</seg>
+	  </item>
+	  <item>
+	   <seg type="indexsubfield2">Traditional</seg>, <seg>&ch5.1;-&ch5.3;, &ch5.4;, &ch5.6;.</seg>
+	  </item>
+	 </list>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Structure</seg>, <seg type="locater">&ch2.33;, &ch3.4;, &ch3.15;, &ch3.17;-&ch3.19;, &chb.6;-&chb.7;, &chc.3;-&chc.12;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield2">Syntax and morphology</seg>, <seg>&ch3.18;-&ch3.19;, &ch5.10;-&ch5.12;, &ch5.16;-&ch5.17;, &ch5.18;-&ch5.20;, &ch5.21;, &ch5.n27;, &ch6.all; <foreign lang="LAT">passim</foreign>, &chc.9;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Textual variation</seg>, <seg type="locater">&ch5.all; <foreign lang="LAT">passim</foreign>, &ch7.13;-&ch7.82; <foreign lang="LAT">passim</foreign>.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Theology</seg>, <seg type="locater">&ch3.17;, &chc.3;, &chc.10;.</seg>
+	</item>
+	<item><seg>See also C&aelig;dmon, &he;, and entries for individual recensions: Archetypal text, Jarrow Recension, &aelda;, &eordu;, &eorthan;, &eorthe;, and &ylda;.</seg></item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="LAT">Carmen ad deum</title> (<title level="m" lang="LAT">Sancte sator</title>)</seg>, <seg type="locater">&chc.3;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Christmas Carol</title> (Charles Dickens)</seg>, <seg type="locater">&ch1.37;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Cnut</seg>, <seg type="locater">&ch1.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Coleridge, Samuel Taylor (<title level="m">Kubla Khan</title>)</seg>, <seg type="locater">&ch3.15;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Commentary on 1 <title level="m">Sam</title> xiv (Bede)</seg>, <seg type="locater">&ch1.32;.</seg>
+      </item>
+
+      <item>
+       <seg type="indexhead">Critical edition (definition)</seg>, <seg type="locater">&ch7.1;, &ch7.2;-&ch7.9;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Cuthbert (Bede&rsquo;s disciple)</seg>, <seg type="locater">&ch1.21;, &ch1.24;-&ch1.26;, &ch1.38;, &ch5.6;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Cynewulf</seg>, <seg type="locater">&ch1.22;, &ch1.23;, &ch3.5;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="LAT">De arte metrica</title> (Bede)</seg>, <seg type="locater">&ch1.31;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="LAT">De orthographia</title> (Bede)</seg>, <seg type="locater">&ch1.31;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="LAT">De schematibus et tropis</title> (Bede)</seg>, <seg type="locater">&ch1.31;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&Deor; (Old English poem)</seg>, <seg type="locater">&ch1.28;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Dickens, Charles (<title level="m">A Christmas Carol</title>)</seg>, <seg type="locater">&ch1.37;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><foreign lang="LAT">Difficilior lectio</foreign>. See Scribal practice: Trivialisation.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&Dream; (Old English poem)</seg>, <seg type="locater">&ch3.n12;, &ch3.29;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Dunstan (Saint)</seg>, <seg type="locater">&ch1.22;, &ch2.6;, &ch2.7;, &ch2.8;, &notee.all; <title level="a">St. Dunstan</title>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Eadmer</seg>, <seg type="locater">&ch1.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Encomium (Germanic genre)</seg>, <seg type="locater">&ch3.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="LAT">Epistola Cuthberti de obitu Bedae</title>. See Cuthbert.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><foreign lang="LAT">Facilior lectio</foreign>. See Scribal practice: Trivialisation.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Facsimiles</seg>, <seg type="locater">&ch7.1;, &ch7.11;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Faricius of Arezzo</seg>, <seg type="locater">&ch2.19;, &ch2.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Genesis (Biblical book)</seg>, <seg type="locater">&ch2.45;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Genesis</title> (Old English poem)</seg>, <seg type="locater">&ch2.32;-&ch2.33;, &ch2.35;, &ch2.36;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Geoffrey of Monmouth</seg>, <seg type="locater">&ch1.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Germanic creation motif</seg>, <seg type="locater">&ch2.35;-&ch2.36;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Gesta Herwardi</title></seg>, <seg type="locater">&ch1.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Godric of Finchale</seg>, <seg type="locater">&ch2.6;, &ch2.8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Great Hymn</title> (Ntsikana)</seg>, <seg type="locater">&ch2.20;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Halfdan the Black</seg>, <seg type="locater">&ch2.8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Hallbj&ouml;rn</seg>, <seg type="locater">&ch2.6;, &ch2.7;, &ch2.8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Heliand</title> poet</seg>, <seg type="locater">&ch1.n17;, &ch2.6;, &ch2.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Hereward</seg>, <seg type="locater">&ch1.22;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Hesiod</seg>, <seg type="locater">&ch2.6;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Hild</seg>, <seg type="locater">&ch1.18;, &ch2.12;, &ch2.14;, &ch2.24;, &ch2.44;, &ch3.26;, &ch3.30;.</seg>
+       <list>
+	<item>
+	 <seg>See also &he;: Vision of Hild&rsquo;s Soul.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">&he;.</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield1">C&aelig;dmon&rsquo;s inspiration (IV. 24).</seg>
+	 <list>
+	  <item>
+	   <seg type="indexsubfield2">Compared to other stories in the &he;</seg>, <seg>&ch1.13;-&ch1.20;, &ch1.35;-&ch1.38;, &ch3.n14;.</seg>
+	   <list>
+	    <item>
+	     <seg type="indexsubfield2">Imma&rsquo;s bonds (IV. 22)</seg>, <seg>&ch1.13;, &ch1.16;, &ch1.19;-&ch1.20;.</seg>
+	    </item>
+	    <item>
+	     <seg type="indexsubfield2">Vision of Hild&rsquo;s soul (IV. 23)</seg>, <seg>&ch1.13;, &ch1.16;-&ch1.18;.</seg>
+	    </item>
+	   </list>
+	  </item>
+	  <item>
+	   <seg type="indexsubfield2">As literary history</seg>, <seg>&ch1.7;, &ch1.21;-&ch1.28;, &ch1.33;, &ch3.36;.</seg>
+	  </item>
+	  <item>
+	   <seg type="indexsubfield2">Structure</seg>, <seg>&ch1.10;, &ch1.25;.</seg>
+	  </item>
+	  <item>
+	   <seg type="indexsubfield2">Summary</seg>, <seg>&ch1.1;-&ch1.5;.</seg>
+	  </item>
+	  <item>
+	   <seg type="indexsubfield2">Significance to modern scholars</seg>, <seg>&ch1.6;-&ch1.9;, &ch1.10;, &ch1.n6;, &ch1.39;.</seg>
+	  </item>
+	  <item>
+	   <seg>See also Bede, C&aelig;dmon, &ch;.</seg>
+	  </item>
+	 </list>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Dating</seg>, <seg type="locater">&cha.n1;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Description of Ireland (I. 1)</seg>, <seg type="locater">&ch1.36;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Early witnesses</seg>, <seg type="locater">&ch7.18;-&ch7.20;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Imma&rsquo;s bonds (IV. 22)</seg>, <seg>&ch1.13;, &ch1.15;, &ch1.16;, &ch1.19;-&ch1.20;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Old English translation</seg>, <seg>&ch1.n5;, &ch5.26;-&ch5.27;, &ch7.61;, &ch7.62; (figure), &ch7.67;, &chb.n4;, &chd.2;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Paraphrase of &ch; (IV. 24)</seg>, <seg type="locater">&ch2.40;-&ch2.41;, &ch5.20;, &ch5.24;, &ch5.27;-&ch5.32;, &ch5.34;, &ch5.37; (figure), &noteb.all;, &chc.9;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1"><foreign lang="LAT">Recapitulo</foreign> (V. 24)</seg>, <seg type="locater">&cha; <foreign lang="LAT">passim</foreign>.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Vision of Hild&rsquo;s soul (IV. 23)</seg>, <seg>&ch1.13;, &ch1.14;, &ch1.16;-&ch1.20;.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Homer</seg>, <seg type="locater">&ch2.6;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Imma. See &he;: Imma&rsquo;s bonds.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Impact (definition). See Substantive variants.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Jarrow Recension (&ch;)</seg>, <seg type="locater">&ch5.31;, &ch5.34;, &ch5.36;-&ch5.37; (figure).</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Jesus Christ Superstar</title> (Andrew Lloyd Webber, Tim Rice)</seg>, <seg type="locater">&ch3.n15;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Kubla Khan</title> (Samuel Taylor Coleridge)</seg>, <seg type="locater">&ch3.15;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&LRid; (Old English poem)</seg>, <seg type="locater">&ch1.34;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Leofric (Anglo-Saxon bishop)</seg>, <seg type="locater">&ch4.5;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Liturgical and scriptural analogues to &ch;</seg>, <seg type="locater">&ch2.37;-&ch2.45;, &ch5.31;.</seg>
+       <list>
+	<item>
+	 <seg>See also <title level="m">Benedicite</title> (Song of the three Children); <title level="m">Benedictine Office</title>; <title level="m">Benedictio Cerei</title>, naming of (Gelasian); Genesis (Biblical book); <title level="m">Preface</title> (Gregorian Sacramentary); <title level="m">Psalms</title>.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Man at wake</seg>, <seg type="locater">&ch2.6;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Manuscripts. See Manuscript index.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Melrose monk</seg>, <seg type="locater">&ch2.6;, &ch2.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Memorial transmission</seg>, <seg type="locater">&chd.1;-&chd.2;, &chd.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&Met; (Old English poem)</seg>, <seg type="locater">&ch1.24;, &ch1.25;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Metrical Psalms</title> (Old English poem)</seg>, <seg type="locater">&ch3.29;, &ch5.n17;, &ch5.27;, &ch5.32;, &ch7.24;, &chb.5;.</seg>
+      </item>
+      <item>
+       <seg>Miracles</seg>, <seg>&ch1.8;, &ch1.9;, &ch1.10;-&ch1.20;, &ch1.26;, &ch1.27;, &ch1.35;-&ch1.36;, &ch1.37;-&ch1.39;, &ch2.n3;, &ch2.10;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Mohammed</seg>, <seg type="locater">&ch2.6;, &ch2.7;, &ch2.11;-&ch2.15;, &ch2.16;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><socalled>Moore memoranda</socalled>. See &mmlShort; and &lmlShort; in the Manuscript index.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&aelda; (&ch;)</seg>, <seg type="locater">&ch2.34;, &ch2.38, &ch2.n12;, &ch2.41;, &ch3.11;, &ch3.n10;, &ch3.21;, &ch4.30;, &ch4.38;, &ch5.1;-&ch5.4; <foreign lang="LAT">passim</foreign>, &ch5.7;, &ch5.16;, &ch5.17;, &ch5.22;, &ch5.28;, &ch5.29;, &ch5.32;, &ch5.34;, &ch5.36;, &ch6.3;-&ch6.38;, &ch6.54;, &ch7.17;-&ch7.27;, &ch7.64;, &chc.8;.</seg>
+       <list>
+	<item>
+	 <seg>See also &ch;</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">&eordu; (&ch;)</seg>, <seg type="locater">&ch2.41;, &ch3.21;, &ch4.11;, &ch4.20;, &ch4.40;, &ch5.1;-&ch5.5; <foreign lang="LAT">passim</foreign>, &ch5.8;, &ch5.14;, &ch5.16;, &ch5.17;, &ch5.22;, &ch5.28;, &ch5.29;, &ch5.32;, &ch5.35;, &ch5.36;, &ch6.1;, &ch6.2;, &ch6.3;-&ch6.38;, &ch6.53;, &ch7.9;, &ch7.14;-&ch7.15;, &ch7.28;-&ch7.42;, &ch7.49;, &ch7.77;, &ch7.80;, &ch7.81;, &chb.n1;, &chd.7;.</seg>
+       <list>
+	<item>
+	 <seg>See also &ch;</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Ntsikana (poet)</seg>, <seg type="locater">&ch2.16;, &ch2.20;-&ch2.21;, &ch2.22;, &ch2.23;-&ch2.25;, &ch2.27;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Ntsikana, William Kobe (biographer)</seg>, <seg type="locater">&ch2.21;, &ch2.24;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Old English poetry.</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield1">Dating</seg>, <seg type="locater">&ch3.n12;.</seg>
+	</item>
+	<item teiform="item">
+	 <seg part="n" teiform="seg">See also individual titles: &Brun;, &BDS;, &Beo;, &ch;, &Deor;, &Dream;, &Gen;, &LRid;, &Met;, &MetPs;, &Phoen;, &Pr;, &SoulSR;, &Wid;.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Orality</seg>, <seg type="locater">&ch5.4;, &ch7.n7;, &chc.1;, &chd.1;-&chd.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Orthographic variants (definition)</seg>, <seg type="locater">&ch7.6;, &ch7.9;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&Phoen; (Old English poem)</seg>, <seg type="locater">&ch1.34;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Poets, named</seg>, <seg type="locater">&ch1.22;-&ch1.25;.</seg>
+       <list>
+	<item>
+	 <seg>See also individual names: Aldhelm, Alfred, Anlaf, &AElig;duwen, Baldulf, Bede, C&aelig;dmon, Cnut, Cynewulf, Dunstan, Hereward, Wulfsige, Wulfstan.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">&Pr; (Old English poem)</seg>, <seg type="locater">&ch1.34;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Preface</title> (Gregorian Sacramentary)</seg>, <seg type="locater">&ch2.42;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Psalms (Latin)</seg>, <seg type="locater">&ch2.38;-&ch2.41;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Psalms (Old English metrical translation). See <title level="m">Metrical Psalms</title> (Old English poem).</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Ramayana Epic</title>. See Valmiki.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Reading text (definition)</seg>, <seg type="locater">&ch7.3;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Report to the Glasgow Mission Society</title> (Brownlee, John)</seg>, <seg type="locater">&ch2.21;, &ch2.24;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Retrospective dating. See &mmlShort; and &lmlShort; in the Manuscript index.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Rice, Tim (<title level="m">Jesus Christ Superstar</title>)</seg>, <seg type="locater">&ch3.n15;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Sabit M&uuml;dam&icirc; Ataman</seg>, <seg type="locater">&ch2.8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Scribal practice.</seg>
+       <list>
+	<item>
+	 <seg type="indexsubfield1">Graphic mistakes</seg>, <seg type="locater">&ch7.9;, &ch7.24;, &ch7.39;, &ch7.49;-&ch7.50;, &ch7.55;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Influence of formulae on</seg>, <seg type="locater">&ch5.13;-&ch5.14;, &ch5.16;-&ch5.17;, &ch5.24;, &chb.8;-&chb.9;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Influence of Latin texts on</seg>, <seg type="locater">&ch5.27;, &ch7.38;, &chb.4;-&chb.5;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Influence of syntax on</seg>, <seg type="locater">&ch5.11;, &ch5.n17;, &ch5.21;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Memorial transmission and</seg>, <seg type="locater">&chd.1;-&chd.2;, &chd.7;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Oral transmission and</seg>, <seg type="locater">&ch5.4;, &ch7.n7;, &chd.1;, &chd.7;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Transitional literacy and</seg>, <seg type="locater">&chd.1;, &chd.3;-&chd.6;, &chd.7;.</seg>
+	</item>
+	<item>
+	 <seg type="indexsubfield1">Trivialisation (<foreign lang="LAT" teiform="foreign">facilior lectio</foreign> / <foreign lang="LAT">difficilior lectio</foreign>)</seg>, <seg type="locater">&ch5.14;, &ch5.16;, &ch5.20;-&ch5.22;, &ch5.31;-&ch5.32;, &ch5.33;, &ch7.n7;, &ch7.25;, &chb.8;-&chb.10;.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Scriptural and liturgical analogues to &ch;</seg>, <seg type="locater">&ch2.37;-&ch2.45;, &ch5.31;.</seg>
+       <list>
+	<item>
+	 <seg>See also <title level="m">Benedicite</title> (Song of the three Children); <title level="m">Benedictine office</title>; <title level="m">Benedictio Cerei</title>, naming of (Gelasian Sacramentary); Genesis (Biblical book); <title level="m">Preface</title> (Gregorian Sacramentary); <title level="m">Psalms</title>.</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">(Potentially) significant variants (definition)</seg>, <seg type="locater">&ch7.8;, &ch7.9;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&SoulSR; (Old English poem)</seg>, <seg type="locater">&ch1.34;, &ch5.n17;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Sources and Analogues. See Analogues to &ch;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Strean&aelig;shalch (Whitby Abbey)</seg>, <seg type="locater">&ch1.n1;, &ch1.17;, &ch1.18;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Substantive variants (definition)</seg>, <seg type="locater">&ch7.7;, &ch7.9;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Textual variation (definition)</seg>, <seg type="locater">&ch5.n1;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Transitional Literacy</seg>, <seg type="locater">&chd.1;, &chd.3;-&chd.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m" lang="XHO">Ulo Thixo Omkulu, ngosezulwini</title> (Ntsikana&rsquo;s <title level="m">Great Hymn</title>)</seg>, <seg type="locater">&ch2.20;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Valmiki</seg>, <seg type="locater">&ch2.6;, &ch2.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Walafrid Strabo</seg>, <seg type="locater">&chc.2;, &chc.3;, &chc.12;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Webber, Andrew Lloyd (<title level="m">Jesus Christ Superstar</title>)</seg>, <seg type="locater">&ch3.n15;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead"><title level="m">Wessobrunner Gebet</title></seg>, <seg type="locater">&ch2.30;, &chc.3;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&eorthan; (&ch;)</seg>, <seg type="locater">&ch3.21;, &ch4.6;, &ch4.16;, &ch4.34;, &ch4.36;, &ch4.44;, &ch4.46;, &ch5.1;-&ch5.9; <foreign lang="LAT">passim</foreign>, &ch5.12;, &ch5.16;, &ch5.17;, &ch5.22;, &ch5.23;, &ch5.26;, &ch5.28;, &ch5.33;, &ch6.2;, &ch6.39;-&ch6.51;, &ch6.52;-&ch6.54; <foreign lang="LAT">passim</foreign>, &ch7.2;, &ch7.n12;, &ch7.33;, &ch7.49;, &ch7.51;, &ch7.56;-&ch7.72;, &ch7.77;, &ch7.80;, &cha.3;, &chb.8;, &chc.8;, &noted.all; <foreign lang="LAT">passim</foreign>.</seg>
+       <list>
+	<item>
+	 <seg>See also &ch;</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">&eorthe; (&ch;)</seg>, <seg type="locater">&ch2.41;, &ch4.18;, &ch4.24;, &ch4.26;, &ch5.1;-&ch5.4; <foreign lang="LAT">passim</foreign>, &ch5.8;, &ch5.16;, &ch5.17;, &ch5.22;, &ch5.28;, &ch5.29;, &ch5.32;, &ch5.35;, &ch5.36;, &ch6.1;, &ch6.9;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch6.52;, &ch6.54;, &ch7.49;, &ch7.64;, &ch7.73;-&ch7.82;, &chd.7;.</seg>
+       <list>
+	<item>
+	 <seg>See also &ch;</seg>
+	</item>
+       </list></item>
+      <item>
+       <seg type="indexhead">&ylda; (&ch;)</seg>, <seg type="locater">&ch2.34;, &ch2.38;, &ch2.41;, &ch3.13;, &ch3.21;, &ch4.9;, &ch4.22;, &ch4.28;, &ch4.32;, &ch4.42;, &ch4.48;, &ch4.50;, &ch5.1;-&ch5.4; <foreign lang="LAT">passim</foreign>, &ch5.7;, &ch5.8;, &ch5.n13;, &ch5.16;, &ch5.17;, &ch5.22;, &ch5.28;, &ch5.29;, &ch5.32;, &ch5.34;-&ch5.36;, &ch6.1, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch6.52;, &ch6.53;, &ch7.43;-&ch7.55;, &ch7.61;, &ch7.62;, &ch7.64;, &ch7.66;, &ch7.69;, &ch7.77;, &ch7.80;, &ch7.81;.</seg>
+       <list>
+	<item>
+	 <seg>See also &ch;</seg>
+	</item>
+       </list>
+      </item>
+      <item>
+       <seg type="indexhead">Whitby Abbey. See Strean&aelig;shalch.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&Wid; (Old English poem)</seg>, <seg type="locater">&ch3.n12;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">William of Malmesbury</seg>, <seg type="locater">&ch1.n7;, &ch1.n8;, &ch1.22;, &ch2.18;-&ch2.19;, &ch2.22;, &ch2.25;-&ch2.26;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Witness archive (definition)</seg>, <seg type="locater">&ch7.1;, &ch7.10;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Wulfila</seg>, <seg type="locater">&ch3.10;, &ch3.23;, &ch3.32;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Wulfsige</seg>, <seg type="locater">&ch1.22;, &ch1.23;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Wulfstan</seg>, <seg type="locater">&ch1.22;, &ch1.23;.</seg>
+      </item>
+     </list>
+    </div2>
+    <div2 id="INDEX.2">
+     <head id="INDEX.2.HEAD">Manuscript index</head>
+     <p>References marked <foreign lang="LAT">Passim</foreign> in the Manuscript index contain information about the recensions to which individual manuscripts belong. While the information is relevant to the manuscripts in question, the manuscript shelf-mark or sigla do not always appear in the referenced sections.</p>
+     <list>
+      <item>
+       <seg type="indexhead">&brml; (&brs;)</seg>, <seg type="locater">&ch4.n1;, &ch4.10;-&ch4.11;, &ch4.n14;, &ch5.n14;, &ch6.3;-&ch6.38; <foreign lang="LAT">passim</foreign>, &ch7.28;-&ch7.42; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Bury Gospels. See Cambridge, Pembroke College, 301.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&b1ml; (&b1s;)</seg>, <seg type="locater">&ch4.5;-&ch4.6;, &ch5.9;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.51;, &ch7.56;-&ch7.73; <foreign lang="LAT">passim</foreign>, &ch7.81;, &chd.1;, &chd.2;, &chd.5;-&chd.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Cambridge, Corpus Christi College, 173 (ChronA)</seg>, <seg type="locater">&ch4.13;, &ch5.12;-&ch5.13;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Cambridge, Corpus Christi College, 201</seg>, <seg type="locater">&ch5.27;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Cambridge, Pembroke College, 301 (Bury Gospels)</seg>, <seg type="locater">&ch4.8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&tr1ml; (&tr1s;)</seg>, <seg type="locater">&ch4.47;-&ch4.48;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.n7;, &ch7.n12;, &ch7.43;-&ch7.55; <foreign lang="LAT">passim</foreign>, &chc.n8;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Cambridge, Trinity College, R. 17. 1 (EPs)</seg>, <seg type="locater">&ch5.n17;, &ch5.27;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&caml; (&cas;)</seg>, <seg type="locater">&ch4.15;-&ch4.16;, &ch5.9;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch6.54;, &ch7.6;, &ch7.56;-&ch7.72; <foreign lang="LAT">passim</foreign>, &chd.4;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&mml; (&ms;)</seg>, <seg type="locater">&ch4.29;-&ch4.30;, &ch4.37;, &ch5.23;, &ch5.26;, &ch6.3;-&ch6.38; <foreign lang="LAT">passim</foreign>, &ch6.53;, &ch6.54;, &ch7.14;, &ch7.17;-&ch7.27; <foreign lang="LAT">passim</foreign>, &ch7.37;, &ch7.56;, &ch7.65;, &ch7.77;, &notea.all;, &chc.9;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&diml; (&dis;)</seg>, <seg type="locater">&ch4.19;-&ch4.20;, &ch5.n14;, &ch6.3;-&ch6.38; <foreign lang="LAT">passim</foreign>, &ch7.11;, &ch7.28;-&ch7.42; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Eadwine Psalter. See Cambridge, Trinity College, R. 17. 1.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Exeter, Cathedral Library, 3501 (Exeter Book)</seg>, <seg type="locater">&ch4.n2;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Exeter, Cathedral Library, Charter no. 2570</seg>, <seg type="locater">&ch4.n2;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&hrml; (&hrs;)</seg>, <seg type="locater">&ch4.23;-&ch4.24;, &ch6.9;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.n14;, &ch7.n17, &ch7.73;-&ch7.82; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Kassel, Landesbibliothek, 4to MS. Theol. 2</seg>, <seg type="locater">&ch5.26;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Leningrad (St. Petersburg) Bede. See &lmlShort;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&nml; (&ns;)</seg>, <seg type="locater">&ch4.1;, &ch4.n8;, &ch4.33;-&ch4.34;, &ch5.12;, &ch6.39;-&ch6.51;, &ch6.53;, &ch6.54;, &ch7.56;-&ch7.73;, &chd.4;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&cml; (&cs;)</seg>, <seg type="locater">&ch4.1;, &ch4.n1;, &ch4.12;-&ch4.13;, &ch4.33;, &ch5.12;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.56;-&ch7.72; <foreign lang="LAT">passim</foreign>, &chd.4;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">London, British Library, Cotton Otho B. xi (ChronG)</seg>, <seg type="locater">&ch5.12;-&ch5.13;, &ch5.n17;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">London, British Library, Cotton Tiberius A. xiv</seg>, <seg type="locater">&ch7.18;-&ch7.19;, &ch7.21;, &cha.3;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">London, British Library, Cotton Tiberius C. ii</seg>, <seg type="locater">&ch5.26;, &chc.9;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">London, British Library, Cotton Tiberius D. iv, vol. 2</seg>, <seg type="locater">&ch4.n37;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">London, British Library, Harley Charter 83. A. 3</seg>, <seg type="locater">&ch4.15;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">London, British Library, Royal 12 D. xvii</seg>, <seg type="locater">&ch4.12;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&carmsml; (&carmss;)</seg>, <seg type="locater">&ch4.17;-&ch4.18;, &ch4.n18;, &ch6.41;, &ch6.42;, &ch7.65;, &ch7.73;-&ch7.82; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Moore Bede. See &mmlShort;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Moore Memoranda. See &mmlShort;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Namur, Public Library, Fonds de la ville II (Namur)</seg>, <seg type="locater">&ch7.18;, &ch7.21;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Oxford, Bodleian Library, Auct. D. 2. 16</seg>, <seg type="locater">&ch4.n2;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&bdml; (&bds;)</seg>, <seg type="locater">&ch4.1;, &ch4.7;-&ch4.9;, &ch4.49;, &ch7.43;-&ch7.55;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&hml; (&hs;)</seg>, <seg type="locater">&ch4.21;-&ch4.22;, &ch5.26;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.43;-&ch7.55; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Oxford, Bodleian Library, Junius 121</seg>, <seg>&ch5.27;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&ldml; (&lds;)</seg>, <seg type="locater">&ch4.n12;, &ch4.25;-&ch4.26;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.n14;, &ch7.73;-&ch7.82; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&t1ml; (&t1s;)</seg>, <seg type="locater">&ch4.n1;, &ch4.43;-&ch4.44;, &ch5.n14;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch6.54;, &ch7.56;-&ch7.72; <foreign lang="LAT">passim</foreign>, &chc.9;, &chd.4;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&oml; (&os;)</seg>, <seg type="locater">&ch4.15;, &ch4.35;-&ch4.36;, &ch5.n7;, &ch5.n13;, &ch5.n14;, &ch5.12;, &ch6.12;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch6.52;, &ch6.53;, &ch6.54;, &ch7.56;-&ch7.72; <foreign lang="LAT">passim</foreign>, &ch7.81;, &chd.1;, &chd.4;, &chd.6;, &chd.7;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&lnml; (&lns;)</seg>, <seg type="locater">&ch4.27;-&ch4.28;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.43;-&ch7.55; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&mgml; (&mgs;)</seg>, <seg type="locater">&ch4.31;-&ch4.32;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.43;-&ch7.55; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&p1ml; (&p1s;)</seg>, <seg type="locater">&ch4.n14;, &ch4.39;-&ch4.40;, &ch5.n14;, &ch6.3;-&ch6.38; <foreign lang="LAT">passim</foreign>, &ch7.11;, &ch7.28;-&ch7.42; <foreign lang="LAT">passim</foreign>, &ch7.n17;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Paris, Biblioth&egrave;que Nationale, lat. 8824 (PPs)</seg>, <seg type="locater">&ch5.27;, &ch5.n17;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&lml; (&ls;)</seg>, <seg type="locater">&ch4.29;, &ch4.37;-&ch4.38;, &ch5.23;, &ch5.26;, &ch6.3;-&ch6.38; <foreign lang="LAT">passim</foreign>, &ch6.53;, &ch7.17;-&ch7.27; <foreign lang="LAT">passim</foreign>, &ch7.37;, &ch7.77;, &notea.all;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&sanmml; (&sanms;)</seg>, <seg type="locater">&ch4.n1;, &ch4.41;-&ch4.42;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.43;-&ch7.55; <foreign lang="LAT">passim</foreign>.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&toml; (&tos;)</seg>, <seg type="locater">&ch4.1;, &ch4.6;, &ch4.45;-&ch4.46;, &ch5.9;, &ch6.39;-&ch6.51; <foreign lang="LAT">passim</foreign>, &ch7.11;, &ch7.33;, &ch7.56;-&ch7.72; <foreign lang="LAT">passim</foreign>, &cha.3;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">&wml; (&ws;)</seg>, <seg type="locater">&ch4.8;, &ch4.49;-&ch4.50;, &ch6.39;-&ch6.51;  <foreign lang="LAT">passim</foreign>, &ch7.n14;, &ch7.43;-&ch7.55; <foreign lang="LAT">passim</foreign>, &ch7.65;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">Wolfenb&uuml;ttel, Herzog-August Bibliothek, Weissenburg 34 (Wbl)</seg>, <seg type="locater">&ch7.18;, &ch7.21;.</seg>
+      </item>
+      <item>
+       <seg type="indexhead">W&uuml;rzburg, Universit&auml;tsbibliothek, M. p. th. f. 118 (Wbg)</seg>, <seg type="locater">&ch7.18;, &ch7.21;.</seg>
+      </item>
+     </list>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</TEI.2>

@@ -1,0 +1,137 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                              Note B                           *
+*                         Back Translation                        *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 id="CHAPP.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Note B: &ch; and Bede&rsquo;s &paraphrase;</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Note to the introduction to the electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="NOTEB" n="B">
+    <head id="NOTEB.HEAD">&ch; and Bede&rsquo;s &paraphrase;</head>    
+    <div2 id="NOTEB.TOC" type="toc">
+     <div3 id="NOTEB.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="notea"><label rend="accesskey">P</label>revious (Note A)</xref></item>
+       <item><xref n="n" doc="notec"><label rend="accesskey">N</label>ext (Note C)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="NOTEB.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="NOTEB">Top</ref></item>	
+      </list>
+     </div3>
+    </div2>
+    <div2 id="NOTEB.APPENDIX">
+     <p id="NOTEB.370" n="B.1">The account of the &hymn;&rsquo;s filiation in &ch5x; above, assuming it is correct, provides important evidence against claims that the Old English text of the &hymn; was translated from Bede&rsquo;s Latin &paraphrase;. Passing references to the possibility that the Old English &hymn; might be a back-translation from Bede appear in the work of several early and mid nineteenth-century scholars, beginning with Lingard in 1810 (see &lingard1841;, 316; also &schmid1827;, 336; &thorpe1832;, ix [&recte; xi]; &pauli1851;, 233). The question was explored in greater detail in an often-cited exchange among W&uuml;lker, Zupitza, and ten Brink, in which W&uuml;lker ultimately conceded Zupitza&rsquo;s and Ten Brink&rsquo;s argument (&wulker1876;; &zupitza1878;; &tenbrink1883;, 372-374; &wulker1885;, 119-120). After a century of consensus concerning the vernacular &hymn;&rsquo;s likely priority, the debate was revived again in the early 1980s and 1990s by Dumville, Kiernan, and Isaac (&dumville1981;, 148; &kiernan1990a;; &isaac1997;). Despite responses from Biggs and Fulk (&biggs1997;, 307, n. 46; &fulk1992;, 427-428), there currently appears to be no solid consensus about the relationship between the Old English &hymn; and Latin &paraphrase; (see, for example, the carefully agnostic position taken in &orchard1996;, 412-413).</p>    
+    <p id="NOTEB.380" n="B.2">In its modern form,<note id="NOTEB.NOTE.240" n="1"><p>Although it is often cited, nineteenth-century discussion about the priority of the Old English &hymn; is not, strictly speaking, relevant to contemporary debate. While there is some agreement in the issues involved, scholars working before Wuest&rsquo;s discovery of the &eordu; in 1906 had a very different (and incomplete) understanding of the &hymn;&rsquo;s textual evidence. See, for example, &wulker1885, 117-120.</p></note> the argument against the priority of the vernacular text rests on two main observations:</p>
+     <list type="ordered">
+      <item>The Old English poem tells us no more about C&aelig;dmon&rsquo;s initial production than does Bede&rsquo;s Latin &paraphrase;: although Bede makes it clear in his chapter that C&aelig;dmon composed additional verses for his &hymn; the morning after his dream, this extra material is preserved in no vernacular text of the poem, all recensions of which stop, as does Bede&rsquo;s &paraphrase;, at the last line of his dream-inspired first performance (&dumville1981;, 148; &kiernan1990a;, 162).</item>
+      <item>Bede&rsquo;s &paraphrase; is far closer to surviving versions of the vernacular poem than his disclaimers about its literal accuracy might otherwise suggest: for the equivalent to the first five lines of the Old English text, Bede&rsquo;s translation reproduces its supposed vernacular source nearly word-for-word. In the final four lines, the principal difference involves the elimination of some more-or-less ornamental material from the Old English version (&kiernan1990a;, 162-163; &isaac1997;<note id="NOTEB.NOTE.250" n="2"><p>&isaac1997; proposes what he sees as a third piece of evidence against the &hymn;&rsquo;s priority: the unlikelihood of Bede&rsquo;s account of the poet&rsquo;s inspiration (esp. 226). Although he presents this as evidence that <quote id="NOTEB.QUOTE.0070">the Northumbrian version of C&aelig;dmon&rsquo;s Hymn is, after all, a translation from Bede&rsquo;s Latin</quote> (219), the argument is actually more concerned with C&aelig;dmon&rsquo;s authorship than the relationship between vernacular and Latin versions of the poem. Even if we assume that somebody other than C&aelig;dmon composed the &hymn;, we are still left with the question: did Bede translate his Latin &paraphrase; from a text of the surviving Old English &hymn; or is the Old English a back translation from Bede? See also &cavill2002;, 65-6, for a discussion of Isaac&rsquo;s claims.</p></note>).</item>
+     </list>
+     <p id="NOTEB.390" n="B.3">Neither of these observations offers unambiguous support for the priority of Bede&rsquo;s text. The fact that the Old English &hymn; tells us no more than Bede&rsquo;s &paraphrase; about the additional lines C&aelig;dmon is supposed to have added to his poem can be attributed as easily to the context in which the vernacular text is preserved as to the possibility that it is a back-translation from Bede&rsquo;s Latin. In the case of the Old English translation of the &he;, the rationale for leaving out the <socalled>rest</socalled> of &ch;&mdash;assuming more actually still was known<note id="NOTEB.NOTE.260" n="3"><p>The fact that Bede quotes from C&aelig;dmon&rsquo;s initial performance indicates that an early distinction existed between the poet&rsquo;s initial, dream-inspired, text and the self-composed lines he added the following morning. Since the inspired lines are obviously the most relevant to the story of the Inspiration, these presumably would have the greatest chance of being preserved in traditional retellings. A generation or two after C&aelig;dmon&rsquo;s death one might expect them to be the only lines known with certainty to be C&aelig;dmon&rsquo;s own composition.</p></note>&mdash;is obvious: Bede&rsquo;s chapter cites the poem&rsquo;s opening lines and explains how the poet later composed and appended additional verses to his initial, dream-inspired, text: had the translator decided to replace this partial Latin &paraphrase; with a text containing the lines Bede omits, he would be forced either to rewrite the narrative of C&aelig;dmon&rsquo;s dream in order to account for the inclusion of the text C&aelig;dmon added after he awoke, or, by failing to distinguish between the original material and the subsequent additions, misrepresent the scope and nature of C&aelig;dmon&rsquo;s initial, dream-inspired performance.<note id="NOTEB.NOTE.270" n="4"><p>That the translator would be reluctant to misrepresent C&aelig;dmon&rsquo;s initial performance is suggested by his careful exclusion of Bede&rsquo;s disclaimers about the quality of the Latin &paraphrase; from his Old English translation. He removed these presumably because he believed he was presenting the actual text of the poem rather than a rendering of its <foreign lang="LAT">sensus</foreign>. See &whitelock1963; for a discussion of the Old English translator&rsquo;s care in adapting Bede&rsquo;s Latin.</p></note></p>
+     <p id="NOTEB.400" n="B.4">In the case of copies found in the Latin &he;, the rationale for matching the Old English text to the length of Bede&rsquo;s &paraphrase; comes from the poem&rsquo;s conceptual relationship to the Latin &paraphrase;. As Kiernan notes, <quote id="NOTEB.QUOTE.0080">Anglo-Saxon scribes did not view [copies of the vernacular text of &ch; in the &he;],... as we do today, as central texts</quote> (&kiernan1990a;, 162). Instead, they present the poem as a gloss, much like the translations of Latin words, retrospective dating, and similar apparatus found elsewhere in many &historia; manuscripts. In such circumstances, the length of vernacular text being added to a Latin manuscript is dictated by the length of the Latin being glossed rather than the scribe&rsquo;s knowledge of the vernacular text being added. Even if the scribes knew more of the text than Bede reproduces, they would be highly unlikely to demonstrate this knowledge by copying the <socalled>complete</socalled> poem in the margins of the &he;.</p>
+     <p id="NOTEB.405" n="B.5">That this is so is demonstrated by the metrical translation of the Psalms. Although it seems certain that a metrical translation of the entire Psalter was widely known in Anglo-Saxon England, no complete copy of this translation survives. As I argue elsewhere, this is because the translation is copied invariably in <socalled>functional</socalled> contexts&mdash;i.e. contexts in which the vernacular text serves as a gloss to or translation of the Latin text. In such circumstances, Anglo-Saxon scribes almost invariably match the length of their citations to that of the Latin being glossed or translated (see &odonnell1996a;, chapter 2).</p>
+     <p id="NOTEB.410" n="B.6">No stronger evidence for the priority of Bede&rsquo;s &paraphrase; is provided by the closeness of the translation. Although it is true that the vernacular and Latin texts of the &hymn; are relatively close, they are not consistently so. While the equivalent to the first five lines of the Old English poem are reproduced almost word-for-word in Bede&rsquo;s Latin text, the relationship between the two versions is considerably more loose in the equivalent to the last four (see &odonnellforthcoming;; &sect;&sect;&nbsp;&ch3x250;-&ch3x280;, above). If we assume that Bede was working from an Old English text substantially similar to one of the surviving vernacular recensions, this apparent inconsistency can be explained as the result of a decision on Bede&rsquo;s part to remove all traces of ornamental apposition from his source: the two versions diverge the most precisely in those lines in which the Old English poem shows the most ornamental variation; their differences, moreover, involve for the most part the collapsing or recasting in Bede&rsquo;s text of syntactically apposite elements from the equivalent lines of the Old English poem: <mentioned rend="postemendation" lang="ANG">&copyOfno.5a.1;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfno.6b.1; &copyOfno.6b.2;</mentioned> (preserved as <mentioned lang="LAT">Qui</mentioned>) in 5a and 6b; <mentioned rend="postemendation" lang="ANG">&copyOfno.7b.2;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfno.8a.1; &copyOfno.8a.2;</mentioned>, and <mentioned rend="postemendation" lang="ANG">&copyOfno.9b.1; &copyOfno.9b.2;</mentioned> (preserved as <mentioned lang="LAT">Custos</mentioned> and <mentioned lang="LAT">omnipotens</mentioned>), in 7a through 9b (&odonnellforthcoming;; &cavill2002, 11-13; &sect;&nbsp;&ch3x280; above).</p>
+     <p id="NOTEB.420" n="B.7">The inconsistency between the Latin and vernacular versions of the poem is more difficult to explain, however, if we assume that Bede&rsquo;s &paraphrase; was the original text. There is no obvious reason why a forger, working from Bede&rsquo;s &paraphrase;, should be prompted to start introducing significant amounts of ornamental variation half-way through his translation. Although Bede&rsquo;s version of the poem&rsquo;s closing lines does show a slight difference in tone from his treatment of the equivalent to 1 through 4 (he introduces three hexameter cadences: <mentioned lang="LAT">caelum pro culmine tecti</mentioned>, <mentioned lang="LAT">Custos humani generis</mentioned>, and <mentioned lang="LAT">omnipotens</mentioned>), the change is neither as marked as the increase in variation in the equivalent section of the Old English, nor as closely correlated with the onset of the poetic variation in the Old English text: the first hexameter cadence in Bede&rsquo;s &paraphrase; comes at the equivalent to 6a (<mentioned lang="LAT">caelum pro culmine tecti</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfno.6a.1; &copyOfno.6a.2; &copyOfno.6a.3;</mentioned>), while the first example of appositive variation in the closing five lines of the Old English text begins with <mentioned rend="postemendation" lang="ANG">&copyOfno.5a.1;</mentioned> in 5a. The discrepancy becomes even more significant, moreover, if we consider the first example of apposition in the poem as a whole, <mentioned rend="postemendation" lang="ANG">&copyOfno.3b.2;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfno.4a.1; &copyOfno.4a.2;</mentioned> in 3b and 4a: while it is easy to understand, if the Old English was prior, why Bede might decide to recast this passage in order to eliminate one of the two nominative singular references to God, there is no obvious reason why an Anglo-Saxon forger, faced with an original reading <mentioned lang="LAT">cum sit aeternus Deus</mentioned>, would decide to recast Bede&rsquo;s clause in a section in which he is otherwise following his <socalled>original</socalled> quite closely (&odonnellforthcoming;).</p>
+     <p id="NOTEB.430" n="B.8">The most important evidence that Bede&rsquo;s &paraphrase; was based on the existing Old English text of the &hymn;, however, comes from his adoption of &facilior; variants for two of the three readings used to distinguish among Old English recensions of the poem: <mentioned lang="LAT">debemus</mentioned> (i.e. <mentioned rend="postemendation" lang="ANG">&uue; &copyOfno.1a.2;</mentioned>) in the equivalent to 1a, and <mentioned lang="LAT">filiis hominum</mentioned> (i.e. <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfae.5b.2;</mentioned>) in the equivalent to 5b (see above, &sect;&sect;&nbsp;&ch5x270;-&ch5x330;). If we assume that Bede&rsquo;s text was prior to surviving recensions of the Old English &hymn;, we are faced with the difficulty of explaining how the &difficilior; readings <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.1; &copyOfno.1a.2;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1; &copyOfno.5b.2;</mentioned> managed to arise. The most obvious translation from <mentioned lang="LAT">debemus</mentioned> is <mentioned rend="postemendation" lang="ANG">&uue; &copyOfno.1a.2;</mentioned>; only the most perverse of forgers, faced with unambiguous first person plural morphology in a Latin <socalled>original</socalled> would decide to substitute the rare but apparently sensible pronoun-less form found in the &naelda and &wseorthan; Recensions for a verb showing an explicit first person inflection.</p>
+     <p id="NOTEB.440" n="B.9">The evidence of 5b is even more significant, however, since it is difficult to see why an Old English forger would chose <emph>either</emph> <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> <emph>or</emph> <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned> to translate Bede&rsquo;s <socalled>original</socalled> <mentioned lang="LAT">filiis hominum</mentioned>. As mentioned above (&sect;&sect;&nbsp;&ch5x090;-&ch5x120;), the most common translation for this biblical tag in the Old English corpus involves some combination of a genitive plural <mentioned lang="ANG">monna</mentioned> and <mentioned lang="ANG">barn</mentioned>- (100 out of 102 occurrences); the collocation <mentioned lang="LAT">monna barn</mentioned>-, similarly, is, with over eighty occurrences (thirty-two in verse), the most common single member of the formulaic system <seg type="metric" subtype="formulaicsystem">[g.pl. noun referring to people] &plus; <mentioned lang="ANG">barn</mentioned>-</seg> (&healeyetal1994;). If we assume that our hypothetical forger was free to set his own alliteration for the translation of 5 (he was, after all, presumably beginning with a blank slate), then it is difficult to see why he should prefer either the less common formula <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfeo.5b.2;</mentioned> (eleven occurrences in Old English) or the unique collocation <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1; &copyOfeo.5b.2;</mentioned> as his preferred translation over the stereotypical <mentioned lang="ANG">monna barnum</mentioned> (see also &cavill2000;, 518).</p>
+     <p id="NOTEB.450" n="B.10">Once again, these difficulties vanish if we assume the Old English text was prior. In the equivalent to 1a, Bede&rsquo;s use of <mentioned lang="LAT">debemus</mentioned> for <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.1; &copyOfno.1a.2; &copyOfno.1a.3;</mentioned> represents an unavoidable disambiguation: while the &difficilior; Old English reading can be interpreted, arguably at least, as first or third person plural, Latin requires an explicit indication of person and number, forcing Bede to choose among what may have been two, equally plausible, interpretations. The use of <mentioned lang="LAT">filiis hominum</mentioned> for 5b, on the other hand, is probably best understood as a learned <socalled>improvement</socalled> on the text introduced by Bede or a redactor of the Old English text from which he was working in order to give the Old English poem a more <socalled>liturgical</socalled> tone.</p>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>
+

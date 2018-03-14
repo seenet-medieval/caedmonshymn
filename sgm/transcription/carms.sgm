@@ -1,0 +1,177 @@
+<!--
+*******************************************************************
+*                              carms.sgm                          *
+*   Diplomatic Transcription of the the Text of Caedmon's Hymn    *
+*                           as found in                           *
+*                   London, College of Arms, s.n.                 *
+*                                                                 *
+*                         Text and Encoding                       *
+*              (c) Daniel Paul O'Donnell, 1999-2002               *
+*                        All Rights Reserved                      *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers.  It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+
+<?STYLESPEC "Diplomatic Transcription" "../styleSheets/dipl.ssh">
+<?STYLESPEC "Normalised Lineation and Word Spacing" "../styleSheets/diplNorm.ssh">
+
+<tei.2 id="AR.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">&carmss; &carmsml;: A transcription and edition.</title>
+    <author>C&aelig;dmon (floruit 657-681)</author>
+    <editor>Daniel Paul O&rsquo;Donnell</editor>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 8 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <bibl>&camlShort;</bibl>
+    <p>Original transcription and edition of &cas; &caml;.</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Transcription prepared for use in the &ech;.</p>
+   </projectdesc>
+   <samplingdecl>
+    <p>Transcription is restricted for the most part to text of the
+    &hymn;; minimal surrounding details (e.g. &ssr; or leading or
+    following Latin words) are provided when these are necessary for
+    understanding the material context in which the Old English text
+    of the &hymn; is found. No systematic attempt has been made to
+    record non-Old English text.</p>
+   </samplingdecl>
+   <editorialdecl>
+    <correction status="high" method="tags">
+     <p>Text based on transcriptions of facsimiles and personal
+      inspection of witness manuscripts by dpod. Each witness has
+      been proofread and checked (against FS or MS) at least four
+      times by dpod and either ls or mve.</p>
+    </correction>
+    <normalization default="yes" method="tags">
+     <p>Text has been described diplomatically with minimal silent
+     normalization. Manuscript word division and spacing,
+     line-division, corrections and erasures are indicated explicitly
+     by tagging and are reproduced as closely as posible to the form
+     in the manuscript. Anglo-Saxon characters (wynn, eth, thorn) and
+     abbreviations have been encoded using the appropriate unicode
+     code points. Modern editorial conventions such as word spacing,
+     line division, etc. are also indicated explictly using TEI tagging.</p> 
+    </normalization>
+    <segmentation>
+     <p>Transcription has been segmented according to modern editorial
+     convention (i.e. line boundaries mark modern editorial line
+     boundaries; caesura elements mark modern editorial
+     caesurae). Diplomatic information (word division and spacing,
+     etc.) has been marked using milestones.</p>
+    </segmentation>
+   </editorialdecl>
+   <metdecl>
+    <p>Prosody has not been marked explicitly; lines are encoded as
+    <socalled>long lines</socalled> with hemistichs marked by the
+    caesura element.</p>
+   </metdecl>
+  </encodingdesc>
+  <profiledesc teiform="profileDesc">
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="FRA">French</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+   <handlist teiform="handList">
+    <hand id="ca.scribe.main" scribe="main text scribe">
+   </handlist>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body>
+   <div1 id="AR" n="ar">
+    <head type="AR.HEAD">&carmss; &carmsml;<note n="1" id="AR.HEAD.N" rend="diplomaticNote"><p>A few insignificant differences in the transcription of manuscript word spacing among this transcription, &humphreysandross1975;, and &cavill2000; have not been noted.</p></note></head>
+    <div2 id="AR.TOC" type="toc">
+     <div3 id="AR.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="ca" rend="Ca"><label rend="accesskey">P</label>revious (&cas;)</xref></item>
+       <item><xref n="n" doc="di" rend="Di"><label rend="accesskey">N</label>ext (&dis;)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+<item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="AR.TOC.2" type="toc:transcription">
+      <list type="simple">
+       <item>&ch4xcarmsDescription;</item>
+       <item>&ch7xEorthe;</item>
+      </list>
+     </div3>
+    </div2>
+    <div2 type="poem">
+    <milestone n="ar" unit="[f. 84v], line 23">
+    <l id="AR.1" n=1 rend="[=1]">&ar.1a.1.orig;&ar.1a.2.orig;&ar.1a.3.orig;<lb><gap lang="lat" rend="1 line of Latin text omitted" extent="1 MS line" reason="sampling"><lb>&ar.1a.4.orig;<caesura>&ar.1b.1.orig;&ar.1b.2.orig;</l>
+    <l id="AR.2" n=2 rend="[=2]">&ar.2a.1.orig;&ar.2a.2.orig;<caesura>&ar.2b.1.orig;&ar.2b.2.orig;&ar.2b.3.orig;</l>
+    <l id="AR.3" n=3 rend="[=3]">&ar.3a.1.orig;&ar.3a.2.orig;<lb><gap lang="lat" rend="1 line of Latin text omitted" extent="1 MS line" reason="sampling"><lb><caesura>&edDagger;&ar.3b.1.orig;&ar.3b.2.orig;&ar.3b.3.orig;</l>
+    <l id="AR.4" n=4 rend="[=4a]">&ar.4a.1.orig;&ar.4a.2.orig;&edDagger;</l>
+    <l id="AR.5" n=5 rend="[=5]">&ar.5a.1.orig;&ar.5a.2.orig;&ar.5a.3.orig;&ar.5a.4.orig;<caesura>&ar.5b.1.orig;&ar.5b.2.orig;</l>
+    <l id="AR.6" n=6 rend="[=6a]">&ar.6a.1.orig;&ar.6a.2.orig;&ar.6a.3.orig;<lb><gap lang="lat" rend="1 line of Latin text omitted" extent="1 MS line" reason="sampling"><lb></l>
+    <l id="AR.7" n=7 rend="[=7]">&ar.7a.1.orig;&ar.7a.2.orig;<caesura>&ar.7b.1.orig;&ar.7b.2.orig;</l>
+    <l id="AR.8" n=8 rend="[=8]">&ar.8a.1.orig;&ar.8a.2.orig;<caesura>&edDagger;&ar.8b.1.orig;</l>
+    <l id="AR.9" n=9 rend="[=9]">&ar.9a.1.orig;&ar.9a.2.orig;&ar.9a.3.orig;<caesura>&ar.9b.1.orig;&ar.9b.2.orig;<lb><gap lang="lat" rend="1 line of Latin text omitted" extent="1 MS line" reason="sampling"><lb></l>
+    <l id="AR.10" n=10 rend="[=6b]">&ar.10.1.orig;&ar.10.2.orig;&edDagger;</l>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>

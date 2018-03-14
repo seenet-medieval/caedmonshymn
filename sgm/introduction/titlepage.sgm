@@ -1,0 +1,124 @@
+<!--
+*******************************************************************
+*              The Electronic Caedmon&rsquo;s Hymn                *
+*                         Table of Contents                       *
+*                                                                 *
+*                         Text and Encoding                       *
+*            (c) Daniel Paul O&rsquo;Donnell, 1997-2003           *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../SGMRelatedFiles/extensionsHTML.ent" >
+<!ENTITY % TEI.extensions.dtd system "../SGMRelatedFiles/extensions.dtd" >
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 id="TITLEPAGE.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Title Page</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Table of Contents for electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <front lang="ENG">
+   <div1>
+    <div2 id="TITLEPAGE.TOC" type="toc">
+     <div3 id="TITLEPAGE.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="?" doc="help"><label rend="helpicon">?</label> Help</xref></item>
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="titlepage"><label rend="accesskey">P</label>revious (None)</xref></item>
+       <item><xref n="n" doc="system"><label rend="accesskey">N</label>ext (System Requirements)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+    </div2>
+   </div1>
+   <titlepage teiform="titlePage">
+    <doctitle teiform="docTitle">
+     <titlepart type="main" teiform="titlePart">&ch;</titlepart>
+     <titlepart type="subtitle" teiform="titlePart">A multimedia edition and archive</titlepart>
+    </doctitle>
+    <byline teiform="byline">By <docauthor teiform="docAuthor">Daniel Paul O'Donnell</docauthor></byline>
+    <byline teiform="byline">With the assistance of <name>Dawn Collins</name>, <name>Matt Van Egmond</name>, <name>Jon Lane</name>, <name>Catherine Larson</name>, <name>Asia Nelson</name>, <name>Lyndon Simmons</name>, and <name>Shelley Stigter</name>.</byline>
+    <docedition teiform="docEdition">Version 0.32</docedition>
+    <docedition teiform="docEdition"><term>&tei; P4 &sgml;</term> and <term>&xhtml; 1.0 Transitional</term> Conformant</docedition>
+    <docimprint teiform="docImprint"><pubplace teiform="pubPlace">Lethbridge, AB</pubplace><publisher teiform="publisher">Department of English, University of Lethbridge</publisher><docdate teiform="docDate">2003</docdate></docimprint>
+   </titlepage>
+  </front>
+  <body teiform="body">
+   <div0 org="uniform" sample="complete" part="n" teiform="div0">
+    <head teiform="head">Text</head>
+    <p teiform="p">temp</p>
+   </div0>
+  </body>
+ </text>
+</tei.2>

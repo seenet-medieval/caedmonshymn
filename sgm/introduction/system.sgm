@@ -1,0 +1,173 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                             System Requirements                           *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+
+]>
+
+<tei.2 id="SYSTEM.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">System requirements</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1K 3M4</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Discussion of System requirements of xhtml version of the electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="SYSTEM">
+    <head id="SYSTEM.HEAD">System requirements (software and fonts)</head>    
+    <div2 id="SYSTEM.TOC" type="toc">
+     <div3 id="SYSTEM.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="titlepage"><label rend="accesskey">P</label>revious (Title Page)</xref></item>
+       <item><xref n="n" doc="toc"><label rend="accesskey">N</label>ext (Table of Contents)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="SYSTEM.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="CH#IMPLIED">Top</ref></item>
+       <item><ref target="SYSTEM.1.HEAD">About this edition</ref></item>
+       <item><ref target="SYSTEM.2.HEAD">Software and fonts</ref></item>
+       <item><ref target="SYSTEM.3.HEAD">System test</ref></item>
+       <item><ref target="SYSTEM.4.HEAD">Style sheets</ref></item>
+       <item><ref target="SYSTEM.5.HEAD">Accessibility</ref></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="SYSTEM.1">
+     <head id="SYSTEM.1.HEAD">About this edition</head>
+     <p id="SYSTEM.010" n="0.1">This book contains a study, edition, and textual archive of &ch;, the sole known surviving work of the Anglo-Saxon poet C&aelig;dmon (&floruit; 657-680). This includes critical texts of the poem, transcriptions of all known manuscript copies, digital colour facsimiles, and an introductory study of the poem in its various textual, cultural, linguistic, and literary contexts. It is assumed that the reader will have some knowledge of Old English.</p>
+     <p id="SYSTEM.020" n="0.2">The text has been published in two media: a printed volume designed for ready reference and an electronic (&xhtml;) text intended for detailed study and interactive use. Both versions have been produced from the same set of &sgml; (&tei; P4) master files using Multidoc Pro style sheets. The electronic text contains all material found in the print volume; it also adds some features (interactive presentation and colour facsimiles) impossible or inordinately expensive to reproduce in print. Paragraph numbering ensures that references to the common text of the print and electronic versions are interchangeable.</p>
+    </div2>
+    <div2 id="SYSTEM.2">
+     <head id="SYSTEM.2.HEAD">Software and fonts</head>
+     <p id="SYSTEM.025" n="0.3">The &xhtml; text can be read using commercially available internet browsers and is intended for general use. The &sgml; source text requires specialised computer knowledge and software and is not intended for the general reader. The two versions have identical content: the &xhtml; text was produced automatically from the &sgml; master.</p>
+     <p id="SYSTEM.030" n="0.4">To consult the display text, you will need the following software:</p>
+     <list type="numbered" teiform="list">
+      <item teiform="item">A modern internet browser capable of displaying unicode characters. As of Spring 2005, acceptable browsers include (in alphabetical order):
+       <list type="simple" teiform="list">
+	<item teiform="item"><xref url="http://www.doczilla.com/" type="external">Doczilla</xref> &lt;http://www.doczilla.com/&gt;</item>
+	<item teiform="item"><xref url="http://www.firefox.com/" type="external">Firefox</xref> &lt;http://www.firefox.com/&gt;</item>
+	<item teiform="item"><xref url="http://www.microsoft.com/" type="external">Microsoft Internet Explorer</xref> &lt;http://www.microsoft.com/&gt; Version 5.5+ (Version 6+ preferred)<note id="system.note.0030" n="1"><p>Current versions of Microsoft Internet Explorer are less compliant with international standards than other contemporary browsers. Care has been taken to ensure that the display text works well with this popular browser, although some functionality inevitably has been lost.</p></note></item>
+	<item teiform="item"><xref url="http://www.netscape.com/" type="external">Netscape Navigator</xref> &lt;http://www.netscape.com/&gt; Version 6+ (7+ preferred)</item>
+	<item teiform="item"><xref url="http://www.opera.com/" type="external">Opera</xref> &lt;http://www.opera.com/&gt; Version 6+</item>
+	<item teiform="item"><xref url="http://www.apple.com/safari/" type="external">Safari</xref> &lt;http://www.apple.com/safari/&gt; (Macintosh OS X+ only)</item>
+       </list></item>
+      <item teiform="item">Peter Baker&rsquo;s <xref
+	url="http://www.engl.virginia.edu/OE/junicode/junicode.html"
+	type="external">Junicode TrueType font</xref>  (also <xref
+	doc="fonts">included on this CD-ROM</xref>) &lt;http://www.engl.virginia.edu/OE/junicode/junicode.html&gt;.</item>
+     </list>
+    </div2>
+    <div2 id="SYSTEM.3">
+     <head id="SYSTEM.3.HEAD">System test</head>
+     <p id="SYSTEM.040" n="0.5">If your software is correctly configured, your screen should look approximately like this:</p>
+     <p><figure id="SYSTEM.FIGURE.1" n="1" entity="systemimage1">
+       <head id="SYSTEM.FIGURE.1.HEAD">Figure 1: Screenshot showing layout of the &xhtml; version of this page.</head>
+       <figdesc>Screenshot showing layout of the xhtml version of this page.</figdesc>
+      </figure></p>
+     <p id="SYSTEM.050" n="0.6">If your fonts are correctly installed, you should see approximately similar characters in both the left and the right hand column of the following table:</p>
+     <p>
+      <table>
+       <row>
+	<cell>$F149; $0101; $01BF; $F161;</cell>
+	<cell>
+	 <figure id="SYSTEM.FIGURE.2" teiform="figure" entity="systemimage2">
+	  <figdesc>Image showing reference copies of four characters from Peter Baker&rsquo;s Junicode font.</figdesc>
+	 </figure>
+	</cell>
+       </row>
+      </table>
+     </p>
+<p>If you do not see the same characters in both columns, you may need to (re)install Junicode on your computer. Consult your system manual for information on the correct installation of fonts on your system.</p>
+    </div2>
+    <div2 id="SYSTEM.4">
+     <head id="SYSTEM.4.HEAD">Style sheets</head>
+     <p id="SYSTEM.055" n="0.7">The appearance of the &xhtml; text is controlled by &css; style sheets. Separate style sheets are used for display and printing. The text is also in most cases readable with style sheets turned off or in browsers that are not &css; capable.</p>
+    </div2>
+    <div2 id="SYSTEM.5">
+     <head id="SYSTEM.5.HEAD">Accessibility</head>
+     <p id="SYSTEM.060" n="0.8">The &xhtml; text has been designed with accessibility in mind. It complies with applicable &w3c; standards and allows users to perform all required actions using a keyboard (or equivalent) rather than a mouse. Tables have been kept to a minimum and no images (except for manuscript facsimiles) contain textual content. Images that are included in the edition are all accompanied by shorter and longer prose descriptions on the <socalled>alt</socalled> and <socalled>longdesc</socalled> attributes. Care has been taken to ensure that documents are comprehensible in &xhtml;-compatible text-only readers.</p>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>

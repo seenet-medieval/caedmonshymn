@@ -1,0 +1,484 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon's Hymn                 *
+*                             Chapter 5                           *
+*                       Recension and Filiation                   *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 id="CH5.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Chapter 5: Filiation and Transmission</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition.</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Fifth chapter from introduction to electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="CH5" n="5">
+    <head id="CH5.head">Filiation and transmission</head>    
+    <div2 id="CH5.TOC" type="toc">
+     <div3 id="CH5.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="ch4"><label rend="accesskey">P</label>revious (Chapter 4)</xref></item>
+       <item><xref n="n" doc="ch6"><label rend="accesskey">N</label>ext (Chapter 6)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="CH5.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="CH5">Top</ref></item>
+       <item><ref target="CH5.1.HEAD">Filiation</ref></item>
+       <item><ref target="CH5.2.HEAD">Transmission</ref>
+	<list>
+	 <item><ref target="CH5.2.1.HEAD">The case against the traditional view of the textual development of <title level="M">C$00E6;dmon$2019;s Hymn</title></ref>
+	  <list>
+	   <item><ref target="CH5.2.1.1.HEAD">Dialect and material context</ref></item>
+	   <item><ref target="CH5.2.1.2.HEAD">Cross-contamination</ref>
+	    <list>
+	     <item><ref target="CH5.2.1.2.1.HEAD">The nominal variation in 5b</ref></item>
+	     <item><ref target="CH5.2.1.2.2.HEAD">The pronominal and prepositional variation in 1a and 9a</ref>
+	      <list>
+	       <item><ref target="CH5.2.1.2.2.1.HEAD"><mentioned lang="ANG" rend="postemendation">firum foldu</mentioned> : <mentioned lang="ANG" rend="postemendation">firum on foldu</mentioned>, 9a</ref></item>
+	       <item><ref target="CH5.2.1.2.2.2.HEAD"><mentioned lang="ANG" rend="postemendation">Nu scylun</mentioned> : <mentioned lang="ANG" rend="postemendation">Nu &uue; sciulun</mentioned>, 1a</ref></item>
+	      </list></item>
+	    </list></item>
+	  </list></item>
+	</list></item>
+       <item><ref target="CH5.2.2.HEAD">An alternative hypothesis for the recensional development of <title level="M">C$00E6;dmon$2019;s Hymn</title></ref></item>
+       <item><ref target="CH5.3.HEAD">Conclusion: The transmission of <title level="M">C$00E6;dmon$2019;s Hymn</title></ref></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="CH5.1">
+     <head id="CH5.1.HEAD">Filiation</head>
+     <p id="CH5.010" n="5.1">Since the beginning of the twentieth century, manuscripts of &ch; have been divided into four main textual recensions, identified by dialect and their reading for the first word of 5b (sigla in brackets are from &dobbie1937;):</p>
+     <list type="ordered">
+      <item n="1">The &aelda; (&dobbiebgr;)</item>
+      <item n="2">The &eordu; (&dobbiegamma;)</item>
+      <item n="3">The &ylda; (&dobbieZ;)</item>
+      <item n="4">The &eorthan; (&dobbieAElig;)</item>
+     </list>
+     <p rend="noindent">In recent years, a fifth, late, and imperfect version of the poem has been identified in three manuscripts of the late eleventh or twelfth century:</p>
+     <list type="ordered">
+      <item n="5">The &eorthe;
+     </list>
+     <p rend="noindent">Originally thought to be a simple &adhoc; corruption of the &eorthan; (e.g. &dobbie1937;, 43), this version of the poem has since been shown to have a much closer connection to the &neordu; text (&schwab1972a;, 15-17; &orton1998;, 158-159).</p>
+     <p id="CH5.020" n="5.2">The evidence for this traditional filiation is compelling. The five recensions show very little internal variation but can be distinguished from each other on the basis of thirteen inter-recensional significant substantive variants<note id="CH5.NOTE.010" n="1"><p>Variants are difficult to count. The figure <quote id="CH5.QUOTE.0010">thirteen</quote> represents the number of potentially significant contrasts among the surviving recensions. Thus the variation in 1a, <mentioned rend="postemendation" lang="ANG">&copyOfae.1a.1;</mentioned> : <mentioned rend="preemendation" lang="ANG">&copyOfyl.1a.1; &copyOfyl.1a.2;</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfeo.1a.1; &copyOfeo.1a.2;</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfex.1a.1;</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfep.1a.1; &copyOfep.1a.2;</mentioned>, shows one potentially significant <socalled>variant</socalled>: the addition or omission of the first person plural nominative pronoun. For the purposes of this chapter, references are to the edited text (before emendation except in the case of &eordu;) of the recension indicated; if no recension is indicated, references are from the edited text of the &hymn;&rsquo;s assumed archetype. Accidental differences among witnesses to a given recension are ignored unless they are the focus of discussion; substantive differences among witnesses are noted where relevant. Definitions for <socalled>significant,</socalled> <socalled>substantive,</socalled> and <socalled>accidental</socalled> as they are used in this edition are given below, &sect;&sect;&nbsp;&ch7x825;-&ch7x829;; some individual recensions present problems that affect these definitions; these are discussed in the editorial introductions to the individual recensions (see &ch7x;, below).</p></note> (variant readings unique to one recension are printed in reverse field; readings used to group different recensions together are printed with different backgrounds):</p>
+     <!-- There is one important tweak in this table: Multidoc can't handle cells with rows="0" (i.e. the equivalent of HTML rowspan=2; to get around this, I've put in spacer cells with row set to 0. These are hidden in the HTML conversion sheet. -->
+     <p>	  
+      <table id="CH5.TABLE.1">
+       <head id="CH5.TABLE.1.HEAD">Table 1: &ch; recensional variation</head>
+       <row>
+	<cell>&nbsp;</cell>
+	<cell>&aeldaShortReference;</cell>
+	<cell>&yldaShortReference;</cell>
+	<cell>&eorduShortReference</cell>
+	<cell>&eorthanShortReference;</cell>
+	<cell>&eortheShortReference;</cell>
+       </row>
+       <row>
+	<cell>1a</cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.AE.1A.1" type="analytic" subtype="crossrecensionalvariant1">&copyOfae.1a.1;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.YL.1A.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfyl.1a.1; &copyOfyl.1a.2;</seg></cell>
+	<cell><seg rend="postemendation" id="CROSSRECENSIONALVARIANT.EO.1A.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfeo.1a.1; &copyOfeo.1a.2;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EX.1A.1" type="analytic" subtype="crossrecensionalvariant1">&copyOfex.1a.1;</seg><note id="CH5.NOTE.030" n="2"><p>Certain late witnesses to this recension show the &wsylda; reading in this position.</p></note></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EP.1A.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfep.1a.1; &copyOfep.1a.2;</seg></cell>
+       </row>
+       <row>
+	<cell>3b</cell>
+	<cell><seg rend="preemendation">&copyOfae.3b.4;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.YL.3B.4" type="analytic" subtype="uniquevariant">&copyOfyl.3b.4;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.3b.4;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfex.3b.4;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfld.3b.4;</seg><note id="CH5.NOTE.040" n="3"><p>Not all witnesses to this recension show this reading.</p></note></cell>
+       </row>
+       <row>
+	<cell rows="2">4b</cell>
+	<cell><seg rend="preemendation">&copyOfae.4b.1;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.YL.4B.1" type="analytic" subtype="uniquevariant">&copyOfyl.4b.1;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.4b.1;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfex.4b.1;</seg><note id="CH5.NOTE.050" n="4"><p>Certain late witnesses to this recension show the &wsylda; reading in this position.</p></note></cell>
+	<cell rows="2"><seg rend="preemendation" id="UNIQUEVARIANT.EP.4B.0.OMITTED" type="analytic" subtype="uniquevariant">4b missing</seg></cell>
+       </row>
+       <row>
+	<cell rows="0"></cell>
+	<cell><seg rend="preemendation">&copyOfae.4b.2;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfyl.4b.2;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.4b.2;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.EX.4B.2" type="analytic" subtype="uniquevariant">&copyOfex.4b.2;</seg></cell>
+	<cell rows="0"></cell>
+       </row>
+       <row>
+	<cell>5a</cell>
+	<cell><seg rend="preemendation">&copyOfae.5a.3;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.YL.5A.3" type="analytic" subtype="uniquevariant">&copyOfyl.5a.3;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.5a.3;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfex.5a.3;</seg><note id="CH5.NOTE.060" n="5"><p>Certain late witnesses to this recension show the &wsylda; reading in this position.</p></note></cell>
+	<cell><seg rend="preemendation">&copyOfep.4a.2;</seg></cell>
+       </row>
+       <row><cell>5b</cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.AE.5B.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfae.5b.1;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.YL.5B.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfyl.5b.1;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EO.5B.1" type="analytic" subtype="crossrecensionalvariant1">&copyOfeo.5b.1;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EX.5B.1" type="analytic" subtype="crossrecensionalvariant1">&copyOfex.5b.1;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EP.4B.1" type="analytic" subtype="crossrecensionalvariant1">&copyOfep.4b.1;</seg></cell>
+       </row>
+       <row>
+	<cell rows="2">7a</cell>
+	<cell><seg rend="preemendation">&copyOfae.7a.1;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.YL.7A.0.OMITTED" type="analytic" subtype="uniquevariant">&omitted;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.7a.1;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfex.7a.1;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfep.6a.1;</seg></cell>
+       </row>
+       <row>
+	<cell rows="0"></cell>
+	<cell><seg rend="preemendation">&copyOfae.7a.2;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.YL.7A.1" type="analytic" subtype="uniquevariant">&copyOfyl.7a.1;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.7a.2;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfex.7a.2;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfep.6a.2;</seg></cell>
+       </row>
+       <row>
+	<cell>8b</cell>
+	<cell><seg rend="preemendation">&copyOfae.8b.2;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.YL.8B.2" type="analytic" subtype="uniquevariant">&copyOfyl.8b.2;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.8b.2;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfex.8b.2;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfep.7b.2;</seg><note id="CH5.NOTE.070" n="6"><p>Not all witnesses to this recension show this reading.</p></note></cell>
+       </row>
+       <row>
+	<cell rows="2">9a</cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.AE.9A.1" type="analytic" subtype="crossrecensionalvariant1">&copyOfae.9a.1;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.YL.9A.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfyl.9a.1; &copyOfyl.9a.2;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EO.9A.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfeo.9a.1; &copyOfeo.9a.2;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EX.9A.1" type="analytic" subtype="crossrecensionalvariant1">&copyOfex.9a.1;</seg></cell>
+	<cell><seg rend="preemendation" id="CROSSRECENSIONALVARIANT.EP.9A.1" type="analytic" subtype="crossrecensionalvariant2">&copyOfep.8a.1; &copyOfep.8a.2;</seg></cell>
+       </row>
+       <row>
+	<cell rows="0"></cell>
+	<cell><seg rend="preemendation">&copyOfae.9a.2;</seg></cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.YL.9A.3" type="analytic" subtype="uniquevariant">&copyOfyl.9a.3;</seg></cell>
+	<cell><seg rend="postemendation">&copyOfeo.9a.3;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfex.9a.2;</seg></cell>
+	<cell><seg rend="preemendation">&copyOfep.8a.3;</seg></cell>
+       </row>
+       <row>
+	<cell>9b-10</cell>
+	<cell>&omitted;</cell>
+	<cell>&omitted;</cell>
+	<cell>&omitted;</cell>
+	<cell>&omitted;</cell>
+	<cell><seg rend="preemendation" id="UNIQUEVARIANT.EP.10A.1" type="analytic" subtype="uniquevariant">6b added after 9</seg></cell>
+       </row>
+       <linkgrp targorder="u">
+	<link type="crossrecensionalvariant1" targorder="u" targets="crossrecensionalvariant.ex.9a.1 crossrecensionalvariant.ae.9a.1 crossrecensionalvariant.ep.4b.1 crossrecensionalvariant.ex.5b.1 crossrecensionalvariant.eo.5b.1 crossrecensionalvariant.ex.1a.1 crossrecensionalvariant.ae.1a.1">
+	<link type="crossrecensionalvariant2" targorder="u" targets="crossrecensionalvariant.ep.9a.1 crossrecensionalvariant.eo.9a.1 crossrecensionalvariant.yl.9a.1 crossrecensionalvariant.yl.5b.1 crossrecensionalvariant.ae.5b.1 crossrecensionalvariant.ep.1a.1 crossrecensionalvariant.eo.1a.1 crossrecensionalvariant.yl.1a.1">
+	<link type="uniquevariant" targorder="u" targets="uniquevariant.ep.10a.1 uniquevariant.yl.9a.3 uniquevariant.yl.8b.2 uniquevariant.yl.7a.1 uniquevariant.yl.7a.0.omitted uniquevariant.yl.5a.3 uniquevariant.ex.4b.2 uniquevariant.ep.4b.0.omitted uniquevariant.yl.4b.1 uniquevariant.yl.3b.4">
+       </linkgrp>
+      </table>
+     </p>
+     <p id="CH5.030" n="5.3">Most of these variants involve the introduction of obvious (and usually minor) errors or the substitution of roughly equivalent forms. Thus early witnesses to the &eorthan; are distinguished by the reading <mentioned rend="postemendation" lang="ANG">&copyOfex.4b.2;</mentioned> in 4b for <mentioned rend="postemendation" lang="ANG">&copyOfno.4b.2;</mentioned> (and orthographic/dialectal variants), an etymologically related and synonymous form in all other recensions. Manuscripts of the &ylda;, for their part, can be identified by a number of unique errors and trivial substitutions: the sensible <mentioned rend="preemendation" id="CH5.MENTIONED.0010" lang="ANG">&copyOfyl.4b.1;</mentioned>, <gloss target="CH5.MENTIONED.0010">origin,</gloss> 4b, and <mentioned rend="preemendation" id="CH5.MENTIONED.0020" lang="ANG">&copyOfyl.5a.3;</mentioned>, <gloss target="CH5.MENTIONED.0020">made,</gloss> 5a, for synonyms <mentioned rend="postemendation" lang="ANG">&copyOfno.4b.1;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfno.5a.3;</mentioned> in all other recensions<note id="CH5.NOTE.090" n="7"><p><mentioned rend="postemendation" lang="ANG">&copyOfyl.5a.3;</mentioned> also appears in two later witnesses to the &eorthan; (&ox; and &cax;). See below, &sect;&nbsp;&ch7x570;.</p></note>; the probable errors <mentioned rend="preemendation" lang="ANG">&copyOfyl.3b.4;</mentioned>, <mentioned rend="preemendation" lang="ANG">&copyOfyl.7a.1;</mentioned>, <mentioned rend="preemendation" lang="ANG">&copyOfyl.8b.2;</mentioned>, and <mentioned rend="preemendation" lang="ANG">&copyOfyl.9a.3;</mentioned>, in 3b, 7a, 8b, and 9a, for expected <mentioned rend="postemendation" lang="ANG">&copyOfno.3b.4;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfno.7a.1; &copyOfno.7a.2;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfno.8b.2;</mentioned>, and <mentioned rend="postemendation" lang="ANG">&copyOfno.9a.2;</mentioned> in most other witnesses. The &eorthe; is distinguished by a number of serious errors and alterations, the most significant of which include the omission of an equivalent to 4b from all witnesses and the movement of the equivalent to 6b to the end of the poem. The &naelda; and &neordu; recensions, finally, do not show any unique substantive variants. They can, however, be distinguished by the readings they share with other versions of the poem: the &aelda; agrees with the &ylda; against all other versions in its reading for the first word of 5b: <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> / <mentioned rend="preemendation" lang="ANG">&copyOfyl.5b.1;</mentioned> versus <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1;</mentioned> / <mentioned rend="postemendation" lang="ANG">&copyOfex.5b.1;</mentioned> / <mentioned rend="postemendation" lang="ANG">&copyOfep.4b.1;</mentioned>; it agrees with the &eorthan; against the &neordu;, and &wseorthe; and &wsylda; recensions, however, in its readings for 1a and 9a: <mentioned rend="postemendation" lang="ANG">&copyOfae.1a.1; &copyOfae.1a.2; &copyOfae.1a.3;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfae.9a.1; &copyOfae.9a.2;</mentioned> versus <mentioned rend="postemendation" lang="ANG">&copyOfeo.1a.1; &copyOfeo.1a.2; &copyOfeo.1a.3; &copyOfeo.1a.4;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.1; &copyOfeo.9a.2; &copyOfeo.9a.3;</mentioned>. The &eordu; shows the opposite pattern of agreement and disagreement: it agrees with the &wseorthan; and &wseorthe; recensions against the &naelda; and &wsylda; texts in 5b, and with the &wsylda; and &wseorthe; recensions against the &naelda; and &wseorthan; texts in 1a and 9a.</p>
+    </div2>
+    <div2 id="CH5.2">
+     <head id="CH5.2.HEAD">Transmission</head>
+     <p id="CH5.040" n="5.4">Traditionally, the &hymn;&rsquo;s recensional division has been understood as implying a particular textual history. This understanding is based on the recognition that the five variants in 5b used to name the major recensions can themselves be divided into two groups of dialectal cognates: <mentioned rend="postemendation" id="CH5.MENTIONED.0030" lang="ANG">&copyOfae.5b.1;</mentioned> / <mentioned rend="preemendation" lang="ANG">&copyOfyl.5b.1;</mentioned>, <gloss target="CH5.MENTIONED.0030">of men,</gloss> versus <mentioned rend="postemendation" id="CH5.MENTIONED.0040" lang="ANG">&copyOfno.5b.1;</mentioned> / <mentioned rend="postemendation" lang="ANG">&copyOfex.5b.1;</mentioned> / <mentioned rend="postemendation" lang="ANG">&copyOfep.4b.1;</mentioned>, <gloss target="CH5.MENTIONED.0040">(of) earth.</gloss><note id="CH5.NOTE.95" n="8"><p>The reading of the &eorthan; (<mentioned rend="postemendation" lang="ANG">&copyOfex.5b.1;</mentioned>) and especially the &eordu; (<mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1;</mentioned>) can be construed as either accusative or genitive singular. See below, &sect;&nbsp;&ch5r130; and note. The &eorthe; reading <mentioned rend="postemendation" lang="ANG">&copyOfep.4b.1;</mentioned> is, formally speaking, nominative singular, a case which makes little sense in context.</p></note> The fact that <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> and <mentioned rend="preemendation" lang="ANG">&copyOfyl.5b.1;</mentioned> are etymologically related has been assumed, since the earliest days of modern &ch; textual scholarship, to indicate that the recensions named for these variants must be closer to each other than other versions of the poem.<note id="CH5.NOTE.098" n="9"><p>This is the assumption behind the exchange between W&uuml;lker and Zupitza (&wulker1876;; &zupitza1878;; &wulker1885;).</p></note> The fact that the &neordu;, &wseorthan;, and &wseorthe; recensions all share a cognate meaning <gloss target="CH5.MENTIONED.0040">earth,</gloss> likewise, has been understood, since witnesses to the &eordu; were first discovered in 1906, to indicate that these three versions of the poem must also share some distant common ancestor, distinct from that responsible for the &naelda; tradition.<note id="CH5.NOTE.100" n="10"><p>The significance of the discovery of the &eordu; is often underestimated, particularly in debates about the priority of <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned> in 5b, or whether the Old English poem might be a back translation from Bede&rsquo;s &paraphrase;. Before 1906, the &eorthan; was understood almost universally to be a late West-Saxon corruption of the original &aelda; (see, for example, the exchange between W&uuml;lker and Zupitza in &wulker1876;; &zupitza1878;; &wulker1885;). By showing that a version of the poem containing <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned> had also circulated in Northumbria, Wuest demonstrated that the &eorthan; in fact belonged to a much older (and indeed more dominant) tradition than had been suspected previously.</p></note>  This view of the poem&rsquo;s textual history was first suggested by Wuest in his pioneering article on the witnesses to the &eordu; (&wuest1906;; esp. 225). It was endorsed, with some disagreement as to the priority of the two branches, by Frampton (&frampton1924;, esp. 8), and given its most developed form by Dobbie in his influential study of the manuscript tradition (&dobbie1937;, 48; see figure 1, below). Apart from the suggestion that witnesses to what is now known as the &eorthe; are descended from the &eordu; directly rather than through the &wseorthan; text (&schwab1972a;, 15-17; &orton1998;, 158-159), and, most recently, a revival of Zupitza&rsquo;s suggestion that the &neordu; : &naelda; split may have arisen orally in the course of the poem&rsquo;s early history (&cavill2000;; &cavill2002;; cf. &zupitza1878;, 216), Wuest&rsquo;s understanding of the poem&rsquo;s recensional development does not appear to have been questioned in any significant way for almost a century.</p>
+     <p><figure id="CH5.FIGURE.1" n="1" entity="ch5image1">
+       <head id="CH5.FIGURE.1.HEAD">Figure 1: Traditional stemma (as in &dobbie1937;, 48)</head>
+       <figdesc>Stemma showing the traditional understanding of the development of &ch; along two main &aeldaShortReference; and &eorduShortReference; branches.</figdesc>
+      </figure></p>
+     <p id="CH5.050" n="5.5">In this case, however, the traditional view of the &hymn;&rsquo;s development is far less compelling. As we shall see, the assumption that the poem broke into separate &aeldaShortReference; and &eorduShortReference; traditions early on in its history is supported by no linguistic, textual, or contextual evidence other than the eponymous readings in 5b. It is also contradicted by evidence of considerable <socalled>cross contamination</socalled> among individual members of its two supposed textual <socalled>branches.</socalled> In some cases, indeed, this <socalled>cross contamination</socalled> is regular enough to call the entire traditional stemma into question. The following section explores the evidence for and against the traditional analysis of the &hymn;&rsquo;s textual development. This is followed by a section in which an alternative stemma is proposed to account for the poem&rsquo;s textual history. Throughout this chapter, the priority of the vernacular &hymn; over Bede&rsquo;s Latin &paraphrase; in &he; IV. 24 is assumed; the evidence underlying this assumption is discussed below, &ch5xAppendix;.</p>
+     <div3 id="CH5.2.1">
+      <head id="CH5.2.1.HEAD">The case against the traditional view of the textual development of &ch;</head>
+      <div4 id="CH5.2.1.1">
+       <head id="CH5.2.1.1.HEAD">Dialect and material context</head>
+      <p id="CH5.060" n="5.6">As argued above, the traditional understanding of the textual development of &ch; rests entirely upon the fact that the variants most commonly used to identify the poem&rsquo;s individual recensions can be divided into two groups of etymological cognates. The problem, however, is that these two, supposedly ancient, branches then develop no other distinguishing textual, linguistic, or material characteristics in the course of a textual history spanning approximately seven hundred years and two dialects. The traditional <foreign lang="ANG">aelda</foreign> and <foreign lang="ANG">eordu</foreign> <socalled>branches</socalled> both survive in West-Saxon and Northumbrian dialects and both are found in copies of Bede&rsquo;s &he; or (&eorthan; only) its Old English translation. Unlike &BDS;, moreover, where, with one partial exception, members of the two main recensions of the Old English poem can be identified by their association with particular versions of Cuthbert&rsquo;s <title level="m">Epistola</title> as well as by dialect and the presence of several characteristic textual variants (&dobbie1942;, c-cvii, esp. ci), no such direct correlation exists between the traditional <socalled>branches</socalled> of &ch; and the associated text of Bede&rsquo;s &historia;: while certain recensions of the &hymn; show a strong affinity with certain recensions of the &he; or its Old English translation, neither <socalled>branch</socalled> is found exclusively in any one recension of the &he;, and there is considerable evidence to suggest that the poem was often added to existing manuscripts of the &he; (see &okeeffe1990;, 37).</p>
+      </div4>
+      <div4 id="CH5.2.1.2">
+       <head id="CH5.2.1.2.HEAD">Cross-contamination</head>
+       <p id="CH5.070" n="5.7">A more significant problem with the traditional division of the poem into <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned> <socalled>branches,</socalled> however, involves the large amount of apparent <socalled>cross-contamination.</socalled> Witnesses to the &aelda;, for example, are far closer to members of the &eorthan; than to their supposed descendents in the &ylda;: they share but a single unique substantive variant with the &ylda; (the eponymous readings in 5b), and differ from it in nine:</p>
+       <p>
+	<table id="CH5.TABLE.1a">
+	 <head id="CH5.TABLE.1a.HEAD">Table 2: Substantive variation between the &aelda; and &ylda;.</head>
+	 <row>
+	  <cell>&nbsp;</cell>
+	  <cell>&aelda;</cell>
+	  <cell>&ylda;</cell>
+	 </row>
+	 <row>
+	  <cell>1a</cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.1a.1;</mentioned></cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.1a.1; &copyOfyl.1a.2;</mentioned></cell>
+	 </row>
+	 <row>
+	  <cell>3b</cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.3b.4;</mentioned></cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.3b.4;</mentioned></cell>
+	 </row>
+	 <row>
+	  <cell>4b</cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.4b.1;</mentioned></cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.4b.1;</mentioned></cell>
+	 </row>
+	 <row>
+	  <cell>5a</cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.5a.3;</mentioned></cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.5a.3;</mentioned></cell>
+	 </row>
+	 <row>
+	  <cell rows="2">7a</cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.7a.1;</mentioned></cell>
+	  <cell>&omitted;</cell>
+	 </row>
+	 <row>
+	  <cell rows="0"></cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.7a.2;</mentioned></cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.7a.1;</mentioned></cell>
+	 </row>
+	 <row>
+	  <cell>8b</cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.8b.2;</mentioned></cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.8b.2;</mentioned></cell>
+	 </row>
+	 <row>
+	  <cell rows="2">9a</cell>
+	  <cell>&omitted;</cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.9a.2;</mentioned></cell>
+	 </row>
+	 <row>
+	  <cell rows="0"></cell>
+	  <cell><mentioned rend="postemendation" lang="ANG">&copyOfae.9a.2;</mentioned></cell>
+	  <cell><mentioned rend="preemendation" lang="ANG">&copyOfyl.9a.3;</mentioned></cell>
+	 </row>
+	</table>
+       </p>
+       <p rend="noindent">For its part, the &aelda; shares two unique readings (the absence of <foreign lang="ANG">&uue;</foreign> and <foreign lang="ANG">to</foreign> in 1a and 9a) with the &eorthan;, a descendant of the other supposed <socalled>branch,</socalled> and differs from it, in its earliest manuscripts at least, in only two substantively different forms: <mentioned rend="postemendation" lang="ANG">&copyOfae.4b.2;</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfex.4b.2;</mentioned>, 4b, and <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfex.5b.1;</mentioned>, 5b.<note id="CH5.NOTE.120" n="11"><p>Later witnesses to the &eorthan; show more differences with the &aelda;, and, in some cases, a greater affinity with the &ylda;. See &sect;&nbsp;&ch7x570;, below.</p></note></p>
+       <p id="CH5.080" n="5.8">The &eordu;, similarly, shows a greater affinity with the corrupt &wsylda; and &wseorthe; recensions than it does with its supposed nearest <socalled>relative,</socalled> the &eorthan;. Like the &wsylda; and &wseorthe; recensions, it reads &uue; and <mentioned lang="ANG" rend="postemendation">&copyOfeo.9a.2;</mentioned> in 1a and 9a<note id="CH5.NOTE.125" n="12"><p>Some late witnesses to the &eorthan; also add <mentioned rend="postcorrection" lang="ANG">&copyOfo.1a.2;</mentioned> in 1a, see below, &sect;&nbsp;&ch7x570;.</p></note> and, with all recensions <emph>except</emph> the &eorthan;, <mentioned lang="ANG" rend="postemendation">&copyOfeo.4b.2;</mentioned> in 4b.</p>
+       <p id="CH5.090" n="5.9">Of these various agreements and disagreements across the two main traditional <socalled>branches,</socalled> it is the variants in 1a and 9a that are the most troubling. This is because they can be used to construct an alternative textual stemma:</p>
+       <p>
+	<figure id="CH5.FIGURE.2" n="2" entity="ch5image2">
+	 <head id="CH5.FIGURE.2.HEAD">Figure 2: Alternative stemma</head>
+	 <figdesc>Alternative to the traditional stemma in which the &hymn; is broken into &plus;<mentioned rend="postemendation" lang="ANG">&eo.1a.2;</mentioned> (1a) and <mentioned rend="postemendation" lang="ANG">&eo.9a.2;</mentioned> (9a) and -<mentioned rend="postemendation" lang="ANG">&eo.1a.2;</mentioned> (1a) and <mentioned rend="postemendation" lang="ANG">&eo.9a.2;</mentioned> branches.</figdesc>
+	</figure>
+       </p>
+       <p rend="noindent">If, as the traditional view suggests, the survival of a single shared reading in one Northumbrian and one West-Saxon recension can be understood as indicating the existence of a genetic relationship, then the variants in 1a and 9a would appear, at first glance at least, to offer at least as great a claim to textual significance, particularly in as much as these other variants are almost invariably correlated: with the exception of three late manuscripts in the &eorthan; (&b1x; &tox; &cax;),<note id="CH5.NOTE.130" n="13"><p>This list excludes &ox;, which adds by correction <mentioned rend="postcorrection" lang="ANG">&copyOfo.1a.2;</mentioned> and a number of other readings apparently influenced by an &yldaShortReference;-type text.</p></note> witnesses that read <mentioned rend="postemendation" lang="ANG">&uue;</mentioned> in 1a always also have <mentioned rend="postemendation" lang="ANG">on</mentioned> in 9a.<note id="CH5.NOTE.135" n="14"><p>The significance of this correlation is obscured in the stemma in &cavill2000;, 528, fig. 5. Although Cavill&rsquo;s figure implies that the <quote><label rend="italic">We</label>-pronoun</quote> entered the textual tradition first, and that correlation with <mentioned lang="ANG">on</mentioned> developed later, most evidence suggests the opposite is true. With the exception of &b1x;, &tox;, &ox; (after correction), and &ox;&rsquo;s descendent, &cax;, all surviving manuscripts of &ch; have either <mentioned lang="ANG">&uue;</mentioned> and <mentioned lang="ANG">on</mentioned> or neither form. All four exceptions are &s11in;-&s12; copies of the &eorthan;. As Cavill&rsquo;s figure correctly suggests, there is no evidence to suggest that the presence of <mentioned rend="postcorrection" lang="ANG">&copyOfo.1a.2;</mentioned> in these manuscripts reflects the early form of their tradition. The two earliest witnesses to the recension, &t1x; (&s10first;) and &cx; (&s10med;), omit pronoun and preposition from 1a and 9a. In &ox; (&s11in;), the pronoun is introduced <emph>by correction</emph> along with a number of other changes that seem to be designed to bring the text into closer alignment with the &ylda;. &cax; appears to be a direct descendent of &ox; and adopts most of its corrections: it reads <mentioned rend="postcorrection" lang="ANG">&copyOfca.1a.2;</mentioned> because its exemplar does. Only in the case of &b1x; and &tox; (dated to &s11first; and &s12;, respectively) is there any evidence of the pronoun entering the textual record spontaneously without a corresponding <mentioned lang="ANG">on</mentioned> in 9a. Although Cavill points to Bede&rsquo;s &paraphrase; as evidence that <mentioned lang="ANG">&uue;</mentioned> might have entered the Old English textual record first, this is far from conclusive: since Latin requires an explicit indication of person on plural verbs, Bede could not reproduce the syntactic ambiguity of the pronounless Old English reading even if his source text omitted the pronoun; in the case of 9a, his translation recasts the Old English syntax. There is no way of telling what Bede&rsquo;s source read in these lines. See also &cavill2002;, esp. 6-9, where it is suggested that <quote>the difference between mnauscripts that have <mentioned lang="ANG">we</mentioned> and those that do not is one of date, not of manuscript grouping.</quote> While the presence or absence of &uue; may be related to date&mdash;especially if one accepts Cavill&rsquo;s argument for a late date for the original insular examplar responsible for &brx;, &p1x;, and &dix; (see &cavill2000;)&mdash;the evidence of witnesses to the &eorthan; also demonstrates a strong correlation with <soCalled>manuscript grouping.</soCalled> See also below, &sect;&sect;&nbsp;&ch5r150;-&ch5r330;.</p></note> While a random pattern of variation might produce some agreement among individual recensions or witnesses, this consistency suggests the possibility of a more significant connection.</p>
+       <div5 id="CH5.2.1.2.1">
+	<head id="CH5.2.1.2.1.HEAD">The nominal variation in 5b</head>
+	<p id="CH5.100" n="5.10">The traditional preference for the nominal variation in 5b over the coordinated pronominal and prepositional variation in 1a and 9a as a genetic indicator has rarely if ever been defended explicitly. To the extent that it has been discussed at all, its defence appears to rest on the assumption that identical nominal substitutions are less likely to occur coincidentally in transmission than substitutions in the use of pronouns and prepositions.<note id="CH5.NOTE.140" n="15"><p>For the possibility that the variants in 1a and 9a may be the result of coincidental variation: see &smithah1978;, 3-4; &dobbie1937;, 46. The only scholar to specifically address the question of whether the nouns in 5b might also be coincidental appears to be &orton1998;, 157. &cavill2000; has recently drawn new attention to the importance of the variants in 1a and 9a; his account obscures several key points, however. See above, &sect;&nbsp;&ch5r080; and note.</p></note> As Orton, who inexplicably ignores the pronominal variation in 1a, suggests, it is <quote id="CH5.QUOTE.0020">[o]n the whole... easier to believe that <mentioned lang="ANG">on</mentioned> was added twice independently in 9 than that <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> was substituted for <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1;</mentioned> twice in 5</quote> (&orton1998;, 157).</p>
+	<p id="CH5.110" n="5.11">This is a reasonable assumption in principle. Nouns are a larger and more open word class than pronouns and prepositions, and, as a result, are far less subject to identical but independent variation in unmarked environments. In the absence of any strong indication as to the correct reading, we might expect that scribes would have difficulty making identical but independent substitutions for difficult or corrupt readings in a common exemplar.</p>
+	<p id="CH5.115" n="5.12">That this is so can be demonstrated from the extant poetic corpus. The mid tenth-century copy of the &Brun; in &chronAml (&chronAs;), for example, contains the nonsense reading <mentioned lang="ANG">cul bod ge hna des</mentioned> in 49b, a line we know from other witnesses should have read <mentioned id="CH5.MENTIONED.0050" lang="ANG">cumbolgehnastes</mentioned>, <gloss target="CH5.MENTIONED.0050">of banner clash.</gloss> A subsequent corrector, usually identified with the early eleventh-century scribe of the now largely destroyed &chronGml; (&chronGs;) (see &lutz1981;, 221), attempted to fix this obvious nonsense by adding the interlinear gloss <mentioned id="CH5.MENTIONED.0060" lang="ANG">&lstroke; cumbel</mentioned>, <gloss target="CH5.MENTIONED.0060"><expan lang="LAT">vel</expan> [i.e. or] banner</gloss> above the first half of the compound while leaving the second, equally nonsensical, element uncorrected.<note id="CH5.NOTE.150" n="16"><p>The &chronGs; text of the poem, to the extent that this can be recovered from early modern transcriptions, appears to incorporate this correction into the main text: 49b is reconstructed as the nonsensical <mentioned lang="ANG">cumbelgehnades</mentioned> in both &campbell1938; and &lutz1981;.</p></note> Similarly, the scribe of the early-eleventh-century &ox; witness to the &eorthan; of &ch; corrects an exemplar that apparently read <mentioned lang="ANG">wero</mentioned> (cf. &nx; [for &cx;] <mentioned rend="postcorrection" lang="ANG">&copyOfn.3a.1;</mentioned>) for expected <mentioned rend="postemendation" id="CH5.MENTIONED.0080" lang="ANG">&copyOfno.3a.1;</mentioned> (West-Saxon <mentioned rend="postemendation" lang="ANG">&copyOft1.3a.1;</mentioned>), <gloss target="CH5.MENTIONED.0080">work(s),</gloss> to <mentioned rend="postcorrection" id="CH5.MENTIONED.0070" lang="ANG">&copyOfo.3a.1;</mentioned>, <gloss target="CH5.MENTIONED.0070">of men.</gloss><note id="CH5.NOTE.160" n="17"><p>Examples of unambiguously incorrect variation in the use of prepositions and pronouns are more rare in the corpus, but do exist. In the metrical translation of Psalm 93:7.1b, the mid-twelfth-century scribe of &epsmlShort; [&epss;] appears to misinterpret an original <mentioned lang="ANG">ge</mentioned>- prefix as a second person plural pronoun, reading <mentioned lang="ANG">ge ne s&aelig;we</mentioned> for expected <mentioned lang="ANG">ne ges&aelig;we</mentioned> as in the mid-eleventh-century &ppsml; (&ppss;) (&odonnell1996a;, 48-49; &baker1984;, 281). Likewise, the Vercelli text of &SoulSR; has a number of examples of the addition of superfluous&mdash;or the misinterpretation or omission of syntactically necessary&mdash;pronouns: e.g. 57b, 117b, and 123b (&odonnell1996a;, 312, 355 and 351-352). That pronouns and prepositions were slightly easier to vary coincidentally, however, is suggested both by the number of substitutions of roughly equivalent forms in the corpus of multiply attested poems, and by examples of successful corrections, such as that in &BrunSR;, 35a, where the &chronGs; scribe correctly repairs the nonsense form <mentioned lang="ANG">cnearen flot</mentioned> in &chronAs; to the expected <mentioned lang="ANG">cnear on flot</mentioned> (see &odonnell1996a;, 173; &lutz1981;, 85).</p></note></p>
+	<p id="CH5.120" n="5.13">The problem, however, is that both these examples involve the attempted corrections of a nonsensical exemplar for which the correct reading was itself highly unusual, and, hence, unpredictable. The correct form in &BrunSR;, 49b, <mentioned lang="ANG">cumbolgehnastes</mentioned>, is a nonce compound in Old English (the simplices are attested somewhat more frequently); in &ch;, 3a, it is the collocation of <mentioned rend="postemendation" lang="ANG">&copyOfno.3a.1;</mentioned> with <mentioned rend="postemendation" lang="ANG">&copyOfno.3a.2;</mentioned> that is unusual: while <mentioned rend="postemendation" lang="ANG">&copyOfno.3a.1;</mentioned> itself, with over sixty occurrences in the uninflected form alone, is not rare, the combination with <mentioned rend="postemendation" lang="ANG">&copyOfno.3a.2;</mentioned> is otherwise unattested in Old English.<note id="CH5.NOTE.170" n="18"><p><mentioned rend="postemendation" lang="ANG">&copyOfno.3a.1;</mentioned> is found in the same line with <mentioned rend="postemendation" lang="ANG">&copyOfno.3a.2;</mentioned> on only one other occasion (<mentioned lang="ANG">mid wuldorf&aelig;der weorca to leane</mentioned>, &Men;, 147). It is collocated in the same half-line with a compound beginning with <mentioned lang="ANG">wuldor</mentioned>- or <mentioned lang="ANG">wundor</mentioned>- on only two other occasions, neither of which is morphologically, metrically, or syntactically parallel to 3a: <mentioned lang="ANG">wuldorlean weorca</mentioned> (&ChristC;, 1079a) and <mentioned lang="ANG">weorca wuldorlean</mentioned> (&GuthB;, 1373a).</p></note>  This means in both cases that scribes attempting to fix the difficult nonsense forms in their exemplars would have had very little guidance in guessing the correct form. A scribe facing <mentioned lang="ANG">cul bod ge hna des</mentioned> in &BrunSR;, 49a, with no indication as to the original reading, would not be able to rely on either his innate knowledge of Old English vocabulary<note id="CH5.NOTE.180" n="19"><p>This is only one of a number of archaic or otherwise unusual forms in the poem; see &campbell1938;, esp. 41; the difficulty these forms cause the scribe of &chronAs; are discussed in &odonnell1996a;, 150-151; also &okeeffe1990;, 118-121; &bately1986;, xciii.</p></note> nor, in this case, his familiarity with similar lines from elsewhere in the poetic corpus in guessing the correct form. A scribe facing an exemplar in <mentioned lang="ANG">wero</mentioned> in 3a of &ch;, similarly, while perhaps less handicapped by the unusualness of the poem&rsquo;s vocabulary, would be equally unlikely to guess the correct reading by recognising any underlying formula. In both cases, indeed, a scribe intent on making <socalled>formulaic</socalled> substitutions if anything would be likely to take his copy farther away from what we are fairly certain must have been the original reading.<note id="CH5.NOTE.195" n="20"><p>For formulaic reading, see &okeeffe1990;; certain problems with O&rsquo;Keeffe&rsquo;s analysis of &ch; are discussed below: &ch7xAppendix;.</p></note></p>
+	<p id="CH5.130" n="5.14">The nominal variation <mentioned lang="ANG" rend="postemendation">eordu</mentioned> : <mentioned lang="ANG" rend="postemendation">aelda</mentioned> in &ch;, 5b, is different, however, in that it involves neither a corrupt exemplar nor a choice between two unusual or otherwise unattested forms: <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1; &copyOfno.5b.2;</mentioned>, while not otherwise attested in Old English, makes perfect sense and metre; the alternative, <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfae.5b.2;</mentioned>, with eleven occurrences in various cases in Old English (&dictionaryofoldenglishetal1994;), similar collocations in other Germanic languages (&dobbie1937;, 48), and a very large number of close parallels following the pattern <seg type="metric" subtype="formulaicsystem">[g.pl. noun referring to a class of people] &plus; <mentioned lang="ANG">barn</mentioned>-</seg>, is metrically, semantically, and syntactically appropriate and well attested; it is also, after <mentioned lang="ANG">israhela barnum</mentioned>, the only repeated collocation in the corpus suitable for vocalic alliteration in the off-verse (&healeyetal1994;). If we assume for the sake of argument and on the principle of <foreign lang="LAT">difficilior lectio</foreign> that the unique &neordu; reading was original, it is difficult to see why a scribe facing an exemplar in <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1; &copyOfeo.5b.2;</mentioned> would feel the need to change his text for anything other than formulaic or (as we shall see below) doctrinal reasons; if he decided on these grounds to do so, it is equally difficult to see what variant he would be tempted to introduce other than the sensible, metrical, formulaically appropriate, and well-attested <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfae.5b.2;</mentioned>.</p>
+       </div5>
+       <div5 id="CH5.2.1.2.2">
+	<head id="CH5.2.1.2.2.HEAD">The pronominal and prepositional variation in 1a and 9a</head>
+	<p id="CH5.140" n="5.15">A similar difference in relative <socalled>difficulty</socalled> is also characteristic of the pronominal and prepositional variation in 1a and 9a. In these examples, the <socalled>less difficult</socalled> and more commonly attested readings are those that include the pronoun or preposition.</p>
+	<div6 id="CH5.2.1.2.2.1">
+	 <head id="CH5.2.1.2.2.1.HEAD"><mentioned rend="postemendation" lang="ANG">&copyOfae.9a.1; &copyOfae.9a.2;</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.1; &copyOfeo.9a.2; &copyOfeo.9a.3;</mentioned>, 9a</head>
+	 <p id="CH5.150" n="5.16">In 9a, the &difficilior; reading is that of the &naelda; and &wseorthan; recensions. The &neordu;, &wsylda;, and &wseorthe; collocation, <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.1; &copyOfeo.9a.2; &copyOfeo.9a.3;</mentioned>, is both syntactically less ambiguous, and, with twenty-one occurrences in the Anglo-Saxon corpus, far better attested. In the &neordu;, &wseorthe;, and, more corruptly, &wsylda; version of the poem, 9a is a clear adverbial phrase serving a single syntactic function (it supplies an indirect object for <mentioned rend="postemendation" id="CH5.MENTIONED.0090" lang="ANG">&copyOfeo.8b.2;</mentioned>, <gloss target="CH5.MENTIONED.0090">appointed,</gloss> in 8b):</p>
+	 <quote id="CH5.QUOTE.0025" lang="ANG">
+	  <l n="5" rend="postemendation">&copyOfeo.5a.1; &copyOfeo.5a.2; &copyOfeo.5a.3;<caesura>&copyOfeo.5b.1; &copyOfeo.5b.2;</l>
+	  <l rend="postemendation">&copyOfeo.6a.1; &copyOfeo.6a.2; &copyOfeo.6a.3;,<caesura>&copyOfeo.6b.1; &copyOfeo.6b.2;;</l>
+	  <l rend="postemendation">&copyOfeo.7a.1; &copyOfeo.7a.2;,<caesura>&copyOfeo.7b.1; &copyOfeo.7b.2;,</l>
+	  <l rend="postemendation">&copyOfeo.8a.1; &copyOfeo.8a.2;,<caesura>&copyOfeo.8b.1; &copyOfeo.8b.2;</l>
+	  <l rend="postemendation"><hi rend="oblique">&copyOfeo.9a.1; &copyOfeo.9a.2; &copyOfeo.9a.3;</hi>,<caesura>&copyOfeo.9b.1; &copyOfeo.9b.2;.</l>
+	 </quote>
+	 <quote corresp="CH5.QUOTE.0025">
+	  <p>He first made, for the children of earth [&ylda;: <mentioned rend="preemendation" id="CH5.MENTIONED.0100" lang="ANG">&copyOfyl.5b.1;</mentioned>, <gloss target="CH5.MENTIONED.0100">of men</gloss>],<note id="CH5.NOTE.198" n="21"><p><mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned> is ambiguous in context: another possible translation is <gloss>He first made the earth for children.</gloss></p></note> heaven as a roof. Then afterwards the guardian of mankind, the eternal lord, the almighty king, appointed the middle-earth, <hi rend="oblique">for men on the land</hi>.</p>
+	 </quote>
+	 <p rend="citation">(Text: &eordu;<note id="CH5.NOTE.200" n="22"><p>The &ylda; and &eorthe; show a number of corruptions unrelated to the variation in 9a.</p></note>).</p>
+	 <p rend="noindent">The reading of the &naelda; and &wseorthan; recensions, on the other hand, is syntactically more ambiguous. In this version of the text, <mentioned rend="postemendation" lang="ANG">&copyOfae.9a.2;</mentioned> can be understood as either genitive singular, in which case it is a complement to <mentioned id="CH5.MENTIONED.0105" rend="postemendation" lang="ANG">&copyOfae.9a.1;</mentioned>, <gloss target="CH5.MENTIONED.0105">for men of the earth,</gloss> or, perhaps more likely,<note id="CH5.NOTE.205" n="23"><p>The &aelda; reading <mentioned lang="ANG">&copyOfae.9a.2;</mentioned> and &eordu; form <mentioned lang="ANG">&copyOfeo.5b.1;</mentioned> in &ch;, 9a and 5b, are usually described on philological grounds as accusative singular (&campbell1991;, &sect;&sect;&nbsp;472, 617, and esp. 331.6; &hogg1992;, &sect;&sect;&nbsp;6.56, 7.98, and esp. 3.34;  &smithah1978;, 35, &sect;&nbsp;18 note). In the case specifically of <mentioned lang="ANG">&copyOfeo.5b.1;</mentioned>, there is considerable evidence of the use of -<seg type="linguistic" subtype="graphemic">u</seg> in oblique cases, including the genitive singular, in early Northumbrian (see &ross1937;, 64-65; &brunnerandsievers1965;, &sect;&nbsp;276 Anm. 6; cf. &smithah1978;, 35, &sect;&nbsp;18 note). There appears to be less evidence for the operation of a similar analogy in the case of other feminine <label rend="oblique">n</label>-stem nouns.</p></note> accusative singular, in which case it functions as a direct object for <mentioned rend="postemendation" lang="ANG">&copyOfno.8b.2;</mentioned>, parallel to <mentioned rend="postemendation" lang="ANG">&copyOfno.7a.2;</mentioned> in 7a:</p>
+	 <quote id="CH5.QUOTE.0027" lang="ANG">
+	  <l n="5">&copyOfae.5a.1; &copyOfae.5a.2; &copyOfae.5a.3;<caesura>&copyOfae.5b.1; &copyOfae.5b.2;</l>
+	  <l>&copyOfae.6a.1; &copyOfae.6a.2; &copyOfae.6a.3;,<caesura>&copyOfae.6b.1; &copyOfae.6b.2;;</l>
+	  <l>&copyOfae.7a.1; &copyOfae.7a.2;,<caesura>&copyOfae.7b.1; &copyOfae.7b.2;,</l>
+	  <l>&copyOfae.8a.1; &copyOfae.8a.2;,<caesura>&copyOfae.8b.1; &copyOfae.8b.2;</l>
+	  <l><hi rend="oblique">&copyOfae.9a.1; &copyOfae.9a.2;</hi>,<caesura>&copyOfae.9b.1; &copyOfae.9b.2;.</l>
+	 </quote>
+	 <quote corresp="CH5.QUOTE.0027">
+	  <p>He first made, for the children of men [&eorthan;: <mentioned rend="postemendation" id="CH5.MENTIONED.0110" lang="ANG">&copyOfex.5b.1;</mentioned>, <gloss target="CH5.MENTIONED.0110">(of) earth</gloss>], heaven as a roof. Then afterwards the guardian of mankind, the eternal lord, the almighty king, appointed the middle-earth, the <hi rend="oblique">land</hi>, for <hi rend="oblique">men</hi> (or: for men of the earth).</p>
+	 </quote>
+	 <p rend="citation">(Text: &aelda;<note id="CH5.NOTE.210" n="24"><p>The &eorthan; shows a nearly identical text at this point.</p></note>).</p>
+	 <p id="CH5.160" n="5.17">As with the nominal substitution in 5b, it is difficult to see why a scribe, faced with an exemplar showing the syntactically, semantically, and metrically appropriate &facilior; reading <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.1; &copyOfeo.9a.2; &copyOfeo.9a.3;</mentioned> would change his copy to the syntactically more difficult and otherwise unattested collocation <mentioned rend="postemendation" lang="ANG">&copyOfae.9a.1; &copyOfae.9a.2;</mentioned>&mdash;and very easy to see how the same scribe, faced with the non-formulaic and syntactically more ambiguous (and hence &difficilior;) reading of the &naelda; and &wseorthan; recensions, might be tempted to substitute the less-ambiguous, better attested, and formulaic reading of the &neordu;, &wsylda;, and &wseorthe; recensions.</p>
+	</div6>
+	<div6 id="CH5.2.1.2.2.2">
+	 <head id="CH5.2.1.2.2.2.HEAD"><mentioned rend="postemendation" lang="ANG">&copyOfae.1a.1; &copyOfae.1a.2;</mentioned> : <mentioned rend="postemendation" lang="ANG">&copyOfeo.1a.1; &copyOfeo.1a.2; &copyOfeo.1a.3;</mentioned>, 1a</head>
+	 <p id="CH5.170" n="5.18">In the case of 1a, the reading with <mentioned rend="postemendation" lang="ANG">&uue;</mentioned> is better attested and less <socalled>difficult.</socalled> The use of a nominative pronoun before plural indicative verbs is very common in Old English and can be paralleled by hundreds of examples from the corpus. The reading without &uue;, on the other hand, like that with <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1;</mentioned> in 5b and without <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.2;</mentioned> in 9a, is both far less common and syntactically more difficult.</p>
+	 <p id="CH5.180" n="5.19">As traditionally understood by editors and translators of &ch;, the subject of <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.2;</mentioned> is assumed to be implicit in versions of the poem without an expressed pronominal subject (e.g. &dobbie1942;, 198; &smithah1978;, 3-4; &frampton1924;, 7). As Mitchell points out, however, there is very little evidence to suggest that the <quote id="CH5.QUOTE.0030">1st pers. nom. pl. pron. <mentioned lang="ANG">we</mentioned> could be unexpressed at the beginning of a poem in which it does not occur and in which there was therefore no first person grammatical referent</quote> (&mitchell1985b;, 192; cf. &fulkandpope2001;, 57). The alternative reading, suggested variously by Mitchell, Ball, and Howlett, is to take <mentioned rend="postemendation" id="CH5.MENTIONED.0120" lang="ANG">&copyOfno.3a.1;</mentioned>, <gloss target="CH5.MENTIONED.0120">work(s),</gloss> 3a, a neuter noun which can be construed as nominative or accusative singular or plural, as the nominative plural subject of the poem&rsquo;s opening verb (&mitchell1985b;; &ball1985;, 39-41; &howlett1974;, 6). This is itself not without difficulty, however, since, as Mitchell notes, the resulting <quote id="CH5.QUOTE.0040">Adverb-Verb-triple Object-Subject pattern</quote> does not appear to be attested anywhere else in the Old English corpus (&mitchell1985b;, 193).</p>
+	 <p id="CH5.190" n="5.20">Once again, it is easy to see how the &facilior; reading might have arisen. While the fact that 1a appears without <mentioned rend="postemendation" lang="ANG">&uue;</mentioned> in different recensions, in different dialects, and in manuscripts copied more than a century apart indicates that the pronounless construction was acceptable Old English, the lack of precise parallels elsewhere in the corpus, together with the fact that it has been replaced in all witnesses copied after the end of the tenth century, suggests that it was considered difficult or unusual by later scribes at the very least. As with the variation in 5b, moreover, Bede&rsquo;s &paraphrase; may have had an effect on later scribal practice. The syntactic ambiguity of vernacular recensions without &uue; is impossible to reproduce in Latin: by translating the first verb of the poem using explicit first person plural morphology, Bede may have influenced subsequent scribes to introduce a similarly explicit first person plural marker in their Old English, helping ensure the success of the <socalled>easier</socalled> form (see further, &sect;&nbsp;&ch5r240;).</p>
+	</div6>
+       </div5>
+      </div4>
+     </div3>
+     <div3 id="CH5.2.2">
+      <head id="CH5.2.2.HEAD">An alternative hypothesis for the recensional development of &ch;</head>
+      <p id="CH5.200" n="5.21">Taken together, the evidence of &sect;&sect;&nbsp;&ch5r060;-&ch5r145; suggests that it is in fact not <quote sameas="ch5.quote.0020" id="CH5.QUOTE.0045">easier to believe that <mentioned lang="ANG">on</mentioned> was added twice independently in 9 than that <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> was substituted for <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1;</mentioned> twice in 5.</quote> While nominal variation is, in unmarked contexts, less likely to be the result of identical independent substitution than variation in the use of pronouns or prepositions, the variants in 1a, 5b, and 9a of &ch; are all strongly marked for relative difficulty. In each case, the variation in question is between an unusual or nonce formulation and a formulation found more frequently in the Anglo-Saxon poetic corpus. In 5b and 9a, the <socalled>less difficult</socalled> formulation belongs to a common formula or system; in 1a and 9a, the <socalled>less difficult</socalled> variants represent noticeably less complex syntax; in 1a and 5b, the <socalled>less difficult</socalled> variants are supported by the reading of Bede&rsquo;s Latin &paraphrase;. In each case it is relatively easy to see how a redactor, faced with a version of the text showing any of these more difficult variants, might be led into substituting the easier reading&mdash;and next to impossible to see how scribes facing the easier reading could be led independently into substituting the less commonly attested, non-formulaic, and hence <socalled>more difficult</socalled> form. Although the traditional view of the &hymn;&rsquo;s textual development depends on the assumption that the nominal variants in 5b used to identify the poem&rsquo;s five main recensions are more significant than the pronominal and prepositional variation that appears to link recensions across the traditional <mentioned lang="ANG">eordu</mentioned> : <mentioned lang="ANG">aelda</mentioned> branches, there is in fact no reason why this must be true. Both the nominal variation in 5b and the pronominal and prepositional variation in 1a and 9a have equal claim to our attention as possible recensional variants.</p>
+      <p id="CH5.210" n="5.22">This is significant because it suggests a way in which the apparently contradictory patterns of variation and contamination separating the five main recensions can be resolved. If we assume for the sake of argument that C&aelig;dmon&rsquo;s original text contained all three &difficilior; readings, (i.e. <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.1; &copyOfno.1a.2; &copyOfno.1a.3;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1; &copyOfno.5b.2;</mentioned>, and <mentioned rend="postemendation" lang="ANG">&copyOfno.9a.1; &copyOfno.9a.2;</mentioned>) and that all three &facilior; alternatives arose in the course of transmission, then it is possible to construct a model of the poem&rsquo;s transmission that avoids the assumption that various branches of the poem&rsquo;s text could be transmitted for centuries without developing any supporting features other than their eponymous variants:</p>
+      <p>
+       <figure id="CH5.FIGURE.3" n="3" entity="ch5image3">
+	<head id="CH5.FIGURE.3.HEAD">Figure 3: New stemma</head>
+	<figdesc>Proposal for a stemma in which the &eorthan; is assumed to represent the closest surviving text to the original written text of &ch;.</figdesc>
+       </figure>
+      </p>
+      <p rend="noindent">In this view, the &eorthan;, the only version to show all three &difficilior; readings in its earliest witnesses, is assumed to be closest to C&aelig;dmon&rsquo;s original song, despite the relatively late date of its surviving witnesses and the fact that its text was presumably translated from Northumbrian in preparation for its incorporation into the &historia;&rsquo;s Old English translation. All other texts of the poem show one or more &facilior; readings, and, as a result, are assumed to represent secondary developments in the poem&rsquo;s text. In the case of the &aelda;, this development involves the introduction of the Psalm-like tag, <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfae.5b.2;</mentioned>, for what was presumably Caedmon&rsquo;s original and far more unusual <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1; &copyOfno.5b.2;</mentioned>; in the case of the &neordu;, and &wseorthe; Recensions, the development involves the introduction of &uue; to 1a and <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.2;</mentioned> to 9a; in the case of the &ylda;, it involves the adoption all three &facilior; readings: &uue; and <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.2;</mentioned> in 1a and 9a, and <mentioned rend="preemendation" lang="ANG">&copyOfyl.5b.1;</mentioned>, the West Saxon cognate of <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned>, in 5b.</p>
+      <p id="CH5.220" n="5.23">There are, of course, a number of obvious problems with this view. The first involves the date, provenance, and dialect of the witnesses to the recension it assumes most closely represents the original text of C&aelig;dmon&rsquo;s poem. C&aelig;dmon was, if Bede&rsquo;s account is to be believed, a seventh-century Northumbrian. The &eorthan; is therefore in the wrong dialect, appears in manuscripts copied in the wrong part of England, and, in as much as its earliest witness was not copied before the beginning of the tenth century, enters the surviving manuscript record more than two centuries after C&aelig;dmon&rsquo;s most likely &floruit;. In selecting this version, moreover, the alternative hypothesis appears to ignore the evidence of the two earliest witnesses to &ch;, &mx; and &lx;, both of which are in Northumbrian manuscripts copied, at the very latest, before the end of the eighth century and, in at least one case, arguably in Bede&rsquo;s own monastery (see below, &ch5xAppendix;).</p>
+      <p id="CH5.230" n="5.24">A second problem with the alternative model is that it appears to ignore the evidence of Bede&rsquo;s own &paraphrase;, which seems to have been based on a vernacular text showing the &facilior; readings in 1a (<mentioned lang="LAT">debemus</mentioned>), 5b (<mentioned lang="LAT">filiis hominum</mentioned>), and, perhaps, 9a (<mentioned lang="LAT">dehinc terram Custos humani generis omnipotens creauit</mentioned>).<note id="CH5.NOTE.220" n="25"><p>The evidence of Bede&rsquo;s &paraphrase; is more ambiguous in the case of 1a and 9a than 5b. Since Latin syntax requires the explicit indication of person on present plural indicative verbs, Bede&rsquo;s use of <mentioned lang="LAT">debemus</mentioned> does not necessarily indicate he was working from an original reading &uue; in 1a&mdash;although it does indicate that he understood the subject of <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.2;</mentioned> to be first person rather than third person plural (i.e. &uue; rather than <mentioned rend="postemendation" lang="ANG">&copyOfno.3a.1;</mentioned>). His equivalent to 9a recasts the syntax of the Old English, changing the dative plural indirect object <mentioned rend="postemendation" lang="ANG">&copyOfno.9a.1;</mentioned> to a genitive singular <mentioned lang="LAT">humani generis</mentioned>, complement of <mentioned lang="LAT">Custos</mentioned>. See also &sect;&nbsp;&ch2x410;, above.</p></note> While it is relatively easy to see how a scribe, working in haste or reading formulaically in the manner proposed in &okeeffe1990; might be led into trivialising difficult readings from his exemplar by introducing syntactically less complex or formulaically more common collocations, it is more difficult to see how a translator of Bede&rsquo;s learning and literacy could make similarly inadvertent substitutions in the production of a Latin version of C&aelig;dmon&rsquo;s text in his careful account of the poet&rsquo;s life.</p>
+      <p id="CH5.240" n="5.25">A third problem with the proposed model is that it does not, at first glance at least, appear to solve the problem of conflicting distribution of recensional variation across the different textual traditions. If the traditional view of the &hymn;&rsquo;s development requires us to assume that the variants in 1a and 9a coincidentally and identically entered both textual branches, the alternative view appears to solve this problem by requiring us to believe that the nominal variation in 5b did something similar instead.</p>
+      <p id="CH5.250" n="5.26">None of these objections is as serious as it sounds, however. The dates of the surviving witnesses to the &eorthan; are less important than the date of the source from which the translator of the Old English &historia; acquired his text. As Plummer, Whitelock, and Colgrave have demonstrated, this source appears to have been a very high quality, and hence apparently quite early, version of the &historia;&rsquo;s <label rend="oblique">c</label>-text: a <quote id="CH5.QUOTE.0050">good and pure</quote> manuscript that avoids the <quote id="CH5.QUOTE.0060">unauthorised additions of later MSS.</quote> characteristic of its tradition (&plummer1975;, 2: cxxix; cf. &colgraveandmynors1969;, xliii, n. 2; &whitelock1963;, 70 and n. 123). It appears at times, indeed, to have been superior to even the best of the tradition&rsquo;s surviving witnesses: the late eighth-century manuscripts &tibc2ml; (&tibc2s;) and &kasselml;, and the eleventh-century &hx;, a manuscript showing a close connection to &tibc2s; (see &whitelock1963;, 70, n. 123). If the original translator of the Old English Bede found his copy of the &hymn; in the same authoritative manuscript from which he acquired the text of the &historia; as a whole, then the presumably Northumbrian text upon which the recension is based may have been copied within a few years of the eighth-century &mx; and &lx;, the earliest known witnesses to the &historia; and the vernacular &hymn;.</p>
+      <p id="CH5.260" n="5.27">The possibility that the translator of the Old English Bede acquired his text of the &hymn; from a very high quality and presumably early Northumbrian manuscript of the Latin &historia; also helps explain how this relatively late text could have preserved all three &difficilior; readings. As &odonnell1996a; demonstrated, the process by which scribes copied vernacular texts as glosses or translations in predominately Latin manuscripts encouraged the introduction of minor, Latin influenced, modifications (see esp. &odonnell1996a;, 56-57). While most variants found among witnesses to Old English poems copied as glosses or translations can be ascribed to mechanical error or insignificant differences in dialect or orthography, a sizeable minority are caused by the sporadic influence of the accompanying Latin text. In the case of the common text of the Paris and Eadwine Psalters (&ppsmlShort; [&ppss;]; &epsmlShort; [&epss;]), for example, at least six and probably eight of the twenty-one potentially significant substantive variants separating the two witnesses can be attributed to the influence of the accompanying Latin text (&odonnell1996a;, 36-49; &baker1984;, 265). In several cases this influence involves the addition of supernumerary words from the Latin original (e.g. Psalms 90:16.3b, 91:1.1b, and 92:7.1a). In others, it concerns changes in inflection, syntax, or wording apparently prompted by the underlying Latin (e.g. Psalms 93:8.1a [change in mood]; 91:8.1a [a possibly Latin-influenced variation between a pronoun and adverb]). Similar examples can be found in Psalm 102:4.1a (found in &ppss; and &junius121ml; [&junius121s;]), and Gloria I, 13b (&junius121s; and &cccc201ml;). In several of these cases, the influenced material is nonsensical or results in poor metre; in others, however, the readings provide reasonably sound, syntactically and metrically appropriate equivalents.<note id="CH5.NOTE.225" n="26"><p>These variants are discussed in greater detail in &odonnell1996a;, chapter 2; the Latin influence in witnesses to the translation of the Psalms is discussed in &baker1984;, 265.</p></note></p>
+      <p id="CH5.270" n="5.28">What this suggests is that the translator of the &wseorthan; tradition may have acquired his text of the &hymn; from a manuscript copied before the &hymn; developed much internal variation or began to show any strong influence from the surrounding Latin. As the following table demonstrates, indeed, there is a strong correlation between a preference for &facilior; readings 1a, 5b, and 9a and transmission in manuscripts of the Latin text of &he; (in the following table, &facilior; readings are reproduced in reverse field, &difficilior; in normal type. Grey is used for a reading in the &paraphrase; not precisely paralleled in the Old English text):</p>
+      <p>	    
+       <table id="CH5.TABLE.2">
+	<head id="CH5.TABLE.2.HEAD">Table 3: Correlation between manuscript context and preference for &facilior; and &difficilior; readings</head>
+	<row>
+	 <cell cols="4" rend="center"><label>Recensions Copied in the Latin &he;</label></cell>
+	 <cell rend="center"><label>Latin &he;</label></cell>
+	 <cell rend="center"><label>Recension Copied in the Old English Translation of the &he;</label></cell>
+	</row>
+	<row>
+	 <cell rend="center">&aelda;</cell>
+	 <cell rend="center">&eordu;</cell>
+	 <cell rend="center">&eorthe;</cell>
+	 <cell rend="center">&ylda;</cell>
+	 <cell rend="center">&nbsp;</cell>
+	 <cell rend="center">&eorthan;</cell>
+	</row>
+	<row>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.AE.1A.1" type="analytic" subtype="difficiliorvariant">&copyOfae.1a.2;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.EO.1A.1" type="analytic" subtype="faciliorvariant" rend="postemendation">&copyOfeo.1a.2; &copyOfeo.1a.3;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.EP.1A.1" type="analytic" subtype="faciliorvariant" rend="postemendation">&copyOfep.1a.2; &copyOfep.1a.3;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.YL.1A.1" type="analytic" subtype="faciliorvariant">&copyOfyl.1a.2; &copyOfyl.1a.3;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.BEDE.1A.1" type="analytic" subtype="faciliorvariant">debemus</seg></cell>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.EX.1A.1" type="analytic" subtype="difficiliorvariant">&copyOfex.1a.2;</seg></cell>
+	</row>
+	<row>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.AE.5B.1" type="analytic" subtype="faciliorvariant">&copyOfae.5b.1; &copyOfae.5b.2;</seg></cell>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.EO.5B.1" type="analytic" subtype="difficiliorvariant">&copyOfeo.5b.1; &copyOfeo.5b.2;</seg></cell>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.EP.4B.1" type="analytic" subtype="difficiliorvariant">&copyOfep.4b.1; &copyOfep.4b.2;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.YL.5B.1" type="analytic" subtype="faciliorvariant">&copyOfyl.5b.1; &copyOfyl.5b.2;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.BEDE.5B.1" type="analytic" subtype="faciliorvariant">filiis hominum</seg></cell>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.EX.5B.1" type="analytic" subtype="difficiliorvariant">&copyOfex.5b.1; &copyOfex.5b.2;</seg></cell>
+	</row>
+	<row>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.AE.9A.2" type="analytic" subtype="difficiliorvariant">&copyOfae.9a.2;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.EO.9A.2" type="analytic" subtype="faciliorvariant">&copyOfeo.9a.2; &copyOfeo.9a.3;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.EP.8A.2" type="analytic" subtype="faciliorvariant">&copyOfep.8a.2; &copyOfep.8a.3;</seg></cell>
+	 <cell rend="center"><seg id="FACILIORVARIANT.YL.9A.2" type="analytic" subtype="faciliorvariant" rend="preemendation">&copyOfyl.9a.2; &copyOfyl.9a.3;</seg></cell>
+	 <cell rend="center"><seg id="UNCERTAINVARIANT.BEDE.9A.2" type="analytic" subtype="uncertainvariant">terram</seg></cell>
+	 <cell rend="center"><seg id="DIFFICILIORVARIANT.EX.9A.2" type="analytic" subtype="difficiliorvariant">&copyOfex.9a.2;</seg></cell>
+	</row>
+	<linkgrp targorder="u">
+	 <link type="difficiliorvariant" targorder="u" targets="difficiliorvariant.ae.1a.1 difficiliorvariant.ex.1a.1 difficiliorvariant.ae.5b.1 difficiliorvariant.eo.5b.1 difficiliorvariant.ep.4b.1 difficiliorvariant.ex.5b.1 difficiliorvariant.ae.9a.2 difficiliorvariant.ex.9a.2">
+	 <link type="faciliorvariant" targorder="u" targets="faciliorvariant.eo.1a.1 faciliorvariant.yl.1a.1 faciliorvariant.ep.1a.1 faciliorvariant.bede.1a.1 faciliorvariant.yl.5b.1 faciliorvariant.bede.5b.1 faciliorvariant.eo.9a.2 faciliorvariant.yl.9a.2 faciliorvariant.ep.8a.2">
+	 <link type="uncertainvariant" targorder="u" targets="uncertainvariant.bede.9a.2">
+	</linkgrp>
+       </table>
+      </p>
+      <p rend="noindent">The only recension of the &hymn; to show all three &difficilior; readings is the only version of the text characteristically not found in manuscripts of the Latin &he;. All other recensions of the text are characterised by their location and their use of one or more &facilior; readings: <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> in 5b, and &uue; and <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.2;</mentioned> in 1a and 9a.</p>
+      <p id="CH5.280" n="5.29">This correlation suggests in turn the solution to the second problem with the alternative stemma proposed above. Rather than ignoring the evidence of Bede&rsquo;s Latin translation of the &hymn;, this account of the evidence of the surviving recensions suggests instead that Bede&rsquo;s &paraphrase; may itself be responsible for the introduction of at least one, and perhaps two or three, of the three &facilior; forms found in the &naelda;, &neordu;, &wsylda;, and &wseorthe; recensions: <mentioned lang="LAT">debemus</mentioned> (i.e. <mentioned rend="postemendation" lang="ANG">&uue; &copyOfno.1a.2;</mentioned>), and <mentioned lang="LAT">filiis hominum</mentioned> (i.e. <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfno.5b.2;</mentioned>).</p>
+      <p id="CH5.290" n="5.30">This is not as unlikely as it sounds. As several scholars have noted, albeit to different ends, Bede&rsquo;s &paraphrase; of &ch; is not always very close to the surviving vernacular text  (see among others, &orchard1996;; &kiernan1990a;; &schwab1984;). While his version remains quite close to the surviving Old English recensions for the equivalent of most of the poem&rsquo;s first five lines, the translation strays considerably from these texts in the equivalent to last four. Eight of the seventeen Old English words in the last four lines of the vernacular &hymn; have no equivalent in Bede&rsquo;s Latin &paraphrase;, which also adds a word not found in any Old English version, <mentioned id="CH5.MENTIONED.0125" lang="LAT">culmine</mentioned>, <gloss target="CH5.MENTIONED.0125">gable,</gloss> apparently for its Latin metrical qualities (see &orchard1996;, 413). Even when the two texts are more closely parallel, moreover, they often differ in the precise language or constructions used. Apart from the use of <mentioned lang="LAT">Custos</mentioned> for <mentioned rend="postemendation" lang="ANG">&copyOfno.7b.2;</mentioned> in the equivalent to 7a, for example, Bede uses none of the usual Latin translations for C&aelig;dmon&rsquo;s epithets for God: he translates <mentioned rend="postemendation" lang="ANG">&copyOfno.4a.2;</mentioned> as <mentioned lang="LAT">Deus</mentioned> in the equivalent to 4b (the usual Latin equivalent is <mentioned lang="LAT">dominus</mentioned>), ignores C&aelig;dmon&rsquo;s use of <mentioned rend="postemendation" lang="ANG">&copyOfno.9b.1;</mentioned> in 9b, and translates the first appearance of <mentioned rend="postemendation" lang="ANG">&copyOfno.1b.2;</mentioned> in 1a with <mentioned lang="LAT">auctorem</mentioned>, a term that contains no sense of guardianship found in the vernacular text (see &sect;&sect;&nbsp;&ch3x250;-&ch3x280;, above). His translation of C&aelig;dmon&rsquo;s syntactic constructions, likewise, is at times very loose. In the last four lines of the poem, Bede eliminates all trace of the heavy ornamental variation so characteristic of C&aelig;dmon&rsquo;s original text. He translates the verbs of 5a and 8a (<mentioned rend="postemendation" lang="ANG">&copyOfno.5a.3;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfno.8b.2;</mentioned>, respectively) using a single Latin form, <mentioned lang="LAT">creauit</mentioned>. He reproduces only one of C&aelig;dmon&rsquo;s two temporal adverbs (<mentioned lang="LAT">dehinc</mentioned> versus <mentioned rend="postemendation" lang="ANG">&copyOfno.7a.1;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfno.8b.1;</mentioned>, 7a and 8b). He ignores the second reference to men as the beneficiaries of his creation (<mentioned rend="postemendation" lang="ANG">&copyOfno.9a.1;</mentioned>) in 8a (see above, &sect;&sect;&nbsp;&ch2x410;-&ch2x420;), and collapses the two references to the earth in the poem&rsquo;s closing lines (<mentioned rend="postemendation" lang="ANG">&copyOfno.7a.2;</mentioned>, 7a, and <mentioned rend="postemendation" lang="ANG">&copyOfno.9a.2;</mentioned>, 9a) into a single Latin form, <mentioned lang="LAT">terram</mentioned>. Even in the first five lines of C&aelig;dmon&rsquo;s text, where Bede does follow the text of the vernacular poem more closely, he nevertheless still permits himself to alter the syntax of 3b-4b, changing the appositive reference to <mentioned rend="postemendation" lang="ANG">&copyOfno.4a.1; &copyOfno.4a.2;</mentioned> in the clause <mentioned rend="postemendation" lang="ANG">&copyOfno.3b.1; &copyOfno.3b.2; &copyOfno.3b.3; &copyOfno.3b.4;</mentioned>, / <mentioned rend="postemendation" lang="ANG">&copyOfno.4a.1; &copyOfno.4a.2;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfno.4b.1; &copyOfno.4b.2;</mentioned> into an adverbial clause in its own right: <mentioned lang="LAT">quomodo ille, cum sit aeternus Deus, omnium miraculorum auctor extitit</mentioned>.</p>
+      <p id="CH5.300" n="5.31">These changes suggest that Bede was not overly concerned with reproducing the precise wording of C&aelig;dmon&rsquo;s text in his Latin &paraphrase;. Given his willingness to change the syntax of even relatively straightforward passages in the original Old English, it requires no stretch of the imagination to assume that he would not necessarily have sought a formulation that reproduced the syntactic ambiguity inherent in the &difficilior; reading of C&aelig;dmon&rsquo;s opening line.<note id="CH5.NOTE.230" n="27"><p>See &cavill2002;, 14, for further examples of this emphasis on unambiguous syntax in Bede&rsquo;s &paraphrase;.</p><p>Another possibility in the case of 1a, of course, is that Bede&rsquo;s &paraphrase; is simply evidence that there was no ambiguity about the subject of <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.2;</mentioned> for contemporary speakers of Old English. See above, &sect;&nbsp;&ch5r142;.</p></note> In the case of his translation of 5b, Bede may also have been influenced by a  general similarity between C&aelig;dmon&rsquo;s poem and various Psalms and Canticles of the Anglo-Saxon liturgy (see &sect;&sect;&nbsp;&ch2x370;-&ch2x450;, above). While the &difficilior; reading for the passage, <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1; &copyOfno.5b.2;</mentioned>, is attested nowhere else in the Old English corpus, the &facilior; reading, <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfae.5b.2;</mentioned>, is regularly found as a translation of the common Christian Latin liturgical tag, <mentioned lang="LAT">filiis hominum</mentioned>. If Bede did not make the substitution himself in the process of translating the poem from Old English to Latin, the variation may represent a subtle and learned improvement to the Old English text originating in the course of the poem&rsquo;s transmission from Whitby to Jarrow.</p>
+      <p id="CH5.310" n="5.32">The close correlation between &facilior; readings in 1a, 5b, and 9a and the appearance of the vernacular &hymn; in the margins of Bede&rsquo;s Latin &he; suggests an answer to the third objection to the alternative stemma proposed above: namely that the proposal still requires us to assume that one or more recensions of the poem introduced identical textual variation at one or more points coincidentally. In the case of the variation in 1a and 9a, the appearance of correlated variants in most surviving witnesses to the poem suggests that the three recensions showing these variants may be genetically related&mdash;or in other words, that the &neordu;, &wseorthe;, and &wsylda; recensions may stem at some point from a single common exemplar in which <mentioned rend="postemendation" lang="ANG">&uue;</mentioned> was added to 1a and <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.2;</mentioned> to 9a (cf. &cavill2000;, esp. 526-529). In the case of 5b, the appearance of the &facilior; reading <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1;</mentioned> / <mentioned rend="preemendation" lang="ANG">&copyOfyl.5b.1;</mentioned> can be attributed to the coincidental influence of Bede&rsquo;s Latin translation: while the reading of the &aelda; may reflect the vernacular text known to Bede, the adoption of <mentioned rend="preemendation" lang="ANG">&copyOfyl.5b.1;</mentioned> in later West-Saxon manuscripts can be explained plausibly as a result of the influence of Bede&rsquo;s paraphrase on the scribe of the recensional archetype in a manner similar to that found in copies of the Old English metrical Psalms (see &sect;&nbsp;&ch5r230;, above).</p>
+     </div3>
+    </div2>
+    <div2 id="CH5.3">
+     <head id="CH5.3.HEAD">Conclusion: The transmission of &ch;</head>
+     <p id="CH5.320" n="5.33">If these arguments are correct then the recensional development of &ch; can be summarised as a competition between three, for the most part quite similar, versions of the original poem. The first branch, showing the &difficilior; readings in 1a, 5b, and 9a and presumably reflecting a text very close to C&aelig;dmon&rsquo;s original song, was copied in the apparently early, highly authoritative (but now lost) manuscript from which the translator of the Old English &historia; acquired his Latin text. It is most fully represented only in the &eorthan;. This version of the poem, while technically accomplished and highly formulaic (see above, &ch3x;), nevertheless contained a number of unusual constructions and rare or perhaps even unique collocations. As the evidence of the three surviving recensions with a cognate to <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1;</mentioned> in 5b attests, moreover, this form of the poem was apparently widely known in Anglo-Saxon England at the time the first manuscripts of Bede&rsquo;s &he; were copied and disseminated.</p>
+     <p id="CH5.330" n="5.34">Very early on in the &hymn;&rsquo;s transmission history, however, a second, perhaps <socalled>learned,</socalled> variant of the poem, in which C&aelig;dmon&rsquo;s original <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1; &copyOfno.5b.2;</mentioned> was altered to the more common (and liturgical) formula <mentioned rend="postemendation" lang="ANG">&copyOfae.5b.1; &copyOfae.5b.2;</mentioned>, appears to have developed. This is the version of the text translated by Bede&rsquo;s &paraphrase; and found in surviving witnesses to the &aelda;. It is impossible to say whether Bede introduced the variant himself (and hence influenced the subsequent Old English glossators) or translated a vernacular text in which <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1; &copyOfeo.5b.2;</mentioned> had already been replaced by the more liturgical phrase. Either way, this recension of the text appears, at first at least, to have enjoyed a relatively limited circulation: its key variant does not show up in three of the four other recensions; its appearance in the &ylda; may have been influenced directly by its appearance in the Latin &paraphrase;.</p>
+     <p id="CH5.340" n="5.35">The &hymn;&rsquo;s third tradition also developed relatively early on in the poem&rsquo;s transmission history. This tradition was characterised by the correlated addition (probably trivialisations) of <mentioned rend="postemendation" lang="ANG">&uue;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.2;</mentioned> in 1a and 9a and, initially at least, the preservation of the &difficilior; reading <mentioned rend="postemendation" lang="ANG">&copyOfno.5b.1;</mentioned> in 5b. This was a very widely disseminated tradition: it is the version responsible for the &neordu;, &wseorthe; and &wsylda; texts. Since both West-Saxon recensions in this group show evidence to suggest that they are the result of independent translations from different Northumbrian exemplars (see &sect;&sect;&nbsp;&ch6x52;-&ch6x54;), it also appears to have been a relatively early addition to the text.</p>
+     <p id="CH5.350" n="5.36">This leaves, finally, the nominal substitution in 5b of the &ylda;. Although the appearance of the correlated variants &uue; and <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.2;</mentioned> in 1a and 9a suggest that this text is related to the tradition responsible for the &neordu; and &wseorthe; recensions, its agreement with the &naelda; in 5b suggests some influence of the Jarrow tradition. There are two possible explanations for this: the first is that the scribe of the exemplar to this tradition knew something of the &naelda; tradition; the second, perhaps more likely given the text&rsquo;s many serious errors, is that the scribe was consciously or unconsciously influenced directly from Bede&rsquo;s Latin.</p>
+     <p id="CH5.360" n="5.37">When this suggested history is applied to the stemma proposed in &sect;&nbsp;&ch5r170; above, the following manuscript history is produced:</p>
+     <p>
+      <figure id="CH5.FIGURE.4" n="4" entity="ch5image4">
+       <head id="CH5.FIGURE.4.HEAD">Figure 4: The transmission of &ch;</head>
+       <figdesc>A detailed stemma showing the transmission of &ch; as outlined in <ref target="CH5.FIGURE.4">Figure 3</ref></figdesc>
+      </figure>
+     </p>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>

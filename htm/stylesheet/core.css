@@ -1,0 +1,301 @@
+/* core stylesheet */
+/* This stylesheet defines the core appearance of elements common to */
+/* most stylesheets (e.g. italics, bold, center, etc.) (except those for the titlepage)*/
+
+.hideme, li.greenstone {
+	display:none;
+}
+
+/* PUBLICATION STYLES */
+
+img {
+	 border: none;
+}
+
+img.tall {
+	 display: block;
+	 border: none;
+	 float:left;
+	 clear: all;
+	 padding-top: 1em;
+	 padding-right: 1em;
+}
+
+code {
+     font-family: mono
+}
+img.wide {
+	 display: block;
+	 border: none;
+	 float:top;
+	 clear: bottom;
+	 padding-bottom: 1em;
+	 padding-right: 1em;
+}
+
+.junicode {
+	  font-family: "Junicode", "Times New Roman", serif;
+}
+
+body	 {
+	 text-align: justify;
+	 font-size: 13pt;
+	 line-height: 1.4;
+	 font-family: "junicode", times, serif;
+}
+
+p.diplomatictext, p.poetry, li {
+		  text-align:left;
+}
+
+h1	{
+	font-size: 200%;
+	text-align: center;
+	font-weight: bold;
+}
+
+h2, h1.subtitle	{
+	font-size: 150%;
+	text-align: center;
+	font-weight: bold;
+}
+
+h3, div.footnotes h2, div.apparatus h2, div.glossary h1	{
+	font-size: 125%;
+	text-align: left;
+	font-weight: bold;
+}
+div.footnotes, div.diplomatictext {
+	display: block;
+}
+
+h4	{
+	font-size: 110%;
+	text-align: left;
+	font-weight: bold;
+}
+
+h5	{
+	font-size: 100%;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h6	{
+	font-size: 100%;
+	text-align: left;
+	font-style: italic;
+	line-height: 1.2;
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+
+a {
+     display:inline;
+     text-decoration: none;
+}
+
+/* .yldalabel, .eorthanlabel, .eorthelabel, .aeldalabel, .eordulabel,
+	    .siglalabel, .shelfmarklabel {
+	    font-variant: small-caps;
+}
+*/
+
+span.term, span.foreign, span.mentioned, em, span.titlem,
+	   .obliquelabel, .reading, .glossaryinstance, .expansion,
+	   span.quote, .italiclabel {
+	   font-style: italic;
+}
+
+.damaged {
+	/* font-style: italic; */
+	text-decoration: underline;
+}
+
+ins {
+    text-decoration: none;
+}
+
+.milestone {
+	   font-style: italic;
+	   color: gray;
+	   font-size: small;
+	   font-family: sans-serif;
+}
+
+span.linebreak {
+	       color: gray;
+}
+
+
+a.footnoteinsertionmarker, a.footnotetargetmarker	{
+			  font-size: 60%;
+			  font-weight: 700;
+			  vertical-align: super;
+}
+
+.superlabel, .superscript, .superscriptlabel {
+			  font-size: 60%;
+			  vertical-align: super;
+}
+
+.analyticstrictapposition, .analyticcollationitem {
+			  font-weight: bold;
+}
+
+.analyticlooseapposition {
+			 font-style: italic;
+}
+
+span.fullstress, .halfstress, .nostress {
+	  font-family: "Junicode", "Times New Roman", serif;
+		 font-size: 185%;
+}
+
+.resolution {
+	  font-family: "Junicode", "Times New Roman", serif;
+		 font-size: 145%;
+}
+.poetryscansion {
+	 margin-top: 0;
+	 margin-bottom: 0;
+	 margin-left: 4em;
+		 line-height: 1.2;
+}
+
+
+p {
+  text-indent: 0;
+}
+
+blockquote {
+      text-align: left;
+      font-size: 90%;
+}
+
+
+blockquote.appendix {
+      margin-left: 1em;
+}
+p.apparatusentry, p.glossaryentry {
+		 margin-left: 2em;
+		 margin-bottom:0;
+		 text-indent: -2em;
+		 line-height: 1.4;
+		 text-align: left;
+}
+p.apparatusentry+p.apparatusentry, p.glossaryentry+p.glossaryentry {
+		 margin-top: 0;
+}
+
+p.apparatusblock {
+		 text-align: left;
+}
+
+.lemma, .glossarylemma, .translation, .notelemma, .technicalterm {
+       font-weight: bold;
+}
+
+p.witnesslist {
+	      text-align: center;
+}
+
+cite, p.caption {
+     display: block;
+     text-align: right;
+     font-style: normal;
+     line-height: 1;
+     padding: 0;
+     margin-top: 0;
+}
+
+cite {
+     font-size: 90%;
+}
+
+.formeword {
+     display: block;
+     text-align: left;
+     font-style: normal;
+     margin-left: 20em;
+}
+
+.formewordinline {
+     display:inline;
+     text-align: left;
+     font-style: normal;
+}
+
+p.poetry:first-child {
+	 margin-top: 1em;
+}
+
+p.poetry {
+	 margin-top: 0;
+	 margin-bottom: 0;
+	 margin-left: 4em;
+}
+
+blockquote p.poetry {
+	 margin-left: 1em;
+}
+
+mentioned {
+	  font-family: "Junicode", times, serif;
+}
+
+span.paragraphnumber {
+		 padding-right: 1em;
+		 font-weight: bold;
+}
+
+span.eorthelinenumber {
+		display: block;
+		float: left;
+		margin-left: -4em;
+		width: 1em;
+		padding-left: 4.75em;
+}
+span.linenumber {
+		display: block;
+		float: left;
+		margin-left: -2em;
+		width: 1em;
+		padding-left: 2.75em;
+}
+
+/* IE 6 workaround: IE6 requires padding for alignment; this removes it again for browsers that work properly */
+p.poetry>span.linenumber {
+			 padding-left:0;
+			 }
+
+span.editoriallinenumberdiplomatic	{
+					font-family: sans-serif;
+					display: inline;
+					font-size: 60%;
+					color: gray;
+					vertical-align: sub;
+}
+
+
+
+table {
+   border: none;
+   border-collapse: collapse;
+   font-size: 90%;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+td {
+text-align: center;
+   padding-right: 5pt;
+   vertical-align: top;
+ border: thin solid gray;
+}
+
+
+td.center {
+	  text-align: center;
+}

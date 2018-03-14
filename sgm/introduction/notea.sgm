@@ -1,0 +1,129 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                              Note A                           *
+*                         Dating of M and P                        *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 id="CHAPP.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Note A: The dating of &ms; and &ls;</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Note to the introduction to the electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="NOTEA" n="A">
+    <head id="NOTEA.HEAD">The dating of &mx; and &lx;</head>    
+    <div2 id="NOTEA.TOC" type="toc">
+     <div3 id="NOTEA.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="ch7"><label rend="accesskey">P</label>revious (Chapter 7)</xref></item>
+       <item><xref n="n" doc="noteb"><label rend="accesskey">N</label>ext (Note B)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="NOTEA.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="NOTEA">Top</ref></item>	
+      </list>
+     </div3>
+    </div2>
+    <div2 id="NOTEA.APPENDIX">
+     <p id="NOTEA.510" n="A.1">The two earliest witnesses to Bede&rsquo;s &he; and &ch; are traditionally dated to 734 &times; 737 (&mx;) and 731 (or 732)<note id="NOTEA.NOTE.350" n="1"><p>Bede records that he finished the &he; in 731 (V. 23): <quote id="NOTEA.QUOTE.0540" lang="LAT">Hic est inpraesentiarum uniuersae status Brittaniae, anno aduentus Anglorum in Brittaniam circiter ducentesimo octogesimo quinto, dominicae autem incarnationis anno DCCXXXI</quote>, <quote corresp="NOTEA.QUOTE.0540">This is the state of the whole of Britain at the present time, about 285 years after the coming of the English to Britain, in the year of our Lord 731</quote> (ed. and trans. &colgraveandmynors1969;). Earlier in the same chapter, however, he refers to the defeat of the Moslems in Gaul, an apparent reference to the battle of Tours in October 732: <quote id="NOTEA.QUOTE.0550" lang="LAT">Quo tempore grauissima Sarracenorum lues Gallias misera caede uastabat, et ipsi non multo post in eadem prouincia dignas suae perfidiae poenas luebant</quote>, <quote corresp="NOTEA.QUOTE.0550">At this time a terrible plague of Saracens ravaged Gaul with cruel bloodshed and not long afterwards they received the due reward of their treachery in the same kingdom.</quote></p></note> &times; 746 (&lx;). In both cases, this unusual precision is due to the presence of a series of chronological notes in the manuscripts, derived from dates given in Bede&rsquo;s <foreign lang="LAT">recapitulo</foreign>, V. 24. These notes, the so-called &memoranda;, provide an alternative to Bede&rsquo;s usual practice of dating historical events from the year of the incarnation by providing instead a retrospective count of the number of years that have elapsed since the event in question occurred. Thus Caesar&rsquo;s attempted invasion of Britain (dated to 60 B.C. in the <foreign lang="LAT">recapitulo</foreign>) is also described in &lx; as having occurred <quote id="NOTEA.QUOTE.0560" lang="LAT">ante annos DCCCVI</quote>, <quote corresp="NOTEA.QUOTE.0560">806 years ago</quote>; the baptism of Eanfl&aelig;d by Paulinus (A.D. 626 in the <foreign lang="LAT">recapitulo</foreign>) is described in &mx; as having occurred <quote id="NOTEA.QUOTE.0570" lang="LAT">ante annos cxi</quote>, <quote corresp="NOTEA.QUOTE.0570">111 years ago.</quote><note id="NOTEA.NOTE.360" n="2"><p>Editions of the &memoranda; can be found in &kiernan1990b;, 50-52 (&mx;), &hunterblair1984;, 246 (&mx;), and &arngart1973;, 48 (&lx; and &tiba14s;). The &memoranda; in &tiba14s are discussed below.</p></note></p>
+     <p id="NOTEA.520" n="A.2">As numerous scholars have pointed out, this retrospective dating can be used to work out the precise year in which the &memoranda; were calculated: Caesar&rsquo;s attempted invasion was <quote corresp="NOTEA.QUOTE.0560">806 years ago</quote> only to somebody writing in 746; the baptism of Eanfl&aelig;d was <quote corresp="NOTEA.QUOTE.0570">111 years ago</quote> only to somebody working in 737. Although the dates implied by each manuscript&rsquo;s &memoranda; show some internal variation (those in &mx; range anywhere from 734 to 748, those in &lx; from 746 to 861), both sets show a clear preference for one particular year: 737 in the case of &mx; (five entries out of nine)<note id="NOTEA.NOTE.380" n="3"><p>The edition of the &memoranda in &kiernan1990b; lists ten items; items <socalled>eight</socalled> and <socalled>nine</socalled>, however, refer to closely associated events (the appearance of comets in the year in which Saint Egbert died) and share the same retrospective date: <quote id="NOTEA.QUOTE.0575" lang="LAT">cometae uisae ante annos uiii . eodem anno pater ecgberct transiuit ad christum,</quote> <gloss corresp="NOTEA.QUOTE.0575">Comets seen 8 years ago, in the same year father Egbert passed on to Christ</gloss> (f.&nbsp;128v, manuscript lines 11-12; as ed. and trans. in &kiernan1990b;, 52).</p></note> and 746 in that of &lx; (thirteen out of fifteen legible entries). Since the calculations in &lx; and &mx; appear to have been added as or soon after the manuscripts were copied, these dates traditionally have been understood as recording either the actual year in which the surviving manuscripts were copied, or, particularly in the case of &lx; where the &memoranda; were added in a distinct hand, a <foreign lang="LAT">terminus ante quem</foreign> for the main text of the manuscript.<note id="NOTEA.NOTE.390" n="4"><p>Kiernan proposes an alternative to the traditional view that the retrospective dates in the &memoranda; were meant to indicate the year in which they were compiled. Rather than mistakes, Kiernan suggests that the <socalled>discrepancies</socalled> among the retrospective dates actually reflect different years of calculation and present a record of the years in which each of the ancestor copies in each tradition were made. Thus in the case of &mx;, the <quote id="NOTEA.QUOTE.0580">memoranda tell us that the manuscript tradition of this copy began in 734, the year before Bede died,</quote> that <quote id="NOTEA.QUOTE.0585">six more copies based on the same exemplar were made in 737,</quote> that an eighth <quote id="NOTEA.QUOTE.0587">was made in 738,</quote> and that <quote id="NOTEA.QUOTE.0589">two additional copies were made in 741 and 748</quote> (&kiernan1990b;, 52).</p>
+       <p>There are at least three problems with this argument, apart from the fact that Kiernan cites no parallels from any other text:</p>
+       <p>The first involves the dating of the first manuscript in each tradition. If the dates <quote id="NOTEA.QUOTE.0590">were meant to keep track of a manuscript tradition</quote> (52), why do they not begin with the first copies produced after Bede finished the &he; in 731 or 732?  The tradition recorded in &mx; begins ostensibly with a copy made in 734; the tradition recorded in &lx; and &tiba14s; with a manuscript from 746. These manuscripts must have been descended from earlier copies. Why was this fact not recorded?</p>
+       <p>The second problem involves the assumption that the &memoranda; were <quote id="NOTEA.QUOTE.0600">made and maintained by consecutive scribes from copy to copy</quote> (52). This seems to require us to assume that the manuscripts involved were copied sequentially rather than in parallel: i.e. that the manuscript copied in 748 in the &mx; tradition has a record for the manuscript copied in 741 because the manuscript copied in 741 was its immediate ancestor. While this is not unreasonable perhaps when we are dealing with one or two manuscripts in a single year, it becomes increasingly difficult to maintain in the face of years such as 737 (in which Kiernan&rsquo;s system requires us to assume that five successive generations of manuscripts were produced in a single year in the &mx; tradition) or 746 (where the &memoranda; in &lx; suggest <emph>thirteen</emph> generations were produced at Wearmouth-Jarrow). If any of these successive generations produced multiple offspring (a fact that would not be recorded in the surviving &memoranda;), the number of manuscripts we are required to assume these scriptoria produced increases rapidly. Assuming that the tally was kept in the exemplar rather than the copy and only accidentally found its way into &mx; only partially solves this problem: we are still left with a very uneven production schedule, and need to explain why scribes would want to keep track of the daughters of any given copy of the &he;.</p>
+       <p>Finally, there is the question of the production schedule these &memoranda; imply. While we might well expect to see certain peaks in activity in response to requests for copies of Bede from other libraries or the continental missions, it is surely odd that these peaks are restricted to a different single year in each tradition. Why would at least five generations of manuscripts be copied at the scriptorium that produced &mx; in 737, but only one in 738 and none in 739?  And why did the scribes of the &mx; tradition produce no copies at all in the year in which those responsible for &lx; and &tiba14s; produced thirteen generations?</p></note></p>
+     <p id="NOTEA.530" n="A.3">This traditional view of the significance of the &memoranda; as a guide to the date at which &lx; and &mx; were copied depends crucially on the assumption that the retrospective dates were recalculated each time the text was copied. That such recalculation sometimes did occur is suggested by the fact that &mx; and &lx; use different years as their consensus points of reference. That it did not always happen, however, is suggested first of all by the agreement of &lx; and a third early Bede manuscript, &tiba14ml; (&tiba14s;) in one serious chronological error (see &arngart1973;, 49), and, secondly, by the fact that the &memoranda; in &mx; are found on the last page of the manuscript rather than beside the events described in Bede&rsquo;s <foreign lang="LAT">recapitulo</foreign>. In the case of &lx; and &tiba14s;, the shared error suggests either that the two manuscripts got their calculations from a common source, or that one of the two is a linear descendent of the other.<note id="NOTEA.NOTE.400" n="5"><p>For opposing views on the two possibilities, see &arngart1973;, and &parkes1987;, 26-27; the debate as a whole is discussed in &fulk1992;, 426.</p><p>As Arngart notes, the error in question, involving the dating of Claudius&rsquo;s invasion of Britain, dated by Bede to A.D. 46 and retrospectively dated in &lx; and &tiba14s; to <quote id="NOTEA.QUOTE.0610" lang="LAT">[ante annos] DCCCXV</quote>, <quote corresp="NOTEA.QUOTE.0610">815 years ago</quote> (implying a gloss written in 861), cannot be explained by an independent graphic error: the correct figure for somebody writing in 746 should be DCC (&arngart1973;, 49).</p></note> In the case of &mx;, the fact that the &memoranda; are found on the last page of the manuscript alongside glosses and other material (including &ch;) more usually associated with the margins of the main text, suggests that the scribe responsible either extracted them from their proper place in his main text&rsquo;s exemplar or collected them from the margins of some other manuscript of the &he; (&kiernan1990b;, 50 and 52-53 [but cf. &kiernan1990a;, 162 n. 16]; &fulk1992;, 426). That this second possibility is the more likely is suggested by the glosses&rsquo; location and the evidence of witnesses to other recensions of the vernacular poem: a scribe copying marginalia from the same exemplar he used for his main text would presumably have preferred to copy them <foreign lang="LAT">in situ</foreign>; a scribe working in haste from different manuscripts of the &he;, however, might be tempted to collect marginalia in a single place rather than collate his main text with the annotated copy. That scribes often added the vernacular &hymn; from sources other than those from which they acquired their main text is suggested by the presence of a copy of the &eorthan; (a recension found otherwise only in manuscripts of the Old English translation of the &he;) in &tox;, a manuscript of the Latin &he;, and the frequent appearance of related texts of the &hymn; in apparently unrelated copies of the &he; (see above, &sect;&nbsp;&ch5x060;). No matter how the text of the &memoranda; and &hymn; arrived in &mx;, the procedure used seems unlikely to encourage recomputation.</p>
+     <p id="NOTEA.540" n="A.4">Apart from some loss of precision, the possibility that the &memoranda; were copied rather than recalculated has little significant effect on our understanding of these witnesses&rsquo; dating. Both manuscripts can be assigned with relative certainty to the eighth century on palaeographic, and, in the case of &mx;, which appears to have been at the library of Charlemagne&rsquo;s palace school in Aachen by ca. 800 (&bischoff1965-1967;, 56-57), external grounds (see, among others, &hunterblair1959; [for &mx;] and &parkes1982;, &wright1961;, and &lowe1958a; [for &lx;]). If the glosses have indeed been copied unchanged from earlier exemplars, then they simply serve to set a <foreign lang="LAT">terminus post quem</foreign> for the work of their respective scribes rather than an indication of the precise year in which the manuscripts were copied. In the case of &mx;, where both the glosses and the main Latin text of the &historia; are in the hand of what looks very much like a single scribe (see above, &sect;&nbsp;&ch4x300; and n.), this <foreign lang="LAT">terminus</foreign> presumably (though not necessarily) applies to the date of the codex as a whole, suggesting that the entire manuscript was copied sometime between 737 and ca. 800 (see &hunterblair1959;, 27). In the case of &lx;, where the &memoranda; are in a distinct hand, the <foreign lang="LAT">terminus</foreign> applies in the strictest sense only to the &memoranda; and other marginal material copied by the same scribe. While the main text of the manuscript might well have been copied at approximately the same time as the chapter headings and &memoranda;, it is not necessary to assume that it was. The scribe responsible for the &memoranda; might equally well have added his material to a manuscript that had been copied some years before.</p>
+     <p id="NOTEA.550" n="A.5">There is, moreover, some evidence to suggest that this was so. For while it is an impressive book, the St. Petersburg Bede is not a very consistent one (see &parkes1982;, 6-12). The main text of &lx; has been copied in four quite distinct hands. The last two scribes of the manuscript (Scribes C and D) copy their text at a steady 27 lines per page on thick parchment. Scribe C copies the shortest portion of the surviving text, beginning on f.&nbsp;64r [&recte; 65] and ending mid-sentence at the bottom of f.&nbsp;68r [&recte; 69r]; Scribe D begins at the top of f.&nbsp;68v [&recte; 69v] with the expected next word of the sentence, and continues until the end of the manuscript on f.&nbsp;161r [&recte; 162]. In contrast, the work of Scribes A (ff.&nbsp;1-32v) and B (ff.&nbsp;33-63v [&recte; 64v]) in the manuscript&rsquo;s first eight quires is far less consistent. The number of lines per page ranges from 27 to 33 and there is a high proportion of overruns at the ends of columns (see particularly &parkes1982;, 6 and n. 38). The parchment used is also notably thinner. As Parkes argues, this suggests that the work of Scribes C and D represents an earlier stage in the manuscript&rsquo;s production and that Scribes A and B were attempting to supply <quote id="NOTEA.QUOTE.0620">eight quires to the beginning of a pre-existing manuscript (up to and including Book III, cap. xix)</quote> (&parkes1982; 6). Since the material added by the scribe of the &memoranda; appears throughout the stints of all four of the main text scribes, it is clear that this fifth hand did not set to work until after Scribes A and B were finished.</p>
+     <p id="NOTEA.560" n="A.6">How long the gap was between the work of Scribes C and D, A and B, and that responsible for the &memoranda; is a matter for speculation. On the one hand, as numerous palaeographers have noted, the hand of Scribe D is quite different from that of Scribes A, B, or C. Where A, B, and C use a fairly uniform pointed minuscule, that of Scribe D is rounder and differs in the formation of several letters and abbreviations, most notably the lower left limb of the letter <seg type="linguistic" subtype="graphemic">x</seg>, which curls outwards in the work of Scribe D, but inwards in that of A, B, C, and the scribe responsible for the chapter numbers and &memoranda; (see particularly &lowe1958a;, 188). Lowe, who believed that the date implied by the &memoranda; represented the date at which the manuscript was copied, nevertheless felt that hand D had <quote id="NOTEA.QUOTE.0630">all the appearances of being saec. viii<label rend="super">1</label></quote> while the <quote id="NOTEA.QUOTE.0640">general impression made by the script of the first three hands (ff.&nbsp;1-68r [&recte; 69r]), one must admit, is saec. viii<label rend="super">2</label>, if not saec. viii ex.</quote> On the other hand, however, it is clear that Scribes C and D were contemporaries: Scribe D takes over from C at the top of a verso and in the middle of a sentence. Given the strength of the similarities between A, B, and C, but the evidence that C and D were working at the same time, it is perhaps best to follow Lowe and Parkes in assuming that the difference in style between C and D represents a change either in generation or school, with Scribe C representing the newer style of minuscule in use at Jarrow, and Scribe D the training of an earlier generation or a different centre. If this is indeed the case, then the manuscript can perhaps be dated, independently of the &memoranda;, to &s8med;&mdash;not early enough to allow us to accept the otherwise intriguing  suggestion that Bede himself was the manuscript&rsquo;s fourth scribe (e.g. &lowe1958b; and &parkes1982;, 5-6 and 7-11, esp. n. 45), but still early enough to place it within a quarter century of his death.</p>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>
+

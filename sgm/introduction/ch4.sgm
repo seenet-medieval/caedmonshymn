@@ -1,0 +1,648 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                             Chapter 4                           *
+*                            Manuscripts                          *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<tei.2 id="CH4.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Chapter 4: Manuscripts</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition.</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Third chapter from introduction to electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="FRA">French</language>
+   </langusage>
+   <langusage>
+    <language id="DEU">German</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="CH4" n="4">
+    <head id="CH4.HEAD">Manuscripts</head>
+    <div2 id="CH4.TOC" type="toc">
+     <div3 id="CH4.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="ch3"><label rend="accesskey">P</label>revious (Chapter 3)</xref></item>
+       <item><xref n="n" doc="ch5"><label rend="accesskey">N</label>ext (Chapter 5)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="CH4.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="CH4">Top</ref></item>
+       <item><ref target="CH4.1.HEAD">Introduction</ref></item>
+       <item><ref target="CH4.2.HEAD">Manuscript catalogue</ref>
+	<list>
+	 <item><ref target="CH4.2.1.HEAD">Index by city and library</ref></item>
+	 <item><ref target="CH4.2.2.HEAD">Manuscript descriptions</ref>
+	  <list>
+	   <item><ref target="CH4.2.2.1.HEAD">&b1s; &b1ml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.1.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.1.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.1.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list>
+	   </item>
+	   <item><ref target="CH4.2.2.2.HEAD">&bds; &bdml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.2.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.2.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.2.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list>
+	   </item>
+	   <item><ref target="CH4.2.2.3.HEAD">&brs; &brml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.3.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.3.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.3.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.4.HEAD">&cs; &cml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.4.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.4.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.4.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.5.HEAD">&cas; &caml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.5.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.5.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.5.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.6.HEAD">&carmss; &carmsml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.6.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.6.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.6.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.7.HEAD">&dis; &diml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.7.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.7.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.7.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.8.HEAD">&hs; &hml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.8.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.8.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.8.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.9.HEAD">&hrs; &hrml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.9.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.9.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.9.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.10.HEAD">&lds; &ldml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.10.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.10.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.10.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.11.HEAD">&lns; &lnml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.11.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.11.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.11.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.12.HEAD">&ms; &mml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.12.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.12.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.12.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.13.HEAD">&mg; &mgml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.13.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.13.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.13.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.14.HEAD">&ns; &nml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.14.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.14.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.14.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.15.HEAD">&os; &oml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.15.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.15.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.15.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.16.HEAD">&ls; &lml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.16.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.16.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.16.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.17.HEAD">&p1s; &p1ml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.17.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.17.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.17.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.18.HEAD">&sanms; &sanmml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.18.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.18.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.18.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.19.HEAD">&t1s; &t1ml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.19.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.19.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.19.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.20.HEAD">&tos; &toml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.20.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.20.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.20.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.21.HEAD">&tr1s; &tr1ml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.21.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.21.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.21.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	   <item><ref target="CH4.2.2.22.HEAD">&ws; &wml;</ref>
+	    <list>
+	     <item><ref target="CH4.2.2.22.1.HEAD">Published descriptions and catalogue entries</ref></item>
+	     <item><ref target="CH4.2.2.22.2.HEAD">Manuscript</ref></item>
+	     <item><ref target="CH4.2.2.22.3.HEAD"><title level="M">Hymn</title></ref></item>
+	    </list></item>
+	  </list></item>
+	</list></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="CH4.1">
+     <head id="CH4.1.HEAD">Introduction</head>
+     <p id="CH4.010" n="4.1">&ch; is known to have been copied in twenty-one medieval witnesses. Of these, two have been destroyed and a third badly damaged: &tomlr; (&tor;) was destroyed during World War II; &cmlsr; (&cr;) was badly burned in the Cottonian fire of 1731, and the section containing &ch; completely destroyed; &bdmlr; (&bdr;) survives, but the copy of the &hymn; in the manuscript has been almost completely effaced by a corrector. Fortunately, however, only the erased text of &bdr; is lost to modern readers: a photographic facsimile survives of the page containing the &hymn; in &tor; (&faiderandvansint1950;, pl. iv) and a complete transcription of &cr; was made by Laurence Nowell in the mid-seventeenth century (&nmlr; [&nx;]).</p>
+     <p id="CH4.020" n="4.2">The manuscripts of &ch; have not suffered from a lack of attention. Seventeen were described, transcribed, and edited by Dobbie in the late 1930s and early 1940s (&dobbie1937;; &dobbie1942;). The remaining four were subsequently identified, (very briefly) described, and transcribed in &humphreysandross1975;. The appearance of the &hymn; in specific witnesses or groups of witnesses has been the subject of several studies and most manuscripts have also been described to a greater or lesser extent in library catalogues or other works not primarily concerned with &ch; (see individual manuscript entries below for details). Black and white facsimiles of all known witnesses were published in &robinsonfcandstanley1991;, pll. 2.1-2.21. New transcriptions (print and CD-ROM) and, for most witnesses, digital colour facsimiles (CD-ROM only) are available in this edition.</p>
+     <p id="CH4.030" n="4.3">The following section provides brief physical descriptions of all known witnesses to &ch;. In writing these accounts, I have concentrated primarily on describing the folio or folios upon which the &hymn; itself appears. While they are in most cases based on my personal examination of the manuscripts,<note id="CH4.NOTE.010" n="1"><p>In making this edition, I have personally consulted all witnesses to the &hymn; except the destroyed manuscripts &tor; and &cr;, &t1r; (undergoing conservation in the summer of 1998), and the late &sanmr;. I inspected the manuscripts of &ch; in June and July 1998, except for &brr;, which I consulted in the spring of 1994.</p></note> they are not intended to replace standard palaeographical descriptions. Bibliographic references too are meant to be useful rather than exhaustive. In citing secondary accounts, I have preferred significant and (where available) recent works to those of purely antiquarian interest or containing only passing or unsupported references to the manuscript in question. This is particularly true of disputes about the number, identification, or dating of hands. Scholars interested in the history of such arguments can in most cases reconstruct the bibliography from the works cited here, particularly &dobbie1937;.</p>
+    </div2>
+    <div2 id="CH4.2">
+     <head id="CH4.2.HEAD">Manuscript catalogue</head>
+     <div3 id="CH4.2.1">
+      <head id="CH4.2.1.HEAD">Index by city and library</head>
+      <p id="CH4.040" n="4.4">Manuscript descriptions in the main body of the chapter are sorted alphabetically by sigla. The following list provides an index arranged by city, library, and shelf-mark.</p>
+      <list type="simple">
+       <item>&brmlr; (&brr;)</item>
+       <item>&b1mlr; (&b1r;)</item>
+       <item>&tr1mlr; (&tr1r;)</item>
+       <item>&camlr; (&car;)</item>
+       <item>&mmlr; (&mr;)</item>
+       <item>&dimlr; (&dir;)</item>
+       <item>&hrmlr; (&hrr;)</item>
+       <item>&nmlr; (&nr; [see also &cr;])</item>
+       <item>&cmlr; (&cr; [see also &nr;])</item>
+       <item>&carmsmlr; (&carmsr;)</item>
+       <item>&bdmlr; (&bdr;)</item>
+       <item>&hmlr; (&href;)</item>
+       <item>&ldmlr; (&ldr;)</item>
+       <item>&t1mlr; (&t1r;)</item>
+       <item>&omlr; (&or;)</item>
+       <item>&lnmlr; (&lnr;)</item>
+       <item>&mgmlr; (&mgr;)</item>
+       <item>&p1mlr; (&p1r;)</item>
+       <item>&lmlr; (&lr;)</item>
+       <item>&sanmmlr; (&sanmr;)</item>
+       <item>&tomlr; (&tor;)</item>
+       <item>&wmlr; (&wr;)</item>
+      </list>
+     </div3>
+     <div3 id="CH4.2.2">
+      <head id="CH4.2.2.HEAD">Manuscript descriptions</head>
+      <div4 id="CH4.2.2.1" n="b1.description">
+       <head id="CH4.2.2.1.HEAD">&b1x; &b1mlx;</head>
+       <div5 id="CH4.2.2.1.1">
+	<head id="CH4.2.2.1.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&budny1997;, art. 32; &robinsonfcandstanley1991;, pl. 2.6; &ker1990;, art. 32; &dobbie1937;, 28; &james1909;, art. 41; &schipper1897-1899;, 2: xxv-xxix; &miller1890;, 1: xvi-xvii; 2: ix-x; &wanley1705;, 114-115.</p>
+       </div5>
+       <div5 id="CH4.2.2.1.2">
+	<head id="CH4.2.2.1.2.HEAD">Manuscript</head>
+	<p id="CH4.050" n="4.5">Parchment. 488 pp. 345 &times; 210 mm (Writing Surface: 265 &times; 143 mm in a single column of 25 lines). The manuscript contains a highly innovative copy of the Old English &he; ending in a unique metrical colophon (ed. &robinsonfc1981;; see &grant1989; for an exhaustive treatment of innovations). Various other unrelated texts (prayers, charms, liturgical texts, and poems) have been copied in the margins on specially ruled lines. The last page contains a copy of Bishop Leofric&rsquo;s donation inscription, recording the gift of the manuscript to Exeter Cathedral.<note id="CH4.NOTE.020" n="2"><p>Nine other manuscripts have similar donor inscriptions. &b1r; is the only one not recorded in the corresponding list of Leofric donations copied in <label>Oxford, Bodleian Library, Auct. D. 2. 16</label>, ff.&nbsp;1r-2v (&s11second;), &exeter3501ml;, ff.&nbsp;1r-2v (&s10second;) and, in Middle English, <label>Exeter, Cathedral Library, Charter no. 2570</label> (&s15;). See &budny1997; and &ker1990;. Editions of the <socalled>normal form</socalled> of the donor inscription and of the list of donations can be found in &chambersetal.1933;, 11, n. 2, and 18-32, respectively.</p></note>  The main text has been copied in two hands of &s11first; (&ker1990;; &budny1997;); the marginal texts are mostly in a single hand of &s11first; or &s11med; (&ker1990;; see also &budny1997;); the donation inscription is in a third hand and the manuscript has been augmented in several more (&ker1990;; &budny1997;). Although the manuscript&rsquo;s history before its donation to Exeter Cathedral is unknown, Budny suggests it is <quote id="CH4.QUOTE.0010">unlikely that it was made at Exeter</quote> (&budny1997;, 509).</p>
+       </div5>
+       <div5 id="CH4.2.2.1.3">
+	<head id="CH4.2.2.1.3.HEAD">&hymn;</head>
+	<p id="CH4.060" n="4.6">The &eorthan; has been copied by the second scribe of the main text on p. 322. The &hymn; begins at manuscript line 6. As in all copies of the &eorthan; except &tor;, the &hymn; has been copied as part of the main text of the Old English translation of the &he;, replacing Bede&rsquo;s &paraphrase;. This witness of the &hymn;, like its framing text, contains a number of unique and highly innovative readings. These variants are discussed below, &ch7x;.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.2" n="bd.description">
+       <head id="CH4.2.2.2.HEAD">&bdx; &bdmlx;</head>
+       <div5 id="CH4.2.2.2.1">
+	<head id="CH4.2.2.2.1.HEAD">Published descriptions and catalogue entries</head> 
+	<p>&robinsonfcandstanley1991;, pl. 2.14; &ker1990;, art. 304; &colgraveandmynors1969;, li; &dobbie1937;, 35-36; &frampton1924;, 4-5, n. 3; &huntetal1895-1953;, 2.1: art. 2016; &plummer1975;, 1: cxviii-cxx; &wanley1705;, 83.</p>
+       </div5>
+       <div5 id="CH4.2.2.2.2">
+	<head id="CH4.2.2.2.2.HEAD">Manuscript</head>
+	<p id="CH4.070" n="4.7">Parchment. 252 folios. 267 &times; 202 mm (Writing Surface: 185 &times; 142 mm in a single column of 22 lines). Trimmed with some loss from the marginal material. The manuscript is a composite volume. The first part, in which &ch; is found, contains a copy of the Latin &he; of the <socalled>Winchester</socalled> (<label rend="oblique">c</label>-type) recension (&colgraveandmynors1969;, li), A&eth;elwulf&rsquo;s <title level="m">De abbatibus</title>, extracts from Jerome and Orosius, and a Latin charm; the second part contains the <title level="m">Historia Brittonum</title><!-- title from lapidgeetal; said to be "mistakenly ascribed to Nennius" --> and several other miscellaneous historical texts; the third section contains a Latin-Old English glossary, the beginning of a homily on the Feast of Saint John the Baptist, and <quote id="CH4.QUOTE.0020">a list of about seventy works, probably in the library of Peterborough abbey</quote> (&huntetal1895-1953;, 2.1: 165); similarities in format and lineation suggest the first and third sections originally belonged together.<note id="CH4.NOTE.030" n="3"><p>Ff.&nbsp;250-251 are on thick parchment and ruled for 22 lines of text, as is the &he; (see &ker1990;). The glosses on f.&nbsp;250r are <quote id="CH4.QUOTE.0030">in the same hand as the charm on fol. 227</quote> (&huntetal1895-1953;, 2.1: 165).</p></note></p>
+	<p id="CH4.080" n="4.8">The first part of the manuscript is in several hands of &s11in; and, on ff.&nbsp;1, 6 and 7, &s12in; (&ker1990;). Bishop reports that the scribe responsible for <quote id="CH4.QUOTE.0040">the bulk of [&bdr;]</quote> is the same as that responsible for the <socalled>Bury Gospels,</socalled> Cambridge, Pembroke College, 301 (&bishop1953;, 441). The Latin text of the &he; in &bdr; appears to be a transcript of &wr;, with some corrections and alterations (&ker1969-1992;, 4: 578). The manuscript is likely to have been in Peterborough by &s12in;, when the booklist on f.&nbsp;251r was added (&ker1990;).</p>
+       </div5>
+       <div5 id="CH4.2.2.2.3">
+	<head id="CH4.2.2.2.3.HEAD">&hymn;</head>
+	<p id="CH4.090" n="4.9">The &ylda; has been copied by a distinct hand of &s11med; (&ker1990;). The poem is located in the outer margin of the Latin &he; on the page containing Bede&rsquo;s &paraphrase; (f.&nbsp;152v). It has been badly damaged by binders and an attempt at erasure. Despite attempts at reading the witness under ultraviolet, bright day-, and artificial light, I was unable to decipher more than a few words and letters.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.3" n="br.description">
+       <head id="CH4.2.2.3.HEAD">&brx; &brmlx;</head>
+       <div5 id="CH4.2.2.3.1">
+	<head id="CH4.2.2.3.1.HEAD">Published descriptions and catalogue entries</head> 
+	<p>&cavill2000;, 512-513; &odonnell1996b;; &robinsonfcandstanley1991;, pll. 2.10.1-2.10.2; &humphreysandross1975;, 53, art. 1; &colgraveandmynors1969;, lxv-lxvi; &laistner1943;, 95<note id="CH4.NOTE.040" n="4"><p>Laistner incorrectly cites Van den Gheyn&rsquo;s catalogue number as the manuscript&rsquo;s shelf-mark. For <quote id="CH4.QUOTE.0050">Biblioth&egrave;que royale 3116</quote> read <quote id="CH4.QUOTE.0060">Biblioth&egrave;que royale 8245-57.</quote> Laistner also has an error in his reference to &vandengheyn1905;. For <quote id="CH4.QUOTE.0070">II, 40</quote> read <quote id="CH4.QUOTE.0080">V, 40.</quote></p></note>; &vandengheyn1905;, 5: art. 3116.</p>
+       </div5>
+       <div5 id="CH4.2.2.3.2">
+	<head id="CH4.2.2.3.2.HEAD">Manuscript</head>
+	<p id="CH4.100" n="4.10">Paper with some parchment. 321 folios.<note id="CH4.NOTE.050" n="5"><p>&vandengheyn1905; gives the number of folios as 320 (5: 41). A last, numbered, folio in the manuscript is clearly original, however. See &odonnell1996b;, 140, n. 7.</p></note>  276 &times; 202 mm (Writing Space: 210 &times; 150 mm in two columns of 42 lines in the first section). Trimmed with some loss from the margins. The manuscript is in two parts. The first part contains a copy of the <socalled>German</socalled> (<label rend="oblique">m</label>-type) recension of the Latin &he; (&colgraveandmynors1969;, lxv-lxvi). The second part contains a variety of histories, <foreign lang="LAT">vitae</foreign>, and historical and administrative documents relating to the practices of the Carthusians (see &vandengheyn1905; for a complete listing). Colophons on ff.&nbsp;1v and 87r identify the scribe of the manuscript as a whole as <quote id="CH4.QUOTE.0090" lang="LAT">fratrem anthonium de bergis supra zomam</quote>, <quote corresp="CH4.QUOTE.0090">Brother Anthony of Bergen-op-Zoom</quote>) and date his work in the first section to 1489. The colophons also indicate that the manuscript was copied at Korssendonk, a house of the Windesheim congregation of Regular Canons in Belgian Brabant.</p>
+       </div5>
+       <div5 id="CH4.2.2.3.3">
+	<head id="CH4.2.2.3.3.HEAD">&hymn;</head>
+	<p id="CH4.110" n="4.11">The &eordu;<note id="CH4.NOTE.060" n="6"><p>&robinsonfcandstanley1991; incorrectly identify the dialect of the &hymn; in this witness as <quote id="CH4.QUOTE.0100">West-Saxon</quote> (18).</p></note> has been copied as part of the main text of the Latin &he; at the beginning of Bede&rsquo;s &paraphrase; (i.e. between <mentioned lang="LAT">iste est sensus</mentioned> and <mentioned lang="LAT">Nunc laudare debemus</mentioned>) on ff.&nbsp;62r2-62v1. It is in the hand of the main scribe. No change in script separates &ch; from the surrounding Latin text, although some unusual letter-forms and slightly wider than usual spacing between the characters suggest that Anthony had difficulty with the passage. The text is also full of misapprehensions of individual letters and forms, a feature of all three witnesses to the &eordu;. For a detailed discussion of the scribe&rsquo;s performance in this manuscript, see &odonnell1996b;, especially 140-150; &cavill2000;, 512-513. The text of the recension is discussed below, &ch7xEordu;.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.4" n="c.description">
+       <head id="CH4.2.2.4.HEAD">&cx; &cmlx;<note id="CH4.NOTE.070" n="7"><p>For a discussion of Nowell&rsquo;s transcription of the manuscript, see &nr;, below.</p></note></head>
+       <div5 id="CH4.2.2.4.1">
+	<head id="CH4.2.2.4.1.HEAD">Published descriptions and catalogue entries</head> 
+	<p>&grant1996;, 25-35; &ker1990;, art. 180; &lutz1981;, xxvii-xxxii; &torkar1981;, 39-43, 49-83, 149-167; &dobbie1937;, 24-25; &schipper1897-1899;, 2: xv-xix; &miller1890;, 1: xv-xvi; 2: ix; &plummer1975;, 1: xcii-xcv; &wanley1705;, 219; &smitht1984;, 71, art xi.</p>
+       </div5>
+       <div5 id="CH4.2.2.4.2">
+	<head id="CH4.2.2.4.2.HEAD">Manuscript</head>
+	<p id="CH4.120" n="4.12">Parchment. 53 folios in 56 fragments: 53 fragments survive in &cr;, 3 in Cotton Otho B. x, and 1 complete leaf in Additional 34652 (&ker1990;). The original manuscript may have contained anywhere from 176 (one possible interpretation of the description in &wanley1705;) to <quote id="CHQUOTE0135">more than 350 leaves</quote> (&dobbie1937;, 24). The most likely figure is probably 231 or 331 folios.<note id="CH4.NOTE.080" n="8"><p>As these figures suggest, there is considerable confusion surrounding the original number of folios in &cr;. Wanley, who catalogued the manuscript before the Cottonian fire, gives two different foliations: <quote id="CH4.QUOTE.0130">231</quote> folios, recorded in hand-written annotations to the manuscript&rsquo;s entry in various copies of &smitht1984; (for a discussion, see &torkar1981;, 50-60; &lutz1981;, xxviii-xxix), and (more than) 351 <quote id="CH4.QUOTE.0140">fol.</quote> in his published catalogue of 1705 (&wanley1705;, 219). Subsequent, post-fire, estimates have ranged from less than 231 folios (&ker1990;, 233) to Dobbie&rsquo;s estimate of <quote id="CH4.QUOTE.0150">more than 350 leaves</quote> (&dobbie1937;, 24).</p><p>The confusion appears to have its origins in two separate mistakes in &wanley1705;. First of all, Wanley appears to confuse folio and page numeration in his description of the manuscript&rsquo;s contents. In locating the incipits for items I through XII, Wanley references specific pages. For items XIII and XIV, however, he changes to folio numbers:</p>
+	  <quote id="CH4.QUOTE.0175">	 
+	   <p>
+	    <figure id="CH4.FIGURE.1" n="1" entity="wanley1705p219">
+	     <figdesc>Facsimile of &wanley1705;, 229, showing the change from page to folio numbers between the bottom of the first column and the top of the second.</figdesc>
+	    </figure>
+	   </p>
+	  </quote>
+	  <p rend="citation">(&wanley1705;, 229).</p>
+	  <p>As his last page-number reference (at the bottom of the first column on p. 219) is to <quote id="CH4.QUOTE.0160">Pag. 349</quote> and his first folio reference (at the top of the second column on p. 219) is to <quote id="CH4.QUOTE.0170">fol. 349,b,</quote> it seems likely that it is the folio count that is incorrect. For <quote id="CH4.QUOTE.0180">fol. 349,b,</quote> therefore, read <quote id="CH4.QUOTE.0190">page 350,</quote> for <quote id="CH4.QUOTE.0200">fol. 351,</quote> read <quote id="CH4.QUOTE.0210">page 351.</quote> This provides a low estimate of 176 folios for the manuscript as a whole (implicit in &ker1990;). The confusion also explains the high estimate of <quote id="CH4.QUOTE.0220">more than 350 leaves</quote> mentioned by &dobbie1937;.</p>
+	  <p>In addition to confusing folios and pages, however, Wanley also appears to have miscounted in his 1705 catalogue. As Torkar argues, the easiest way of reconciling Wanley&rsquo;s published and unpublished paginations is to assume that the printed catalogue has accidentally dropped 100 pages from its count (for a detailed explanation, see &torkar1981;, 49-60). After collating the surviving fragments against &nr; and various pre-fire descriptions of &cr;, moreover, Torkar concludes that the error arose in the Old English Bede (&torkar1981;, 50-60, especially 58-60).</p></note> <quote id="CH4.QUOTE.0230">244 &times; 177 mm</quote> (Writing Surface: <quote id="CH4.QUOTE.0240">207 &times; 144 mm,</quote> single column of <quote id="CH4.QUOTE.0250">27 long lines, except ff.&nbsp;35, 36, 39 and Add. [34652] in 26 lines, and ff.&nbsp;48-51 in 22 lines</quote>).<note id="CH4.NOTE.090" n="9"><p>All measurements from &ker1990;. Ker&rsquo;s figures are based on an examination of Additional 34652, f.&nbsp;2. This leaf, detached from the manuscript before the Cottonian fire, is the only folio to have avoided fire-related damage.</p></note>   The manuscript contained copies of the Old English &he;, the <socalled>G</socalled> text of the <title level="m">Anglo-Saxon Chronicle</title>, and miscellaneous shorter texts including genealogies, laws, and poetry (see &torkar1981;).</p>
+	<p id="CH4.130" n="4.13">The first text was copied (with the exception of Bede&rsquo;s autobiographical note) in a hand of &s10med;; the remaining texts were copied in two hands of &s11first; (&ker1990;). The first scribe of the manuscript, responsible for copying the Old English &he;, probably also copied the annals for 925-955 in Chronicle A (<label>Cambridge, Corpus Christi College, 173</label>), and <label>London, British Library, Royal 12 D. xvii</label>, a recipe collection that shows considerable overlap with &cr; (&torkar1981;, 153-154; see &ker1990;, arts. 39 and 264). The manuscript was <quote id="CH4.QUOTE.0260">[w]ritten at Winchester</quote> (&ker1990;).</p>
+       </div5>
+       <div5 id="CH4.2.2.4.3">
+	<head id="CH4.2.2.4.3.HEAD">&hymn;</head>
+	<p id="CH4.140" n="4.14">Although fragments survive from Bede&rsquo;s chapter on C&aelig;dmon, the page containing the text of the &hymn; itself was destroyed in the fire of 1731. Nowell&rsquo;s transcription in &nr;, however, confirms that &cr; contained the expected copy of the &eorthan;. It is impossible to say with certainty much about the location of the &hymn;, other than that it was found in the Old English &he;. The &hymn; therefore presumably was copied by the principal scribe of the main text of the Old English &he;.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.5" n="ca.description">
+       <head id="CH4.2.2.5.HEAD">&cax; &camlx;</head>
+       <div5 id="CH4.2.2.5.1">
+	<head id="CH4.2.2.5.1.HEAD">Published descriptions and catalogue entries</head> 
+	<p>&robinsonfcandstanley1991;, pl. 2.5; &ker1990;, art. 23; &dobbie1937;, 27-28; &schipper1897-1899;, 2: xix-xxi; &miller1890;, 1: xix-xx; &hardwicketal1980;, 3: art. 2004; &smithj1722;; &wanley1705;, 153; &wheloc1644a;.</p>
+       </div5>
+       <div5 id="CH4.2.2.5.2">
+	<head id="CH4.2.2.5.2.HEAD">Manuscript</head>
+	<p id="CH4.150" n="4.15">Parchment. 97 folios. 319 &times; 230 mm (Writing Surface: 275 &times; 158 mm in a single column of 30 lines). The manuscript contains a copy of the Old English translation of the &he; in a single hand of &s11second; (&ker1990;). The witness is closely related to, and, indeed, was perhaps directly copied from, &or; (&zupitza1882;, iv).<note id="CH4.NOTE.100" n="10"><p>&dobbie1937; (27, n. 39) gives an incorrect title and publication date for this volume.</p></note> A Worcester manuscript, &car; contains glosses in the Worcester <socalled>tremulous hand</socalled> (&ker1990;) and a partial signature by <quote id="CH4.QUOTE.0270">Coleman,</quote> a Worcester scribe (&ker1949;, 29). The main scribe of &car; is responsible for five other Worcester manuscripts and <label>London, British Library, Harley Charter 83. A. 3</label> (&ker1990;). The manuscript was used as the basis for early editions by &smithj1722; and &wheloc1644a;.</p>
+       </div5>
+       <div5 id="CH4.2.2.5.3">
+	<head id="CH4.2.2.5.3.HEAD">&hymn;</head>
+	<p id="CH4.160" n="4.16">The &eorthan; has been copied by the scribe of the Old English &he; in the usual position as part of the main text of the &historia; beginning at f.&nbsp;72v (p. 140 in the older filiation), manuscript line 24.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.6" n="ar.description">
+       <head id="CH4.2.2.6.HEAD">&carmsx; &carmsmlx;<note id="CH4.NOTE.110" n="11"><p>The manuscript is variously identified as College of Arms, M. 6 (&humphreysandross1975;, 53) and <foreign lang="LAT">sine numero</foreign> (&robinsonfcandstanley1991;, and &ker1964;, 51). The correct designation is <foreign lang="LAT">sine numero</foreign> (R. Yorke, College of Arms Archivist, Personal Communication, April 18, 2001). <socalled>M. 6</socalled> is a medieval (Chichester) press mark.</p></note></head>
+       <div5 id="CH4.2.2.6.1">
+	<head id="CH4.2.2.6.1.HEAD">Published descriptions and catalogue entries</head> 
+	<p>&cavill2000;, 504-505; &robinsonfcandstanley1991;, pl. 2.13; &humphreysandross1975;, 53, art. 4; &colgraveandmynors1969;, liii.</p>
+       </div5>
+       <div5 id="CH4.2.2.6.2">
+	<head id="CH4.2.2.6.2.HEAD">Manuscript</head>
+	<p id="CH4.170" n="4.17">Parchment. 113 folios. 230 &times; 165 mm (Writing Surface: 185 &times; 112 mm in a single column of 35 lines on f.&nbsp;[84v]. Pages are of uneven size and number of lines). The manuscript contains copies of the Latin &he;, perhaps belonging to the <socalled>English</socalled> <label rend="oblique">c</label>-type (&colgraveandmynors1969;, liii),<note id="CH4.NOTE.120" n="12"><p>Colgrave and Mynors discuss &carmsr; in their section on the <socalled>English</socalled> or <label rend="oblique">c</label>-type tradition, but place the manuscript, with &ldr;, in a brief list of <quote id="CH4.QUOTE.0280">copies, whose relation to the more clearly marked groups has not yet been established</quote> (&colgraveandmynors1969;, lii-liii).</p></note> and the <title level="m">Epistola Cuthberti de obitu Bedae</title>. Copied in &s12; (&ker1964;, 51). &carmsr; has a medieval press mark from Chichester Cathedral (&ker1964;, 51) but is otherwise of unknown provenance.</p>
+       </div5>
+       <div5 id="CH4.2.2.6.3">
+	<head id="CH4.2.2.6.3.HEAD">&hymn;</head>
+	<p id="CH4.180" n="4.18">The &eorthe; has been copied by the scribe of the main Latin text in alternating lines with Bede&rsquo;s &paraphrase; within the main Latin text of the &he; on f.&nbsp;[84v] (see &odonnell1996b;, appendix). The first three words of the Old English poem have been copied interlinearly above the first words of the &paraphrase; (between manuscript lines 29 and 30).</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.7" n="di.description">
+       <head id="CH4.2.2.7.HEAD">&dix; &dimlx;<note id="CH4.NOTE.125" n="13"><p>This manuscript is often identified as <foreign lang="FRA">&bibliotheque; publique</foreign> 574 (e.g. &colgrave1940;). The manuscript is owned by the <foreign lang="FRA">&bibliotheque; municipale</foreign>.</p></note></head>
+       <div5 id="CH4.2.2.7.1">
+	<head id="CH4.2.2.7.1.HEAD">Published descriptions and catalogue entries</head> 
+	<p>&robinsonfcandstanley1991;, pl. 2.2; &ker1990;, art. appendix 8; &colgraveandmynors1969;, lx-lxi; &colgrave1940;, 34; &dobbie1937;, 17-19; &wuest1906;, 206-12; &cataloguegeneral;, 5: 142, art. 574/334.</p>
+       </div5>
+       <div5 id="CH4.2.2.7.2">
+	<head id="CH4.2.2.7.2.HEAD">Manuscript</head>
+	<p id="CH4.190" n="4.19">Parchment. 117 folios. 325 &times; 240 mm (Writing Surface: 230 &times; 180 mm, two columns of 36 lines). The manuscript contains a copy of the Latin &he; (probably of the <socalled>German</socalled> <label rend="oblique">m</label>-type recension),<note id="CH4.NOTE.130" n="14"><p>Colgrave and Mynors tentatively assign &dir;, which they did not examine, to the <socalled>English</socalled> or <label rend="oblique">c</label>-type text, presumably on the basis of the strong English focus of its contents (&colgraveandmynors1969;, lx-lxi). The manuscript shows close correspondences to &brr; and &p1r;, however, both of which Colgrave and Mynors assign to the <socalled>German</socalled> or <label rend="oblique">m</label>-type recension on the basis of a collation of selected passages from the Latin text (&colgraveandmynors1969;, lxv-lxvi). A more detailed discussion of the relationship among &dir;, &brr;, and &p1r; can be found below (&ch7xEordu;), and in &odonnell1996b;.</p></note> three texts by Bede and other authors concerning Saint Cuthbert, and, on the final three folios, miscellaneous works on Saint Thomas Becket in verse and prose. The first 114 folios, containing &he; and the material on Saint Cuthbert, are in several hands of &s12; (see &wuest1906;, 210; &cataloguegeneral)<note id="CH4.NOTE.140" n="15"><p>The &cataloguegeneral; suggests the first part of the manuscript is in <quote id="CH4.QUOTE.0290" lang="FRA">une &eacute;criture anglaise tr&egrave;s caract&eacute;ris&eacute;e</quote> (142). This is an exaggeration, although, as Wuest suggests, some of the scribes show some English traits (&wuest1906;, 208). Both Wuest (210) and the Catalogue (142) date the manuscript to before 1171 on different internal grounds.</p></note>; the last three folios have been copied in several slightly later hands. The manuscript was probably copied at C&icirc;teaux.</p>
+       </div5>
+       <div5 id="CH4.2.2.7.3">
+	<head id="CH4.2.2.7.3.HEAD">&hymn;</head>
+	<p id="CH4.200" n="4.20">The &eordu; is found within the main Latin text of &he; at the beginning of Bede&rsquo;s &paraphrase; (i.e. between <mentioned lang="LAT">iste est sensus</mentioned> and <mentioned lang="LAT">Nunc laudare debemus</mentioned>), f.&nbsp;59v2, manuscript line 19. The beginning of the Old English text and the start of the &paraphrase; are marked by &ssr; consisting of a cross with dots in the upper left and right quadrants. The Old English text is further distinguished by a vertical line in the right hand margin. Robinson and Stanley report <quote id="CH4.QUOTE.0320">[a]bove <quote id="CH4.QUOTE.0325" lang="ANG">modgedeanc,</quote> between the <mentioned>e</mentioned> and <mentioned>d</mentioned>, is a very light <mentioned>s</mentioned>, perhaps for <quote id="CH4.QUOTE.0327" lang="LAT">saxonice</quote></quote> (&robinsonfcandstanley1991;, 18); it is uncertain, even after personal inspection under natural, bright white, and ultra-violet light, however, whether this extremely light mark is from a pen or simply a blemish on the parchment.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.8" n="h.description">
+       <head id="CH4.2.2.8.HEAD">&hx; &hmlx;</head>
+       <div5 id="CH4.2.2.8.1">
+	<head id="CH4.2.2.8.1.HEAD">Published descriptions and catalogue entries</head> 
+	<p>&robinsonfcandstanley1991;, pl. 2.15; &ker1990;, art. 326; &colgraveandmynors1969;, xlii-xliii; &dobbie1937;, 34-35 (description) and 38-39 (text); &huntetal1895-1953;, 2.2: art. 4106; &plummer1975;, 1: cxiii.</p>
+       </div5>
+       <div5 id="CH4.2.2.8.2">
+	<head id="CH4.2.2.8.2.HEAD">Manuscript</head>
+	<p id="CH4.210" n="4.21">Parchment. 181 folios. 264 &times; 210 mm (Writing Surface: 192 &times; 147 mm in a single column of 26 lines). The manuscript contains an <quote id="CH4.QUOTE.0330">accurate and handsome</quote> copy of the early <label rend="oblique">c</label>-text of the Latin &he; (&colgraveandmynors1969;, xliii), in two hands of &s11in; (&ker1990;). Its provenance is unknown.<note id="CH4.NOTE.150" n="16"><p>Plummer&rsquo;s suggestion of <quote id="CH4.QUOTE.0340">Glastonbury</quote> (&plummer1975;, 1: cxiii) has been generally discounted. See &colgraveandmynors1969;, xliii.</p></note></p>
+       </div5>
+       <div5 id="CH4.2.2.8.3">
+	<head id="CH4.2.2.8.3.HEAD">&hymn;</head>
+	<p id="CH4.220" n="4.22">The &ylda; of &ch; has been copied in the lower margin of the Latin &historia; on f.&nbsp;129r in a distinct hand of &s11second; (&ker1990;). The scribe uses a lighter colour ink, marks the beginning of the Old English with a &sr; (a similar &sr; is found at the beginning of the &paraphrase; on manuscript line 17 of the main text), and draws a box around his text. The same hand is probably also responsible for the three occurrences of <mentioned lang="LAT">beati</mentioned> on ff.&nbsp;23v and 24r), although these omit the most distinctive feature of the scribe&rsquo;s copy of &ch;, the very high <seg type="linguistic" subtype="graphemic">s</seg>.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.9" n="hr.description">
+       <head id="CH4.2.2.9.HEAD">&hrx; &hrmlx;</head>
+       <div5 id="CH4.2.2.9.1">
+	<head id="CH4.2.2.9.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&mynorsandthomson1993;, 95-96; &robinsonfcandstanley1991;, pl. 2.12; &ker1990;, art. 121; &colgraveandmynors1969;, lvi; &ker1955;, 20-21; &dobbie1937;, 41-42; &judge1934;, 89-92; &bannister1927;, 147-149.</p>
+       </div5>
+       <div5 id="CH4.2.2.9.2">
+	<head id="CH4.2.2.9.2.HEAD">Manuscript</head>
+	<p id="CH4.230" n="4.23">Parchment. 154 folios. 283 &times; 200 mm (Writing Space: 217 &times; 145 mm in two columns of 35 lines). A composite manuscript. The first section contains Lanfranc, <title level="m">Constitutiones</title>, and the Pseudo-Augustine, <title level="m">Contra Felicianum Arianum</title>; the second, a copy of the <socalled>Digby</socalled> or <socalled>Common Southern Text</socalled> of Bede&rsquo;s Latin &he; (&colgraveandmynors1969;, lv-lvi), an unusually innovative representative of the <socalled>Digby</socalled> text of Cuthbert&rsquo;s <title level="m">Epistola de obitu Bedae</title> (&dobbie1937;, 82-83), and a list of archbishops of Canterbury. Additional items have been lost from the end of the manuscript, except for a copy of the <title level="m">Historia Brittonum</title><!-- title from lapidgeetal; said to be "mistakenly ascribed to Nennius" -->, preserved in the British Library. The first part is in a single hand; Bede&rsquo;s &historia; and Cuthbert&rsquo;s epistle are in a second; the list of archbishops, a third, with additions by other scribes. All three main hands are to be dated to <quote>&s11ex;, &s12in;</quote> (&mynorsandthomson1993;).<note id="CH4.NOTE.160" n="17"><p>The list of archbishops is dated on internal grounds to <quote id="CH4.QUOTE.0350">1161-1162</quote> by Bannister (&bannister1927;, 149).</p></note> &hrr; was acquired by Sir John Prise from the cell of Battle Abbey at Brecon by 1539 (&ker1955;, 7, 20-21). It appears to have been at Battle Abbey itself before that (&ker1990;).</p>
+       </div5>
+       <div5 id="CH4.2.2.9.3">
+	<head id="CH4.2.2.9.3.HEAD">&hymn;</head>
+	<p id="CH4.240" n="4.24">The &eorthe; is found in the outer margin of the Latin &he; (f.&nbsp;116v) on specially ruled lines. &Ssr; in a later hand at the upper right of the &hymn; and at the beginning of the &paraphrase; in column two link the gloss to the main text. The &hymn; has been copied by a different but roughly contemporaneous marginal scribe (&ker1990;).</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.10" n="ld.description">
+       <head id="CH4.2.2.10.HEAD">&ldx; &ldmlx;</head>
+       <div5 id="CH4.2.2.10.1">
+	<head id="CH4.2.2.10.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&robinsonfcandstanley1991;, pl. 2.16; &ker1990;, art. 341; &colgraveandmynors1969;, liii; &dobbie1937;, 40-41; &plummer1975;, 1: cxvii-cxviii; &coxeandhunt1973;, 2: col. 205.</p>
+       </div5>
+       <div5 id="CH4.2.2.10.2">
+	<head id="CH4.2.2.10.2.HEAD">Manuscript</head>
+	<p id="CH4.250" n="4.25">Parchment. 111 folios. 270 &times; 190 mm. (Writing Surface: 230 &times; 145 mm in two columns of 36 lines). Partially trimmed with loss of up to 25 mm on outer margin. The manuscript contains a copy of the Latin &he; (associated with the <socalled>English</socalled> <label rend="oblique">c</label>-type recension by &colgraveandmynors1969;, liii)<note id="CH4.NOTE.170" n="18"><p>Colgrave and Mynors discuss &ldr; in their section on the <socalled>English</socalled> or <label rend="oblique">c</label>-type tradition, but place the manuscript, with &carmsr;, in a brief list of <quote id="CH4.QUOTE.0360">copies, whose relation to the more clearly marked groups has not yet been established</quote> (&colgraveandmynors1969;, lii-liii).</p></note> in one or more hands of &s12first; (cf. &dobbie1937;, 40-41; &colgraveandmynors1969;, liii; &ker1990;). Provenance is unknown.</p>
+       </div5>
+       <div5 id="CH4.2.2.10.3">
+	<head id="CH4.2.2.10.3.HEAD">&hymn;</head>
+	<p id="CH4.260" n="4.26">The &eorthe; has been copied in the outer margin of f.&nbsp;82v. It is marked with an elaborate &sr;, but without any corresponding mark at the beginning of the &paraphrase;, which begins 10 lines below the end of the Old English &hymn; in the first column.<note id="CH4.NOTE.180" n="19"><p>A similar &sr; is used on f.&nbsp;32r, where it also appears in the text.</p></note> The &hymn; has been partially damaged in trimming, although some care has been taken to cut around the text. The scribe of the Old English text is probably the same as that responsible for the main text on f.&nbsp;82v (&ker1990;). He is also responsible for other marginalia in the manuscript.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.11" n="ln.description">
+       <head id="CH4.2.2.11.HEAD">&lnx; &lnmlx;</head>
+       <div5 id="CH4.2.2.11.1">
+	<head id="CH4.2.2.11.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&robinsonfcandstanley1991;, pl. 2.17; &ker1990;, art. 356; &colgraveandmynors1969;, liv; &dobbie1937;, 36-37; &plummer1975;, 1: cxxii-cxxiii; &coxe1972;, 1: 28.</p>
+       </div5>
+       <div5 id="CH4.2.2.11.2">
+	<head id="CH4.2.2.11.2.HEAD">Manuscript</head>
+	<p id="CH4.270" n="4.27">Parchment. 216 folios (including 13 empty folios of ruled parchment, perhaps &s15;; see &colgraveandmynors1969;, liv). 262 &times; 177 mm (Writing Surface: 215 &times; 140 mm in two columns of 32 lines). A composite manuscript. The first part contains a copy of the <socalled>Yorkshire</socalled> version of the <label rend="oblique">c</label>-type <socalled>English</socalled> text of Bede&rsquo;s Latin &he; and <socalled>Burney</socalled> version of Cuthbert&rsquo;s <title level="m">Epistola de obitu Bedae</title> collated against a member of the <socalled>Digby</socalled> recension (&dobbie1937;, 88). Both texts have been copied in a single hand of &s12med;. The second part contains an unrelated copy of Bede&rsquo;s <title level="m">Commentary on the Catholic Epistles</title>. The two parts were probably bound together in &s15; when the manuscript was donated to Lincoln Cathedral by Robert Flemmyng, who died in 1483 (&colgraveandmynors1969;, liv). Its provenance is otherwise unknown.</p>
+       </div5>
+       <div5 id="CH4.2.2.11.3">
+	<head id="CH4.2.2.11.3.HEAD">&hymn;</head>
+	<p id="CH4.280" n="4.28">The &ylda; of the &hymn; has been copied in the bottom margin of f.&nbsp;83r<note id="CH4.NOTE.190" n="20"><p>&dobbie1937;, who ignores the first 13 blank folios in his foliation, gives the location of the &hymn; as <quote id="CH4.QUOTE.0370">f.&nbsp;70a.</quote> The current description follows &ker1990; and &robinsonfcandstanley1991;, both of which count the initial folios.</p></note> on specially ruled lines by one of the correctors of the main Latin text (&ker1990;). The vernacular text has been copied around a tear in the bottom right corner of the page. It is connected to the Latin text by a &sr;; a matching symbol is found in the outer margin beside the first word of the &paraphrase;. &BDS; has been copied in a different hand on f.&nbsp;112v (&ker1990;).</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.12" n="m.description">
+       <head id="CH4.2.2.12.HEAD">&mx; &mmlx;</head>
+       <div5 id="CH4.2.2.12.1">
+	<head id="CH4.2.2.12.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&robinsonfcandstanley1991;, pl. 2.1; &ker1990;, art. 25; &robinsonpr1988;, art. 68 (1: 37 and 2: pll. 1 and 2); &colgraveandmynors1969;, xliii-xliv; &hunterblair1959;; &dobbie1937;, 11-16; &lowe1934-;, art. 139; &mayorandlumby1878;, 413, 431*; &paleographicalsociety1879;, 1: pll. 139 and 140 and accompanying letterpress; &plummer1975;, 1: lxxxix-xci; &hardwicketal1980;, 3: art. 2058; &wanley1705;, 287.</p>
+       </div5>
+       <div5 id="CH4.2.2.12.2">
+	<head id="CH4.2.2.12.2.HEAD">Manuscript</head>
+	<p id="CH4.290" n="4.29">Parchment. 128 folios. 293 &times; 215 mm (Writing Surface: 250 &times; 185 mm in a single column of 30-33 lines in the main text [30 on f. 128v]). The manuscript contains (with &lr;) one of the two earliest representatives of the <label rend="oblique">m</label>-type text of the Latin &he; (&colgraveandmynors1969;, xliii-xliv). Copied  in a single hand, &mr; is traditionally dated to 734 &times; 737 on the basis of the so-called Moore Memoranda, a series of chronological notes preserved on f.&nbsp;128v. Although the validity of these (and similar notes in &lr;) as evidence for the manuscript&rsquo;s date has been challenged vigorously, the manuscript can be dated securely to &s8; on palaeographic and codicological grounds (for a discussion see &ch4rAppendix;, below). &mr; is now thought <quote id="CH4.QUOTE.0390">likely to be English in origin</quote> (&ker1990;). Bischoff has shown that the manuscript was at the Palace School at Aachen in c. 800 (&bischoff1965-1967;, 56). Parkes suggests that it may have been sent to there from York at Alcuin&rsquo;s request (&parkes1982;, 27, n. 35).</p>
+       </div5>
+       <div5 id="CH4.2.2.12.3">
+	<head id="CH4.2.2.12.3.HEAD">&hymn;</head>
+	<p id="CH4.300" n="4.30">The &aelda; has been copied at the top edge of f.&nbsp;128v (an originally blank page). The &hymn; is in the hand of a contemporary scribe, probably to be identified with that responsible for the so-called &memoranda; on the same page (written in a larger script, but showing many similarities to the more cramped &ch;; see &ch4xAppendix;) and the main text of ff.&nbsp;1r-128r.<note id="CH4.NOTE.200" n="21"><p>For differing opinions, see &hunterblair1959;; &kiernan1990a;, 160-162 [but cf. &kiernan1990b;, 52]; and &ker1990;.</p>
+	  <p>&kiernan1990a;, pointing to the small size of the text of &ch; and the subsequent line of glosses, has suggested that the &hymn; was added to the manuscript after the Moore Memoranda that follow (see particularly 160-162 and n. 16). This seems inconsistent with a) the layout of the manuscript (it assumes that the scribe of the &memoranda; used a much larger top margin on f.&nbsp;128v than elsewhere), b) the strong similarities between the smaller script of the &hymn; and the larger script of the &memoranda;, and c) the convincing argument in &kiernan1990b; concerning the &memoranda; scribe&rsquo;s approach to compiling f.&nbsp;128v:</p>
+	  <quote id="CH4.QUOTE.0395">
+	   <p>The Moore scribe apparently collected the marginalia in his exemplar and deposited them all in a heap at the end of his manuscript.</p>
+	   <p>Thus, instead of inserting C&aelig;dmon&rsquo;s &hymn; as a marginal note on the same page as Bede&rsquo;s Latin paraphrase (fol. 91r), as the other Anglo-Saxon manuscripts of the Latin text do, the Moore scribe makes an endnote of our first English poem. He also apparently gathered together and alphabetized three rather specialized glosses from the margins of his copy-text.... And, of course, he combined the marginal chronological notes into what scholars have been calling the Moore Memoranda (52-53).</p>
+	  </quote>
+	 </note>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.13" n="mg.description">
+       <head id="CH4.2.2.13.HEAD">&mgx; &mgmlx;</head>
+       <div5 id="CH4.2.2.13.1">
+	<head id="CH4.2.2.13.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&robinsonfcandstanley1991;, pl. 2.18; &ker1990;, art. 357; &colgraveandmynors1969;, lvi; &dobbie1937;, 37-38; &plummer1975;, 1: cxxiv; &coxe1972;, 2: 55-56.</p>
+       </div5>
+       <div5 id="CH4.2.2.13.2">
+	<head id="CH4.2.2.13.2.HEAD">Manuscript</head>
+	<p id="CH4.310" n="4.31">Parchment. 138 folios. 304 &times; 215 mm (Writing Surface: 215 &times; 138 mm in two columns of 36 lines). Manuscript has been trimmed slightly. &mgr; contains a copy of the <socalled>Common Southern</socalled> version of the <label rend="oblique">c</label>-type <socalled>English</socalled> text of Bede&rsquo;s Latin &he; (&colgraveandmynors1969;, lv-lvi) in a single hand of &s12med; (&ker1990;). The manuscript was in Magdalen College by 1600 but otherwise is of unknown provenance.</p>
+       </div5>
+       <div5 id="CH4.2.2.13.3">
+	<head id="CH4.2.2.13.3.HEAD">&hymn;</head>
+	<p id="CH4.320" n="4.32">The &ylda; has been copied on specially drawn lines in the outer margin of f.&nbsp;99r. It is at the same height on the page as the beginning of the Latin &paraphrase; in column 1, and has been copied by the scribe of the main Latin text. The &hymn; is in the same proto-gothic script as the Latin, but with some imitation <socalled>insular</socalled> features, especially <seg type="linguistic" subtype="graphemic">f</seg>, <seg type="linguistic" subtype="graphemic">g</seg>, rounded <seg type="linguistic" subtype="graphemic">d</seg> and <socalled>insular</socalled> <seg type="linguistic" subtype="graphemic">r</seg> (&ker1990;). A three-dot &sr; connects <mentioned rend="postcorrection" lang="ANG">&copyOfmg.1a.1;</mentioned> in the &hymn; and <mentioned lang="LAT">nunc</mentioned> in the &paraphrase;.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.14" n="n.description">
+       <head id="CH4.2.2.14.HEAD">&nx; &nmlx;</head>
+       <div5 id="CH4.2.2.14.1">
+	<head id="CH4.2.2.14.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&grant1996;, 25-35; &robinsonfcandstanley1991;, pll. 2.7.1-2.7.2; &lutz1981;, li-liii; &torkar1981;, 42-48, 159-167; &grant1974;.</p></div5>
+       <div5 id="CH4.2.2.14.2">
+	<head id="CH4.2.2.14.2.HEAD">Manuscript</head>
+	<p id="CH4.330" n="4.33">Paper. 268 folios. 200 &times; 152 mm (Writing Surface: 157 &times; 100 mm in a single column of 27 lines). The manuscript contains a copy of the Old English translation of Bede&rsquo;s &he;, the <socalled>G</socalled> text of the <title level="m">Anglo-Saxon Chronicle</title>, and a variety of other laws, administrative documents and recipes (see &torkar1981;, 42-43). A transcription of &cr;, the manuscript was copied by Laurence Nowell in 1562 in London.<note id="CH4.NOTE.210" n="22"><p>See colophons on f.&nbsp;2r and especially f.&nbsp;264v (transcribed in &lutz1981;, li).</p></note></p>
+       </div5>
+       <div5 id="CH4.2.2.14.3">
+	<head id="CH4.2.2.14.3.HEAD">&hymn;</head>
+	<p id="CH4.340" n="4.34">The &eorthan; has been copied by Nowell at the expected point of the main text of the Old English &he; (ff.&nbsp;146r-146v).</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.15" n="o.description">
+       <head id="CH4.2.2.15.HEAD">&ox; &omlx;<note id="CH4.NOTE.220" n="23"><p>Earlier descriptions of this manuscript give the shelf-mark <quote>279, pt II,</quote> and note that it was bound with a copy of the Latin &he; in &s16; or &s17; (e.g. &ker1990;; &miller1890;). The two texts were separated again during conservation and rebinding in 1992. The Old English translation is now known as <quote>279, B</quote>.</p></note></head>
+       <div5 id="CH4.2.2.15.1">
+	<head id="CH4.2.2.15.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&robinsonfcandstanley1991;, pl. 2.9; &ker1990;, art. 354; &dobbie1937;, 25-27;  &schipper1897-1899;, 2: xii-xv; &miller1890;, 1: xvii-xix; 2: x-xi; &coxe1972;, 2: 118.</p>
+       </div5>
+       <div5 id="CH4.2.2.15.2">
+	<head id="CH4.2.2.15.2.HEAD">Manuscript</head>
+	<p id="CH4.350" n="4.35">Parchment. 161 folios. 257 &times; 167 mm (Writing Surface: 212 &times; 115 mm in a single column of 24 lines). The manuscript contains a copy of the Old English translation of the &he; in three hands of &s11in; (&ker1990;).<note id="CH4.NOTE.230" n="24"><p>The scribes show a very uneven division of labour. The chief scribe is responsible for most of the main text with sporadic interventions, ranging from a few lines to several leaves, in a second, better, hand (&ker1990;). Yet a third scribe, <quote id="CH4.QUOTE.0400">a fine hand</quote> (&ker1990;), copied a single page. A breakdown of the three scribes&rsquo; work can be found in &ker1990;.</p></note>  Provenance unknown before 1644, when an inscription in the Latin text indicates that it was bequeathed to Corpus Christi College by Brian Twyne (&dobbie1937;, 26).</p>
+       </div5>
+       <div5 id="CH4.2.2.15.3">
+	<head id="CH4.2.2.15.3.HEAD">&hymn;</head>
+	<p id="CH4.360" n="4.36">The &eorthan; has been copied by the second scribe at the expected point in the main text of the Old English &he; (f.&nbsp;112v, manuscript line 1).</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.16" n="l.description">
+       <head id="CH4.2.2.16.HEAD">&lx; &lmlx;</head>
+       <div5 id="CH4.2.2.16.1">
+	<head id="CH4.2.2.16.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&odonnell2002;; &robinsonfcandstanley1991;, pl. 2.3; &ker1990; art. 122; &parkes1982;, 5-12; &arngart1973;; &colgraveandmynors1969;, xliv; &bevenot1962;; &wright1961;; &meyvaert1961;; &lowe1958a;; &lowe1958b;; &arngart1952;; &anderson1941;; &dobbie1937;, 16-17; &lowe1934-;, art. 1621; &dobiache-rojdestvensky1928;; &staerk1910;, art. xlii; &gillert1880;, art. 26.</p>
+       </div5>
+       <div5 id="CH4.2.2.16.2">
+	<head id="CH4.2.2.16.2.HEAD">Manuscript</head>
+	<p id="CH4.370" n="4.37">Parchment. 162 folios (numbered 161, but with f.&nbsp;51 repeated; the correct foliation is given on the last folio in the bottom right corner).<note id="CH4.NOTE.240" n="25"><p>Anderson notes that a folio also is missing after f.&nbsp;159 (&anderson1941;, 1; &arngart1952;, 14). Its absence is not reflected in the official foliation.</p></note> 270 &times; 190 mm (Writing Space: 230 &times; 150 mm in two columns of 27 lines), trimmed with some loss from the margins. The manuscript contains (with &mr;) one of the two earliest representatives of the <label rend="oblique">m</label>-type text of the Latin &he; (&colgraveandmynors1969;, xliv). It has been copied by four hands with colophons, chapter numbers, and other textual <socalled>accessories</socalled> in a fifth (&parkes1982;, 6-11). The manuscript as a whole is usually assigned on palaeographic grounds to Bede&rsquo;s monastery at Wearmouth-Jarrow and dated to 731 or 732 &times; 746 on the basis of the so-called &memoranda;, a series of retrospective dates found in the margins of Bede&rsquo;s <foreign lang="LAT">recapitulo</foreign> in V. 24. The validity of these &memoranda; (and similar notes in &mr;) as evidence for the precise year in which the manuscript was copied has been vigorously challenged; it seems unlikely, however, that the manuscript was copied much after &s8med; (see &ch4rAppendix; below).</p>
+       </div5>
+       <div5 id="CH4.2.2.16.3">
+	<head id="CH4.2.2.16.3.HEAD">&hymn;</head>
+	<p id="CH4.380" n="4.38">The &aelda; of &ch; has been copied by the fourth scribe of the main Latin text (<quote id="CH4.QUOTE.0410">Scribe D,</quote> &parkes1982;, 6) in the bottom margin of f.&nbsp;107r (&recte; f.&nbsp;108r). Bede&rsquo;s Latin &paraphrase; is found on the same page of the manuscript in the same hand as the Old English &hymn;.<note id="CH4.NOTE.250" n="26"><p>Kiernan&rsquo;s claim that the vernacular text of the &hymn; was added to &lr; in a separate hand and at a later time (&kiernan1990a;, 162 and 172, n. 16) seems unlikely. The Old English is in a nearly identical colour ink, and the script shares numerous peculiarities with Scribe D&rsquo;s Latin text. These include (Latin examples are cited from f.&nbsp;107r by column and manuscript line number): frequent open-headed <seg type="linguistic" subtype="graphemic">a</seg> (see &parkes1982;, 7), <seg type="linguistic" subtype="graphemic">g</seg> in Old English <mentioned rend="postcorrection" lang="ANG">&copyOfl.3b.4;</mentioned> and Latin <mentioned lang="LAT">surgebat</mentioned> (1/8); <seg type="linguistic" subtype="graphemic">d</seg> in Old English <mentioned rend="postcorrection" lang="ANG">&copyOfl.3a.2;</mentioned>, Latin <mentioned lang="LAT">decretum</mentioned> (1/5), and Latin <mentioned lang="LAT">deberent</mentioned> (1/6); <seg type="linguistic" subtype="graphemic">t</seg> in Old English <mentioned rend="postcorrection" lang="ANG">&copyOfl.7a.1;</mentioned> and Latin <mentioned lang="LAT">ad stabula</mentioned> (1/13); <seg type="linguistic" subtype="graphemic">&amp;</seg> (i.e. <seg type="linguistic" subtype="graphemic">e+t</seg> ligature) in Old English <mentioned rend="postcorrection" lang="ANG">&copyOfl.2a.1;</mentioned> and Latin <mentioned lang="LAT">et</mentioned> (1/17).</p><p>In arguing that the poem was copied by a different scribe after the manuscript was finished, Kiernan points particularly to the relative length of the truncated descender on the letters <seg type="linguistic" subtype="graphemic">f</seg>, <seg type="linguistic" subtype="graphemic">p</seg>, <seg type="linguistic" subtype="graphemic">r</seg>, and <seg type="linguistic" subtype="graphemic">s</seg> compared to the descender on the letter <seg type="linguistic" subtype="graphemic">g</seg>: <quote id="CH4.QUOTE.0430">[i]n the main text, with exactly the same space between lines, the descender on these letters is invariably long and spiky</quote> (&kiernan1990a;, 172, n. 16). This view, however, ignores differences in the context within which each text is found. Although the two passages are written with similar space between the lines, the Old English text of the &hymn; is written in a clearly more compact script, such as, indeed, would be suitable to a gloss. Characters are bunched together, decorative features like finials and spiked descenders are reduced in prominence, and there is less attention devoted to preserving contrasts in descender lengths or between thick and thin strokes. The main Latin text is copied in a much larger and more careful script. The relative length of the <socalled>descenders</socalled> on <quote id="CH4.QUOTE.0440">the letters <seg type="linguistic" subtype="graphemic">f</seg>, <seg type="linguistic" subtype="graphemic">p</seg>, <seg type="linguistic" subtype="graphemic">r</seg>, and <seg type="linguistic" subtype="graphemic">s</seg></quote> and <quote id="CH4.QUOTE.0450"><seg type="linguistic" subtype="graphemic">g</seg>,</quote> moreover, is irrelevant. The two groups of letters have completely different types of <socalled>descenders</socalled>; one would expect such different ratios to arise in different types of writing by the same scribe in different scripts. Given the large number of similarities between the two scripts, it is more than reasonable to conclude that the two texts have been written by the same scribe. See also &parkes1982;, 5, and, for details of the fourth scribe&rsquo;s work, 7 and 11.</p></note> No &sr; connects the two texts.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.17" n="p1.description">
+       <head id="CH4.2.2.17.HEAD">&p1x; &p1mlx;</head>
+       <div5 id="CH4.2.2.17.1">
+	<head id="CH4.2.2.17.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&odonnell1996b;, 146-163; &robinsonfcandstanley1991;, pl. 2.4.; &colgraveandmynors1969;, lxvi; &dobbie1937;, 19-20; &wuest1906;, 212-215; &cataloguscodicumregiae1754;, volume 4, part 3: 57.</p>
+       </div5>
+       <div5 id="CH4.2.2.17.2">
+	<head id="CH4.2.2.17.2.HEAD">Manuscript</head>
+	<p id="CH4.390" n="4.39">Paper. 300 folios (numbered ff.&nbsp;1-299 with f.&nbsp;92 twice). 280 &times; 215 mm (Writing Surface: 198 &times; 135 mm in a single column of 40 lines). The manuscript is a composite. The first part contains a copy of the Latin &he; of the <socalled>German</socalled> <label rend="oblique">m</label>-type recension (&colgraveandmynors1969;, lxv-lxvi) and a Latin chronicle of the counts of Flanders from 621-1422; the second, miscellaneous texts in Latin and German, the majority pertaining to the council of Constance in 1414.<note id="CH4.NOTE.260" n="27"><p>An older numbering in this section indicates that the first 20 folios are missing from part 2.</p></note> The first part of the manuscript was copied by several hands of &s15first; (after 1422),<note id="CH4.NOTE.270" n="28"><p>The <foreign lang="LAT">terminus post quem</foreign> is provided by the second item in the first part of the manuscript, the chronicle of the Counts of Flanders. Material in this second part of the manuscript dates from 1425 (&wuest1906;, 213-215).</p></note> probably in Cologne (&wuest1906;, 215).<note id="CH4.NOTE.280" n="29"><p>Wuest bases his provenance on material in the second, originally independent, section; while this is not directly related to the first part (which contains the copy of &ch;), Wuest considers that this too <quote id="CH4.QUOTE.0460" lang="DEU">ist sicher nicht weit von K&ouml;ln... geschrieben</quote> (&wuest1906;, 215).</p></note></p>
+       </div5>
+       <div5 id="CH4.2.2.17.3">
+	<head id="CH4.2.2.17.3.HEAD">&hymn;</head>
+	<p id="CH4.400" n="4.40">The &eordu; has been copied within the main Latin text of the &historia; by the main scribe of the first part. It is found at the beginning of the Latin &paraphrase; (i.e. between <mentioned lang="LAT">iste est sensus</mentioned> and <mentioned lang="LAT">nunc laudare</mentioned>) on f.&nbsp;72v, beginning with manuscript line 2.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.18" n="sm.description">
+       <head id="CH4.2.2.18.HEAD">&sanmx; &sanmmlx;</head>
+       <div5 id="CH4.2.2.18.1">
+	<head id="CH4.2.2.18.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&cavill2000;, 503-504; &robinsonfcandstanley1991;, pl. 2.19; &dutschke1989;, 2: 705-707; &humphreysandross1975;, 53, art. 2; &colgraveandmynors1969;, lvii.</p>
+       </div5>
+       <div5 id="CH4.2.2.18.2">
+	<head id="CH4.2.2.18.2.HEAD">Manuscript</head>
+	<p id="CH4.410" n="4.41">Parchment. 170 folios. 261 &times; 187 mm (Writing Surface: 182 &times; 125 mm in two columns of 32-40 lines [38 and 40 lines on f.&nbsp;82r]).<note id="CH4.NOTE.290" n="30"><p>Information about the physical makeup of &sanmr; is based on &dutschke1989;, 2: 707.</p></note>  The manuscript is a composite. The first part contains a copy of the <socalled>Common Southern</socalled> version of the <label rend="oblique">c</label>-type <socalled>English</socalled> text of Bede&rsquo;s Latin &he; in perhaps two hands of &s15med;; the second part contains a &s13ex; collection of miscellaneous texts, mostly by Bede (see &dutschke1989; for a detailed list). The manuscript was given in 1490 to the Bridgettine abbey of Syon at Isleworth, Middlesex, by Robert Elyot, a Fellow of All Souls College, Oxford, who died in 1499 (&dutschke1989;). It is identified as K. 59 in the early sixteenth-century catalogue of the Syon Abbey (see &ker1964;, 185). &sanmr; was subsequently acquired by Augustine Stywarde and donated to Bury Saint Edmunds in 1595. It was acquired by the Huntington in 1971 (&dutschke1989;).</p>
+       </div5>
+       <div5 id="CH4.2.2.18.3">
+	<head id="CH4.2.2.18.3.HEAD">&hymn;</head>
+	<p id="CH4.420" n="4.42">The &ylda; has been copied in a hand identical with or very similar to that responsible for the Latin text. It is found beside the Latin &paraphrase; on specially ruled lines in the outer margin of f.&nbsp;82r.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.19" n="t1.description">
+       <head id="CH4.2.2.19.HEAD">&t1x; &t1mlx;</head>
+       <div5 id="CH4.2.2.19.1">
+	<head id="CH4.2.2.19.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&bately1992;; &robinsonfcandstanley1991;, pl. 2.8; &ker1990;, art. 351; &dobbie1937;, 23-24; &schipper1897-1899;, 2: xxi-xxv; &miller1890;, 1: xiii-xv; &hackman1860;, 4: col. 11, art. 10.</p>
+       </div5>
+       <div5 id="CH4.2.2.19.2">
+	<head id="CH4.2.2.19.2.HEAD">Manuscript</head>
+	<p id="CH4.430" n="4.43">Parchment. 139 folios. 250 &times; 162 mm (Writing Surface: 177 &times; 107 mm in a single column of 29 lines).<note id="CH4.NOTE.300" n="31"><p>Information about the physical makeup of &t1r; is based on &ker1990;, art. 351.</p></note>  Contains a copy of the Old English translation of the &he; copied by as many as five scribes of &s10first;. The manuscript was in Thorney in &s14; (&ker1990;), where the binding leaves (removed in 1898 and now catalogued as Tanner 10*) were used to record loans from the book closet in 1324-1330 (&humphreys1948;).</p>
+       </div5>
+       <div5 id="CH4.2.2.19.3">
+	<head id="CH4.2.2.19.3.HEAD">&hymn;</head>
+	<p id="CH4.440" n="4.44">The &eorthan; has been copied as part of the main text of the Old English &he; on 195 (f.&nbsp;100r, beginning at manuscript line 8) by the main scribe (Scribe 1).</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.20" n="to.description">
+       <head id="CH4.2.2.20.HEAD">&tox; &tomlx;<note id="CH4.NOTE.305" n="32"><p>This manuscript is often identified as <foreign lang="FRA">&bibliotheque; municipale</foreign> 134 (e.g. &robinsonfcandstanley1991;). The library is currently known as the <foreign lang="FRA">&bibliotheque; de la ville</foreign>.</p></note></head>
+       <div5 id="CH4.2.2.20.1">
+	<head id="CH4.2.2.20.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&robinsonfcandstanley1991;, pl. 2.20; &ker1990;, art. 387; &humphreysandross1975;, 53, art. 3; &colgraveandmynors1969;, lxi; &faiderandvansint1950;, 149-153<note id="CH4.NOTE.307" n="33"><p>&faiderandvansint1950; contains the only known image of the &hymn; in this manuscript. The printed photograph in this volume is the source of all modern facsimiles including &robinsonfcandstanley1991; (Fred C. Robinson, personal communication) and this edition.</p></note>; &laistner1943;, 101.</p>
+       </div5>
+       <div5 id="CH4.2.2.20.2">
+	<head id="CH4.2.2.20.2.HEAD">Manuscript</head>
+	<p id="CH4.450" n="4.45">Parchment. 123 folios. 280 &times; 190 mm (Writing Surface: 205 &times; 125 mm in two columns of 35 lines).<note id="CH4.NOTE.310" n="34"><p>This manuscript was destroyed in 1940. Physical description is from &faiderandvansint1950;.</p></note>  Contained copies of the Latin &he; (assigned tentatively to the <label rend="oblique">c</label>-text tradition in &colgraveandmynors1969;, lxi), Rogerus&rsquo;s <title level="m">Carmina et epistolae</title>, and the <title level="m">Bulla Alexandri tertii papae de Thomae Becket occisione</title>, all in a single, probably English,<note id="CH4.NOTE.320" n="35"><p>Ker places the manuscript in the section of his <title level="m">Catalogue</title> devoted to English manuscripts, but suggests that <quote id="CH4.QUOTE.0470">[t]he Latin text of the Historia ecclesiastica may not be in an English hand</quote> (&ker1990;). Faider and van Sint Jan describe the hand as <quote id="CH4.QUOTE.0480" lang="FRA">nettement insulaire</quote> and suggest that <quote>le texte anglo-saxon du fol. 78 v<label rend="super">o</label> est d&rsquo;orthographe trop correcte pour avoir &eacute;t&eacute; transcrit sur le continent</quote> (&faiderandvansint1950;, 153).</p></note> hand of &s12;. Some marginalia were found in different contemporary and later hands. &tor; belonged to Denis de Villers, canon of Tournai, who died in 1620 (&ker1990;); it is otherwise of unknown provenance. The manuscript was destroyed <quote id="CH4.QUOTE.0490">during the air raid of 17 May 1940</quote> (&humphreysandross1975;, 53, citing a letter <quote id="CH4.QUOTE.0500">from the Librarian to the Second Author [i.e. Ross],</quote> 30 November, 1968).</p>
+       </div5>
+       <div5 id="CH4.2.2.20.3">
+	<head id="CH4.2.2.20.3.HEAD">&hymn;</head>
+	<p id="CH4.460" n="4.46">The &eorthan; was copied in the bottom margin of the Latin &he; on f.&nbsp;78v by what may have been the main hand of the page. &Ssr; linked the &hymn; to the line above the beginning of Bede&rsquo;s &paraphrase; (i.e. to a point after <mentioned lang="LAT">nunquam audierat</mentioned> rather than the more usual <mentioned lang="LAT">iste est sensus</mentioned>). This is the only copy of the &eorthan; known from a manuscript of the Latin &he;. All other examples of the recension are found as part of the main text of the &historia;&rsquo;s Old English translation.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.21" n="tr1.description">
+       <head id="CH4.2.2.21.HEAD">&tr1x; &tr1mlx;</head>
+       <div5 id="CH4.2.2.21.1">
+	<head id="CH4.2.2.21.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&robinsonfcandstanley1991;, pl. 2.11; &colgraveandmynors1969;, lvi; &dobbie1937;, 38; &james1901;, 2: art. 717; &mayorandlumby1878;, 413-414; &wheloc1644a;.</p>
+       </div5>
+       <div5 id="CH4.2.2.21.2">
+	<head id="CH4.2.2.21.2.HEAD">Manuscript</head>
+	<p id="CH4.470" n="4.47">Parchment. 156 folios in two volumes. 298 &times; 196 mm (Writing Surface: 227 &times; 155 mm in two columns of 55 lines). Manuscript has been trimmed in binding; fold-ins suggest as much as 25 mm have been cut away. A composite manuscript, the first part contains a copy of the <socalled>Common Southern</socalled> version of the <label rend="oblique">c</label>-type <socalled>English</socalled> text of Bede&rsquo;s Latin &he; and the <socalled>Digby</socalled> recension of the <title level="m">Epistola Cuthberti de obitu Bedae</title> (&colgraveandmynors1969;, lvi) in a single hand of &s14; (&james1901;); the remaining parts contain miscellaneous lives and passions and a copy of the Old English <title level="m">Pastoral Care</title>. The manuscript was probably in Salisbury in 1568 (&ker1990;, art. 87, 133).</p>
+       </div5>
+       <div5 id="CH4.2.2.21.3">
+	<head id="CH4.2.2.21.3.HEAD">&hymn;</head>
+	<p id="CH4.480" n="4.48">The &ylda; has been copied by the main hand of the first part of the manuscript. It is found inserted into the main Latin text of the &he; at beginning of the &paraphrase; (i.e. between <mentioned lang="LAT">iste est sensus</mentioned> and <mentioned lang="LAT">nunc laudare</mentioned>) on f.&nbsp;32v1-2, beginning at manuscript line 52.</p>
+       </div5>
+      </div4>
+      <div4 id="CH4.2.2.22" n="w.description">
+       <head id="CH4.2.2.22.HEAD">&wx; &wmlx;</head>
+       <div5 id="CH4.2.2.22.1">
+	<head id="CH4.2.2.22.1.HEAD">Published descriptions and catalogue entries</head>
+	<p>&ker1969-1992;, 4: 578-579; &robinsonfcandstanley1991;, pl. 2.21; &ker1990;, art. 396; &colgraveandmynors1969;, l-li; &dobbie1937;, 35; &potter1935;; &plummer1975;, 1: cix-cxi.</p>
+       </div5>
+       <div5 id="CH4.2.2.22.2">
+	<head id="CH4.2.2.22.2.HEAD">Manuscript</head>
+	<p id="CH4.490" n="4.49">Parchment. 108 folios. 363 &times; 265 mm (Writing Surface: 295 &times; 196 mm in two columns of 32 lines). The manuscript has been trimmed in binding; fold-ins suggest as much as 10 mm has been cut away. Contains a copy of the Latin &he; (<socalled>Winchester</socalled> [<label rend="oblique">c</label>-type] recension, &colgraveandmynors1969;, l-li) and the beginning of A&eth;elwulf&rsquo;s <title level="m">De abbatibus</title> (&ker1969-1992;)<note id="CH4.NOTE.340" n="37"><p>The remainder of the poem, with extracts from Jerome and Orosius, is found in <label>London, British Library, Cotton Tiberius D. iv, vol. 2, ff.&nbsp;158-66</label> (&ker1969-1992;).</p></note> in one or more (<quote>arguably... one,</quote> &ker1969-1992;, 4: 579; <quote id="CH4.QUOTE.0530">four</quote> &potter1935;, 40) careless hand(s) of &s1011;. The manuscript was probably in Winchester by &s14; (&ker1969-1992;). The presence of a corrupt Irish colophon on f.&nbsp;108v suggests &wr; may have been copied from an earlier, Northern exemplar (see &plummer1975; and &potter1935;, both of which make slight errors in transcription). The manuscript probably served as a source for &bdr; (&ker1969-1992;).</p>
+       </div5>
+       <div5 id="CH4.2.2.22.3">
+	<head id="CH4.2.2.22.3.HEAD">&hymn;</head>
+	<p id="CH4.500" n="4.50">The &ylda; has been copied by a marginal hand of &s11; in the outer margin of f.&nbsp;81r of the Latin &he;. The scribe is probably the same as that responsible for additional marginalia on f.&nbsp;93v (see also &ker1969-1992;). &Ssr; link the Old English poem with the beginning of the &paraphrase; in col. 1.</p>
+       </div5>
+      </div4>
+     </div3>
+    </div2>
+   </div1>
+  </body>
+ </text> 
+</tei.2>

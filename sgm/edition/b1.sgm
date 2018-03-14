@@ -1,0 +1,158 @@
+<!--
+*******************************************************************
+*                          b1Edition.sgm                          *
+*           A Critical Edition the Text of Caedmon's Hymn         *
+*                           as found in                           *
+*               Cambridge, Corpus Christi College 41              *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O'Donnell, 1999-2002            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+]>
+
+<tei.2 id="B1.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">&b1ml;: An edition.</title>
+    <author>C&aelig;dmon (floruit 657-681)</author>
+    <editor>Daniel Paul O&rsquo;Donnell</editor>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 8 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <bibl>&b1mlShort;</bibl>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Edition and collation prepared for use in the &ech;.</p>
+   </projectdesc>
+   <samplingdecl>
+    <p>Edition is based on original transcriptions of source manuscripts.</p>
+   </samplingdecl>
+   <editorialdecl>
+    <correction status="high" method="tags">
+     <p>Text based on transcriptions of facsimiles and personal
+      inspection of witness manuscripts by dpod. Each witness has
+      been proofread and checked (against FS or MS) at least four
+      times by dpod and either ls or mve.</p>
+    </correction>
+    <normalization default="yes" method="tags">
+     <p>Modern editorial line division, spacing, punctuation, and
+     capitalisation have been silently imposed on the base text.
+     Paleographic information about the base witness (damage,
+     hard-to-read letter forms letters, etc.) has been silently
+     suppressed.  These features can be recovered from the apparatus
+     (which preserves paleographic encoding about the readings in each
+     witness) and from the relevant sgml files containing witness
+     transcriptions.</p> 
+    </normalization>
+    <segmentation>
+     <p>Edition has been segmented according to modern editorial
+     convention (i.e. line boundaries mark modern editorial line
+     boundaries; caesura elements mark modern editorial
+     caesurae).</p>
+    </segmentation>
+   </editorialdecl>
+   <metdecl>
+    <p>Prosody has not been marked explicitly; lines are encoded as
+    <socalled>long lines</socalled> with hemistichs marked by the
+    caesura element.</p>
+   </metdecl>
+  </encodingdesc>
+  <profiledesc teiform="profileDesc">
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body>
+   <div1 id="B1" n="B1">
+    <head type="B1.HEAD">&b1s; &b1ml; (&eorthan;)</head>
+    <witlist>
+     <witness sigil="B1">&b1x;</witness>
+     <witness sigil="Ca">&cax;</witness>
+     <witness sigil="N">&nx;</witness>
+     <witness sigil="O">&ox;<note n="1" id="B1.WITLIST.N"><p>The scribe of &ox; has altered his text considerably by correction (see above, &ch4xo; and &ch7xEorthan;). Pre- and post-correction forms are collated separately (where applicable) except in the All readings (parallel) apparatus.</p></note></witness>
+     <witness sigil="T1">&t1x;</witness>
+     <witness sigil="To">&tox;</witness>
+    </witlist>
+    <div2 id="B1.TOC" type="toc">
+     <div3 id="B1.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="eorthanEdition" rend="Eor&thorn;an"><label rend="accesskey">P</label>revious (&eorthanAbbreviationSiglum;)</xref></item>
+       <item><xref n="n" doc="eorthanOEdition" rend="Eor&thorn;an O Performance"><label rend="accesskey">N</label>ext (&os; Performance)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+<item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="B1.TOC.2" type="toc:edition">
+      <list type="simple">
+       <item>&ch7xEorthan;</item>      
+      </list>
+     </div3>
+    </div2>
+    <div2 type="poem">
+    <milestone unit="f. 152v, l. 6">
+    <l id="EDITION.B1.1" n="1">&edition.b1.1a.1.orig;&edition.b1.1a.2.orig;&edition.b1.1a.3.orig;&edition.b1.1a.4.orig;<caesura>&edition.b1.1b.1.orig;&edition.b1.1b.2.orig;,</l>
+    <l id="EDITION.B1.2" n="2">&edition.b1.2a.1.orig;&edition.b1.2a.2.orig;,<caesura>&edition.b1.2b.1.orig;&edition.b1.2b.2.orig;&edition.b1.2b.3.orig;,</l>
+    <l id="EDITION.B1.3" n="3">&edition.b1.3a.1.orig;&edition.b1.3a.2.orig;&mdash;<caesura>&edition.b1.3b.1.orig;&edition.b1.3b.2.orig;&edition.b1.3b.3.orig;&edition.b1.3b.4.orig;,</l>
+    <l id="EDITION.B1.4" n="4">&edition.b1.4a.1.orig;&edition.b1.4a.2.orig;,<caesura>&edition.b1.4b.1.orig;&edition.b1.4b.2.orig;!</l>
+    <l id="EDITION.B1.5" n="5">&edition.b1.5a.1.orig;&edition.b1.5a.2.orig;&edition.b1.5a.3.orig;<caesura>&edition.b1.5b.1.orig;&edition.b1.5b.2.orig;</l>
+    <l id="EDITION.B1.6" n="6">&edition.b1.6a.1.orig;&edition.b1.6a.2.orig;&edition.b1.6a.3.orig;,<caesura>&edition.b1.6b.1.orig;&edition.b1.6b.2.orig;</l>
+    <l id="EDITION.B1.7" n="7">&edition.b1.7a.1.orig;&edition.b1.7a.2.orig;,<caesura>&edition.b1.7b.1.orig;&edition.b1.7b.2.orig;,</l>
+    <l id="EDITION.B1.8" n="8">&edition.b1.8a.1.orig;&edition.b1.8a.2.orig;,<caesura>&edition.b1.8b.1.orig;&edition.b1.8b.2.orig;</l>
+    <l id="EDITION.B1.9" n="9">&edition.b1.9a.1.orig;&edition.b1.9a.2.orig;,<caesura>&edition.b1.9b.1.orig;&edition.b1.9b.2.orig;.</l>
+    </div2>
+     &b1Analytic;&b1Parallel;
+   </div1>
+  </body>
+ </text>
+</tei.2>

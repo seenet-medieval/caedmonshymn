@@ -1,0 +1,105 @@
+<!-- 
+
+
+******************************************************************************************
+******************************************************************************************
+**											**
+** 			THE ELECTRONIC C&AELIG;DMON'S HYMN 				**
+**			     ../sgm/extensions.dtd			                **
+**	                    Project Extensions File		                        **
+**         (c)Daniel Paul O'Donnell, 1998-2002.  All Rights Reserved 		        **
+**											**
+******************************************************************************************
+******************************************************************************************
+
+1. TABLE OF CONTENTS
+-->
+
+<!-- JPEG Notation: Statement taken from Multidoc Manual -->
+
+<!NOTATION jpeg PUBLIC "-//ISBN 0-7923-9432-1::GRAPHIC NOTATION//NOTATION JOINT PHOTOGRAPHIC EXPERTS GROUP RASTER//EN" >
+
+<!NOTATION tiff PUBLIC "-//TEI//NOTATION Aldus Tagged Image File Format//EN" >
+<!NOTATION gif PUBLIC  "-//TEI//NOTATION Compuserve Graphics Interchange Format//EN" >
+<!NOTATION sgml PUBLIC "ISO 8879:1986//NOTATION Standard Generalized Markup Language//EN">
+<!NOTATION html PUBLIC "-//W3C//NOTATION HTML 4.01 Transitional//EN">
+<!NOTATION wsd PUBLIC '-//TEI P3-1994//NOTATION Writing System Declaration//EN'>
+
+
+<!-- entities -->
+
+<!-- 1. New Elements (1 example) -->
+
+<!-- EMEND (Emendation): Adds element to dtd.  This is based on an similar to <corr> but used for marking editorial intervention.  Requires "resp", "id", and "type" attributes.  Has optional sic, although this should only be used if there is no apparatus) -->
+<!ELEMENT emend      - -  %specialPara;                    >
+<!ATTLIST emend              %a.global
+          sic                CDATA               #IMPLIED
+          resp               CDATA               #IMPLIED
+          cert               CDATA               #IMPLIED
+          type               CDATA               #IMPLIED
+          TEIform            CDATA               'corr'         >
+
+
+<!-- 2. Changes to Content Models (2 examples) -->
+
+<!-- WORD: changes to allow various editing and text crit elements to nest within word; also adds "pos, iform, syntFunc, and gloss" attribute -->
+<!ELEMENT w       - - ((#PCDATA | seg | m | c | space | add | del | 
+                        damage | unclear | supplied | gap | corr | emend | sic | abbr | expan | reg | orig |
+                        lb | pb | cb | milestone | note)*)>
+<!ATTLIST w           %a.global
+                      %a.seg
+          copiedFrom       CDATA               #IMPLIED
+          basedOn       CDATA               #IMPLIED
+          lemma       CDATA               #IMPLIED
+          pos       CDATA               #IMPLIED
+          iform       CDATA               #IMPLIED
+          syntFunc       CDATA               #IMPLIED
+          gloss       CDATA               #IMPLIED                            >
+
+<!-- modified cell to accept paragraphs and lines.  This is necessary for ch 6; element is identical except that %paraContent; has been replaced by special para -->
+<!ELEMENT cell - - %specialPara; > 
+<!ATTLIST cell  
+      %a.global;
+      role CDATA "data"
+      rows CDATA "1"
+      cols CDATA "1" >
+
+
+<!-- 3. Changes to Attributes (2 examples) -->
+
+<!ELEMENT space - - EMPTY> 
+<!ATTLIST space  
+      %a.global;
+      dim (horizontal | vertical) #IMPLIED
+      type CDATA #IMPLIED
+      extent CDATA #IMPLIED
+      resp CDATA #IMPLIED>
+
+<!-- changes a.global to add type -->
+<!-- ENTITY % a.global ' 
+      %a.terminology;
+      %a.linking;
+      %a.analysis;
+      id ID #IMPLIED
+      type CDATA #IMPLIED
+      n CDATA #IMPLIED
+      lang IDREF %INHERITED;
+      rend CDATA #IMPLIED' --> 
+
+
+<!-- CORR (correction): adds 'type' AND HAND attributeS to dtd.  This allows for distinguishing different layers of correction from each other especially in o. -->
+
+<!-- ELEMENT corr      - -  %specialPara;                   -->
+<!-- ATTLIST corr              %a.global
+          sic                CDATA               #IMPLIED
+          resp               CDATA               #IMPLIED
+          cert               CDATA               #IMPLIED
+          type               CDATA               #IMPLIED
+          hand               CDATA               #IMPLIED
+          TEIform            CDATA               'corr'         -->
+
+<!-- W (Word): in addition to the change in content model above, W also has two new attributes: basedOn (used to indicate the IDREF of the form from which an editorial form is derived) and copiedFrom (used to indicate identity with a form in an witness transcription or edition -->
+
+
+
+

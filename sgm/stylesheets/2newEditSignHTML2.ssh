@@ -1,0 +1,2304 @@
+<!DOCTYPE STYLESHEET PUBLIC "-//SYNEX INFORMATION AB//DTD STYLESHEET EXPLORER//EN"[
+<!ELEMENT sheet (margins?)>
+<!ELEMENT margins EMPTY>
+<!ATTLIST margins
+	left CDATA #IMPLIED
+	right CDATA #IMPLIED
+	top CDATA #IMPLIED
+	bottom CDATA #IMPLIED>
+
+<!ELEMENT font-shadow EMPTY>
+<!ATTLIST font-shadow
+	v NUMBER #REQUIRED>
+
+<!ELEMENT shadow-color EMPTY>
+<!ATTLIST shadow-color
+	v CDATA #REQUIRED>
+
+]>
+
+<STYLESHEET NAME="2newEditSignHTML">
+
+<STYLE TAG="ORIG">
+
+<QUAL-STYLE QUAL="not(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="LIST">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(type="ordered")<ol>\else<ul>\endif'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(type="ordered")</ol>\else</ul>\endif'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;DIV3&Q; AND PAR[type]=&Q;toc:edition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(type="ordered")<ol>\else<ul>\endif\n;<li><a href="../../frontmatter/conventions.htm#CONVENTIONS.2.HEAD" title="Link to discussion of colours, symbols, and conventions used in this text (separate document).">Conventions and symbols</a></li>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(type="ordered")</ol>\else</ul>\endif'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,TITLE,LABEL,ABBR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="SOURCEDESC,P,LABEL,ABBR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="ABBR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<abbr\ifatt(lang) lang="\att(lang)"\else\endif\ifatt(expan) title="\att(expan)"\else\endif>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</abbr>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="(PAR/PAR=&Q;l&Q; or PAR/PAR/PAR=&Q;l&Q; or PAR/PAR=&Q;lem&Q; or PAR/PAR/PAR=&Q;lem&Q; or PAR/PAR=&Q;lem&Q; or PAR/PAR/PAR=&Q;lem&Q; or PAR=&Q;rdg&Q; or PAR/PAR=&Q;rdg&Q; or PAR/PAR/PAR=&Q;rdg&Q;) and (NOT(PAR=&Q;p&Q; or PAR/PAR=&Q;p&Q; or PAR/PAR/PAR=&Q;p&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,TITLE,XREF,TERM">
+</STYLE>
+
+<STYLE TAG="TERM">
+<A-TEXT V='<span class=\ifatt(type)"\att(type)\else"term\endif"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="P">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<p>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</p>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;availability&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.rights" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;sourcedesc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.content" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;projectdesc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.content" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;samplingdecl&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.content" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR=&Q;editorialdecl&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.content" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;metdecl&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.content" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;note&Q; and (NOT(PREV=&Q;p&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[type]=&Q;apparatus:analytic&Q; or PAR[type]=&Q;apparatus:parallel&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<p class="apparatusblock">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</p>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SPONSOR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.contributor" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="SEG">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(type)<span class="\att(type)\ifatt(subtype):\att(subtype)\else\endif" title="\ifatt(type="punctuation")\ifatt(subtype="ms")Punctuation in original manuscript.\else\endif\else\endif\ifatt(subtype="graphemic")Graphemic transcription.\else\endif\ifatt(subtype="phonemic")Phonemic transcription.\else\endif\ifatt(subtype="phonetic")Phonetic (allophonic) transcription.\else\endif">\else\endif\ifatt(subtype="phonemic")/\else\endif\ifatt(subtype="phonetic")[\else\endif\ifatt(subtype="graphemic")$003C;\else\endif\ifatt(n)<span class="\att(n)label">\else\endif'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(subtype="phonemic")/\else\endif\ifatt(subtype="phonetic")]\else\endif\ifatt(subtype="graphemic")$003E;\else\endif\ifatt(type)</span>\else\ifatt(n)</span>\else\endif\endif'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[type]=&Q;punctuation&Q; and [subtype]=&Q;ms&Q; and (not(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR=&Q;sourcedesc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="DIV2">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='</div>\n;<div class="toc">\n;\ifatt(id)<p class="hideme">[<a href="#\att(id)">Skip to Content</a>]</p>\else\endif\n;<h2>Contents</h2>\n;'>
+<BEFORE>
+<FONT-COLOR V="Olive">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(id)<p class="hideme"><a id="\att(id)" name="\att(id)" />[<em><strong>Beginning of Content</strong></em>]</p>\else\endif\ifatt(type="toc:chapter")</div>\else\endif</div>'>
+<AFTER>
+<FONT-COLOR V="Olive">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;poem&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="\att(type)">\n;<h2 class="hideme">Poem</h2>'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;apparatus:parallel&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;apparatus:analytic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="apparatus"><a id="apparatus" name="apparatus" />\n;<hr /><h2>Apparatus (<a href="../../introduction/ch7.htm#CH7.080" title="Link to information on criteria used in constructing this apparatus (separate document).">Significant variants</a>)</h2>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;apparatus:analytic&Q; and PAR[id]=&Q;archetype&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="apparatus"><a id="apparatus" name="apparatus" />\n;<hr /><h2>Apparatus (<a href="../../introduction/ch7.htm#CH7.080" title="Link to information on criteria used in constructing this apparatus (separate document).">Significant recensional variants</a>)</h2>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;apparatus:analytic&Q; and PAR[id]=&Q;archetype.witness&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="apparatus"><a id="apparatus" name="apparatus" />\n;<hr /><h2>Apparatus (<a href="../../introduction/ch7.htm#CH7.080" title="Link to information on criteria used in constructing this apparatus (separate document).">Significant witness variants</a>)</h2>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;apparatus:analytic&Q; and PAR[id]=&Q;eordu&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="apparatus"><a id="apparatus" name="apparatus" />\n;<hr /><h2>Apparatus (<a href="../../introduction/ch7.htm#CH7.060" title="Link to information on criteria used in constructing this apparatus (separate document).">Accidental variants</a>)</h2>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="UNCLEAR">
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and ([rend]=&Q;beginning&Q; or [rend]=&Q;complete&Q; or (not(PAR/PREV=&Q;w&Q; or PAR/PAR/PREV=&Q;w&Q; or PAR/PAR/PAR/PREV=&Q;w&Q;)))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="unclear" title="Text is unclear for some (physical) reason."><span class="junicode">$2329;</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and (not([rend]=&Q;beginning&Q; or [rend]=&Q;complete&Q; or (not(PAR/PREV=&Q;w&Q; or PAR/PAR/PREV=&Q;w&Q; or PAR/PAR/PAR/PREV=&Q;w&Q;))))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="unclear" title="Text is unclear for some (physical) reason.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and ([rend]=&Q;end&Q; or [rend]=&Q;complete&Q; or (not(PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/PAR/PAR/NEXT=&Q;w&Q;)))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='<span class="junicode">$232A;</span></span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and (not([rend]=&Q;end&Q; or [rend]=&Q;complete&Q; or (not(PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/PAR/PAR/NEXT=&Q;w&Q;))))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="ITEM">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<li>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</li>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD/CHILD[n]=&Q;aelda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</li>\n;<li>Witnesses to the <span class="aeldalabel">Northumbrian \n;<span class="term">aelda</span> recension</span>: <a href="../../transcription/m/index.htm" \n;title="Link to transcription and facsimile of M (separate \n;document)."><span class="aeldalabel">M</span></a>, <a href="../../transcription/l/index.htm" title="Link to transcription and \n;facsimile of P (separate \n;document)."><span \n;class="aeldalabel">P</span></a></li>\n;<li><a href="../../introduction/ch4.htm" title="Link to Chapter 4 (separate document).">Filiation and Transmission (Chapter 4)</a></li>\n;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD/CHILD[n]=&Q;eordu&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</li>\n;<li>Witnesses to the <span class="eordulabel">Northumbrian \n;<span class="term">eordu</span> recension</span>: <a href="../../transcription/br/index.htm" title="Link to \n;transcription and facsimile of Br (separate \n;document)."><span class="eordulabel">Br</span></a>, \n;<a href="../../transcription/di/index.htm" title="Link to transcription and \n;facsimile of Di (separate \n;document)."><span class="eordulabel">Di</span></a>, \n;<a href="../../transcription/p1/index.htm" title="Link to transcription and \n;facsimile of P1 (separate \n;document)."><span class="eordulabel">P1</span></a></li>\n;<li><a href="../../introduction/ch4.htm" title="Link to Chapter 4 (separate document).">Filiation and Transmission (Chapter 4)</a></li>\n;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD/CHILD[n]=&Q;eorthan&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</li>\n;<li>Witnesses to the <span class="eorthanlabel">West-Saxon \n;<span class="term">eor$00F0;an</span> recension</span>: <a href="../../transcription/b1/index.htm" \n;title="Link to transcription and facsimile of B1 (separate \n;document)."><span class="eorthanlabel">B1</span></a>, <a href="../../transcription/ca/index.htm" title="Link to transcription and \n;facsimile of Ca (separate \n;document)."><span \n;class="eorthanlabel">Ca</span></a>, <a href="../../transcription/n/index.htm" title="Link to transcription and \n;facsimile of N (separate \n;document)."><span \n;class="eorthanlabel">N</span></a>, <a href="../../transcription/o/index.htm" title="Link to transcription and \n;facsimile of O (separate \n;document)."><span \n;class="eorthanlabel">O</span></a>, <a href="../../transcription/t1/index.htm" title="Link to transcription and \n;facsimile of T1 (separate \n;document)."><span \n;class="eorthanlabel">T1</span></a>, <a href="../../transcription/to/index.htm" title="Link to transcription and \n;facsimile of To (separate \n;document)."><span \n;class="eorthanlabel">To</span></a></li>\n;<li><a href="../../introduction/ch4.htm" title="Link to Chapter 4 (separate document).">Filiation and Transmission (Chapter 4)</a></li>\n;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD/CHILD[n]=&Q;eorthe&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</li>\n;<li>Witnesses to the <span class="eorthelabel">West-Saxon \n;<span class="term">eor$00F0;e</span> recension</span>: <a href="../../transcription/carms/index.htm" \n;title="Link to transcription and facsimile of CArms (separate \n;document)."><span class="eorthelabel">CArms</span></a>, <a href="../../transcription/hr/index.htm" title="Link to transcription and \n;facsimile of Hr (separate \n;document)."><span \n;class="eorthelabel">Hr</span></a>, <a href="../../transcription/ld/index.htm" title="Link to transcription and \n;facsimile of Ld (separate \n;document)."><span \n;class="eorthelabel">Ld</span></a></li>\n;<li><a href="../../introduction/ch4.htm" title="Link to Chapter 4 (separate document).">Filiation and Transmission (Chapter 4)</a></li>\n;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD/CHILD[n]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</li>\n;<li>Witnesses to the <span class="yldalabel">West-Saxon \n;<span class="term">ylda</span></span>: <a href="../../transcription/bd/index.htm" \n;title="Link to transcription and facsimile of Bd (separate \n;document)."><span class="yldalabel">Bd</span></a>, <a href="../../transcription/h/index.htm" title="Link to transcription and \n;facsimile of H (separate \n;document)."><span \n;class="yldalabel">H</span></a>, <a href="../../transcription/ln/index.htm" title="Link to transcription and \n;facsimile of Ln (separate \n;document)."><span \n;class="yldalabel">Ln</span></a>, <a href="../../transcription/mg/index.htm" title="Link to transcription and \n;facsimile of Mg (separate \n;document)."><span \n;class="yldalabel">Mg</span></a>, <a href="../../transcription/sanm/index.htm" title="Link to transcription and \n;facsimile of SanM (separate \n;document)."><span \n;class="yldalabel">SanM</span></a>, <a href="../../transcription/tr1/index.htm" title="Link to transcription and \n;facsimile of Tr1 (separate \n;document)."><span \n;class="yldalabel">Tr1</span></a>, <a href="../../transcription/w/index.htm" title="Link to transcription and \n;facsimile of W (separate \n;document)."><span \n;class="yldalabel">W</span></a></li>\n;<li><a href="../../introduction/ch4.htm" title="Link to Chapter 4 (separate document).">Filiation and Transmission (Chapter 4)</a></li>\n;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR/PAR[id]=&Q;ARCHETYPE.TOC.2&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</li>\n;<li><a href="../../introduction/ch4.htm" title="Link to Chapter 4 (separate document).">Filiation and Transmission (Chapter 4)</a></li>\n;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="XPTR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$0020;<a href="../../transcription/\att(doc)/index.htm#\att(from)" title="Link to original reading in diplomatic transcription of this witness (separate document)."><span class="\att(rend)label">\att(n)</span></a>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[doc]=&Q;aeldaEdition&Q; or [doc]=&Q;eorthanEdition&Q; or [doc]=&Q;eortheEdition&Q; or  [doc]=&Q;yldaEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$0020;<a href="../\att(rend)/significant.htm#\att(from)" title="Link to reading in indicated critical edition (separate document)."><span class="\att(rend)label">\att(n)</span></a>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;eorduEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$0020;<a href="../eordu/substantive.htm#\att(from)" title="Link to reading in indicated critical edition (separate document)."><span class="eordulabel">\att(n)</span></a>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="W">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(id)<a class="apparatusAnchor" name="\att(id)" id="\att(id)">\else\endif<span class="chword"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>\ifatt(id)</a>\else\endif'>
+<AFTER>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;lem&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$00A0;<span class="lemma" lang="ANG">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;significant&Q; and PAR=&Q;l&Q; and (PREV=&Q;w&Q; OR PREV=&Q;lb&Q; OR PREV=&Q;cb&Q; OR PREV=&Q;pb&Q; OR PREV=&Q;note&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$0020;<a class="apparatusReference"\ifatt(id) name="\att(id)" id="\att(id)"\else\endif href="#\att(id).APP" title="Link to the associated entry in apparatus in this file."><span class="chword"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>\ifatt(id)</a>\else\endif'>
+<AFTER>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;significant&Q; and PAR=&Q;l&Q; and (NOT(PREV=&Q;w&Q; OR PREV=&Q;lb&Q; OR PREV=&Q;cb&Q; OR PREV=&Q;pb&Q; OR PREV=&Q;note&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a class="apparatusReference"\ifatt(id) name="\att(id)" id="\att(id)"\else\endif href="#\att(id).APP" title="Link to the associated entry in apparatus in this file."><span class="chword"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span></a>'>
+<AFTER>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR=&Q;rdg&Q; or PAR/PAR=&Q;rdg&Q;) and (NOT(PREV=&Q;w&Q; or PAR/PREV=&Q;wit&Q; or PAR/PAR/PREV=&Q;wit&Q; or PAR/PREV=&Q;rdggrp&Q; or PAR/PAR/PREV=&Q;rdggrp&Q; or PAR/PAR/PAR/PREV=&Q;rdggrp&Q; or PAR/PAR/PAR/PAR/PREV=&Q;rdggrp&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="reading" lang="ANG">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR=&Q;rdg&Q; or PAR/PAR=&Q;rdg&Q;) and (PREV=&Q;w&Q; or PAR/PREV=&Q;wit&Q; or PAR/PAR/PREV=&Q;wit&Q; or PAR/PREV=&Q;rdggrp&Q; or PAR/PAR/PREV=&Q;rdggrp&Q; or PAR/PAR/PAR/PREV=&Q;rdggrp&Q; or PAR/PAR/PAR/PAR/PREV=&Q;rdggrp&Q; or PAR/PAR/PAR/PAR/PAR/PREV=&Q;rdggrp&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$0020;<span class="reading" lang="ANG">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(not([type]=&Q;significant&Q;)) and PAR=&Q;l&Q; and (PREV=&Q;w&Q; OR PREV=&Q;lb&Q; OR PREV=&Q;cb&Q; OR PREV=&Q;pb&Q; OR PREV=&Q;note&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$0020;\ifatt(id)<a class="apparatusAnchor" name="\att(id)" id="\att(id)">\else\endif<span class="chword"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>\ifatt(id)</a>\else\endif'>
+<AFTER>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PREV=&Q;w&Q; AND (NOT(PAR=&Q;l&Q; OR PAR=&Q;rdg&Q; or PAR/PAR=&Q;rdg&Q; or PAR=&Q;lem&Q; or PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$0020;<span class="chword"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="QUOTE">
+
+<QUAL-STYLE QUAL="not (CHILD=&Q;p&Q; or CHILD=&Q;l&Q; or CHILD=&Q;list&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang="LAT")<span class="quote" lang="\att(lang)">\else\ifatt(lang="ANG")<span class="quote" lang="\att(lang)">\else\ifatt(lang="SGA")<span class="quote" lang="\att(lang)">\else$201C;\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang="LAT")</span>\else\ifatt(lang="ANG")</span>\else\ifatt(lang="SGA")</span>\else$201D;\endif'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR=&Q;QUOTE&Q; OR PAR=&Q;Q&Q;) and (not(CHILD=&Q;p&Q; or CHILD=&Q;l&Q; or CHILD=&Q;list&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang="LAT")<span class="quote" lang="\att(lang)">\else\ifatt(lang="ANG")<span class="quote" lang="\att(lang)">\else$2018;\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang="LAT")</span>\else\ifatt(lang="ANG")</span>\else$2019;\endif'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(CHILD=&Q;p&Q; or CHILD=&Q;l&Q; or CHILD=&Q;list&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="CB">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="linebreak" title="Indicates the end of a manuscript line and column in the original witness.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+
+<QUAL-STYLE QUAL="not(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="((PAR=&Q;w&Q; or PAR=&Q;fw&Q;) and prev[type]=&Q;wordboundary&Q; and (PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/NEXT=&Q;fw&Q; or PAR/PAR/NEXT=&Q;fw&Q;)) and (PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$0020;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;supplied&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=']<span class="linebreak" title="Indicates the end of a manuscript line and column in the original witness.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;unclear&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="junicode">$232A;</span><span class="linebreak" title="Indicates the end of a manuscript line and column in the original witness.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="C">
+<A-TEXT V='\ifatt(rend)<span class="\att(rend)">\else\endif'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(rend)</span>\else\endif'>
+<AFTER>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="AUTHORITY">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.publisher" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="PB">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="linebreak" title="Indicates the end of a manuscript line and page (recto or folio) in the original witness.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+
+<QUAL-STYLE QUAL="not(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="((PAR=&Q;w&Q; or PAR=&Q;fw&Q;) and prev[type]=&Q;wordboundary&Q; and (PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/NEXT=&Q;fw&Q; or PAR/PAR/NEXT=&Q;fw&Q;)) and (PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$0020;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;supplied&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=']<span class="linebreak" title="Indicates the end of a manuscript line and page (recto or folio) in the original witness.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;unclear&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="junicode">$232A;</span><span class="linebreak" title="Indicates the end of a manuscript line and page (recto or folio) in the original witness.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="TEI.2">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n;\t;"Http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n;<html xmlns="http://www.w3.org/1999/xhtml">'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</html>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="TITLE">
+
+<QUAL-STYLE QUAL="PAR=&Q;titlestmt&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<title>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</title>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PREV=&Q;title&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$0020;'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="NEXT=&Q;title&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='.'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[level]=&Q;M&Q; AND (NOT (PAR=&Q;teiheader&Q; or PAR/PAR=&Q;teiheader&Q; or PAR/PAR/PAR=&Q;teiheader&Q; or PAR/PAR/PAR/PAR=&Q;teiheader&Q; or PAR/PAR/PAR/PAR/PAR=&Q;teiheader&Q; or PAR/PAR/PAR/PAR/PAR/PAR=&Q;teiheader&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="titlem">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SPACE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="([type]=&Q;wordinternal&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(extent="1")$0020;\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="([type]=&Q;wordboundary&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)) and (PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/PAR/PAR/NEXT=&Q;w&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(extent="1")$0020;\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="APP">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="#\att(from)" name="\att(id)" id="\att(id)" title="Link to associated lemma in edition (this document).">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='.$0020;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="NOT (CHILD/NEXT/NEXT=&Q;rdggrp&Q; OR (CHILD/CHILD/CHILD=&Q;emend&Q; and (not(CHILD/CHILD/CHILD[TYPE]=&Q;normalisation&Q;))) OR (CHILD/CHILD/CHILD/CHILD=&Q;emend&Q; and (not(CHILD/CHILD/CHILD/CHILD[TYPE]=&Q;normalisation&Q;))))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="GLOSS">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$201C;\ifatt(lang)<span class="gloss" lang="\att(lang)">\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$201D;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="BODY">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<body lang="\ifatt(lang)\att(lang)\elseENG-CAN\endif">\n;'>
+<BEFORE>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='<div class="footnotes">\n;<hr />\n;<h2>Notes</h2>\n;<!-- footnotes here -->\n;</div>\n;</body>'>
+<AFTER>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="LANGUAGE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.language" scheme="DCTERM.ISO639-2" content="\att(id). '>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FW">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="formeword"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FUNDER">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.contributor" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="Q">
+
+<QUAL-STYLE QUAL="not (CHILD=&Q;p&Q; or CHILD=&Q;l&Q; or CHILD=&Q;list&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$201C;\ifatt(lang)<span class="quote" lang="\att(lang)">\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$201D;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR=&Q;QUOTE&Q; OR PAR=&Q;Q&Q;) AND (NOT(CHILD=&Q;p&Q; or CHILD=&Q;l&Q; or CHILD=&Q;list&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(lang)<span class="quote" lang="\att(lang)">\else$2018;\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else$2019;\endif'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(CHILD=&Q;p&Q; or CHILD=&Q;l&Q; or CHILD=&Q;list&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<blockquote\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</blockquote>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="DIV3">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div>'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>\n;'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:book&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="quickmenu">\n;<h3 title="Links to contextually significant documents within the Electronic C$00E6;dmon$2019;s Hymn.">General Navigation</h3>\n;'>
+<BEFORE>
+<FONT-COLOR V="Olive">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:edition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="thischapter">\n;<h3>This text</h3>\n;<noscript><p>[Select the desired view from the following menu \n;(these links perform the same the function as the following drop \n;down menu in javascript-enabled browsers)]:</p>\n;<ul>\n;<li><a href="index.htm">Reading text.</a></li>\n;<li><a href="significant.htm"><strong>Significant variants</strong>. (Current view).</a></li>\n;<li><a href="substantive.htm">Substantive variants.</a></li>\n;<li><a href="orthographic.htm">Orthographic variants.</a></li>\n;<li><a href="analytic.htm">All readings (analytic).</a></li>\n;<li><a href="parallel.htm">All readings (parallel).</a></li>\n;</ul>\n;</noscript>\n;<ul>\n;<li>View (select to change):\n;<noscript><br />\n;[ <strong>NOTE:</strong> This form is disabled if your browser \n;is not javascript enabled; please use above menu. ]</noscript><br />\n;<form action="" class="changeView" name="view" title="Use this to \n;change the way the information in this document is displayed.">\n;<select name="choices" size="1" \n;onchange="location=document.view.choices.\n;options[document.view.choices.\n;selectedIndex].value">\n;<option value="index.htm">Reading text</option>\n;<option selected="selected" value="significant.htm">Significant variants</option>\n;<option value="substantive.htm">Substantive variants</option>\n;<option value="orthographic.htm">Orthographic variants</option>\n;<option value="analytic.htm">All readings (analytic)</option>\n;<option value="parallel.htm">All readings (parallel)</option>\n;</select>\n;</form>\n;</li>\n;</ul>\n;<h3>Related Information</h3>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>\n;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:edition&Q; and PAR/PAR[ID]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="thischapter">\n;<h3>This text</h3>\n;<noscript><p>[Select the desired view from the following menu \n;(these links perform the same the function as the following drop \n;down menu in javascript-enabled browsers)]:</p>\n;<ul>\n;<li><a href="index.htm">Reading text (emended).</a></li>\n;<li><a href="preemendation.htm">Reading text (pre-emendation).</a></li>\n;<li><a href="significant.htm"><strong>Significant variants</strong>. (Current view).</a></li>\n;<li><a href="substantive.htm">Substantive variants.</a></li>\n;<li><a href="orthographic.htm">Orthographic variants.</a></li>\n;<li><a href="analytic.htm">All readings (analytic).</a></li>\n;<li><a href="parallel.htm">All readings (parallel).</a></li>\n;</ul>\n;</noscript>\n;<ul>\n;<li>View (select to change):\n;<noscript><br />\n;[ <strong>NOTE:</strong> This form is disabled if your browser \n;is not javascript enabled; please use above menu. ]</noscript><br />\n;<form action="" class="changeView" name="view" title="Use this to \n;change the way the information in this document is displayed.">\n;<select name="choices" size="1" \n;onchange="location=document.view.choices.\n;options[document.view.choices.\n;selectedIndex].value">\n;<option value="index.htm">Reading text (emended)</option>\n;<option value="preemendation.htm">Reading text (pre-emendation)</option>\n;<option selected="selected" value="significant.htm">Significant variants</option>\n;<option value="substantive.htm">Substantive variants</option>\n;<option value="orthographic.htm">Orthographic variants</option>\n;<option value="analytic.htm">All readings (analytic)</option>\n;<option value="parallel.htm">All readings (parallel)</option>\n;</select>\n;</form>\n;</li>\n;</ul>\n;<h3>Related Information</h3>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>\n;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:edition&Q; and PAR/PAR[ID]=&Q;EORDU&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:edition&Q; and PAR/PAR[id]=&Q;ARCHETYPE&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="thischapter">\n;<h3>This text</h3>\n;<noscript><p>[Select the desired view from the following menu \n;(these links perform the same the function as the following drop \n;down menu in javascript-enabled browsers)]:</p>\n;<ul>\n;<li><a href="index.htm">Reading text.</a></li>\n;<li>Apparatus showing recensional readings\n;<ul>\n;<li><a href="significant.htm"><strong>Significant recensional variants</strong>. (Current view).</a></li>\n;<li><a href="substantive.htm">Substantive recensional variants.</a></li>\n;<li><a href="orthographic.htm">Orthographic recensional variants.</a></li>\n;<li><a href="analytic.htm">All recensional readings (analytic).</a></li>\n;<li><a href="parallel.htm">All recensional readings (parallel).</a></li>\n;</ul></li>\n;<li>Apparatus showing witness readings\n;<ul>\n;<li><a href="witnesssignificant.htm">Significant witness variants.</a></li>\n;<li><a href="witnesssubstantive.htm">Substantive witness variants.</a></li>\n;<li><a href="witnessorthographic.htm">Orthographic witness variants.</a></li>\n;<li><a href="witnessanalytic.htm">All witness readings (analytic).</a></li>\n;<li><a href="witnessparallel.htm">All witness readings (parallel).</a></li>\n;</ul></li></ul></noscript>\n;<ul>\n;<li>View (select to change):\n;<noscript><br />\n;[ <strong>NOTE:</strong> This form is disabled if your browser \n;is not javascript enabled; please use above menu. ]</noscript><br />\n;<form action="" class="changeView" name="view" title="Use this to \n;change the way the information in this document is displayed.">\n;<select name="choices" size="1" \n;onchange="location=document.view.choices.\n;options[document.view.choices.\n;selectedIndex].value">\n;<option value="index.htm">Reading text</option>\n;<optgroup label="Recension Apparatus">\n;<option selected="selected" value="significant.htm">Significant recensional variants</option>\n;<option value="substantive.htm">Substantive recensional variants</option>\n;<option value="orthographic.htm">Orthographic recensional variants</option>\n;<option value="analytic.htm">All recensional readings (analytic)</option>\n;<option value="parallel.htm">All recensional readings (parallel)</option>\n;</optgroup>\n;<optgroup label="Witness Apparatus">\n;<option value="witnesssignificant.htm">Significant witness variants</option>\n;<option value="witnesssubstantive.htm">Substantive witness variants</option>\n;<option value="witnessorthographic.htm">Orthographic witness variants</option>\n;<option value="witnessanalytic.htm">All witness readings (analytic)</option>\n;<option value="witnessparallel.htm">All witness readings (parallel)</option>\n;</optgroup>\n;</select>\n;</form>\n;</li>\n;</ul>\n;<h3>Related Information</h3>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>\n;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[type]=&Q;toc:edition&Q; and PAR/PAR[id]=&Q;ARCHETYPE.WITNESS&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div class="thischapter">\n;<h3>This text</h3>\n;<noscript><p>[Select the desired view from the following menu \n;(these links perform the same the function as the following drop \n;down menu in javascript-enabled browsers)]:</p>\n;<ul>\n;<li><a href="index.htm">Reading text.</a></li>\n;<li>Apparatus showing recensional readings\n;<ul>\n;<li><a href="significant.htm">Significant recensional variants.</a></li>\n;<li><a href="substantive.htm">Substantive recensional variants.</a></li>\n;<li><a href="orthographic.htm">Orthographic recensional variants.</a></li>\n;<li><a href="analytic.htm">All recensional readings (analytic).</a></li>\n;<li><a href="parallel.htm">All recensional readings (parallel).</a></li>\n;</ul></li>\n;<li>Apparatus showing witness readings\n;<ul>\n;<li><a href="witnesssignificant.htm"><strong>Significant witness variants.</strong>. (Current view)</a></li>\n;<li><a href="witnesssubstantive.htm">Substantive witness variants.</a></li>\n;<li><a href="witnessorthographic.htm">Orthographic witness variants.</a></li>\n;<li><a href="witnessanalytic.htm">All witness readings (analytic).</a></li>\n;<li><a href="witnessparallel.htm">All witness readings (parallel).</a></li>\n;</ul></li></ul></noscript>\n;<ul>\n;<li>View (select to change):\n;<noscript><br />\n;[ <strong>NOTE:</strong> This form is disabled if your browser \n;is not javascript enabled; please use above menu. ]</noscript><br />\n;<form action="" class="changeView" name="view" title="Use this to \n;change the way the information in this document is displayed.">\n;<select name="choices" size="1" \n;onchange="location=document.view.choices.\n;options[document.view.choices.\n;selectedIndex].value">\n;<option value="index.htm">Reading text</option>\n;<optgroup label="Recension Apparatus">\n;<option value="significant.htm">Significant recensional variants</option>\n;<option value="substantive.htm">Substantive recensional variants</option>\n;<option value="orthographic.htm">Orthographic recensional variants</option>\n;<option value="analytic.htm">All recensional readings (analytic)</option>\n;<option value="parallel.htm">All recensional readings (parallel)</option>\n;</optgroup>\n;<optgroup label="Witness Apparatus">\n;<option selected="selected" value="witnesssignificant.htm">Significant witness variants</option>\n;<option value="witnesssubstantive.htm">Substantive witness variants</option>\n;<option value="witnessorthographic.htm">Orthographic witness variants</option>\n;<option value="witnessanalytic.htm">All witness readings (analytic)</option>\n;<option value="witnessparallel.htm">All witness readings (parallel)</option>\n;</optgroup>\n;</select>\n;</form>\n;</li>\n;</ul>\n;<h3>Related Information</h3>\n;'>
+<BEFORE>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>\n;'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EMPH">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<em>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</em>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="RDG">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PREV=&Q;wit&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="MILESTONE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+<A-TEXT V='<br />\n;<span class="milestone" title="Indicates the location of the first line of the Hymn on this page.">\att(unit)</span><br />\n;'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</STYLE>
+
+<STYLE TAG="REF">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="#\att(target)"\ifatt(id) id="\att(id)" name="\att(id)"\else\endif\ifatt(lang) lang="\att(lang)"\else\endif title="Link to associated location in this document.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="MENTIONED">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="mentioned"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="NOTE">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\n;<a class="footnoteinsertionmarker" name="ref_\att(id)" \n;id="ref_\att(id)" \n;href="#note_\att(id)" \n;title="Link to associated note at the end of this document."><span \n;class="hideme">[</span>\att(n)<span class="hideme">]</span></a>\n;<!-- begin footnote <div class="footnote"><p><a class="footnotetargetmarker" name="note_\att(id)" \n;href="#ref_\att(id)" \n;title="Link to insertion point for this note in the main text of this document."><span class="hideme">[</span>\att(n)<span \n;class="hideme">]</span></a>'>
+<BEFORE>
+<FONT-COLOR V="Blue">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</div>\n; end footnote -->'>
+<AFTER>
+<FONT-COLOR V="Blue">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="EDITOR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;titlestmt&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.creator" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EDITION">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;editionstmt&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DCTERM.isPartOf" content="The Electronic C$00E6;dmon$2019;s Hymn" />\n;\t;<meta name="DCTERM.hasVersion" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="TITLESTMT,TITLE,XREF">
+</STYLE>
+
+<STYLE TAG="XREF">
+<BEFORE>
+<FONT-COLOR V="Red">
+</BEFORE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;glossary&Q; or [doc]=&Q;bibliography&Q; or [doc]=&Q;index&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../backmatter/\ifatt(doc="index")analytic\else\endif\att(doc).htm\ifatt(from)#\att(from)\else\endif" title="Link to\ifatt(from) associated location in\else\endif \ifatt(doc="bibliography") Bibliography\else\endif\ifatt(doc="glossary") Glossary\else\endif\ifatt(doc="index") Index\else\endif\ifatt(doc="help") help\else\endif (separate document)."\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Black">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-COLOR V="Black">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;preface&Q; or [doc]=&Q;conventions&Q; or [doc]=&Q;system&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../frontmatter/\att(doc).htm\ifatt(from)#\att(from)\else\endif" title="Link to\ifatt(from) associated location in\else\endif \ifatt(doc="preface") Preface\else\ifatt(doc="system") System Requirements\else\ifatt(doc="conventions") Conventions\else indicated file\endif (separate document)."\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Fuchsia">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-COLOR V="Fuchsia">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;titlepage&Q; or [doc]=&Q;toc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../\att(doc).htm\ifatt(from)#\att(from)\else\endif" title="Link to\ifatt(doc="titlepage") Title Page\else\endif\ifatt(doc="toc") Table of Contents\else\endif\ifatt(doc="index") Index\else\endif\ifatt(doc="help") Help File\else\endif (separate document)."\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-COLOR V="Teal">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;b1&Q; or [doc]=&Q;bd&Q; or [doc]=&Q;br&Q; or [doc]=&Q;ca&Q; or [doc]=&Q;carms&Q; or [doc]=&Q;di&Q; or [doc]=&Q;h&Q; or [doc]=&Q;hr&Q; or [doc]=&Q;ld&Q; or [doc]=&Q;l&Q; or [doc]=&Q;ln&Q; or [doc]=&Q;mg&Q; or [doc]=&Q;m&Q; or [doc]=&Q;n&Q; or [doc]=&Q;o&Q; or [doc]=&Q;p1&Q; or [doc]=&Q;sanm&Q; or [doc]=&Q;t1&Q; or [doc]=&Q;to&Q; or [doc]=&Q;tr1&Q; or  [doc]=&Q;w&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../transcription/\att(doc)/index.htm\ifatt(from)#\att(from)\else\endif" title="Link to\ifatt(from) relevant form in\else transcription and facsimile of\endif \ifatt(rend) \att(rend)\else this witness\endif (separate document).">'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;aeldaEdition&Q; or [doc]=&Q;eorthanEdition&Q; or [doc]=&Q;eorthanB1Edition&Q; or [doc]=&Q;eorthanOEdition&Q; or [doc]=&Q;eortheEdition&Q; or [doc]=&Q;yldaEdition&Q; or [doc]=&Q;northumbrianoriginalEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../edition/\ifatt(doc="aeldaEdition")aelda\else\endif\ifatt(doc="eorduEdition")eordu\else\endif\ifatt(doc="eorthanEdition")eorthan\else\endif\ifatt(doc="eorthanB1Edition")b1\else\endif\ifatt(doc="eorthanOEdition")o\else\endif\ifatt(doc="eortheEdition")eorthe\else\endif\ifatt(doc="yldaEdition")ylda\else\endif\ifatt(doc="northumbrianoriginalEdition")original\else\endif/significant.htm" title="Link to critical text of\ifatt(doc="northumbrianoriginalEdition") the archteype of the Hymn\else\endif\ifatt(doc="aeldaEdition") the Nb aelda recension\else\endif\ifatt(doc="eorduEdition") the Nb eordu recension\else\endif\ifatt(doc="eorthanEdition") the WS eor$00F0;an recension\else\endif\ifatt(doc="eorthanB1Edition") B1 Scribal Performance of the WS eor$00F0;an recension\else\endif\ifatt(doc="eorthanOEdition") O Scribal Performance of the WS eor$00F0;an recension\else\endif\ifatt(doc="eortheEdition") WS eor$00F0;e recension\else\endif\ifatt(doc="yldaEdition") WS ylda recension\else indicated recension\endif (separate document)." class="\att(rend)">'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;eorduEdition&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../edition/eordu/substantive.htm" title="Link to critical text of the Nb eordu recension (separate document).">'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[doc]=&Q;ch1&Q; or [doc]=&Q;ch2&Q; or [doc]=&Q;ch3&Q; or [doc]=&Q;ch4&Q; or [doc]=&Q;ch5&Q; or [doc]=&Q;ch6&Q; or [doc]=&Q;ch7&Q; or [doc]=&Q;notea&Q; or [doc]=&Q;noteb&Q; or [doc]=&Q;notec&Q; or [doc]=&Q;noted&Q; or [doc]=&Q;notee&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../introduction/\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to\ifatt(from) referenced passage in\else\endif\ifatt(doc="ch1") Chapter 1: Bede and C$00E6;dmon\else\endif\ifatt(doc="ch2") Chapter 2: Sources and analogues\else\endif\ifatt(doc="ch4") Chapter 4: Manuscripts\else\endif\ifatt(doc="ch5") Chapter 5: Filiation and transmission\else\endif\ifatt(doc="ch6") Chapter 6: Language\else\endif\ifatt(doc="ch3") Chapter 3: C$00E6;dmon$2019;s Hymn and Germanic convention\else\endif\ifatt(doc="ch7") Chapter 7: Editorial introductions\else\endif\ifatt(doc="notea") Note A: The dating of M and P\else\endif\ifatt(doc="noteb") Note B: C$00E6;dmon$2109;s Hymn and Bede$2019;s paraphrase\else\endif\ifatt(doc="notec") Note C: Numerical and geometric patterning in C$00E6;dmon$2019;s Hymn\else\endif\ifatt(doc="noted") Note D: Memorial performance, transitional literacy, and the transmission of C$00E6;dmon$2019;s Hymn\else\endif\ifatt(doc="notee") Note E: Index of proposed analogues to the C$00E6;dmon story\else\endif (separate document).">'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</a>'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;xref&Q; and [doc]">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[n]=&Q;aelda&Q; OR [n]=&Q;eordu&Q; OR [n]=&Q;eorthe&Q; OR [n]=&Q;eorthan&Q; OR [n]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<a href="../../introduction/\att(doc).htm\ifatt(from)#\att(from)\else\endif"\ifatt(lang) lang="\att(lang)"\else\endif title="Link to editorial introduction to\ifatt(n="eordu") Nb eordu\else\endif\ifatt(n="aelda") Nb aelda\else\endif\ifatt(n="eorthan") WS eor$00F0;an\else\endif\ifatt(n="eorthe") WS eor$00F0;e\else\endif\ifatt(n="ylda") WS ylda\else\endif recension in Chapter 7 (separate document)." class="\att(n)">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="LEM">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\att(n)</a>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=']$0020;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="GAP">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\ifatt(extent="1")<span title="Gap of approx. 1 character due to damage, erasure, or other physical cause.">:</span>\else\endif\ifatt(extent="2")<span title="Gap of approx. 2 characters due to damage, erasure, or other physical cause.">::</span>\else\endif\ifatt(extent="3")<span title="Gap of approx. 3 characters due to damage, erasure, or other physical cause.">:::</span>\else\endif\ifatt(extent="4")<span title="Gap of approx. 4 characters due to damage, erasure, or other physical cause.">::::</span>\else\endif\ifatt(extent="5")<span title="Gap of approx. 5 characters due to damage, erasure, or other physical cause.">:::::</span>\else\endif\'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+
+<QUAL-STYLE QUAL="[reason]=&Q;sampling&Q; and [rend]">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+<A-TEXT V='<span class="gaptranscription" title="\att(rend)">[ \att(rend) ]$00A0;</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="[reason]=&Q;sampling&Q; and (not([rend]))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+<A-TEXT V='<span class="gaptranscription" title="Approx. \att(extent) \ifatt(extent="1")character\else characters\endif from the\n; \ifatt(lang="lat") Latin text of the\else Old English translation of the\endif Historia ecclesiastica which are not part of C$00E6;dmon$2019;s Hymn\ifatt(extent="1") has\else have\endif\n; been omitted from the transcription at this point.">[ Approx. \att(extent) characters omitted ]$00A0;</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SUPPLIED">
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and ([rend]=&Q;beginning&Q; or [rend]=&Q;complete&Q; or (not(PAR/PREV=&Q;w&Q; or PAR/PAR/PREV=&Q;w&Q; or PAR/PAR/PAR/PREV=&Q;w&Q;)))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="supplied" title="Missing or damaged text has been supplied editorially.">['>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and (not([rend]=&Q;beginning&Q; or [rend]=&Q;complete&Q; or (not(PAR/PREV=&Q;w&Q; or PAR/PAR/PREV=&Q;w&Q; or PAR/PAR/PAR/PREV=&Q;w&Q;))))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="supplied" title="Missing or damaged text has been supplied editorially.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and ([rend]=&Q;end&Q; or [rend]=&Q;complete&Q; or (not(PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/PAR/PAR/NEXT=&Q;w&Q;)))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V=']</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and (not([rend]=&Q;end&Q; or [rend]=&Q;complete&Q; or (not(PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/PAR/PAR/NEXT=&Q;w&Q;))))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="LABEL">
+<A-TEXT V='<span\ifatt(rend) class="\att(rend)label"\else class="label"\endif\n;\ifatt(rend="aelda") title="Witness of the Nb aelda recension."\else\endif\ifatt(rend="eord") title="Witness of the Nb eordu recension."\else\endif\ifatt(rend="eorthan") title="Witness of the WS eorthan recension."\else\endif\ifatt(rend="eorthe") title="Witness of the WS eorthe recension."\else\endif\ifatt(rend="ylda") title="Witness of the WS ylda recension."\else\endif\ifatt(rend="helpicon") title="Help."\else\endif>\ifatt(id)<a name="\att(id)" id="\att(id)" />\else\endif'>
+<BEFORE>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR/PAR=&Q;titlestmt&Q; or PAR/PAR=&Q;sourcedesc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="TEIHEADER">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<head  profile="http://dublincore.org/documents/dcq-html/">'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\n;\t;<meta name="generator" content="2newEditSignHTML.ssh and post-processing" />\n;\t;<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n;\n;\t;<style type="text/css" media="all" title="default"> @import 
+url(../../stylesheet/core.css); </style>\n;\t;<style type="text/css" media="screen" title="default"> @import 
+url(../../stylesheet/screen.css); </style>\n;\t;<style type="text/css" media="print" title="default"> @import 
+url(../../stylesheet/print.css); </style>\n;</head>\n;'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="FOREIGN">
+<A-TEXT V='<span class="foreign"\ifatt(lang) lang="\att(lang)"\else\endif>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR/PAR=&Q;samplingdecl&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EMEND">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</STYLE>
+
+<STYLE TAG="DEL">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;corr&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<del\ifatt(rend) class="\att(rend)"\else\endif title="\ifatt(rend="overwriting")Deletion by overwriting (i.e. text has been replaced by other text through modification or erasure).\else\endif\ifatt(rend="erasure")Deletion by erasure (i.e. text removed leaving gap).\else\endif\ifatt(rend="underlined")Deletion indicated by line under form.\else\endif\ifatt(rend="subpunctus")Deletion indicated by point under form.\else\endif\ifatt(rend="strikethrough")Deletion indicated by line through form.\else\endif">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</del>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="CHILD=&Q;space&Q; and PAR=&Q;corr&Q; and (not(PAR[rend]=&Q;precorrection&Q; or PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR/PAR[rend]=&Q;precorrection&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;corr&Q; and (PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR/PAR[rend]=&Q;precorrection&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;corr&Q; AND (not (PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR=&Q;l&Q; or PAR/PAR/PAR=&Q;l&Q; or PAR/PAR/PAR/PAR=&Q;l&Q; or PAR/PAR=&Q;lem&Q; or PAR/PAR/PAR=&Q;lem&Q;  or PAR/PAR/PAR/PAR=&Q;lem&Q; or PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;emend&Q; and (not(PAR/PAR/PAR[rend]=&Q;preemendation&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR[type]=&Q;punctuation:editorial&Q; or PAR/PAR/PAR=&Q;rdg&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="WITLIST">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<p class="witnesslist">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</p>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="HAND">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.creator" content="\ifatt(id)\att(id) \else\endif\ifatt(scribe)(\att(scribe))\else\endif" />'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</STYLE>
+
+<STYLE TAG="REG">
+
+<QUAL-STYLE QUAL="PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="WITNESS">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PREV=&Q;witness&Q; and NEXT=&Q;witness&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$0020;'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=','>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="NEXT=&Q;witness&Q; AND (NOT(PREV=&Q;witness&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='Based on '>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=' with collations from'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PREV=&Q;witness&Q; and (NOT(NEXT=&Q;witness&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='$0020;'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='.'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="RDGGRP">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;rdg&Q; and PAR/PAR/PREV=&Q;lem&Q; and (not((PAR/PAR/PREV/CHILD/CHILD=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD[type]=&Q;normalisation&Q;))) or (PAR/PAR/PREV/CHILD/CHILD/CHILD=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD/CHILD[type]=&Q;normalisation&Q;))) or (PAR/PAR/PREV/CHILD/CHILD/NEXT=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD/NEXT[type]=&Q;normalisation&Q;))) or (PAR/PAR/PREV/CHILD/CHILD/CHILD/NEXT=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD/CHILD/NEXT[type]=&Q;normalisation&Q;))) or (PAR/PAR/PREV/CHILD/CHILD/NEXT/NEXT=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD/NEXT/NEXT[type]=&Q;normalisation&Q;))) or (PAR/PAR/PREV/CHILD/CHILD/CHILD/NEXT/NEXT=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD/CHILD/NEXT/NEXT[type]=&Q;normalisation&Q;))) or (PAR/PAR/PREV/CHILD/CHILD/NEXT/NEXT/NEXT=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD/NEXT/NEXT/NEXT[type]=&Q;normalisation&Q;))) or (PAR/PAR/PREV/CHILD/CHILD/CHILD/NEXT/NEXT/NEXT=&Q;emend&Q; and (not(PAR/PAR/PREV/CHILD/CHILD/CHILD/NEXT/NEXT/NEXT[type]=&Q;normalisation&Q;)))))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="DIV1">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div\ifatt(type) class="\att(type)"\else\endif lang="\ifatt(lang)\att(lang)\elseENG-CAN\endif">'>
+<BEFORE>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<AFTER>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="CHILD=&Q;head&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<div\ifatt(type) class="\att(type)"\else\endif lang="\ifatt(lang)\att(lang)\elseENG-CAN\endif">\n;<h1><a id="\att(id)" name="\att(id)" />'>
+<BEFORE>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<AFTER>
+<FONT-COLOR V="Maroon">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="DAMAGE">
+
+<QUAL-STYLE QUAL="PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="damaged" title="Text is (physically) damaged in some way.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EXTENT">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;filedesc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DCTERM.extent" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="CAESURA">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="caesura">$0020;$00A0;$00A0;$00A0;$00A0;$0020;</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</STYLE>
+
+<STYLE TAG="L">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<p class="poetry"\ifatt(lang) lang="\att(lang)"else\endif>\ifatt(n=5)<span class="linenumber">\att(n)<span class="hideme"><!-- this span helps position line numbers in nonCSS browsers -->$00A0;$00A0;$00A0;$00A0;</span></span>\else<span class="hideme">$00A0;$00A0;$00A0;$00A0;</span>\endif'>
+<BEFORE>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</p>'>
+<AFTER>
+<FONT-COLOR V="Purple">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="BIBL">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;sourcedesc&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.source" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="ADDRESS">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='." />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;publicationstmt&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.publisher" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="EXPAN">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="not(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="HEAD">
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;aelda&Q; or PAR[id]=&Q;eordu&Q; or PAR[id]=&Q;eorthan&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h1 class="subtitle">A critical edition of the probable recension archetype</h1>'>
+<AFTER>
+<FONT-FAMILY V="System">
+<FONT-SIZE V=10>
+<FONT-SLANT V=Roman>
+<FONT-WEIGHT V=Medium>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;ylda&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h1 class="subtitle">A critical reconstruction of the idealised recension archetype (after emendation)</h1>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;b1&Q; or PAR[id]=&Q;o&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h1 class="subtitle">A critical edition of the scribal performance</h1>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;eorthe&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h1 class="subtitle">A critical edition of the recension$2019;s latest text</h1>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[id]=&Q;archetype&Q; or PAR[id]=&Q;archetype.witness&Q; ">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='</h1><h1 class="subtitle">A reconstruction of the hypothetical written ancestor to all surviving recensions of the poem</h1>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="SOCALLED">
+<A-TEXT V='$201C;\ifatt(lang)<span lang="\att(lang)">\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='\ifatt(lang)</span>\else\endif$201D;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</STYLE>
+
+<STYLE TAG="ADDRLINE">
+
+<QUAL-STYLE QUAL="next=&Q;addrline&Q; and (PAR=&Q;address&Q; and PAR/PAR=&Q;publicationstmt&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V=', '>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="CORR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+
+<QUAL-STYLE QUAL="PAR/PAR=&Q;l&Q; or PAR/PAR/PAR=&Q;l&Q; or PAR/PAR/PAR/PAR=&Q;l&Q; or PAR/PAR=&Q;lem&Q; or PAR/PAR/PAR=&Q;lem&Q;  or PAR/PAR/PAR/PAR=&Q;lem&Q; or PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span \n;class="correction" \n;title="Scribal correction.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="LB">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="linebreak" title="Indicates the end of a manuscript line.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+
+<QUAL-STYLE QUAL="not(PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="((PAR=&Q;w&Q; or PAR=&Q;fw&Q;) and prev[type]=&Q;wordboundary&Q; and (PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/NEXT=&Q;fw&Q; or PAR/PAR/NEXT=&Q;fw&Q;)) and (PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='$0020;'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;supplied&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V=']<span class="linebreak" title="Indicates the end of a manuscript line.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;unclear&Q; and (PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="junicode">$232A;</span><span class="linebreak" title="Indicates the end of a manuscript line.">|</span>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="ADD">
+
+<QUAL-STYLE QUAL="PAR=&Q;corr&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<ins title="Inserted text. See diplomatic transcription.">'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</ins>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR[type]=&Q;punctuation:editorial&Q; or PAR[rend]=&Q;precorrection&Q; or PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR/PAR[rend]=&Q;precorrection&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;corr&Q; and (PAR/PAR=&Q;l&Q; or PAR/PAR/PAR=&Q;l&Q; or PAR/PAR/PAR/PAR=&Q;l&Q; or PAR/PAR=&Q;lem&Q; or PAR/PAR/PAR=&Q;lem&Q;  or PAR/PAR/PAR/PAR=&Q;lem&Q; or PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and (not(([rend]=&Q;middle&Q; or [rend]=&Q;end&Q;) and (PAR/PREV=&Q;w&Q; or PAR/PAR/PREV=&Q;w&Q; or PAR/PAR/PAR/PREV=&Q;w&Q;)))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<ins title="\ifatt(place="interlinear")Addition placed between letters within line.\else\endif\ifatt(place="right margin")Addition placed in right margin.\else\endif\ifatt(place="left margin")Addition placed in left margin.\else\endif\ifatt(place="overwriting")Addition placed over some other modified or erased text.\else\endif\ifatt(place="superlinear")Addition placed above the line.\else\endif\ifatt(place="sublinear")Addition placed below the line.\else\endif">\ifatt(rend="caret")<span class="junicode" title="Addition with caret.">$2041;</span>\else\endif\ifatt(place="overwriting"){\else\ifatt(place="superlinear")\\\else\ifatt(place="sublinear")/\else\ifatt(place="interlinear")|\else\ifatt(place="right margin")|\else\endif'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;corr&Q; and (PAR/PAR=&Q;l&Q; or PAR/PAR/PAR=&Q;l&Q; or PAR/PAR/PAR/PAR=&Q;l&Q; or PAR/PAR=&Q;lem&Q; or PAR/PAR/PAR=&Q;lem&Q;  or PAR/PAR/PAR/PAR=&Q;lem&Q; or PAR[rend]=&Q;diplomatic&Q; or PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR[rend]=&Q;diplomatic&Q; or PAR/PAR/PAR/PAR[rend]=&Q;diplomatic&Q;) and (not(([rend]=&Q;beginning&Q; or [rend]=&Q;middle&Q;) and (PAR/NEXT=&Q;w&Q; or PAR/PAR/NEXT=&Q;w&Q; or PAR/PAR/PAR/NEXT=&Q;w&Q;)))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='\ifatt(place="overwriting")}\else\endif\ifatt(place="interlinear")|\else\endif\ifatt(place="superlinear")/\else\endif\ifatt(place="sublinear")\\\else\endif\ifatt(place="left margin")|\else\endif</ins>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;corr&Q; and (PAR[rend]=&Q;postcorrection&Q; or PAR/PAR[rend]=&Q;postcorrection&Q; or PAR/PAR/PAR[rend]=&Q;postcorrection&Q; or PAR/PAR/PAR/PAR[rend]=&Q;postcorrection&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<empty>'>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V='</empty>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;emend&Q; and (PAR/PAR/PAR[rend]=&Q;preemendation&Q; or PAR/PAR/PAR[rend]=&Q;precorrection&Q; or PAR/PAR/PAR=&Q;rdg&Q; or PAR/PAR/PAR/PAR=&Q;rdg&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<VISIBLE V=Hide>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;emend&Q; and (not(PAR/PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR/PAR[rend]=&Q;postcorrection&Q; or PAR/PAR/PAR=&Q;rdg&Q; or PAR/PAR/PAR/PAR=&Q;rdg&Q;))">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='<span class="emendation" title="Editorial emendation.">['>
+<BEFORE>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+<Z-TEXT V=']</span>'>
+<AFTER>
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+</QUAL-STYLE>
+
+<QUAL-STYLE QUAL="PAR=&Q;emend&Q; and (PAR/PAR/PAR[rend]=&Q;postemendation&Q; or PAR/PAR/PAR[rend]=&Q;postcorrection&Q;)">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</QUAL-STYLE>
+</STYLE>
+
+<STYLE TAG="AUTHOR">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<Z-TEXT V='" />'>
+<AFTER>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</AFTER>
+
+<QUAL-STYLE QUAL="PAR=&Q;titlestmt&Q;">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+<A-TEXT V='\t;<meta name="DC.creator" content="'>
+<BEFORE>
+<FONT-COLOR V="Red">
+<BREAK-BEFORE>
+<BREAK-AFTER>
+</BEFORE>
+</QUAL-STYLE>
+</STYLE>
+
+</STYLESHEET>

@@ -1,0 +1,197 @@
+<!--
+*******************************************************************
+*                    northumbrianOriginal.sgm                     *
+*             Critical Reconstruction of the 'original'           *
+*                          Caedmon's Hymn                         *
+*                                                                 *
+*                         Text and Encoding                       *
+*               (c) Daniel Paul O'Donnell, 1999-2002              *
+*                        All Rights Reserved                      *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+
+<tei.2 id="ARCHETYPE.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">&ch;: A reconstruction of the hypothetical archetype.</title>
+    <author>C&aelig;dmon (floruit 657-681)</author>
+    <editor>Daniel Paul O&rsquo;Donnell</editor>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 8 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <bibl>&b1mlShort;</bibl>
+    <bibl>&bdmlShort;</bibl>
+    <bibl>&brmlShort;</bibl>
+    <bibl>&camlShort;</bibl>
+    <bibl>&carmsmlShort;</bibl>
+    <bibl>&dimlShort;</bibl>
+    <bibl>&hmlShort;</bibl>
+    <bibl>&hrmlShort;</bibl>
+    <bibl>&lmlShort;</bibl>
+    <bibl>&ldmlShort;</bibl>
+    <bibl>&lnmlShort;</bibl>
+    <bibl>&mmlShort;</bibl>
+    <bibl>&mgmlShort;</bibl>
+    <bibl>&nmlShort;</bibl>
+    <bibl>&omlShort;</bibl>
+    <bibl>&p1mlShort;</bibl>
+    <bibl>&sanmmlShort;</bibl>
+    <bibl>&t1mlShort;</bibl>
+    <bibl>&tomlShort;</bibl>
+    <bibl>&tr1mlShort;</bibl>
+    <bibl>&wmlShort;</bibl>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Edition and collation prepared for use in the &ech;.</p>
+   </projectdesc>
+   <samplingdecl>
+    <p>Edition is based on original transcriptions of source manuscripts.</p>
+   </samplingdecl>
+   <editorialdecl>
+    <correction status="high" method="tags">
+     <p>Text based on transcriptions of facsimiles and personal
+      inspection of witness manuscripts by dpod. Each witness has
+      been proofread and checked (against FS or MS) at least four
+      times by dpod and either ls or mve.</p>
+    </correction>
+    <normalization default="yes" method="tags">
+     <p>Modern editorial line division, spacing, punctuation, and
+     capitalisation have been silently imposed on the base text.
+     Paleographic information about the base witness (damage,
+     hard-to-read letter forms letters, etc.) has been silently
+     suppressed.  These features can be recovered from the apparatus
+     (which preserves paleographic encoding about the readings in each
+     witness) and from the relevant sgml files containing witness
+     transcriptions.</p> 
+    </normalization>
+    <segmentation>
+     <p>Edition has been segmented according to modern editorial
+     convention (i.e. line boundaries mark modern editorial line
+     boundaries; caesura elements mark modern editorial
+     caesurae).</p>
+    </segmentation>
+   </editorialdecl>
+   <metdecl>
+    <p>Prosody has not been marked explicitly; lines are encoded as
+    <socalled>long lines</socalled> with hemistichs marked by the
+    caesura element.</p>
+   </metdecl>
+  </encodingdesc>
+  <profiledesc teiform="profileDesc">
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body>
+   <div1 id="ARCHETYPE.WITNESS" n="Archetype">
+    <head type="ARCHETYPE.HEAD">&ch;</head>
+    <witlist>
+     <witness sigil="m" teiform="witness">&mx; (orthographic forms) and the &eorthan; (substantive readings)</witness>
+     <witness sigil="b1" teiform="witness">&b1x;</witness>
+     <witness sigil="bd" teiform="witness">&bdx; (parallel view only)</witness>
+     <witness sigil="br" teiform="witness">&brx;</witness>
+     <witness sigil="ca" teiform="witness">&cax;</witness>
+     <witness sigil="carms" teiform="witness">&carmsx;</witness>
+     <witness sigil="di" teiform="witness">&dix;</witness>
+     <witness sigil="h" teiform="witness">&hx;</witness>
+     <witness sigil="hr" teiform="witness">&hrx;</witness>
+     <witness sigil="ld" teiform="witness">&ldx;</witness>
+     <witness sigil="ln" teiform="witness">&lnx;</witness>
+     <witness sigil="mg" teiform="witness">&mgx;</witness>
+     <witness sigil="n" teiform="witness">&nx;</witness>
+     <witness sigil="o" teiform="witness">&ox;</witness>
+     <witness sigil="l" teiform="witness">&lx;</witness>
+     <witness sigil="p1" teiform="witness">&p1x;</witness>
+     <witness sigil="sanm" teiform="witness">&sanmx;</witness>
+     <witness sigil="t1" teiform="witness">&t1x;</witness>
+     <witness sigil="to" teiform="witness">&tox;</witness>
+     <witness sigil="tr1" teiform="witness">&tr1x;</witness>
+     <witness sigil="w" teiform="witness">&wx;</witness>
+    </witlist>
+    <div2 id="ARCHETYPE.TOC" type="toc">
+     <div3 id="ARCHETYPE.TOC.1" type="toc:book">
+      <list type="simple">
+       
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="ch7" rend="Chapter 7"><label rend="accesskey">P</label>revious (Chapter 7)</xref></item>
+       <item><xref n="n" doc="aeldaEdition" rend="Aelda"><label rend="accesskey">N</label>ext (&aeldaAbbreviationSiglum;)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+<item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="ARCHETYPE.TOC.2" type="toc:edition">
+      <list type="simple">
+       <item>&ch7xOriginal;</item>      
+      </list>
+     </div3>
+    </div2>
+    <div2 type="poem">
+    <l id="NO.1" n="1">&no.1a.1.orig.wit;&no.1a.2.orig.wit;&no.1a.3.orig.wit;<caesura>&no.1b.1.orig.wit;&no.1b.2.orig.wit;,</l>  
+    <l id="NO.2" n="2">&no.2a.1.orig.wit;&no.2a.2.orig.wit;,<caesura>&no.2b.1.orig.wit;&no.2b.2.orig.wit;&no.2b.3.orig.wit;,</l> 
+    <l id="NO.3" n="3">&no.3a.1.orig.wit;&no.3a.2.orig.wit;&mdash;<caesura>&no.3b.1.orig.wit;&no.3b.2.orig.wit;&no.3b.3.orig.wit;&no.3b.4.orig.wit;,</l>
+    <l id="NO.4" n="4">&no.4a.1.orig.wit;&no.4a.2.orig.wit;,<caesura>&no.4b.1.orig.wit;&no.4b.2.orig.wit;!</l>
+    <l id="NO.5" n="5">&no.5a.1.orig.wit;&no.5a.2.orig.wit;&no.5a.3.orig.wit;<caesura>&no.5b.1.orig.wit;&no.5b.2.orig.wit;</l>
+    <l id="NO.6" n="6">&no.6a.1.orig.wit;&no.6a.2.orig.wit;&no.6a.3.orig.wit;,<caesura>&no.6b.1.orig.wit;&no.6b.2.orig.wit;;</l>
+    <l id="NO.7" n="7">&no.7a.1.orig.wit;&no.7a.2.orig.wit;,<caesura>&no.7b.1.orig.wit;&no.7b.2.orig.wit;,</l>
+    <l id="NO.8" n="8">&no.8a.1.orig.wit;&no.8a.2.orig.wit;,<caesura>&no.8b.1.orig.wit;&no.8b.2.orig.wit;</l>
+    <l id="NO.9" n="9">&no.9a.1.orig.wit;&no.9a.2.orig.wit;,<caesura>&no.9b.1.orig.wit;&no.9b.2.orig.wit;.</l>
+    </div2>
+&originalAnalyticWitness;&originalParallelWitness;
+   </div1>
+  </body>
+ </text>
+</tei.2>

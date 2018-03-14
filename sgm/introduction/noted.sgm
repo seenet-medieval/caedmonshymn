@@ -1,0 +1,134 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                              Note D                           *
+*         Memorial performance, transitional literacy, and the transmission of &ch;                        *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 id="NOTED.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Memorial performance, transitional literacy, and the transmission of C&aelig;dmon&rsquo;s Hymn</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Note to the introduction to the electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="NOTED" n="D">
+    <head id="NOTED.HEAD">Memorial performance, transitional literacy, and the transmission of &ch;</head>    
+    <div2 id="NOTED.TOC" type="toc">
+     <div3 id="NOTED.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="notec"><label rend="accesskey">P</label>revious (Note C)</xref></item>
+       <item><xref n="n" doc="notee"><label rend="accesskey">N</label>ext (Note E)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="NOTED.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="NOTED">Top</ref></item>	
+      </list>
+     </div3>
+    </div2>
+    <div2 id="NOTED.APPENDIX">
+     <p id="NOTED.850" n="D.1">&ch; has served as a test case for several studies of scribal performance in the transmission of Old English poetry (e.g &cavill2000;; &orton1998;; &odonnell1996a;; &okeeffe1990;; &kiernan1996;; &jabbour1968;).<note id="NOTED.NOTE.280" n="1"><p>The most influential study of the question, &sisamk1953;, 29-44, explicitly excludes &ch; from consideration; see 35.</p></note> Two studies in particular, &jabbour1968; and &okeeffe1990;, cite differences among witnesses and recensions of the poem to demonstrate the influence of non-literate methods of transmission on Anglo-Saxon scribal practice. In the case of Jabbour, whose work is heavily influenced by the study of English ballads (see 38-45), this method involves the memorisation of the texts in question. In the case of O&rsquo;Keeffe, whose approach attempts to discover and define the nature of a transitional stage in the development of Anglo-Saxon literacy between its presumed oral and literate phases, the method involves the adaptation of improvisational techniques associated with oral formulaic theory to the transmission of a written text (&okeeffe1990;, 46; also 191-193). Both studies take the presence of sensible, metrical, and formulaically appropriate variation in a written poetic tradition as key evidence for the operation of their proposed methods; perhaps not surprisingly, both draw their principal examples in the case of &ch; from witnesses to the &eorthan;: &b1x; in the case of Jabbour, and (in practice) &b1x; and &ox; in that of O&rsquo;Keeffe.</p>
+     <p id="NOTED.860" n="D.2">Neither study is very convincing, at least as far as it pertains to &ch;. In Jabbour&rsquo;s case, the suggestion that the thoroughgoing textual variation that separates &b1x; from the other members of &eorthanShortReference; tradition fits the expected pattern for memorial transmission of verse (see esp. 200) fails to take into account the context in which the witness is found: as a part of the Old English translation of Bede&rsquo;s &he;, the &b1x; text of &ch; was copied as an integral part of the manuscript&rsquo;s much longer (and presumably not memorially-transmitted) main prose text. As we have seen above (&sect;&sect;&nbsp;&ch7x510;-&ch7x520), this prose text is itself highly innovative, and shows types and amounts of textual variation similar to those found in the vernacular poem. While the variation may not be inconsistent with memorial transmission, the context in which the poem is found suggests that the actual cause more probably lies in coordinated editorial activity by the scribes of the manuscript&rsquo;s main text or, since the innovations appear to be spread evenly across both scribes&rsquo; work, perhaps by the scribe or scribes of an earlier exemplar.</p>
+     <p id="NOTED.870" n="D.3">O&rsquo;Keeffe&rsquo;s suggestion that manuscripts of the &eorthan; as a whole show evidence of <socalled>transitional literacy</socalled> founders on a similar difficulty. In O&rsquo;Keeffe&rsquo;s view, scribes working at a transitional point in the development of Anglo-Saxon literacy are characterised by their ability to introduce metrically, formulaically, syntactically, and semantically appropriate substitutions spontaneously into the texts they copy (&okeeffe1990;, 40). In the case of &ch;, the evidence that this <quote id="NOTED.QUOTE.0120">mode of reading</quote> is in operation is said to lie in the <quote id="NOTED.QUOTE.0130">integral presence</quote> (41) of such formulaically appropriate textual variation across witnesses to the &eorthan; (40-41):</p>
+     <quote id="NOTED.QUOTE.0135">
+      <p>When we examine the variations in the five tenth- and eleventh-century records of the West Saxon version, we see in the despair of the textual editor palpable evidence of a fluid transmission of the &hymn; somewhere between the formula-defined process which is an oral poem and the graph-bound object which is a text. We see a reading activity reflected in these scribal variants which is formula-dependent, in that the variants observe metrical and alliterative constraints, and which is context-defined, in that the variants produced arise within a field of possibilities generated within a context of expectations.... These five records of Caedmon&rsquo;s &hymn; give evidence of a reading activity characterized by intense reader inference, where the reader uses knowledge of the conventions of the verse to <socalled>predict</socalled> what is on the page....</p>
+      <p>[T]he variants in Caedmon&rsquo;s &hymn; use memory not to import a set phrase, but to draw on a formulaic possibility. Reception here, conditioned by formulaic conventions, produces variants which are metrically, syntactically and semantically appropriate. In such a process, reading and copying have actually become conflated with composing.</p>
+     </quote>
+     <p id="NOTED.880" n="D.4">As we have seen above, however, the transmission of the &eorthan; is far less fluid than O&rsquo;Keeffe suggests (see esp. &sect;&sect;&nbsp;&ch7x560;-&ch7x590;). With two exceptions, most tenth- and eleventh-century manuscripts of the &eorthan; actually pass on quite conservative copies of their probable exemplars. The tenth-century manuscripts &t1x; and &cx; (as represented by &nx;), appear to have been distinguished by no metrically, syntactically, or semantically appropriate variation: their five substantive variants all involve the substitution of contextually inappropriate readings in &cx;/&nx; (at least four of which may be attributable to mistakes made by Nowell in his sixteenth-century transcription, see above &sect;&nbsp;&ch7x480; and &okeeffe1990;, 39) for sensible and metrical forms in &t1x;. A similar conservatism shows up in &cx;&rsquo;s eleventh-century descendants. If we exclude the five nonsensical errors in &nx;, the precorrection text of &ox; shows only one contextually appropriate substitution: &ox; <mentioned rend="diplomatic" lang="ANG">&copyOfo.5a.3;</mentioned> for &cx;/&nx; <mentioned rend="diplomatic" lang="ANG">&copyOfn.5a.3;</mentioned>, 5a. In its corrected state, &ox; provides all but one of the readings found in its close descendent &cax; (see above, &sect;&nbsp;&ch7x490;).</p>
+     <p id="NOTED.890" n="D.5">Just as significantly, the scribes responsible for the two eleventh-century manuscripts which do show the most contextually appropriate substantive variation introduce their variation into the text of the &hymn; in very different ways and in ways consistent with their performance in the larger prose text of which the &hymn; is a part in both manuscripts. In the case of &b1s;, as we have seen above (&sect;&nbsp;&ch7x510;), the type and amount of variation introduced into the text of the &hymn; are in keeping with that found in the surrounding prose text; while there is nothing to suggest that the variation was not introduced spontaneously&mdash;except perhaps the suspicious consistency of this variation across the work of two distinct main-text scribes&mdash;, there is also very little to suggest that this variation was particularly formula-dependent: one of the most striking innovations in this copy of the &hymn; (<mentioned lang="ANG">&copyOfb1.3a.2;</mentioned>) is paralleled nowhere else in the Anglo-Saxon poetic corpus; and while the remaining variants can all be paralleled at least once from Old English verse, all five can also be paralleled from the prose corpus and involve changes similar or identical to those introduced elsewhere by the same scribes in the surrounding prose (for a discussion of this characteristic pattern of scribal variation in <socalled>fixed context</socalled> texts, see &odonnell1996a;, esp. chapter 3).</p>
+     <p id="NOTED.900" n="D.6">The case of &ox; is even more significant because its supposedly <socalled>formulaic</socalled> variation, in addition to being paralleled by similar corrections throughout the prose framing text, is almost entirely <emph>by correction</emph>&mdash;and hence, by definition, <emph>not</emph> <quote id="NOTED.QUOTE.0140">evidence of a reading activity characterized by intense reading inference, where the reader uses knowledge of the conventions of the verse to <socalled>predict</socalled> what is on the page</quote> (&okeeffe1990;, 40). While the scribe of &ox; does introduce a fair bit of formulaically appropriate substantive variation into his copy of the &hymn;, his variation is neither as striking as that introduced by the scribe of &b1x; nor, apparently, as spontaneous. Since all but one of the variants introduced by correction parallel readings found in other recensions of the text, indeed, it is entirely possible that the scribe of this manuscript introduced his <socalled>formulaic</socalled> variants memorially or through a physical collation of his copy with other manuscripts of the &hymn; or &historia;.</p>
+     <p id="NOTED.910" n="D.7">Although some manuscripts of &ch; show more variation than others, there is no indication that the poem was regularly passed on by means other than literate written transmission. Most recensions of the &hymn; show very little textual innovation, even in traditions spanning several hundred years. Those manuscripts that do show significant amounts of textual variation are either too late and too corrupt to serve as satisfactory representatives of the work of formulaically aware Anglo-Saxon scribes (see, for example, the discussion of the &eordu; and &eorthe;, &sect;&sect;&nbsp;&ch7x150;-&ch7x290; and &ch7x630;-&ch7x720;, above), or are found in contexts which suggest that their variation is part of a larger programme of (presumably) literate editorial intervention (&b1x; and &ox;). Even when viewed as a whole, witnesses to &ch; suggest a relatively stable, written, pattern of transmission.</p>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>
+

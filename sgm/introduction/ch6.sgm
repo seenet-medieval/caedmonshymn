@@ -1,0 +1,367 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon's Hymn                 *
+*                             Chapter 5                           *
+*                             Language                            *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1997-2003            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 ID="CH6.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Chapter 6: Language</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition.</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Fifth chapter from introduction to electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language ID="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language ID="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language ID="GEM-PR">Germanic, Proto</language>
+   </langusage>
+   <langusage>
+    <language ID="LAT">Latin</language>
+   </langusage>
+   <langusage>
+    <language ID="NON">Norse, Old</language>
+   </langusage>
+   <langusage>
+    <language ID="SAN">Sanskrit (Transliteration in Roman Characters)</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="CH6" n="6">
+    <head id="CH6.HEAD">Language</head>
+    <div2 id="CH6.TOC" type="toc">
+     <div3 id="CH5.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="ch5"><label rend="accesskey">P</label>revious (Chapter 5)</xref></item>
+       <item><xref n="n" doc="ch7"><label rend="accesskey">N</label>ext (Chapter 7)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="CH6.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="CH6">Top</ref></item>
+       <item><ref target="CH6.1.HEAD">Introduction</ref></item>
+       <item><ref target="CH6.2.HEAD">Northumbrian features</ref>
+	<list>
+	 <item><ref target="CH6.2.1.HEAD">Orthography</ref>
+	  <list>
+	   <item><ref target="CH6.2.1.1.HEAD">Native modifications of the Latin alphabet</ref></item>
+	   <item><ref target="CH6.2.1.2.HEAD"><seg type="linguistic" subtype="phonemic">$00E6;</seg></ref></item>
+	   <item><ref target="CH6.2.1.3.HEAD"><seg type="linguistic" subtype="phonemic">$03C7;</seg></ref></item>
+	   <item><ref target="CH6.2.1.4.HEAD">Germanic *<seg type="linguistic" subtype="phonetic">$03B2;</seg></ref></item>
+	   <item><ref target="CH6.2.1.5.HEAD">Length</ref></item>
+	  </list></item>
+	 <item><ref target="CH6.2.2.HEAD">Analogic and historical forms</ref>
+	  <list>
+	   <item><ref target="CH6.2.2.1.HEAD"><mentioned lang="ANG">end</mentioned> : <mentioned lang="ANG">and</mentioned></ref></item>
+	   <item><ref target="CH6.2.2.2.HEAD"><mentioned lang="ANG">fadur</mentioned></ref></item>
+	   <item><ref target="CH6.2.2.3.HEAD"><mentioned lang="ANG">astelid$00E6;</mentioned></ref></item>
+	   <item><ref target="CH6.2.2.4.HEAD"><mentioned lang="ANG">hefun</mentioned>/-<mentioned lang="ANG">aen</mentioned>/-<mentioned lang="ANG">en</mentioned></ref></item>
+	   <item><ref target="CH6.2.2.5.HEAD"><mentioned lang="ANG">halig</mentioned> / <mentioned lang="ANG">haleg</mentioned></ref></item>
+	   <item><ref target="CH6.2.2.6.HEAD"><mentioned lang="ANG">swe</mentioned> / <mentioned lang="ANG">sw$00E6;</mentioned></ref></item>
+	  </list></item>
+	 <item><ref target="CH6.2.3.HEAD">Phonology</ref>
+	  <list>
+	   <item><ref target="CH6.2.3.1.HEAD">Stressed syllables</ref>
+	    <list>
+	     <item><ref target="CH6.2.3.1.1.HEAD">Germanic *<seg type="linguistic" subtype="phonemic">a</seg></ref>
+	      <list>
+	       <item><ref target="CH6.2.3.1.1.1.HEAD">Nasalisation and rounding</ref></item>
+	       <item><ref target="CH6.2.3.1.1.2.HEAD">First fronting, breaking, and retraction</ref></item>
+	      </list></item>
+	     <item><ref target="CH6.2.3.1.2.HEAD">Palatal diphthongisation</ref></item>
+	     <item><ref target="CH6.2.3.1.3.HEAD">Anglian smoothing</ref></item>
+	     <item><ref target="CH6.2.3.1.4.HEAD">Back umlaut</ref></item>
+	    </list></item>
+	   <item><ref target="CH6.2.3.2.HEAD">Unstressed syllables</ref>
+	    <list>
+	     <item><ref target="CH6.2.3.2.1.HEAD">Loss of final <seg type="linguistic" subtype="phonemic">n</seg></ref></item>
+	     <item><ref target="CH6.2.3.2.2.HEAD">Preservation of unstressed <seg type="linguistic" subtype="phonemic">u</seg></ref></item>
+	     <item><ref target="CH6.2.3.2.3.HEAD">Preservation of unstressed <seg type="linguistic" subtype="phonemic">$00E6; </seg> <seg type="linguistic" subtype="phonemic">e</seg> and <seg type="linguistic" subtype="phonemic">i</seg></ref></item>
+	    </list></item>
+	  </list></item>
+	</list></item>
+       <item><ref target="CH6.3.HEAD">West-Saxon features</ref>
+	<list>
+	 <item><ref target="CH6.3.1.HEAD">Orthography</ref></item>
+	 <item><ref target="CH6.3.2.HEAD">Analogic and historical forms</ref>
+	  <list>
+	   <item><ref target="CH6.3.2.1.HEAD"><mentioned lang="ANG">swa</mentioned></ref></item>
+	  </list></item>
+	 <item><ref target="CH6.3.3.HEAD">Phonology</ref>
+	  <list>
+	   <item><ref target="CH6.3.3.1.HEAD">Stressed syllables</ref>
+	    <list>
+	     <item><ref target="CH6.3.3.1.1.HEAD">Germanic *<seg type="linguistic" subtype="phonemic">a</seg></ref>
+	      <list>
+	       <item><ref target="CH6.3.3.1.1.1.HEAD">Nasalisation and rounding</ref></item>
+	       <item><ref target="CH6.3.3.1.1.2.HEAD">First fronting, breaking</ref></item>
+	      </list></item>
+	     <item><ref target="CH6.3.3.1.2.HEAD">Palatal diphthongisation</ref></item>
+	     <item><ref target="CH6.3.3.1.3.HEAD">Back umlaut</ref></item>
+	     <item><ref target="CH6.3.3.1.4.HEAD">Later changes to Old English diphthongs</ref></item>
+	    </list></item>
+	  </list></item>
+	</list></item>
+       <item><ref target="CH6.4.HEAD">Anglian and Northumbrian features in West-Saxon recensions of the <title level="M">Hymn</title></ref></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="CH6.1">
+     <head id="CH6.1.HEAD">Introduction</head>
+     <p id="CH6.010" n="6.1">Witnesses to &ch; can be divided into two main dialectal groups: Northumbrian and West-Saxon. Each of the poem&rsquo;s five recensions belongs to one or the other of these two main dialectal divisions, although, as &dobbie1937; demonstrated, the distinction is textually insignificant:  key recensional readings cut across dialectal lines, and copies of the &hymn; showing similar dialectal features need not show any other evidence of close textual affinity. This is particularly true of the two Northumbrian recensions: as demonstrated above (&sect;&sect;&nbsp;&ch5x065;-&ch5x080;), the &eordu; is closer textually to the &wseorthe; and &wsylda; recensions than it is to the &naelda;. The dialectal similarity among the three West-Saxon recensions is similarly incidental: while two of the three appear to be descended from the same broad tradition, various minor and major differences suggest that each was translated independently from the Northumbrian (see further, &sect;&sect;&nbsp;&ch6r52;-&ch6r54;).</p>
+     <p id="CH6.020" n="6.2">The following sections discuss aspects of the language of the &hymn; as represented in the surviving witnesses. The emphasis throughout is on features that are significant for the determination of dialect or date. As in &ch4x;, above, references in this section are intended to be current and useful rather than historically exhaustive. More detailed studies of the language of the &hymn; exist. The &eorthan; is often discussed in general terms in studies of the dialect of the Old English &he; (see &grant1989; and &whitelock1963; for bibliography). The &aeldaShortReference; and &eorduShortReference; recensions are important sources for our knowledge of Northumbrian and, as a result, are frequently cited in dialectal studies and the standard grammars (e.g. &ross1937;; &campbell1991;; &hogg1992;; &bourns2001;). Witnesses to these recensions are also the subject of several self-standing studies and monographs, many of which deal in whole or in part with linguistic matters (e.g. &cavill2000;; &odonnell1996b;; &wuest1906;). Readers interested in a more detailed account of the language of the &hymn; are referred to these sources.</p>
+    </div2>
+    <div2 id="CH6.2">
+     <head id="CH6.2.HEAD">Northumbrian features</head>
+     <p id="CH6.030" n="6.3">Five witnesses to the &hymn;, belonging to two distinct recensions, show Northumbrian features. Two of the witnesses, &lx; and &mx;, are found in early manuscripts of Bede&rsquo;s Latin &he; and can be dated with relative certainty on palaeographic and internal grounds to the eighth century (see below, &ch4xAppendix;).<note id="CH6.NOTE.010" n="1"><p>Arguments against the authenticity of the &hymn; in these early manuscripts in &kiernan1990b; are unconvincing; see below, &ch4xAppendix; and &ch5xAppendix;.</p></note> Both contain copies of the &aelda;. The other three witnesses, &p1x; &brx; &dix;, contain copies of the &eordu;. These manuscripts are in continental hands ranging in date from &s12ex; through &s15ex;. As &odonnell1996b; demonstrated, all three derive from a single insular exemplar. While none represents the work of a scribe familiar with Old English, their evidence can be used collectively to help isolate readings from the original manuscript with which this version of the poem travelled to the continent.</p>
+     <p id="CH6.040" n="6.4">In the material that follows, &mx; and &lx; are cited independently as appropriate. As the forms in &dix;, &p1x;, and &brx; are of no independent linguistic value, readings from the &eordu; are usually cited (under the siglum &eordux;) from the reconstructed text rather than from individual witnesses.<note id="CH6.NOTE.012" n="2"><p>A detailed defence of the reconstruction can be found in &odonnell1996b; and, in abridged form, in the textual introduction to this edition (&ch7xEordu;).</p></note></p>
+     <div3 id="CH6.2.1">
+      <head id="CH6.2.1.HEAD">Orthography</head>
+      <p id="CH6.050" n="6.5">The Northumbrian witnesses have been copied, with some early or regional features, using the same Latin-based alphabet used in most surviving Old English manuscripts.</p> 
+      <div4 id="CH6.2.1.1">
+       <head id="CH6.2.1.1.HEAD">Native modifications of the Latin alphabet</head>
+       <p id="CH6.060" n="6.6">The native characters <seg type="linguistic" subtype="graphemic">&eth;</seg>, <seg type="linguistic" subtype="graphemic">&thorn;</seg>, and <seg type="linguistic" subtype="graphemic">&wynn;</seg> are not used in &mx; or &lx;. &mx; uses <seg type="linguistic" subtype="graphemic">th</seg> initially and <seg type="linguistic" subtype="graphemic">d</seg> medially for dental fricatives (i.e. <seg type="linguistic" subtype="phonemic">&thgr;</seg> and <seg type="linguistic" subtype="phonemic">&eth;</seg>): e.g. <mentioned rend="postcorrection" lang="ANG">&copyOfm.7a.1;</mentioned>, 7a; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2b.3;</mentioned>, 2b. In &lx; these are represented by <seg type="linguistic" subtype="graphemic">th</seg> in all positions: e.g. <mentioned rend="postcorrection" lang="ANG">&copyOfl.7a.1;</mentioned>, 7a; <mentioned rend="postcorrection" lang="ANG">&copyOfl.2b.3;</mentioned>, 2b. Both manuscripts use <seg type="linguistic" subtype="graphemic">u</seg> for the back approximant <seg type="linguistic" subtype="phonemic">w</seg>: e.g. &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1b.2;</mentioned>, 1b, and &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.3a.2;</mentioned>, 3a. These are early features in insular manuscripts (&hogg1992;, &sect;&sect;&nbsp;2.59, n. 1, and 2.77).</p>
+       <p id="CH6.070" n="6.7">&eordux; used <seg type="linguistic" subtype="graphemic">d</seg> (medially) and <seg type="linguistic" subtype="graphemic">&eth;</seg> (probably initially and perhaps medially) for <seg type="linguistic" subtype="phonemic">&thgr;</seg> and <seg type="linguistic" subtype="phonemic">&eth;</seg>.<note id="CH6.NOTE.020" n="3"><p>All surviving witnesses read <seg type="linguistic" subtype="graphemic">d</seg> in all positions; evidence for the reconstruction of initial and medial <seg type="linguistic" subtype="graphemic">&eth;</seg> is discussed in &odonnell1996b;, &wuest1906;, and below, &ch7xEordu;; see also &cavill2000;, 520.</p></note> It did not use <seg type="linguistic" subtype="graphemic">&thorn;</seg>. Examples include <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned>, 5b, and perhaps <mentioned rend="postemendation" lang="ANG">&copyOfeo.2b.3;</mentioned> (&p1x; &brx; <mentioned rend="postcorrection" lang="ANG">&copyOfp1.2b.3;</mentioned> &dix; <mentioned rend="postcorrection" lang="ANG">&copyOfdi.2b.3;</mentioned>, 2b<note id="CH6.NOTE.030" n="4"><p>Wuest argues that -<seg type="linguistic" subtype="graphemic">dea</seg>- in the &dix; form may represent an original -<seg type="linguistic" subtype="graphemic">&eth;a</seg>-, see &wuest1906;, 216 and &odonnell1996b;, 159-160. The reconstruction in &dobbie1937;, 21, normalises the spelling of all medial dental fricatives to <seg type="linguistic" subtype="graphemic">&eth;</seg>. For a discussion of Dobbie&rsquo;s procedure, see &odonnell1996b;, 160, n. 53, and below, &ch7xEordu;.</p></note>) vs. <mentioned rend="postemendation" lang="ANG">&copyOfeo.7a.1;</mentioned> (&p1x; <mentioned rend="postcorrection" lang="ANG">&copyOfp1.7a.1;</mentioned> &brx; <mentioned rend="postcorrection" lang="ANG">&copyOfbr.7a.1;</mentioned> &dix; <mentioned rend="postcorrection" lang="ANG">&copyOfdi.7a.1;</mentioned>), 7a. <seg type="linguistic" subtype="phonemic">w</seg> is represented initially by <seg type="linguistic" subtype="graphemic">&wynn;</seg> and <seg type="linguistic" subtype="graphemic">&wynn;u</seg> and medially by <seg type="linguistic" subtype="graphemic">u</seg>: <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.2;</mentioned> (&p1x; &brx; &dix; <mentioned rend="postcorrection" lang="ANG">&copyOfp1.1b.2;</mentioned>), 1b, <mentioned rend="postemendation" lang="ANG">&copyOfeo.3a.2;</mentioned> (&dix; <mentioned rend="postcorrection" lang="ANG">&copyOfdi.3a.2;</mentioned> &brx; &p1x; <mentioned rend="postcorrection" lang="ANG">&copyOfp1.3a.2;</mentioned>), 3a, and <mentioned rend="postemendation" lang="ANG">&copyOfeo.3b.4;</mentioned> (&dix; &p1x; <mentioned rend="postcorrection" lang="ANG">&copyOfdi.3b.4;</mentioned> &brx; <mentioned rend="postcorrection" lang="ANG">&copyOfbr.3b.4;</mentioned>), 3b. <seg type="linguistic" subtype="graphemic">&wynn;</seg> is invariably misinterpreted as <seg type="linguistic" subtype="graphemic">p</seg> in the surviving witnesses to this recension.</p>
+       <p id="CH6.080" n="6.8">The use of <seg type="linguistic" subtype="graphemic">d</seg> for insular <seg type="linguistic" subtype="graphemic">d</seg> and <seg type="linguistic" subtype="graphemic">&eth;</seg> is common in continental manuscripts and may represent a misunderstanding of the Anglo-Saxon character. The use of <seg type="linguistic" subtype="graphemic">&wynn;u</seg> for <seg type="linguistic" subtype="phonemic">w</seg> is unusual although it is found occasionally in the Lindisfarne Gospels (&hogg1992;, &sect;&nbsp;2.77, n. 3; &cavill2000;, 521-522).</p>
+      </div4>
+      <div4 id="CH6.2.1.2">
+       <head id="CH6.2.1.2.HEAD"><seg type="linguistic" subtype="phonemic">&aelig;</seg></head>
+       <p id="CH6.090" n="6.9">The low front unrounded vowel <seg type="linguistic" subtype="phonemic">&aelig;</seg> is spelled <seg type="linguistic" subtype="graphemic">ae</seg> and <seg type="linguistic" subtype="graphemic">&aelig;</seg> in &mx;, <seg type="linguistic" subtype="graphemic">&aelig;</seg> only in &lx;, and probably <seg type="linguistic" subtype="graphemic">ae</seg> only in &eordux;. Examples include &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1b.1;</mentioned>, <mentioned rend="postcorrection" lang="ANG">&copyOfm.2a.1;</mentioned>, <mentioned rend="postcorrection" lang="ANG">&copyOfm.8b.1;</mentioned>; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1b.1;</mentioned>, <mentioned rend="postcorrection" lang="ANG">&copyOfl.2a.1;</mentioned>, <mentioned rend="postcorrection" lang="ANG">&copyOfl.8b.1;</mentioned>; &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.1;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfeo.2a.1;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfeo.8b.1;</mentioned>, 1b, 2a, and 8b. The witnesses to the &eorduShortReference; recension show one example of difficulty with this character: &dix; <mentioned rend="diplomatic" lang="ANG">&copyOfdi.8a.2;&copyOfdi.8b.1;</mentioned>, 8a-b, where the faulty word division presumably goes back to the misinterpretation of some combination of <seg type="linguistic" subtype="graphemic">a</seg> and <seg type="linguistic" subtype="graphemic">e</seg> in <mentioned rend="postemendation" lang="ANG">&copyOfeo.8b.1;</mentioned>; &p1x; and &brx;, however, correctly read <seg type="linguistic" subtype="graphemic">ae</seg> in the same word (&hrx;, a &s11ex;/&s12in; witness to the &eorthe;, shows evidence of a similar mistake in the same line: <mentioned rend="diplomatic" lang="ANG">&copyOfhr.7a.2;&copyOfhr.7b.1;</mentioned>).</p>
+      </div4>
+      <div4 id="CH6.2.1.3">
+       <head id="CH6.2.1.3.HEAD"><seg type="linguistic" subtype="phonemic">&khgr;</seg></head>
+       <p id="CH6.100" n="6.10">The voiceless velar fricative <seg type="linguistic" subtype="phonemic">&khgr;</seg> is written <seg type="linguistic" subtype="graphemic">h</seg> initially in all Northumbrian versions of the text but represented before <seg type="linguistic" subtype="phonemic">t</seg> by <seg type="linguistic" subtype="graphemic">c</seg> in &mx;, by <seg type="linguistic" subtype="graphemic">c</seg> and <seg type="linguistic" subtype="graphemic">h</seg> in &lx;, and by <seg type="linguistic" subtype="graphemic">ch</seg> in &eordux;: &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2a.2;</mentioned>, <mentioned rend="postcorrection" lang="ANG">&copyOfm.4a.2;</mentioned>; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.2a.2;</mentioned>, <mentioned rend="postcorrection" lang="ANG">&copyOfl.4a.2;</mentioned>; &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2a.2;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfeo.4a.2;</mentioned>, 2a and 4a. <seg type="linguistic" subtype="graphemic">ch</seg> is found in Northumbrian manuscripts through the ninth century (&hogg1992;, &sect;&nbsp;2.60, n. 1; &cavill2000;, 521).</p>
+      </div4>
+      <div4 id="CH6.2.1.4">
+       <head id="CH6.2.1.4.HEAD">Germanic *<seg type="linguistic" subtype="phonetic">&bgr;</seg></head>
+       <p id="CH6.110" n="6.11">The Germanic bilabial voiced fricative *<seg type="linguistic" subtype="phonetic">&bgr;</seg> (later Old English <seg type="linguistic" subtype="phonetic">v</seg>, an allophone of <seg type="linguistic" subtype="phonemic">f</seg>) is represented as <seg type="linguistic" subtype="graphemic">f</seg> in all copies of the Northumbrian texts of the &hymn;: e.g. &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.6a.3;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.6a.3;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.6a.3;</mentioned>, 6a. In &mx; the form also appears once as <seg type="linguistic" subtype="graphemic">b</seg>: &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.6a.1;</mentioned> (vs. &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.6a.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.6a.1;</mentioned> and the first element in &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1b.1;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1b.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.1;</mentioned>, 1b), 6a. Sporadic spellings with <seg type="linguistic" subtype="graphemic">b</seg> are found in other early Northumbrian texts, especially the Leiden Riddle (e.g. <mentioned id="CH6.MENTIONED.0010" lang="ANG">ob</mentioned>, <gloss target="CH6.MENTIONED.0010">from,</gloss> twice against <mentioned id="CH6.MENTIONED.0020" lang="ANG">ofaer</mentioned>, <gloss target="CH6.MENTIONED.0020">against</gloss>) and in proper names in Bede (see &anderson1941;, 83-84; &strom1939;). It is especially characteristic of the Mercian glossaries and is also found, probably as a deliberate archaism, in Kentish charters of &s9med; (&hogg1992;, &sect;&nbsp;2.54).</p>
+      </div4>
+      <div4 id="CH6.2.1.5">
+       <head id="CH6.2.1.5.HEAD">Length</head>
+       <p id="CH6.120" n="6.12">There is one example of the use of double letters to indicate length: &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.5a.3;</mentioned> (vs. &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.5a.3;</mentioned>), 5a. This is usually described as an early feature (&hogg1992;, &sect;&nbsp;2.4), though it is frequent in the mid- to late- tenth-century Lindisfarne Gospels (&cavill2000;, 520). There is one example of a similar use of double letters in a West-Saxon manuscript, &ox; <mentioned lang="ANG" rend="diplomatic">&copyOfo.4b.1;</mentioned>, 4b.</p>
+      </div4>
+     </div3>
+     <div3 id="CH6.2.2">
+      <head id="CH6.2.2.HEAD">Analogic and historical forms</head>
+      <p id="CH6.130" n="6.13">A number of unusual forms in individual witnesses to the Northumbrian recensions have their origins in analogic spellings or variation between alternate historical forms.</p>
+      <div4 id="CH6.2.2.1">
+       <head id="CH6.2.2.1.HEAD"><mentioned lang="ANG">end</mentioned> : <mentioned lang="ANG">and</mentioned></head>
+       <p id="CH6.140" n="6.14">&mx; reads <mentioned rend="postcorrection" lang="ANG">&copyOfm.2b.1;</mentioned> for &lx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfl.2b.1;</mentioned>, 2b. The &mx; reading is derived from Germanic *<mentioned lang="GEM-PR">andi</mentioned> (&gt; *<mentioned lang="GEM-PR">&aelig;ndi</mentioned> &gt; *<mentioned lang="GEM-PR">endi</mentioned>); the reading in the other witnesses is from Germanic *<mentioned lang="GEM-PR">anda</mentioned> (&hogg1992;, &sect;&nbsp;5.4, n. 2).</p>
+      </div4>
+      <div4 id="CH6.2.2.2">
+       <head id="CH6.2.2.2.HEAD"><mentioned lang="ANG">fadur</mentioned></head>
+       <p id="CH6.150" n="6.15">All witnesses to the &eorduShortReference; and &aeldaShortReference; recensions read (-)<mentioned lang="ANG">fadur</mentioned> for more common Old English (-)<mentioned lang="ANG">f&aelig;der</mentioned> in 3a. Smith traces the form to Germanic *<mentioned lang="GEM-PR">fa&eth;urz</mentioned> (cf. Old Norse <mentioned lang="NON">f&ocedil;&eth;ur</mentioned>) beside *<mentioned lang="GEM-PR">fa&eth;raz</mentioned> (&smithah1978;, 27, &sect;&nbsp;3). Campbell adds that the variant forms are derived from different Indo-European genitives: cf. Latin <mentioned lang="LAT">patris</mentioned> with Sanskrit <mentioned lang="SAN">pitur</mentioned> (&campbell1991;, &sect;&nbsp;630; &bourns2001;, 22-23).</p>
+      </div4>
+      <div4 id="CH6.2.2.3">
+       <head id="CH6.2.2.3.HEAD"><mentioned lang="ANG">astelid&aelig;</mentioned></head>
+       <p id="CH6.160" n="6.16">&mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.4b.2;</mentioned>, 4b, shows analogic insertion of <seg type="linguistic" subtype="phonemic">i</seg> between the root and dental of the past participle in a weak class I verb (&campbell1991;, &sect;&nbsp;753.9; cf. &bourns2001;, 33-34) with resulting first fronting (from *<seg type="linguistic" subtype="phonemic">a</seg> to *<seg type="linguistic" subtype="phonemic">&aelig;</seg>) and <label rend="oblique">i</label>-mutation (from *<seg type="linguistic" subtype="phonemic">&aelig;</seg> to <seg type="linguistic" subtype="phonemic">e</seg>) of the root vowel. The &eordux; form, <mentioned rend="postemendation" lang="ANG">&copyOfeo.4b.2;</mentioned>, shows the more common spelling without the intermediate <seg type="linguistic" subtype="phonemic">i</seg> and related changes. See also below, &sect;&sect;&nbsp;&ch6r23;-&ch6r25;.</p>
+      </div4>
+      <div4 id="CH6.2.2.4">
+       <head id="CH6.2.2.4.HEAD"><mentioned lang="ANG">hefun</mentioned>/-<mentioned lang="ANG">aen</mentioned>/-<mentioned lang="ANG">en</mentioned></head>
+       <p id="CH6.170" n="6.17">Etymological <seg type="linguistic" subtype="phonemic">u</seg> is preserved in &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.1;</mentioned>, 1b. In &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1b.1;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1b.1;</mentioned> and &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.6a.1;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.6a.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.6a.1;</mentioned>, 6a, <seg type="linguistic" subtype="graphemic">ae</seg> (confused with <seg type="linguistic" subtype="graphemic">e</seg> in most cases) appears by analogy from oblique forms in *-<seg type="linguistic" subtype="phonemic">&aelig;n</seg>- in prehistoric Old English (&hogg1992;, &sect;&nbsp;6.2, n. 3).</p>
+      </div4>
+      <div4 id="CH6.2.2.5">
+       <head id="CH6.2.2.5.HEAD"><mentioned lang="ANG">halig</mentioned> / <mentioned lang="ANG">haleg</mentioned></head>
+       <p id="CH6.180" n="6.18">The derivational suffix -<mentioned lang="ANG">ig</mentioned> is spelled -<seg type="linguistic" subtype="graphemic">eg</seg> and -<seg type="linguistic" subtype="graphemic">ig</seg> in &mx;, -<seg type="linguistic" subtype="graphemic">ig</seg> only in &lx; and &eordux;. The failure of <label rend="oblique">i</label>-umlaut in the root syllable of all forms in all manuscripts suggests that both spellings are derived from prehistoric Old English *<seg type="linguistic" subtype="phonemic">&aelig;j</seg> (cf. the common Old English spellings <mentioned lang="ANG">mihtig</mentioned>, <mentioned lang="ANG">syndrig</mentioned>, and, less common, <mentioned lang="ANG">m&aelig;nig</mentioned>/<mentioned lang="ANG">menig</mentioned> where umlauted forms suggest a prehistoric suffix *<seg type="linguistic" subtype="phonemic">ij</seg>. See &hogg1992;, &sect;&nbsp;5.85.10.b and n. 8). &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.6b.1;</mentioned>, 6a, preserves the historical spelling of the suffix after first fronting (&hogg1992;, &sect;&sect;&nbsp;6.48, 6.51). The endings in &lx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfl.6b.1;</mentioned>, 6b, and &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.9b.2;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.9b.2;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.9b.2;</mentioned>, 9b, all show the effect of fronting of <mentioned lang="ANG">&aelig;</mentioned> to <mentioned lang="ANG">e</mentioned> and raising to <mentioned lang="ANG">i</mentioned> (&hogg1992;, &sect;&sect;&nbsp;6.2, 6.48, and 6.51-52).</p>
+      </div4>
+      <div4 id="CH6.2.2.6">
+       <head id="CH6.2.2.6.HEAD"><mentioned lang="ANG">swe</mentioned> / <mentioned lang="ANG">sw&aelig;</mentioned></head>
+       <p id="CH6.190" n="6.19">Old English <mentioned lang="ANG">swe</mentioned>, <mentioned lang="ANG">sw&aelig;</mentioned>, <mentioned lang="ANG">swa</mentioned> appears as <mentioned rend="postcorrection" lang="ANG">&copyOfm.3b.1;</mentioned> in &mx; &lx;, <mentioned rend="postemendation" lang="ANG">&copyOfeo.3b.1;</mentioned> in &eordux; (3b). The &mx; &lx; form is common in early Northumbrian (&hogg1992;, &sect;&nbsp;3.25, n. 3) and shows the expected development of West Germanic *<seg type="linguistic" subtype="phonemic">&along;</seg> (*<seg type="linguistic" subtype="phonetic">&aeliglong;</seg>) in Anglian. The &eordux; form is the usual spelling in later Anglian (&hogg1992;, &sect;&nbsp;3.25, n. 3). The origins of the later form, and its West-Saxon equivalent <mentioned lang="ANG">swa</mentioned>, are obscure (see also &bourns2001;, 24-26).</p>
+      </div4>
+     </div3>
+     <div3 id="CH6.2.3">
+      <head id="CH6.2.3.HEAD">Phonology</head>
+      <p id="CH6.200" n="6.20">The following section traces features of &mx;, &lx;, and the reconstructed insular exemplar for &dix;, &brx;, and &p1x; that are most commonly associated with the northern (Northumbrian and more broadly Anglian) dialects.</p>
+      <div4 id="CH6.2.3.1">
+       <head id="CH6.2.3.1.HEAD">Stressed syllables</head>
+       <div5 id="CH6.2.3.1.1">
+	<head id="CH6.2.3.1.1.HEAD">Germanic *<seg type="linguistic" subtype="phonemic">a</seg></head>
+	<div6 id="CH6.2.3.1.1.1">
+	 <head id="CH6.2.3.1.1.1.HEAD">Nasalisation and rounding</head>
+	 <p id="CH6.210" n="6.21">Germanic *<seg type="linguistic" subtype="phonemic">a</seg> is written <seg type="linguistic" subtype="graphemic">a</seg> and <seg type="linguistic" subtype="graphemic">o</seg> before nasal consonants and clusters. In later sources, there is a <quote id="CH6.QUOTE.0020">clear-cut division between S[outhern, i.e. Kentish and West-Saxon] texts, where &lt;a&gt; predominates, and the Angl[ian] texts, where &lt;o&gt; predominates</quote>  (&hogg1992;, &sect;&nbsp;5.5); in most earlier Anglian texts, including the early Northumbrian poems, however, <seg type="linguistic" subtype="graphemic">a</seg> and <seg type="linguistic" subtype="graphemic">o</seg> are distributed more evenly.</p>
+	 <p id="CH6.220" n="6.22">The Northumbrian recensions of &ch; show both <seg type="linguistic" subtype="graphemic">a</seg> and <seg type="linguistic" subtype="graphemic">o</seg> for Germanic *<seg type="linguistic" subtype="phonemic">a</seg> followed by a nasal. Spellings with <seg type="linguistic" subtype="graphemic">a</seg> are found in the second element of &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2b.3;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.2b.3;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2b.3;</mentioned>, 2b, and &lx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfl.2b.1;</mentioned>, 2b (&mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2b.1;</mentioned>, 2b, is derived from a different Germanic form; see above &sect;&nbsp;&ch6r14;). <seg type="linguistic" subtype="graphemic">o</seg> is found in the first element of &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.7b.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.7b.1;</mentioned>, 7b.</p>
+	</div6>
+	<div6 id="CH6.2.3.1.1.2">
+	 <head id="CH6.2.3.1.1.2.HEAD">First fronting, breaking, and retraction</head>
+	 <p id="CH6.230" n="6.23">When not found before a nasal consonant or cluster, Germanic *<seg type="linguistic" subtype="phonemic">a</seg> develops regularly into prehistoric Old English *<seg type="linguistic" subtype="phonemic">&aelig;</seg> (<socalled>First Fronting</socalled>; see &hogg1992;, &sect;&nbsp;5.10). In Anglian dialects, however, this sound change regularly fails to produce the expected developments before <seg type="linguistic" subtype="phonemic">w</seg>, velarised <seg type="linguistic" subtype="phonemic">l</seg> (i.e. <seg type="linguistic" subtype="phonemic">l</seg> between back vowels or followed by another consonant), and, in Northumbrian, before clusters beginning in <seg type="linguistic" subtype="phonemic">r</seg> (see &hogg1992;, &sect;&nbsp;5.10, 5.13, and 5.29).<note id="CH6.NOTE.040" n="5"><p>This discussion is based on &hogg1992;, &sect;&sect;&nbsp;5.10-5.40. Hogg&rsquo;s account differs in some details from that found in standard grammars of the mid-twentieth century (e.g. &campbell1991;, &sect;&sect;&nbsp;131 and 139, n. 1; &brunnerandsievers1965;, &sect;&nbsp;50); see &hogg1992;, &sect;&sect;&nbsp;5.10-5.13 for a discussion of the issues involved.</p></note> In non-Anglian dialects, the newly fronted sound participated in breaking, a process by which long and short front vowels were diphthongised through the addition of a back vowel, in all three of these contexts (&hogg1992;, &sect;&nbsp;5.16); in Northumbrian and (before <seg type="linguistic" subtype="phonemic">w</seg> and velarised <seg type="linguistic" subtype="phonemic">l</seg>) in Anglian more generally, the first fronting either fails to occur or is <socalled>retracted</socalled> back to <seg type="linguistic" subtype="phonemic">a</seg> (&hogg1992;, &sect;&sect;&nbsp;5.10-5.13, and 5.29).</p>
+	 <p id="CH6.240" n="6.24">&mx; and &lx; almost invariably show failure or retraction of first fronting in the expected contexts: e.g. &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1b.2;</mentioned>, 1b and 7b; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.5b.2;</mentioned>, 5b; and the second element of &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.7a.2;</mentioned>, 7a. The sole exception is the second element of &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.7a.2;</mentioned>, 7a, which shows breaking of fronted *<seg type="linguistic" subtype="phonemic">a</seg> (<seg type="linguistic" subtype="graphemic">ea</seg>). &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.5b.1;</mentioned>, 5b, also shows retraction although the results are obscured by the effect of <label rend="oblique">i</label>-mutation (&smithah1978;, 30, &sect;&sect;&nbsp;8.d and 9.a.iv). In &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.4b.2;</mentioned>, 4b, the presence of an analogic <seg type="linguistic" subtype="phonemic">i</seg> before the past participle ending allowed fronting of the medial syllable (with subsequent <label rend="oblique">i</label>-mutation to <seg type="linguistic" subtype="phonemic">e</seg>) to occur (see above, &sect;&nbsp;&ch6r16;).</p>
+	 <p id="CH6.250" n="6.25">The evidence of &eordux; is mixed. The only example of Germanic *<seg type="linguistic" subtype="phonemic">a</seg> before velarised <seg type="linguistic" subtype="phonemic">l</seg>, <mentioned rend="postemendation" lang="ANG">&copyOfeo.4b.2;</mentioned>, 4b, shows retraction or failure of first fronting. On the other hand, Prehistoric Old English *<seg type="linguistic" subtype="phonemic">&aelig;</seg> (i.e. the product of first fronting of Germanic *<seg type="linguistic" subtype="phonemic">a</seg>) is always broken before <seg type="linguistic" subtype="phonemic">rC</seg>: <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.2;</mentioned>, 1b, <mentioned rend="postemendation" lang="ANG">&copyOfeo.7b.2;</mentioned>, 7b, <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.2;</mentioned>, 5b, <mentioned rend="postemendation" lang="ANG">&copyOfeo.7a.2;</mentioned>, 7a. Hogg notes that retraction/failure of first fronting is incomplete in all periods in the Anglian dialects, and that <quote>there are many forms with diphthongization rather than retraction</quote> (&hogg1992; &sect; 5.29).</p>
+	</div6>
+       </div5>
+       <div5 id="CH6.2.3.1.2">
+	<head id="CH6.2.3.1.2.HEAD">Palatal diphthongisation</head>
+	<p id="CH6.260" n="6.26">Stressed vowels preceded by palatal consonants are frequently diphthongised in Old English. The change affects front vowels inherited from Germanic, vowels fronted by the operation of <label rend="oblique">i</label>-mutation, and back vowels. The operation of this sound change varies greatly by dialect, period, and context (&hogg1992;, &sect;&nbsp;5.48).</p>
+	<p id="CH6.270" n="6.27">The relevant forms in &ch; are <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.2;</mentioned> and <mentioned rend="postemendation" lang="ANG">&copyOfno.6b.2;</mentioned>, 1a and 6b. Palatal diphthongisation fails in all Northumbrian witnesses in the latter of these two cases: &lx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfl.6b.2;</mentioned> &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.6b.2;</mentioned> (see &hogg1992;, &sect;&nbsp;5.54). &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1a.2;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1a.2;</mentioned> and &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1a.3;</mentioned>, 1a, on the other hand, all show the effect of palatal diphthongisation of *<seg type="linguistic" subtype="phonemic">u</seg> to *<seg type="linguistic" subtype="phonemic">ju</seg> (&eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1a.3;</mentioned>) with subsequent monophthongisation to <seg type="linguistic" subtype="phonemic">y</seg> (&mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1a.2;</mentioned>), or <seg type="linguistic" subtype="phonemic">i</seg> (&lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1a.2;</mentioned>; see &hogg1992;, &sect;&nbsp;5.68; cf. &campbell1991;, &sect;&nbsp;176; &brunnerandsievers1965;, &sect;&nbsp;92 Anm. 1).</p>
+       </div5>
+       <div5 id="CH6.2.3.1.3">
+	<head id="CH6.2.3.1.3.HEAD">Anglian smoothing</head>
+	<p id="CH6.280" n="6.28">Long and short Old English front diphthongs are generally monophthongised (<socalled>smoothed</socalled>) in Anglian dialects when they occur before a velar consonant or a liquid and velar consonant cluster (&hogg1992;, &sect;&nbsp;5.93). The correspondences are as follows: <seg type="linguistic" subtype="phonemic">&ibreve;u, iu</seg> to <seg type="linguistic" subtype="phonemic">i, &ilong;</seg>, <seg type="linguistic" subtype="phonemic">&ebreve;o, eo</seg> to <seg type="linguistic" subtype="phonemic">e, &elong;</seg>, <seg type="linguistic" subtype="phonemic">&aeligbreve;&agr;</seg> to <seg type="linguistic" subtype="phonemic">&aelig;</seg> (later raised to <seg type="linguistic" subtype="phonemic">e</seg> before liquids), <seg type="linguistic" subtype="phonemic">&aelig;&agr;</seg> to <seg type="linguistic" subtype="phonemic">&elong;</seg> (or <seg type="linguistic" subtype="phonemic">&aeliglong;</seg>). The change appears to have begun at or immediately before the time of the earliest texts.</p>
+	<p id="CH6.290" n="6.29">Smoothing is found regularly in both recensions of the &hymn;, e.g. &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2a.2;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.2a.2;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2a.2;</mentioned>, 2a; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.3a.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.3a.1;</mentioned>, 3a; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.8b.2;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.8b.2;</mentioned>, 8b. In this last example, smoothing of original *<seg type="linguistic" subtype="phonemic">iu</seg> has been obscured by lenition of *<seg type="linguistic" subtype="phonemic">&khgr;</seg> > <seg type="linguistic" subtype="phonetic">h</seg> with subsequent loss of <seg type="linguistic" subtype="phonetic">h</seg> and lengthening between voiced segments (see &hogg1992;, &sect;&nbsp;7.45).</p>
+       </div5>
+       <div5 id="CH6.2.3.1.4">
+	<head id="CH6.2.3.1.4.HEAD">Back umlaut</head>
+	<p id="CH6.300" n="6.30">The short front vowels <seg type="linguistic" subtype="phonemic">i, e, &aelig;</seg> were diphthongised in early Old English to <seg type="linguistic" subtype="phonemic">&ibreve;o, &ebreve;o, &aeligbreve;&agr;</seg> (spelled <seg type="linguistic" subtype="graphemic">io, eo, ea</seg>) when followed by a back vowel in the next unstressed syllable (&hogg1992;, &sect;&nbsp;5.103). All dialects show back umlaut before unstressed <seg type="linguistic" subtype="phonemic">u</seg>; back umlaut before <seg type="linguistic" subtype="phonemic">&agr;</seg> is also common with all short front vowels in all dialects except West-Saxon, where it is largely restricted to <seg type="linguistic" subtype="phonemic">i</seg>. In Anglian, back umlaut occurs regularly before all consonants except original velars. The sound change belongs to the early historic or late pre-historic periods; it is rare and sporadic in the earliest Northumbrian texts, but becomes increasingly regular in later texts (&hogg1992;, &sect;&nbsp;5.112).</p>
+	<p id="CH6.310" n="6.31">There are no examples of back umlaut in either Northumbrian recension. The operation fails in &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2a.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2a.1;</mentioned>, 2a, and &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.1;</mentioned>, &mx; <mentioned rend="postemendation" lang="ANG">&copyOfae.1b.1;</mentioned>; &lx; <mentioned rend="postemendation" lang="ANG">&copyOfl.1b.1;</mentioned>, 1b.</p>
+       </div5>
+      </div4>
+      <div4 id="CH6.2.3.2">
+       <head id="CH6.2.3.2.HEAD">Unstressed syllables</head>
+       <div5 id="CH6.2.3.2.1">
+	<head id="CH6.2.3.2.1.HEAD">Loss of final <seg type="linguistic" subtype="phonemic">n</seg></head>
+	<p id="CH6.320" n="6.32">Loss of word-final <seg type="linguistic" subtype="phonemic">n</seg> in specific morphosyntactic categories is a characteristic feature of the Northumbrian dialect. Loss is common in the oblique cases of weak nouns, infinitive endings, the subjunctive plural, and adverbs ending in -<mentioned lang="ANG">an</mentioned>. It is less common in the past participles of strong verbs, nouns ending in -<mentioned lang="ANG">en</mentioned>, and the past indicative plural. In the earliest texts, grammatically identical forms with and without final <seg type="linguistic" subtype="phonemic">n</seg> often coexist; in later Northumbrian, forms without <seg type="linguistic" subtype="phonemic">n</seg> are the norm (&hogg1992;, &sect;&sect;&nbsp;7.98-7.100).</p>
+	<p id="CH6.330" n="6.33">Word-final <seg type="linguistic" subtype="phonemic">n</seg> is lost consistently in the expected places in &lx; and &eordux;: e.g. &lx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1a.3;</mentioned>, 1a; &eordux;, <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned>, 5b; &lx; &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.9a.3;</mentioned>, 9a; &mx; shows forms with and without final <seg type="linguistic" subtype="phonemic">n</seg>: e.g. &mx; <mentioned rend="diplomatic" lang="ANG">&copyOfm.1a.3;</mentioned> (i.e. with <mentioned lang="ANG">a</mentioned> corrected from <mentioned lang="ANG">e</mentioned>), 1a, against <mentioned rend="diplomatic" lang="ANG">&copyOfm.9a.2;</mentioned> (i.e. with <mentioned lang="ANG">u</mentioned> added in superscript), 9a.</p>
+       </div5>
+       <div5 id="CH6.2.3.2.2">
+	<head id="CH6.2.3.2.2.HEAD">Preservation of unstressed <seg type="linguistic" subtype="phonemic">u</seg></head>
+	<p id="CH6.340" n="6.34">Prehistoric Old English unstressed *<seg type="linguistic" subtype="phonemic">u</seg> was lowered to <seg type="linguistic" subtype="phonemic">o</seg> in most dialects in unstressed syllables. Spellings in <seg type="linguistic" subtype="graphemic">u</seg> are the norm in early Northumbrian and common in early Mercian, however. They remain common in later Anglian dialects (&hogg1992;, &sect;&nbsp;6.55-6.56).</p>
+	<p id="CH6.350" n="6.35">Unstressed <seg type="linguistic" subtype="phonemic">u</seg> is regularly preserved in inflectional endings, medial syllables, and derivative suffixes in both Northumbrian recensions: e.g. &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1a.2;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1a.2;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1a.3;</mentioned>, 1a; &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.1;</mentioned> (cf. &mx; <mentioned rend="postemendation" lang="ANG">&copyOfae.1b.1;</mentioned>; &lx; <mentioned rend="postemendation" lang="ANG">&copyOfl.1b.1;</mentioned>), 1b; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2a.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2a.1;</mentioned>, 2a; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.3a.2;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.3a.2;</mentioned>, 3a; &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned>, 5b (see &smithah1978;, 35 &sect;&nbsp;18.a [note]); &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.7a.2;</mentioned> (&lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.7a.2;</mentioned>), 7a; &mx; &lx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfm.9a.2;</mentioned>, 9a.</p>
+       </div5>
+       <div5 id="CH6.2.3.2.3">
+	<head id="CH6.2.3.2.3.HEAD">Preservation of unstressed <seg type="linguistic" subtype="phonemic">&aelig; </seg> <seg type="linguistic" subtype="phonemic">e</seg> and <seg type="linguistic" subtype="phonemic">i</seg></head>
+	<p id="CH6.360" n="6.36">Prehistoric Old English *<seg type="linguistic" subtype="phonemic">&aelig;, e, i</seg> fell together early in the historic period to a sound usually represented by <seg type="linguistic" subtype="graphemic">e</seg> (see &hogg1992;, &sect;&sect;&nbsp;6.46-6.47, and, on individual sounds &sect;&sect;&nbsp;6.48-6.54), except when followed by a palatal consonant, in which circumstances <seg type="linguistic" subtype="graphemic">i</seg> is common (see &hogg1992;, &sect;&sect;&nbsp;6.51-6.52). The sounds are represented with historical accuracy only in the earliest texts (&hogg1992;, &sect;&sect;&nbsp;6.48-6.49, 6.53). In later Northumbrian texts, etymological <seg type="linguistic" subtype="graphemic">i</seg> is frequent; <seg type="linguistic" subtype="graphemic">&aelig;</seg> is the result of subsequent changes (see &hogg1992; &sect;&nbsp;649, n. 3 and 6.62; cf. &cavill2000;, 520).</p>
+	<p id="CH6.370" n="6.37">Prehistoric *<seg type="linguistic" subtype="phonemic">&aelig;</seg> is generally preserved in both Northumbrian recensions of &ch;, although more frequently in &mx; and &lx; than &eordux;. Examples include the inflectional endings in &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.1b.1;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.1b.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.1b.1;</mentioned>, 1b; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2a.1;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2a.1;</mentioned>, 2a; &mx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfm.3b.4;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.3b.4;</mentioned>, 3b; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.4b.2;</mentioned> (cf. &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.4b.2;</mentioned>), 4b; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.6a.3;</mentioned> (cf. &mx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfm.6a.3;</mentioned>) 6a; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.7b.1;</mentioned> (cf. &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.7b.1;</mentioned>) 7b; &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.8b.2;</mentioned> (cf. &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.8b.2;</mentioned>), 8b.</p>
+	<p id="CH6.380" n="6.38">Prehistoric Old English *<seg type="linguistic" subtype="phonemic">i</seg> shows more variation in Northumbrian witnesses. It is preserved in both recensions in forms such as the <mentioned lang="ANG">gi</mentioned> prefix in 2b and 3b (a form also relatively common in later Northumbrian; see &hogg1992;, &sect;&nbsp;6.54) and &mx; &lx; &eordux; <mentioned rend="postcorrection" lang="ANG">&copyOfm.4a.1;</mentioned>, 4a and 8a. &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.2a.2;</mentioned> &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.2a.2;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2a.2;</mentioned>, 2a, all show retention of <seg type="linguistic" subtype="phonemic">i</seg>, though the failure of <label rend="oblique">i</label>-mutation in the &mx; form, together with variation in the endings of &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.6b.1;</mentioned> (see also above, &sect;&nbsp;&ch6r18;), and &mx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.9b.2;</mentioned> may suggest that the &mx; scribe had trouble with the sound (see &hogg1992;, &sect;&nbsp;6.53, n. 1). <seg type="linguistic" subtype="phonemic">i</seg> is retained in the corresponding forms in &lx; and &eordux;: &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfl.9b.2;</mentioned> &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.9b.2;</mentioned>, 9b. The sound is spelled <seg type="linguistic" subtype="graphemic">e</seg> in the medial syllable of &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.2b.3;</mentioned>, 2b.</p>
+       </div5>
+      </div4>
+     </div3>
+    </div2>
+    <div2 id="CH6.3">
+     <head id="CH6.3.HEAD">West-Saxon features</head>
+     <p id="CH6.390" n="6.39">Sixteen witnesses belonging to three distinct recensions of the &hymn; show late West-Saxon features. In eleven witnesses, the Old English poem has been copied alongside or within the main text of Bede&rsquo;s Latin &he;. In five manuscripts, the poem appears as part of the main text of the &historia;&rsquo;s Old English translation. The manuscripts range in date from &s10; to &s15; (&cx;, a &cd; copy of the &hymn; was largely destroyed in the eighteenth century; it is cited from &nx;, a &nd; transcription by Laurence Nowell). Since C&aelig;dmon himself was Northumbrian, all West-Saxon versions of the poem presumably have been translated from Northumbrian; major and minor linguistic and textual differences among these recensions, however, suggest that the extant versions stem from more than one translation (see &ch5x;; &sect;&sect;&nbsp;&ch6r52;-&ch6r54;; &orton1998;). In the case of the &eorthan;, this translation was, like the rest of the Old English &historia;, presumably via a Mercian intermediary (see the discussion and references in &whitelock1963; and &grant1989;).</p>
+     <p id="CH6.400" n="6.40">As in the previous section, the following account provides a review of the most characteristic and significant features of the surviving witnesses and their exemplars rather than a comprehensive linguistic discussion. Even within this limited scope, however, no attempt has been made to detail all exceptional forms in individual witnesses.</p>
+     <div3 id="CH6.3.1">
+      <head id="CH6.3.1.HEAD">Orthography</head>
+      <p id="CH6.410" n="6.41">The West-Saxon witnesses have all been copied using the expected Latin-based alphabet. The native characters <seg type="linguistic" subtype="graphemic">&eth;</seg>, <seg type="linguistic" subtype="graphemic">&thorn;</seg>, and <seg type="linguistic" subtype="graphemic">&wynn;</seg> are found in all witnesses except the late &tr1x; and &sanmx;, where <seg type="linguistic" subtype="graphemic">p</seg> is substituted consistently for <seg type="linguistic" subtype="graphemic">&wynn;</seg>. &carmsx; uses <seg type="linguistic" subtype="graphemic">u</seg> for expected <seg type="linguistic" subtype="graphemic">&wynn;</seg> once (<mentioned rend="postcorrection" lang="ANG">&copyOfar.3b.1;</mentioned>, 3b), and once reads <seg type="linguistic" subtype="graphemic">s</seg> (<mentioned rend="postcorrection" lang="ANG">&copyOfar.3a.1;</mentioned> [expected <mentioned lang="ANG">&wynn;eorc</mentioned>], 3a).</p>
+     </div3>
+     <div3 id="CH6.3.2">
+      <head id="CH6.3.2.HEAD">Analogic and historical forms</head>
+      <div4 id="CH6.3.2.1">
+       <head id="CH6.3.2.1.HEAD"><mentioned lang="ANG">swa</mentioned></head>
+       <p id="CH6.420" n="6.42">Old English <mentioned lang="ANG">swe</mentioned>, <mentioned lang="ANG">sw&aelig;</mentioned>, <mentioned lang="ANG">swa</mentioned> appears as <mentioned rend="postcorrection" lang="ANG">&copyOft1.3b.1;</mentioned> (&carmsx; <mentioned rend="postcorrection" lang="ANG">&copyOfar.3b.1;</mentioned>) in all West-Saxon witnesses of the poem on its sole occurrence in 3b. The expected West-Saxon development is <mentioned lang="ANG">sw&aelig;</mentioned>, found in early West-Saxon. As in most dialects, however, <mentioned lang="ANG">swa</mentioned> develops irregularly in the later period. <mentioned lang="ANG">Swa</mentioned> is the usual late West-Saxon reflex (see &hogg1992;, &sect;&nbsp;3.25, n. 3).</p>
+      </div4>
+     </div3>
+     <div3 id="CH6.3.3">
+      <head id="CH6.3.3.HEAD">Phonology</head>
+      <div4 id="CH6.3.3.1">
+       <head id="CH6.3.3.1.HEAD">Stressed syllables</head>
+       <div5 id="CH6.3.3.1.1">
+	<head id="CH6.3.3.1.1.HEAD">Germanic *<seg type="linguistic" subtype="phonemic">a</seg></head>
+	<div6 id="CH6.3.3.1.1.1">
+	 <head id="CH6.3.3.1.1.1.HEAD">Nasalisation and rounding</head>
+	 <p id="CH6.430" n="6.43">Germanic *<seg type="linguistic" subtype="phonemic">a</seg> is usually written <seg type="linguistic" subtype="graphemic">a</seg> before nasal consonants and nasal clusters in later texts from southern dialects, although <seg type="linguistic" subtype="graphemic">o</seg> is found sporadically (&hogg1992;, &sect;&nbsp;5.5).</p>
+	 <p id="CH6.440" n="6.44">The West-Saxon witnesses show some variation in the spelling of this sound. Most witnesses to the West-Saxon recensions show <seg type="linguistic" subtype="graphemic">a</seg> in <mentioned lang="ANG">modge&eth;anc</mentioned>, 2b. The only exceptions are the early &eorthanShortReference; witnesses &nx; and &ox;, both of which read <mentioned rend="postcorrection" lang="ANG">&copyOfn.2b.3;</mentioned>. In the case of <mentioned lang="ANG">mancynnes</mentioned>, 7b, <seg type="linguistic" subtype="graphemic">a</seg> and <seg type="linguistic" subtype="graphemic">o</seg> are more evenly distributed: four of six manuscripts (&t1x; &nx; &ox; &cax;) from the &eorthan; and all three representatives of the &eorthe; read <mentioned lang="ANG">mon</mentioned>-; all six witnesses to the &ylda; and two witnesses to the &eorthan; (&b1x; and &tox;) read <mentioned lang="ANG">man(n)</mentioned>-. &nx; reads <mentioned rend="postcorrection" lang="ANG">&copyOfn.2b.1;</mentioned> in 2b, although this may be the work of the witness&rsquo;s &s16; transcriber. All other witnesses to the West-Saxon recensions except &sanmx; use the symbol <mentioned lang="ANG">&tyronianNota;</mentioned> for the conjunction. &sanmx; has the nonsense form <mentioned rend="postcorrection" lang="ANG">&copyOfsm.2b.1;</mentioned>, presumably a misinterpretation of <mentioned lang="ANG">&amp;</mentioned>, the Latin <seg type="linguistic" subtype="graphemic">e&plus;t</seg> ligature.</p>
+	</div6>
+	<div6 id="CH6.3.3.1.1.2">
+	 <head id="CH6.3.3.1.1.2.HEAD">First fronting, breaking</head>
+	 <p id="CH6.450" n="6.45">When not found before a nasal consonant or cluster, Germanic *<seg type="linguistic" subtype="phonemic">a</seg> develops regularly into prehistoric Old English *<seg type="linguistic" subtype="phonemic">&aelig;</seg> (&hogg1992;, &sect;&nbsp;5.10). In West-Saxon, this newly fronted sound participated in breaking before <seg type="linguistic" subtype="phonemic">&khgr;, lC, rC, w</seg> (see &hogg1992;, &sect;&nbsp;5.16).</p>
+	 <p id="CH6.460" n="6.46">Breaking appears with some exceptions in the expected contexts in all witnesses to West-Saxon recensions of the &hymn;. Examples include <mentioned lang="ANG">&wynn;eard</mentioned> (all West Saxon witnesses except &sanmx; <mentioned rend="postcorrection" lang="ANG">&copyOfsm.7b.2;</mentioned>, 7b), 1b and 7b; <mentioned lang="ANG">&wynn;eorc</mentioned> (all witnesses except the erroneous forms &nx; <mentioned rend="postcorrection" lang="ANG">&copyOfn.3a.1;</mentioned> and &ox; &cax; <mentioned rend="postcorrection" lang="ANG">&copyOfo.3a.1;</mentioned>, and the readings &hx; &mgx; <mentioned rend="postcorrection" lang="ANG">&copyOfh.3a.1;</mentioned> and &sanmx; <mentioned rend="postcorrection" lang="ANG">&copyOfsm.3a.1;</mentioned>, which show subsequent developments), 3a;  -<mentioned lang="ANG">stealde</mentioned> in all West-Saxon witnesses (except &mgx; <mentioned rend="postcorrection" lang="ANG">&copyOfmg.4b.2;</mentioned> and &sanmx; <mentioned rend="postcorrection" lang="ANG">&copyOfsm.4b.2;</mentioned>), 4b; <mentioned lang="ANG">bearnum</mentioned> (all West Saxon witnesses), 5b; and -<mentioned lang="ANG">geard</mentioned> (all West Saxon witnesses), 7a. <mentioned lang="ANG">ylda</mentioned>, the reading of all witnesses to the &ylda; in 5b, underwent the expected change (from *<seg type="linguistic" subtype="phonemic">&aelig;</seg> to *<seg type="linguistic" subtype="phonemic">&aelig;&agr;</seg>); the results are obscured by the subsequent effect of <label rend="oblique">i</label>-mutation (see &hogg1992;, &sect;&nbsp;5.74, 5.82). &hx; &mgx; <mentioned rend="postcorrection" lang="ANG">&copyOfh.3a.1;</mentioned> &sanmx; <mentioned rend="postcorrection" lang="ANG">&copyOfsm.3a.1;</mentioned> (for <mentioned lang="ANG">&wynn;urc</mentioned>) show late West-Saxon raising and retraction of short vowels and diphthongs between <seg type="linguistic" subtype="phonemic">w</seg> and <seg type="linguistic" subtype="phonemic">r</seg> (&hogg1992;, &sect;&nbsp;5.183).</p>
+	</div6>
+       </div5>
+       <div5 id="CH6.3.3.1.2">
+	<head id="CH6.3.3.1.2.HEAD">Palatal diphthongisation</head>
+	<p id="CH6.470" n="6.47">Palatal diphthongisation of original <seg type="linguistic" subtype="phonemic">&aelig;, &aeliglong;</seg> to <seg type="linguistic" subtype="phonemic">&Ibreve;&schwa;, &I;&schwa;</seg> (spelled <seg type="linguistic" subtype="graphemic">ea</seg>) is common in early and late West-Saxon (&hogg1992;, &sect;&nbsp;5.50). The resulting diphthong fell together with other diphthongs spelled <seg type="linguistic" subtype="graphemic">ea</seg> and underwent <label rend="oblique">i</label>-mutation, producing early West-Saxon <seg type="linguistic" subtype="graphemic">ie</seg>, late West-Saxon <seg type="linguistic" subtype="graphemic">y</seg> or <seg type="linguistic" subtype="graphemic">i</seg> (&hogg1992;, &sect;&sect;&nbsp;5.74, 5.82-5.83, 5.163-5.175). Diphthongisation of original <seg type="linguistic" subtype="phonemic">u</seg> after <seg type="linguistic" subtype="phonemic">&sh;</seg> is sporadic in early and late West-Saxon, with forms in <seg type="linguistic" subtype="graphemic">u</seg> appearing alongside forms in <seg type="linguistic" subtype="graphemic">eo</seg> and <seg type="linguistic" subtype="graphemic">y</seg> that show palatisation and subsequent changes (&hogg1992;, &sect;&sect;&nbsp;5.66 and 5.67).</p>
+	<p id="CH6.480" n="6.48">All West-Saxon witnesses (except &tox;, which reads <mentioned rend="postcorrection" lang="ANG">&copyOfto.6b.2;</mentioned>) show evidence of palatal diphthongisation with subsequent <label rend="oblique">i</label>-mutation to <seg type="linguistic" subtype="phonemic">y</seg> in <mentioned rend="postemendation" lang="ANG">&copyOfex.6b.2;</mentioned>, 6b, and, in &wx; <mentioned rend="postcorrection" lang="ANG">&copyOfw.6b.2;</mentioned> only, <seg type="linguistic" subtype="phonemic">i</seg>. The evidence for <mentioned rend="postemendation" lang="ANG">&copyOfno.1a.2;</mentioned>, 1a, is more mixed. Four manuscripts from the &eorthan; (&t1x; &nx; &ox; &b1x;) and five from the &ylda; (&hx; &wx; &mgx; &sanmx; &lnx;) show unmutated forms with original <seg type="linguistic" subtype="graphemic">u</seg>; one witness to the &ylda; (&tr1x;), two to the &eorthan; (&tox; &cax;), and all three witnesses to the &eorthe;, on the other hand, show forms with the post-palatal diphthong <seg type="linguistic" subtype="graphemic">eo</seg>.</p>
+       </div5>
+       <div5 id="CH6.3.3.1.3">
+	<head id="CH6.3.3.1.3.HEAD">Back umlaut</head>
+	<p id="CH6.490" n="6.49">Back umlaut is more constrained in West-Saxon than in other dialects. It is common only before liquids, and labial and labiovelar consonants (i.e. <seg type="linguistic" subtype="phonemic">l, r, p, f, m, w</seg>). When the back vowel is <seg type="linguistic" subtype="phonemic">u</seg>, umlaut occurs with all front vowels; before <seg type="linguistic" subtype="phonemic">&agr;</seg> it is usually restricted to the high front vowel <seg type="linguistic" subtype="phonemic">i</seg> (see &hogg1992;, &sect;&nbsp;5.103).</p>
+	<p id="CH6.500" n="6.50">All West-Saxon witnesses to the &hymn; show back mutation in <mentioned lang="ANG">heofon</mentioned> (-<mentioned lang="ANG">an</mentioned>, <mentioned lang="ANG">en</mentioned>), 1b and 6a. Back umlaut fails in <mentioned lang="ANG">metudes</mentioned>/<mentioned lang="ANG">metodes</mentioned> (except &t1x; <mentioned rend="postcorrection" lang="ANG">&copyOft1.2a.1;</mentioned>), 2a.</p>
+       </div5>
+       <div5 id="CH6.3.3.1.4">
+	<head id="CH6.3.3.1.4.HEAD">Later changes to Old English diphthongs</head>
+	<p id="CH6.510" n="6.51">When not subject to subsequent changes, long and short Old English front diphthongs (<seg type="linguistic" subtype="phonemic">&ebreve;o, eo, &aeligbreve;&agr;, &aelig;&agr;</seg>) are generally preserved in West-Saxon witnesses to the &hymn;: e.g. <mentioned lang="ANG">&copyOfb1.3a.1;</mentioned> (all witnesses except &hx; &mgx; &sanmx;, which show subsequent changes, and &nx; &ox; &cax; where corrupt forms &nx; <mentioned rend="postcorrection" lang="ANG">&copyOfn.3a.1;</mentioned> and &ox; &cax; <mentioned rend="postcorrection" lang="ANG">&copyOfo.3a.1;</mentioned> may show signs of Northumbrian influence [see below &sect;&nbsp;&ch6r53;]), 3a; <mentioned lang="ANG">teode</mentioned> (&wseorthan; and &wseorthe; recensions only), 8b (cf. the late changes discussed in &hogg1992;, &sect;&sect;&nbsp;5.206-5.212, 5.214). In &hx; &mgx; &sanmx;, the form <mentioned rend="postcorrection" lang="ANG">&copyOfh.3a.1;</mentioned> shows late West-Saxon raising and retraction of short vowels and diphthongs between <seg type="linguistic" subtype="phonemic">w</seg> and <seg type="linguistic" subtype="phonemic">r</seg> (see &hogg1992;, &sect;&nbsp;5.183). The &ylda; form <mentioned rend="preemendation" lang="ANG">&copyOfyl.8b.2;</mentioned> is best explained as a misunderstanding of an original exemplar showing the Northumbrian spelling -<seg type="linguistic" subtype="graphemic">ia</seg>- (see below, &sect;&nbsp;&ch6r53;).</p>
+       </div5>
+      </div4>
+     </div3>
+    </div2>
+    <div2 id="CH6.4">     
+     <head id="CH6.4.HEAD">Anglian and Northumbrian features in West-Saxon recensions of the &hymn;</head>
+     <p id="CH6.520" n="6.52">As &wuest1906;, &dobbie1937;, &ross1949-1950;, and especially &orton1998; have pointed out, anomalous forms in all three West-Saxon recensions of the &hymn; can be explained as evidence of the influence of an underlying Anglian or Northumbrian original. In three cases, the evidence for Northumbrian influence lies in problems with oblique endings of -<mentioned lang="ANG">n</mentioned> stem nouns (cf. &sect;&nbsp;&ch6r32; above) where the surviving Northumbrian recensions show expected loss of final -<mentioned lang="ANG">n</mentioned>. Thus the &ox; text of the &eorthan; reads <mentioned rend="diplomatic" lang="ANG">&copyOfo.9a.2;</mentioned> (i.e. with <mentioned lang="ANG">a</mentioned> corrected to <mentioned lang="ANG">an</mentioned>), 9a, for expected West-Saxon <mentioned lang="ANG">foldan</mentioned>. In the case of the &ylda;, all surviving witnesses read a nonsensical dative plural <mentioned rend="preemendation" lang="ANG">&copyOfyl.9a.3;</mentioned> (presumably the result of a misinterpretation of Northumbrian -<mentioned lang="ANG">u</mentioned> as -<mentioned lang="ANG">&umacr;</mentioned>) for expected accusative singular <mentioned rend="postemendation" lang="ANG">&copyOfyl.9a.3;</mentioned>. In the &eorthe;, all three witnesses read nonsensical <mentioned rend="postemendation" lang="ANG">&copyOfep.4b.1;</mentioned> (nominative singular) for expected <mentioned lang="ANG">eor&eth;an</mentioned> (accusative or genitive singular), presumably reflecting, once again, a misinterpretation of an underlying exemplar in -<mentioned lang="ANG">u</mentioned> or -<mentioned lang="ANG">a</mentioned>.</p>
+     <p id="CH6.530" n="6.53">Two further examples show more serious problems involving the likely misinterpretation of originally Anglian forms. The nonsensical &ylda; reading <mentioned rend="preemendation" lang="ANG">&copyOfyl.8b.2;</mentioned> for expected <mentioned lang="ANG">teode</mentioned>, for example, is best explained, as Dobbie demonstrated, as a misinterpretation of Northumbrian <quote id="CH6.QUOTE.0030"><mentioned lang="ANG">tiad&aelig;</mentioned>, or a similar form,</quote> in the recension&rsquo;s original exemplar (&dobbie1937;, 39). Unexpected &nx; <mentioned rend="precorrection" lang="ANG">&copyOfn.3a.1;</mentioned> and &ox; <mentioned rend="diplomatic" lang="ANG">&copyOfo.3a.1;</mentioned> (i.e. with <mentioned lang="ANG">a</mentioned> corrected from original <mentioned lang="ANG">o</mentioned>) for expected <mentioned rend="postemendation" lang="ANG">&copyOfex.3a.1;</mentioned>, 3a, in two early witnesses of the &eorthan;, likewise, are explained by Wuest and Orton as misinterpretations of original forms showing Anglian smoothing, as in &mx; &lx; <mentioned rend="postcorrection" lang="ANG">&copyOfm.3a.1;</mentioned> and &eordux; <mentioned rend="postemendation" lang="ANG">&copyOfeo.3a.1;</mentioned> (&wuest1906;, 223; &orton1998;, 155-156).</p>
+     <p id="CH6.540" n="6.54">Several other forms spread across the different recensions show sporadic non-West-Saxon spellings in individual witnesses. Germanic *<seg type="linguistic" subtype="phonemic">a</seg> before a nasal consonant and cluster, for example, appears in the early and Anglian spelling <seg type="linguistic" subtype="graphemic">o</seg> rather than expected West-Saxon <seg type="linguistic" subtype="graphemic">a</seg> in the early &eorthan; witnesses &nx; and &ox; in <mentioned rend="postcorrection" lang="ANG">&copyOfn.2b.3;</mentioned>, 2b, and more generally in <mentioned rend="postcorrection" lang="ANG">&copyOft1.7b.1;</mentioned> (&t1x; &nx; &ox; &cax; and all witnesses to the &eorthe;). Expected back umlaut of <seg type="linguistic" subtype="phonemic">e</seg> in <mentioned lang="ANG">metudes</mentioned>, 2a, fails in all West-Saxon witnesses except &t1x; <mentioned rend="postcorrection" lang="ANG">&copyOft1.2a.1;</mentioned>. &ox; <mentioned rend="postcorrection" lang="ANG">&copyOfo.7a.2;</mentioned> for expected <mentioned lang="ANG">middangeard</mentioned>, 7b, has been explained as a <quote id="CH6.QUOTE.0040">modernized spelling of the form <mentioned lang="ANG">middungeard</mentioned></quote> (&orton1998;, 157), the reading of &mx;, a witness to the textually distant &aelda; (&orton1998;, 157; see also &ross1949-1950;, 94, n. 38, who suggests the &ox; form may also be an example of careless copying).</p>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>
+

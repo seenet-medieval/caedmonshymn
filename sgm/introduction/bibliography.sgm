@@ -1,0 +1,388 @@
+<!--
+*******************************************************************
+*                   The Electronic Caedmon&rsquo;s Hymn                 *
+*                           Works cited                           *
+*                                                                 *
+*                         Text and Encoding                       *
+*                 (c) Daniel Paul O&rsquo;Donnell, 1999-2002            *
+*                        All Rights Reserved                      *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.prose 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<!-- The following "stylespec" are used to invoke propriety-format stylesheets   -->
+<!-- for use in Multidoc/Panorama SGML browsers. It may be necessary to remove  -->
+<!-- them before processing these files in certain SGML/XML applications -->
+
+<?STYLESPEC "Introduction" "../styleSheets/introduction.ssh">
+
+<tei.2 id="BIBLIOGRAPHY.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Works cited</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <author>Dawn Collins</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 8 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original text.</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Reference list prepared for use in the &ech;.</p>
+   </projectdesc>
+   <samplingdecl>
+    <p>Reference list is restricted to works cited in the &ech;</p>
+   </samplingdecl>
+  </encodingdesc>
+  <profiledesc teiform="profileDesc">
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="FRA">French</language>
+   </langusage>
+   <langusage>
+    <language id="LAT">Latin</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body>
+   <div1 id="BIBLIOGRAPHY" n="bibliography">
+    <head>Works cited</head>
+    <div2 id="BIBLIOGRAPHY.TOC" type="toc">
+     <div3 id="BIBLIOGRAPHY.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="glossary"><label rend="accesskey">P</label>revious (Glossary)</xref></item>
+       <item><xref n="n" doc="index"><label rend="accesskey">N</label>ext (Index)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="BIBLIOGRAPHY.TEXT">
+<bibl id="CATALOGUSCODICUMREGIAE1739-44"><title level="m">Catalogus codicum manuscriptorum Bibliothecae regiae</title>. 1739-1944. Paris.</bibl>
+<bibl id="CATALOGUEGENERAL"><title level="m">Catalogue g&eacute;n&eacute;ral des manuscrits des biblioth&egrave;ques publiques de France</title>, D&eacute;partements V. 1885-.  Paris: E. Plon.</bibl>
+<bibl id="ANGLICANCHURCHOFCANADA1997"><title level="m">The book of common prayer</title>. 1997.  Toronto: Anglican Book Centre.</bibl>
+<bibl id="ABRAHAM1992">Abraham, L. 1992. C&aelig;dmon&rsquo;s Hymn and the Ge&thorn;w&aelig;rnysse (fitness) of things. <title level="m">ABR</title> 43: 331-44.</bibl>
+<bibl id="AMOS1980">Amos, A. C. 1980. <title level="m">Linguistic means of determining the dates of Old English literary texts</title>. Medieval Academy Books, 90. Cambridge, MA: Medieval Academy of America.</bibl>
+<bibl id="ANDERSON1977">Anderson, E. R. 1977. Passing the harp in Bede&rsquo;s story of C&aelig;dmon: a twelfth century analogue. <title level="m">ELN</title> 15: 1-4.</bibl>
+<bibl id="ANDERSON1941">Anderson, O. S. 1941. <title level="m">Old English material in the Leningrad manuscript of Bede&rsquo;s ecclesiastical history</title>. Skrifter utgivna av Kungl. humanistiska vetenskapssamfundet i Lund/Acta reg. societatis humaniorum litterarum Lundensis, 31. Lund: Gleerup.</bibl>
+<bibl id="ARMSTRONG1992">Armstrong, K. 1992. <title level="m">Muhammad:  a biography of the prophet</title>. San Francisco: HarperSanFrancisco.</bibl>
+<bibl id="ARNGART1952">Arngart, O. S. 1952. <title level="m">The Leningrad Bede: an eighth century manuscript of the Venerable Bede&rsquo;s Historia ecclesiastica gentis Anglorum in the Public Library, Leningrad</title>. Early English Manuscripts in Facsimile, 2. Copenhagen: Rosenkilde & Bagger.</bibl>
+<bibl id="ARNGART1973">$2500;$2500;$2500;$2500;. 1973. On the dating of early Bede manuscripts. <title level="m">SN</title> 45: 47-52.</bibl>
+<bibl id="AURNER1926">Aurner, N. S. 1926. Bede and Pausanias. <title level="m">MLN</title> 41: 535-6.</bibl>
+<bibl id="BAKER1984">Baker, P. S. 1984. A little known variant text of the Old English metrical Psalms. <title level="m">Speculum</title> 59: 263-81.</bibl>
+<bibl id="BALL1985">Ball, C. J. E. 1985. Homonymy and polysemy in Old English: a problem for lexicographers. <title level="m">Problems of Old English lexicography: studies in memory of Angus Cameron</title>, ed. A. Bammesberger. Eichst&auml;tter Beitr&auml;ge, 15. 39-46. Regensburg: Pustet.</bibl>
+<bibl id="BANNISTER1927">Bannister, A. T. 1927. <title level="m">Descriptive catalogue of the manuscripts in the Hereford Cathedral library</title>. Hereford: Wilson & Phillips.</bibl>
+<bibl id="BATELY1986">Bately, J. M. 1986. <title level="m">MS A: A semi-diplomatic edition with introduction and indices</title>. The Anglo-Saxon Chronicle, a Collective Edition, 3. Cambridge: D. S. Brewer.</bibl>
+<bibl id="BATELY1992">$2500;$2500;$2500;$2500;, ed. 1992. <title level="m">The Tanner Bede: the Old English version of Bede&rsquo;s Historia ecclesiastica, Oxford Bodleian Library Tanner 10, together with the mediaeval binding leaves, Oxford Bodleian Library Tanner 10* and the Domitian extracts, London British Library Cotton Domitian A IX Fol. 11</title>. Early English Manuscripts in Facsimile, 24. Copenhagen: Rosenkilde & Bagger.</bibl>
+<bibl id="BATESON1898">Bateson, M., ed. 1898. <title level="m">Catalogue of the Library of Syon Monastery, Isleworth</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="BESSINGER1974">Bessinger, J. B. Jr.  1974. Homage to C&aelig;dmon and others: a Beowulfian praise song. <title level="m">Old English studies in honour of John C. Pope</title>, eds. R. B. Burlin and E. B. Irving. 91-106. Toronto: University of Toronto Press.</bibl>
+<bibl id="BEVENOT1962">B&eacute;venot, M. S. J. 1962. Towards dating the Leningrad &ldquo;Bede&rdquo;. <title level="m">Scriptorium</title> 36: 366-9.</bibl>
+<bibl id="BIDDICK1994">Biddick, K. 1994. Bede&rsquo;s blush: postcards from Bali, Bombay, and Palo Alto. <title level="m">The past and future of Medieval Studies</title>, ed. J. H. van Engen. Notre Dame Conferences in Medieval Studies, 4. 16-44. Notre Dame: Notre Dame University Press.</bibl>
+<bibl id="BIGGS1997">Biggs, F. M. 1997. Deor&rsquo;s threatened <socalled>blame poem</socalled>. <title level="m">SP</title> 94: 297-320.</bibl>
+<bibl id="BISCHOFF1966-1968">Bischoff, B. 1966-1968. Die Hofbibliothek Karls des Grossen. <title level="m">Karl der Grosse Lebenswerk und Nachleben</title>, ed. W. Braunfels and H. Beumann. 2. Aufl. 2: Das geistige Leben: 42-62. D&uuml;sseldorf: L. Schwann.</bibl>
+<bibl id="BISHOP1953">Bishop, T. A. M. 1953. Notes on Cambridge manuscripts. <title level="m">TCBS</title> 1: 432-41.</bibl>
+<bibl id="BLAKEEO1962">Blake, E. O., ed. 1962. <title level="m">Liber Eliensis</title>. Camden Third Series. London: Offices of the Royal Historical Society.</bibl>
+<bibl id="BLAKENF1962">Blake, N. F. 1962. C&aelig;dmon&rsquo;s Hymn. <title level="m">N&amp;Q</title> 207: 243-46.</bibl>
+<bibl id="BLOCKLEY1998">Blockley, Mary. 1998. C&aelig;dmon&rsquo;s conjunction: &ch; 7a revisited. <title level="m">Speculum</title> 73: 1-31.</bibl>
+<bibl id="BLOOMFIELD1962">Bloomfield, M. W. 1962. Patristics and Old English literature: notes on some poems. <title level="m">CL</title> 14: 36-43 .</bibl>
+<bibl id="BOSWORTHANDTOLLER1972">Bosworth, J. and T. N. Toller. [1898] 1972. <title level="m">An Anglo-Saxon dictionary based on the manuscript collections of the late Joseph Bosworth</title>. London: Clarendon Press.</bibl>
+<bibl id="BOURNS2001">Bourns, J. G. 2001. Studies in the language of Three Northumbrian Poems. Unpublished PhD Dissertation, Harvard University.</bibl>
+<bibl id="BOUTERWEK1849-1851">Bouterwek, K. W. 1849-1851. <title level="m">C&aelig;dmon&rsquo;s des Angels&auml;chsen biblische Dichtungen</title>. Elberfeld.</bibl>
+<bibl id="BRACCINI1989">Braccini, G. P. 1989. Creazione dell&rsquo;uomo o destino dell&rsquo;uomo?: due ipotesi per firum foldan (&ldquo;Inno di Caedmon&rdquo; v. 9). <title level="m">SMed</title> 30: 65-142.</bibl>
+<bibl id="BRADLEY1982">Bradley, S. A. J., ed. and trans. 1982. <title level="m">Anglo-Saxon poetry: an anthology of Old English poems in prose translations with introduction and headnotes</title>. Everyman&rsquo;s Library. London: Everyman.</bibl>
+<bibl id="TENBRINK1883">ten Brink, B. 1883. <title level="m">Early English literature (to Wiclif)</title>. Trans. H. M. Kennedy. New York: Holt.</bibl>
+<bibl id="BRUNNERANDSIEVERS1965">Brunner, K. and E. Sievers. 1965. <title level="m">Altenglische Grammatik nach der angels&auml;chsischen Grammatik von Eduard Sievers</title>. 3rd, neubearb. Aufl. Sammlung kurzer Grammatiken germanischer Dialekte, A. 3. T&uuml;bingen: Max Niemeyer.</bibl>
+<bibl id="BUDNY1997">Budny, M. 1997. <title level="m">Insular, Anglo-Saxon, and early Anglo-Norman manuscript art at Corpus Christi College, Cambridge: an illustrated catalogue</title>. Kalamazoo: Medieval Institute Publications.</bibl>
+<bibl id="CALDER1983">Calder, D. G. 1983. <title level="m">Sources and analogues of Old English Poetry 2: the major Germanic and Celtic texts in translation</title>. Cambridge: D. S. Brewer.</bibl>
+<bibl id="CAMPBELL1938">Campbell, A., ed. 1938. <title level="m">The battle of Brunanburh</title>. London: Heinemann.</bibl>
+<bibl id="CAMPBELL1991">$2500;$2500;$2500;$2500;. 1991. <title level="m">Old English grammar</title>. Reprinted with corrections. Oxford: Clarendon Press.</bibl>
+<bibl id="CAVILL2000">Cavill, P. 2000. The manuscripts of C&aelig;dmon&rsquo;s Hymn. <title level="m">Anglia</title> 118: 499-530.</bibl>
+<bibl id="CAVILL2002">$2500;$2500;$2500;$2500;. 2002. Bede and C&aelig;dmon&rsquo;s Hymn. <title level="m">'Lastworda betst': essays in memory of Christine E. Fell, with her unpublished writings</title>, eds. C. Hough and K. A. Lowe. 1-17. Donington: Shaun Tyas.</bibl>
+<bibl id="CHAMBERSETAL.1933">Chambers, R. W., M. F&ouml;rster, and  R. Flower, ed. 1933. <title level="m">The Exeter book of Old English poetry</title>. London: Percy Lund for the Dean & Chapter of Exeter Cathedral.</bibl>
+<bibl id="CHAPPELL1934">Chappell, L. W. 1934-1935. The C&aelig;dmon story. <title level="m">EStn</title> 69: 152-4.</bibl>
+<bibl id="CLARKHALL1984">Clark Hall, J. R. and H. D. Meritt. 1984. <title level="m">A concise Anglo-Saxon dictionary</title>. 4th ed. Medieval Academy Reprints for Teaching, 14. Toronto: University of Toronto Press.</bibl>
+<bibl id="COLGRAVE1940">Colgrave, B., ed. and trans. 1940. <title level="m">Two lives of  St. Cuthbert: a life by an anonymous monk of Lindisfarne and Bede&rsquo;s prose life</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="COLGRAVE1966">$2500;$2500;$2500;$2500;. 1966. Bede&rsquo;s miracle stories. <title level="m">Bede, his life, times, and writings: essays in commemoration of the twelfth centenary of his death</title>, ed. A. H. Thompson. 201-29. New York: Russell & Russell.</bibl>
+<bibl id="COLGRAVEANDMYNORS1969">$2500;$2500;$2500;$2500; and R. A. B. Mynors, eds. 1969. <title level="m">Bede&rsquo;s ecclesiastical history of the English people</title>. Oxford Medieval Texts. Oxford: Clarendon Press.</bibl>
+<bibl id="COXE1972">Coxe, H. O., ed. [1852] 1972. <title level="m">Catalogus codicum mss qui in collegiis aulisque Oxoniensibus hodie adservantur</title>. Wakefield: E. P. Publishing.</bibl>
+<bibl id="COXEANDHUNT1973">$2500;$2500;$2500;$2500; and R. W. Hunt. [1858-1885] 1973. <title level="m">Bodleian Library, Quarto Catalogues: 2 Laudian manuscripts (Catalogi codicum manuscriptorum Bibliothecae Bodleianae Codices Miscellanei)</title>. Oxford: Bodleian Library.</bibl>
+<bibl id="CRAMP1976">Cramp, R. J. 1976. Monastic sites. <title level="m">The archaeology of Anglo-Saxon England</title>, ed. D. M. Wilson. 201-252; Appendix B, Appendix C. London: Methuen.</bibl>
+<bibl id="CREED1992">Creed, R. P. 1992. The archetypal verse line in C&aelig;dmon&rsquo;s &ldquo;Hymn&rdquo; and Beowulf. <title level="m">Old English and New: studies in language and linguistics in honor of Frederic G. Cassidy</title>, eds. J. H. Hall, N. Doane, and D. Ringler. Garland Reference Library of the Humanities, 1652. 31-45. New York: Garland.</bibl>
+<bibl id="CRYSTAL1987">Crystal, D. 1987. <title level="m">The Cambridge encyclopedia of language</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="CURTIUS1973">Curtius, E. R. 1990. <title level="m">European literature and the Latin Middle Ages</title>. Bollingen Series, 36. Princeton: Princeton University Press.</bibl>
+<bibl id="DAY1975">Day, V. 1975. The influence of the catechetical narratio on Old English and some other medieval literature. <title level="m">ASE</title> 3: 51-61.</bibl>
+<bibl id="DOBBIE1937">Dobbie, E. V. K. 1937. <title level="m">The manuscripts of C&aelig;dmon&rsquo;s Hymn and Bede&rsquo;s Death Song with a critical text of the Epistola Cuthberti de obitu Bed&aelig;</title>. Columbia University Studies in English and Comparative Literature, 128. New York: Columbia University Press.</bibl>
+<bibl id="DOBBIE1942">$2500;$2500;$2500;$2500;. 1942. <title level="m">The Anglo-Saxon minor poems</title>. The Anglo-Saxon Poetic Records, a Collective Edition, 6. New York: Columbia University Press.</bibl>
+<bibl id="DOBIACHE-ROJDESTVENSKY1928">Dobiache-Rojdestvensky, O. 1928. Un manuscrit de B&egrave;de &agrave; L&eacute;ningrad. <title level="m">Speculum</title> 3: 314-21.</bibl>
+<bibl id="DUMMLER1964">D&uuml;mmler, E., ed. [1884] 1964. <title level="m">Poetae latini aevi Carolini</title>. Monumenta Germaniae historica. Poetarum latinarum medii aevi, 2. Berlin: Apud Weidmannos.</bibl>
+<bibl id="DUMVILLE1981">Dumville, D. N. 1981. &ldquo;Beowulf&rdquo; and the Celtic world: the uses of evidence. <title level="m">Traditio</title> 37: 109-60.</bibl>
+<bibl id="DUTSCHKE1989">Dutschke, C. W. 1989. <title level="m">Guide to medieval and renaissance manuscripts in the Huntington Library</title>. With the assistance of R. H. Rouse et al. San Marino: Huntington Library.</bibl>
+<bibl id="FAIDERANDVANSINTJAN1950">Faider, P. and P. van Sint Jan. 1950. <title level="m">Catalogue des manuscrits conserv&eacute;s &agrave; Tournai biblioth&egrave;que de la ville et du s&eacute;minaire</title>. Catalogue g&eacute;n&eacute;rale de manuscrits de biblith&egrave;ques de Belgique, 6. Gemblaux: J. Duculot.</bibl>
+<bibl id="FELL1981">Fell, C. E. 1981. Hild Abbess of Streon&aelig;shalch. <title level="m">Hagiography and medieval literature: a symposium</title>, eds. H. Bekker-Nelson et al. Proceedings of the Fifth International Symposium organized by the Centre for the Study of Vernacular Literature in the Middle Ages Held at Odense University on 17-18 November, 1980. 76-99. Odense: Odense University Press.</bibl>
+<bibl id="FERGUSONETAL1996">Ferguson, Margaret W.,  et al. 1996. <title level="m">The Norton anthology of poetry</title>. 4th  ed. New York: W. W. Norton. </bibl>
+<bibl id="FRAMPTON1924">Frampton, M. G. 1924. C&aelig;dmon&rsquo;s Hymn. <title level="m">MP</title> 22: 1-15.</bibl>
+<bibl id="FRANK1993">Frank, R. 1993. The search for the Anglo-Saxon oral poet [T. Northcote Toller memorial lecture; March 9, 1992]. <title level="m">Bulletin of the John Rylands University</title> 75: 11-36.</bibl>
+<bibl id="FRANTZEN1990">Frantzen, A. J. 1990. <title level="m">Desire for origins: new language, Old English and teaching the tradition</title>. New Brunswick, NJ: Rutgers University Press.</bibl>
+<bibl id="fritz1969">Fritz, D. W. 1969. C&aelig;dmon: a traditional christian poet. <title level="m">MS</title> 31: 334-7.</bibl>
+<bibl id="FRITZ1974">$2500;$2500;$2500;$2500;. 1974. C&aelig;dmon: a monastic exegete. <title level="m">ABR</title> 25: 351-63.</bibl>
+<bibl id="FRY1975">Fry, D. K. 1975. C&aelig;dmon as formulaic poet. <title level="m">Oral literature: seven essays</title>, ed. J. J. Duggan. 41-61. Edinburgh: Scottish Academic Press.</bibl>
+<bibl id="FRY1979a">$2500;$2500;$2500;$2500;. 1979. Old English formula statistics. <title level="m">In Geardagum</title> 3: 1-6.</bibl>
+<bibl id="FRY1981">$2500;$2500;$2500;$2500;. 1981. The memory of C&aelig;dmon. <title level="m">Oral traditional literature: a Festschrift for Albert Bates Lord</title>, ed. J. M. Foley. 282-93. Columbus, OH: Slavica.</bibl>
+<bibl id="FULK1992">Fulk, R. D. 1992. <title level="m">A history of Old English meter</title>. Middle Ages Series. Philadelphia: University of Pennsylvania Press.</bibl>
+<bibl id="GILLERT1880">Gillert, K. 1880. Lateinische Handschriften in St. Petersburg. <title level="m">Neues Archiv der Gesellschaft f&uuml;r &auml;ltere deutsche Geschichtskunde</title> 5: 243-625 [recte 265].</bibl>
+<bibl id="GOLDEN1969">Golden, J. 1969. An onomastic allusion in C&aelig;dmon&rsquo;s Hymn? <title level="m">NM</title> 70: 627-9.</bibl>
+<bibl id="GOLLANCZ1927">Gollancz, I., ed. 1927. <title level="m">The C&aelig;dmon manuscript of Anglo-Saxon biblical poetry: Junius XI in the Bodleian Library</title>. Oxford: Humphrey Milford for the British Academy.</bibl>
+<bibl id="GRANT1974">Grant, R. J. S. 1974. Laurence Nowell&rsquo;s transcript of BM Cotton Otho B.xi. <title level="m">ASE</title> 3: 111-24.</bibl>
+<bibl id="GRANT1989">$2500;$2500;$2500;$2500;. 1989. <title level="m">The B text of the Old English Bede: a linguistic commentary</title>. Costerus, n. s. 73. Amsterdam: Rodopi.</bibl>
+<bibl id="GRANT1996">$2500;$2500;$2500;$2500;. 1996. <title level="m">Laurence Nowell, William Lambarde, and the laws of the Anglo-Saxons</title>. Costerus, n. s. 108. Amsterdam: Rodopi.</bibl>
+<bibl id="GREEN1965">Green, D. H. 1965. <title level="m">The Carolingian lord: semantic studies on four Old High German words: balder, fr&ocirc;, trahtin, h&ecirc;rro</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="GREENFIELDANDCALDER1986">Greenfield, S. B. and D. G. Calder. 1986. <title level="m">A new critical history of Old English literature</title>. With a survey of the Anglo-Latin background by M. Lapidge. New York: New York University Press.</bibl>
+<bibl id="GREETHAM1994">Greetham, D. C. 1994. <title level="m">Textual scholarship: an introduction</title>. Garland Reference Library of the Humanities, 1417. New York: Garland.</bibl>
+<bibl id="GRIFFITH1991">Griffith, M. S. 1991. Poetic language and the Paris Psalter: the decay of the Old English tradition. <title level="m">ASE</title> 20: 167-86.</bibl>
+<bibl id="HACKMAN1860">Hackman, A., ed. 1860. <title level="m">Codices Thomae Tanneri complectens</title>. Catalogi codicum manuscriptorum bibliothecae Bodleianae, 4. Oxford.</bibl>
+<bibl id="HAMILTON1870">Hamilton, N. E. S. A., ed. 1870. <title level="m">Willelmi Malmesbiriensis monachi de gestis pontificum Anglorum libri quinque</title>. Rerum britannicarum medii &aelig;vi scriptores, or, Chronicles and memorials of Great Britain and Ireland during the middle ages. London.</bibl>
+<bibl id="HARDWICKETAL1980">Hardwick, C. et al., eds. [1856-1867] 1980. <title level="m">A catalogue of the manuscripts preserved in the Library of the University of Cambridge</title>. Munich: Kraus. Reprint by G. Olms.</bibl>
+<bibl id="HARDYANDMARTIN1966">Hardy, T. D. and C. T. Martin, eds. [1888 ] 1966. Gesta Herwardi solum la translacion Maistre Geffrei Gaimar.  <title level="m">Geoffrey Gaimar&rsquo;s Lestorie des Engles</title>,  339-404. 2. Rolls Series. Wiesbaden: Kraus.</bibl>
+<bibl id="HEALEYETAL1994">Healey, A. d. P. et al. 1994. <title level="m">The complete Corpus of Old English in machine readable form (TEI compatible version) [Data file]</title>. 2nd TEI-conformant ed. Oxford: Oxford Text Archive.</bibl>
+<bibl id="HENRY1966">Henry, P. L. 1966. The origin of C&aelig;dmon&rsquo;s Hymn. <title level="m">The Early English and Celtic lyric</title> 209-15. London: George Allen.</bibl>
+<bibl id="HIEATT1985">Hieatt, C. B. 1985. C&aelig;dmon in context: transforming the formula. <title level="m">JEGP</title> 84: 485-97.</bibl>
+<bibl id="HOGG1992">Hogg, R. M. 1992-. <title level="m">A grammar of Old English</title>. Cambridge, MA: Blackwell.</bibl>
+<bibl id="HOLT1954">Holt, B. F. 1954. <title level="m">Joseph Williams and the pioneer mission to the south-eastern Bantu</title>. The Lovedale Historical Series, 1. Lovedale, C. P.: Lovedale Press.</bibl>
+<bibl id="HOLTHAUSEN1934">Holthausen, F. 1974. <title level="m">Altenglisches etymologisches W&ouml;rterbuch</title>. Heidelberg: Carl Winter.</bibl>
+<bibl id="HOOVER1985">Hoover, D. L. 1985. Evidence for primacy of alliteration in Old English metre. <title level="m">ASE</title> 14: 75-96.</bibl>
+<bibl id="HOPKINS2000">Hopkins, K., 2000. Unpublished essay (English 3450a, University of Lethbridge). </bibl>
+<bibl id="HOWLETT1974">Howlett, D. R. 1974. The Theology of C&aelig;dmon&rsquo;s Hymn. <title level="m">LSE</title> 7: 1-12.</bibl>
+<bibl id="HOWLETT1997">$2500;$2500;$2500;$2500;. 1997. <title level="m">British books in biblical style</title>. Medieval Studies. Dublin: Four Courts Press.</bibl>
+<bibl id="HULSMANN1980">H&uuml;lsmann, G. 1980. Der Caedmon-Hymnus Versuch einer Neudeutung in sprach-und religiongeschichtlicher Sicht. Inaugural Dissertation, Westf&auml;lischen Wilhelms-Universit&auml;t.</bibl>
+<bibl id="HUMPHREYS1948">Humphreys, K. W. 1948. Book distribution lists from Thorney Abbey, Cambridgeshire, 1324-30. <title level="m">BLR</title> 2: 205-10.</bibl>
+<bibl id="HUMPHREYSANDROSS1975">Humphreys, K. W. and A. S. C. Ross. 1975. Further manuscripts of Bede&rsquo;s &ldquo;Historia ecclesiastica,&rdquo; of the &ldquo;Epistola Cuthberti de obitu Bedae,&rdquo; and further Anglo-Saxon texts of &ldquo;C&aelig;dmon&rsquo;s Hymn&rdquo; and &ldquo;Bede&rsquo;s Death Song.&rdquo; <title level="m">N&amp;Q</title> 220: 50-5.</bibl>
+<bibl id="HUNTETAL1895-1953">Hunt, R. W. et al., eds. 1895-1953. <title level="m">A summary catalogue of Western manuscripts in the Bodleian Library at Oxford</title>. Oxford: Clarendon Press.</bibl>
+<bibl id="HUNTERBLAIR1959">Hunter Blair, P., ed. 1959. <title level="m">The Moore Bede: Cambridge University Library Kk. 5. 16</title>. With a contribution by R. A. B. Mynors. Early English Manuscripts in Facsimile, 9. Copenhagen: Rosenkilde & Bagger.</bibl>
+<bibl id="HUNTERBLAIR1984">$2500;$2500;$2500;$2500;. 1984. The Moore memoranda on Northumbrian history. <title level="m">Anglo-Saxon Northumbria</title>, eds. M. Lapidge and P. Hunter Blair. 245-57. London: Variorum Reprints.</bibl>
+<bibl id="HUNTERBLAIR1985">$2500;$2500;$2500;$2500;. 1985. Whitby as a centre of learning in the seventh century. <title level="m">Learning and literature in Anglo-Saxon England: studies presented to Peter Clemoes on the occasion of his sixty-fifth birthday</title>, eds. M. Lapidge and H. Gneuss. 3-32. Cambridge: Cambridge University Press.</bibl>
+<bibl id="HUPPE1968">Hupp&eacute;, B. F. 1968. C&aelig;dmon&rsquo;s Hymn. <title level="m">Old English literature: twenty-two analytical essays</title>, eds. M. Stevens and J. Mandel. 117-38. Lincoln: University of Nebraska Press.</bibl>
+<bibl id="HURST1962">Hurst, D., ed. 1962. Bedae Venerabilis in primam partem Samuhelis libri IIII.  <title level="m">Bedae Venerabilis opera</title>,  119. Corpus Christianorum, series latina, Pars II, opera exegetica. Turnhout: Brepols.</bibl>
+<bibl id="HUTCHESON1995">Hutcheson, B. R. 1995. <title level="m">Old English poetic metre</title>. Suffolk: D. S. Brewer.</bibl>
+<bibl id="IPA1999">International Phonetic Association. 1999. <title level="m">Handbook of the International Phonetic Association: a guide to the use of the International Phonetic Alphabet</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="IRELAND1986">Ireland, C. A. 1986. The Celtic background to the story of C&aelig;dmon and his hymn. Unpublished PhD dissertation, UCLA.</bibl>
+<bibl id="IRELAND1997">$2500;$2500;$2500;$2500;. 1997. An Irish precursor of C&aelig;dmon. <title level="m">N&amp;Q</title> 242: 2-4.</bibl>
+<bibl id="IRVINE1991">Irvine, M. 1991. Medieval textuality and the archaeology of textual culture. <title level="m">Speaking two languages: traditional disciplines and contemporary theory in medieval studies</title>, ed. A. J. Frantzen. 181-210. Albany: State University of New York Press.</bibl>
+<bibl id="IRVINE1994">$2500;$2500;$2500;$2500;. 1994. <title level="m">The making of textual culture: &ldquo;Grammatica&rdquo; and literary theory, 350-1100</title>. Cambridge Studies in Medieval Literature, 19. Cambridge: Cambridge University Press.</bibl>
+<bibl id="ISAAC1997">Isaac, G. R. 1997. The date and origin of C&aelig;dmon&rsquo;s Hymn. <title level="m">NM</title> 98: 217-28.</bibl>
+<bibl id="JABBOUR1968">Jabbour, A. A. 1968. The memorial transmission of Old English poetry: a study of the extant parallel texts. Unpublished PhD dissertation, Duke University.</bibl>
+<bibl id="JACKSON1953">Jackson, K. H. 1953. <title level="m">Language and history in early Britain: a chronological survey of the Brittonic languages, first to twelfth century A.D</title>. Edinburgh University Publications; Language and Literature, no. 4. Edinburgh: University Press.</bibl>
+<bibl id="JAMES1901">James, M. R. 1901. <title level="m">The western manuscripts in the library of Trinity College, Cambridge: a descriptive catalogue</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="JAMES1909">$2500;$2500;$2500;$2500;. 1909. <title level="m">Descriptive catalogue of the manuscripts in the library of Corpus Christi College</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="JIRICZEK1912">Jiriczek, O. 1912. Scepen in C&aelig;dmons Hymnus Hs. N. <title level="m">IF</title> 30: 279-82.</bibl>
+<bibl id="JORDAN1973">Jordan, A. C. 1973. <title level="m">Towards an African literature: the emergence of literary form in Xhosa</title>. Perspectives on Southern Africa, 6. Berkeley: University of California Press.</bibl>
+<bibl id="JUDGE1934">Judge, C. B. 1934. Anglo-Saxonica in Hereford Cathedral Library. <title level="m">HSNPL</title> 16: 89-96.</bibl>
+<bibl id="KANE1948">Kane, G. 1948. The poetry of C&aelig;dmon [review of &wrenn1946;]. <title level="m">MLR</title> 43: 250-52.</bibl>
+<bibl id="KARTSCHOKE1975">Kartschoke, D. 1975. <title level="m">Bibeldichtung: Studien zur Geschichte der epischen Bibelparaphrase von Juvencus bis Otfrid von Wei&szlig;enburg</title>. Munich: Fink.</bibl>
+<bibl id="KENDALL1975">Kendall, C. B., ed. 1975. De arte metrica et de schematibus et tropis.  <title level="m">Bedae Venerabilis opera</title>, 59-171. Pars I, Opera didascalica. Corpus Christianorum, series latina, 123a. Turnhout: Brepols.</bibl>
+<bibl id="KER1939">Ker, N. R. 1939. The Hague MS of the Epistola Cuthberti de obitu Bed&aelig; with Bede&rsquo;s song. <title level="m">M&AElig;</title> 8: 40-4.</bibl>
+<bibl id="KER1949">$2500;$2500;$2500;$2500;. 1949. Old English notes signed <quote>Coleman</quote>. <title level="m">M&AElig;</title> 18: 29-31.</bibl>
+<bibl id="KER1955">$2500;$2500;$2500;$2500;. 1955. Sir John Prise. <title level="m">The Library</title> Fifth Series 10: 1-24.</bibl>
+<bibl id="KER1964">$2500;$2500;$2500;$2500;. 1964. <title level="m">Medieval libraries of Great Britain: a list of the surviving books</title>. 2nd  ed. London: Offices of the Royal Historical Society.</bibl>
+<bibl id="KER1990">$2500;$2500;$2500;$2500;. 1990. <title level="m">Catalogue of manuscripts containing Anglo-Saxon</title>. Oxford: Clarendon Press.</bibl>
+<bibl id="KER1969-1992">$2500;$2500;$2500;$2500; and A. J. Piper. 1969-1992. <title level="m">Medieval manuscripts in British libraries</title>. Oxford: Clarendon Press.</bibl>
+<bibl id="KHAFAJI1972">Khafaji, M. 1972. <title level="m">Majallat Rabitat Al-Å¡lam Al Islami</title> [Journal of the Association of the Islamic World] 9: 57 [not seen: cited from &lester1974;].</bibl>
+<bibl id="KIERNAN1990A">Kiernan, K. S. 1990a. Reading C&aelig;dmon&rsquo;s Hymn with someone else&rsquo;s glosses. <title level="m">Representations</title> 32: 157-74.</bibl>
+<bibl id="KIERNAN1990B">$2500;$2500;$2500;$2500;. 1990b. Old English manuscripts: the scribal deconstruction of &ldquo;early&rdquo; Northumbrian. <title level="m">ANQ</title> n.s. 3: 48-55.</bibl>
+<bibl id="KIERNAN1996">$2500;$2500;$2500;$2500;. 1996. <title level="m">Beowulf and the Beowulf manuscript</title>. Revised ed. Ann Arbor: University of Michigan Press.</bibl>
+<bibl id="KIERNAN1999">$2500;$2500;$2500;$2500;, ed. 1999. <title level="m">The electronic Beowulf [Electronic text]</title>. London: British Library.</bibl>
+<bibl id="KLAEBER1911">Klaeber, Fr. 1911. Die christlichen Elemente im Beowulf. <title level="m">Anglia</title> 35: 111-36.</bibl>
+<bibl id="KLAEBER1927">$2500;$2500;$2500;$2500;. 1927. Analogues of the story of C&aelig;dmon. <title level="m">MLN</title> 42: 390.</bibl>
+<bibl id="KLEINER1988">Kleiner, Yu. A. 1988. The singer and the interpreter: C&aelig;dmon and Bede. <title level="m">Germanic Notes</title> 19: 2-6.</bibl>
+<bibl id="KRAPP1931">Krapp, G. P. 1931. <title level="m">The Junius manuscript</title>. The Anglo-Saxon Poetic Records, a Collective Edition, 1. New York: Columbia University Press.</bibl>
+<bibl id="LAISTNER1943">Laistner, M. L. W. 1943. <title level="m">A hand-list of Bede manuscripts</title>. With the collaboration of H. H. King. Ithaca, NY: Cornell University Press.</bibl>
+<bibl id="LAPIDGEETAL2001">Lapidge, M. et al. 2001. <title level="m">The Blackwell encyclopaedia of Anglo-Saxon England</title>. Oxford: Blackwell.</bibl>
+<bibl id="LAPIDGEANDROSIER1985">$2500;$2500;$2500;$2500; and J. L. Rosier, eds. 1985. <title level="m">Aldhelm, the poetic works</title>. Cambridge: D. S. Brewer.</bibl>
+<bibl id="LEESANDOVERING1994">Lees, C. A. and G. R. Overing. 1994. Birthing bishops and fathering poets: Bede, Hild, and the relations of cultural production. <title level="m">Exemplaria</title> 6: 35-65.</bibl>
+<bibl id="LEHMANN1971">Lehmann, W. P. 1971. <title level="m">The development of Germanic verse form</title>. New York: Gordian Press.</bibl>
+<bibl id="LERER1991">Lerer, S. 1991. <title level="m">Literacy and power in Anglo-Saxon literature</title>. Regents Studies in Medieval Culture. Lincoln: University of Nebraska Press.</bibl>
+<bibl id="LESTER1974">Lester, G. A. 1974. The C&aelig;dmon story and its analogues. <title level="m">Neophil</title> 58: 225-37.</bibl>
+<bibl id="LINGARD1841">Lingard, J. [1810] 1841. <title level="m">The antiquities of the Anglo-Saxon church</title>. 1st American ed., from the 2nd London ed. Philadelphia.</bibl>
+<bibl id="LINGS1983">Lings, M. 1983. <title level="m">Muhammad: his life based on the earliest sources</title>. New York: Inner Traditions International.</bibl>
+<bibl id="LLOYDWEBBERANDRICE1993">Lloyd Webber, A. and T. Rice. 1993. <title level="m">Jesus Christ superstar</title>.Willowdale, ON: MCA Records.</bibl>
+<bibl id="LONNROTH1981">L&ouml;nnroth, L.  1981. I&ocedil;r&eth; fannz &aelig;va n&eacute; upphiminn: a formula analysis. <title level="m">Speculum Norroenum: Norse studies in memory of Gabriel Turville-Petre</title>, eds. U. Dronke et al. 310-27. Odense: Odense University Press.</bibl>
+<bibl id="LOOMIS1946">Loomis, C. G. 1946. The miracle traditions in the Venerable Bede. <title level="m">Speculum</title> 21:  404-18.</bibl>
+<bibl id="LORD1993">Lord, A. B. 1993. C&aelig;dmon Revisited. <title level="m">Heroic poetry in the Anglo-Saxon period: studies in honor of Jess B. Bessinger, Jr.</title>, eds. H. D&rsquo;Amico and J. Leyerle. Studies in Medieval culture, 32. 121-37. Kalamazoo: Medieval Institute Publications.</bibl>
+<bibl id="LORD2000">$2500;$2500;$2500;$2500;. 2000. <title level="m">The singer of tales</title>. Ed. S. A. Mitchell and G. Nagy. 2nd ed. Cambridge, MA: Harvard University Press.</bibl>
+<bibl id="LOWE1934-">Lowe, E. A. 1934-. <title level="m">Codices latini antiquiores: a palaeographical guide to Latin manuscripts prior to the ninth century.</title> Oxford: Clarendon Press.</bibl>
+<bibl id="LOWE1958A">$2500;$2500;$2500;$2500;. 1958a. A key to Bede&rsquo;s scriptorium: some observations on the Leningrad Bede. <title level="m">Scriptorium</title> 12: 182-90.</bibl>
+<bibl id="LOWE1958B">$2500;$2500;$2500;$2500;. 1958b. An autograph of the Venerable Bede? <title level="m">Revue B&eacute;n&eacute;dictine</title> 68: 200-2.</bibl>
+<bibl id="LOWE1934">$2500;$2500;$2500;$2500;. 1934-. <title level="m">Codices latini antiquiores: a palaeographical guide to Latin manuscripts prior to the ninth century</title>. Oxford: Oxford University Press, Clarendon Press.</bibl>
+<bibl id="LUTZ1981">Lutz, A., ed. 1981. <title level="m">Die Version G der angels&auml;chsischen Chronik: Rekonstruktion und Edition</title>. M&uuml;nchener Universit&auml;ts-Schriften philosophische Fakult&auml;t: Texte und Untersuchungen zur englischen Philologie, 11. Munich: Fink.</bibl>
+<bibl id="MAGOUN1955">Magoun, F. P. 1955. Bede&rsquo;s story of Caedman: the case history of an Anglo-Saxon singer. <title level="m">Speculum</title> 30: 49-63.</bibl>
+<bibl id="MAWERANDSTENTON1927">Mawer, A., F. M. Stenton, and F. T. S. Houghton. 1927. <title level="m">The place-names of Worcestershire</title>. English Place-Name Society (Series), 4. Cambridge: Cambridge University Press.</bibl>
+<bibl id="MAYORANDLUMBY1878">Mayor, J. E. B. and J. R. Lumby, eds. 1878. <title level="m">Venerabilis Bedae historiae ecclesiasticae gentis anglorum libri IV</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="MCCREADY1994">McCready, W. D. 1994. <title level="m">Miracles and the Venerable Bede</title>. Studies and Texts, 118. Toronto: Pontifical Institute of Mediaeval Studies.</bibl>
+<bibl id="MCGANN1995">McGann, J. The rationale of hypertext. 1995.  URL: &lt;http://www.iath.virginia.edu/public/jjm2f/rationale.html&gt;. Accessed: 10 November 2004.</bibl>
+<bibl id="MCGILLIVRAY1994">McGillivray, M. 1994. Towards a post-critical edition: theory, hypertext, and the presentation of Middle English works. <title level="m">Text</title> 7: 175-99.</bibl>
+<bibl id="MEYVAERT1961">Meyvaert, P. 1961. The Bede <socalled>signature</socalled> in the Leningrad colophon. <title level="m">Revue B&eacute;n&eacute;dictine</title> 71: 274-86.</bibl>
+<bibl id="MILETICH1976-1977">Miletich, J. S. 1976-1977. The quest for <socalled>the formula</socalled>: a comparative reappraisal. <title level="m">MP</title> 74: 111-23.</bibl>
+<bibl id="MILETICH1983">$2500;$2500;$2500;$2500;. 1983. Old English <socalled>formulaic</socalled> studies and C&aelig;dmon&rsquo;s Hymn in a comparative context. <title level="m">Festschrift f&uuml;r Nikola R. Pribi&ccaron;</title>, eds. J. Matesi&ccaron; and  E. Wendel. Selecta Slav., 9. 183-94. Neuried: Hieronymus.</bibl>
+<bibl id="MILLER1890-1898">Miller, T., ed. and trans. 1890-1898. <title level="m">The Old English version of Bede&rsquo;s ecclesiastical history of the English people</title>. Early English Text Society, o. s. 95, 96, 110, 111. Oxford: EETS.</bibl>
+<bibl id="MITCHELL1967">Mitchell, B. 1967. Swa in C&aelig;dmon&rsquo;s Hymn line 3. <title level="m">N&amp;Q</title> 212: 203-4.</bibl>
+<bibl id="MITCHELL1985A">$2500;$2500;$2500;$2500;. 1985a. <title level="m">Old English syntax</title>. Oxford:  Clarendon Press.</bibl>
+<bibl id="MITCHELL1985B">$2500;$2500;$2500;$2500;. 1985b. C&aelig;dmon&rsquo;s Hymn, line 1: what is the subject of scylun or its variants? <title level="m">LSE</title> 16: 190-7.</bibl>
+<bibl id="MITCHELLANDROBINSONFC2001">$2500;$2500;$2500;$2500; and F. C. Robinson, eds. 2001. <title level="m">A guide to Old English</title>. 6th ed. Oxford: Blackwell.</bibl>
+<bibl id="moffat1992">Moffat, D. 1992. Anglo-Saxon scribes and Old English verse. <title level="m">Speculum</title> 67: 805-27.</bibl>
+<bibl id="MOMMA1997">Momma, H. 1997. <title level="m">The composition of Old English poetry</title>. Cambridge Studies in Anglo-Saxon England, 20. Cambridge: Cambridge University Press.</bibl>
+<bibl id="MORLAND1992">Morland, L. 1992. C&aelig;dmon and the Germanic tradition. <title level="m">De gustibus: essays for Alain Renoir</title>, eds. J. M. Foley, J. C. Womack, and W. A. Womack. Garland Reference Library of the Humanities, 1482. 324-58. New York: Garland.</bibl>
+<bibl id="mynorsandthomson1993">Mynors, R. A. B. and R. M. Thomson. 1993. <title level="m">Catalogue of the manuscripts of Hereford Cathedral Library</title>. With a contribution on the bindings by M. Gullick. Cambridge: Published on behalf of the Dean & Chapter of Hereford Cathedral, D. S. Brewer.</bibl>
+<bibl id="ODONNELL1996a">O&rsquo;Donnell, D. P. 1996a. Manuscript variation in multiple recension Old English poetic texts: the technical problem and poetic art. Unpublished PhD Dissertation, Yale University.</bibl>
+<bibl id="ODONNELL1996b">$2500;$2500;$2500;$2500;. 1996b. A Northumbrian version of &ldquo;C&aelig;dmon&rsquo;s Hymn&rdquo; (eordu recension) in Brussels, Biblioth&egrave;que Royale MS 8245-57 ff. 62r2-v1: identification, edition and filiation. <title level="m">Beda venerabilis: historian, monk and Northumbrian</title>, eds. L. A. J. R. Houwen and A. A. MacDonald. Mediaevalia Groningana, 19. 139-65. Groningen: Egbert Forsten.</bibl>
+<bibl id="ODONNELL2002">$2500;$2500;$2500;$2500;. 2002. The accuracy of the St. Petersburg Bede. <title level="m">N&amp;Q</title> 247: 4-6.</bibl>
+<bibl id="ODONNELLFORTHCOMING">$2500;$2500;$2500;$2500;. 2004. Bede&rsquo;s strategy in paraphrasing C&aelig;dmon&rsquo;s Hymn. <title level="m">JEGP</title> 103: 417-432.</bibl>
+<bibl id="OHARE1992">O&rsquo;Hare, C. 1992. The story of C&aelig;dmon: Bede&rsquo;s account of the first English poet. <title level="m">ABR</title> 43: 345-57.</bibl>
+<bibl id="OKEEFFE1990">O&rsquo;Keeffe, K. O. 1990. <title level="m">Visible song: transitional literacy in Old English verse</title>. Cambridge Studies in Anglo-Saxon England, 4. Cambridge: Cambridge University Press.</bibl>
+<bibl id="OKASHA1971">Okasha, E. 1971. <title level="m">Hand-list of Anglo-Saxon non-runic inscriptions</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="OPLAND1977">Opland, J. 1977. C&aelig;dmon and Ntsikana: Anglo-Saxon and Xhosa traditional poets. <title level="m">Annals of the Grahamstown Historical Society</title> 2: 56-65.</bibl>
+<bibl id="OPLAND1980">$2500;$2500;$2500;$2500;. 1980. <title level="m">Anglo-Saxon oral poetry: a study of the traditions</title>. New Haven: Yale University Press.</bibl>
+<bibl id="ORCHARD1994">Orchard, A. 1994. <title level="m">The poetic art of Aldhelm</title>. Cambridge Studies in Anglo-Saxon England, 8. Cambridge: Cambridge University Press.</bibl>
+<bibl id="ORCHARD1996">$2500;$2500;$2500;$2500;. 1996. Poetic inspiration and prosaic translation: the making of C&aelig;dmon&rsquo;s Hymn. <title level="m">Studies in English language and literature. Doubt wisely: papers in honour of E. G. Stanley</title>, eds. M. J. Toswell and E. M. Tyler. 402-22. London: Routledge.</bibl>
+<bibl id="ORTON1983">Orton, P. R. 1983. C&aelig;dmon and christian poetry. <title level="m">NM</title> 84: 163-70.</bibl>
+<bibl id="ORTON1998">$2500;$2500;$2500;$2500;. 1998. The transmission of the West-Saxon versions of C&aelig;dmon&rsquo;s Hymn: a reappraisal. <title level="m">Studia Neophilologus</title> 70: 153-64.</bibl>
+<bibl id="ORTON2000">$2500;$2500;$2500;$2500;. 2000. <title level="m">The transmission of Old English poetry</title>. Westfield Publications in Medieval and Renaissance Studies, 12. Turnhout: Brepols.</bibl>
+<bibl id="OSBORN1989">Osborn, M. 1989. Translation, translocation, and the native context of C&aelig;dmon&rsquo;s Hymn. <title level="m">New Comparison</title> 8: 13-23.</bibl>
+<bibl id="PALEOGRAPHICALSOCIETY1879">Paleographical Society. 1879. <title level="m">Facsimiles of manuscripts and inscriptions</title>. London: W. Clowes & Sons.</bibl>
+<bibl id="PALGRAVE1831">Palgrave, F. 1831. <title level="m">History of England: Anglo-Saxon period</title>. London.</bibl>
+<bibl id="PALGRAVE1832">$2500;$2500;$2500;$2500;. 1832. Observations on the history of C&aelig;dmon. <title level="m">Archaeologia</title> 24: 341-3.</bibl>
+<bibl id="PARKES1982">Parkes, M. B. 1982. <title level="m">The scriptorium of Wearmouth-Jarrow</title>. Jarrow Lectures. Jarrow: [St. Paul&rsquo;s Rectory].</bibl>
+<bibl id="PARKES1987">$2500;$2500;$2500;$2500;. 1987. The contribution of insular scribes of the seventh and eighth centuries to the <socalled>grammar of legibility</socalled>. <title level="m">Grafia e interpunzione del latino nel medievo</title>, ed. A. Maieru. 15-32. Rome: Ateneo.</bibl>
+<bibl id="PAULI1851">Pauli, R. 1851. <title level="m">K&ouml;nig Aelfred und seine Stelle in der Geschichte Englands</title>. Berlin.</bibl>
+<bibl id="PEERSANDRADFORD1943">Peers, C. and C. A. R. Radford. 1943. The Saxon monastery of Whitby. <title level="m">Archaeologica</title> 89: 27-88.</bibl>
+<bibl id="PLATT1995">Platt, C. 1995. <title level="m">Whitby Abbey</title>. 2nd ed. London: English Heritage.</bibl>
+<bibl id="PLUMMER1969">Plummer, C., ed. [1896] 1969. <title level="m">Venerabilis Baedae Historiam ecclesiasticam gentis Anglorum, Historiam abbatum, Epistolam ad Ecgberctum, una cum Historia abbatum auctore anonymo</title>. Oxford: Clarendon Press.</bibl>
+<bibl id="FULKANDPOPE2001">Pope, J. C. and R. D. Fulk. 2001. <title level="m">Eight Old English poems</title>. 3rd ed. New York: W. W. Norton.</bibl>
+<bibl id="POTTER1935">Potter, S. 1935. The Winchester Bede. <title level="m">Wessex</title> 3: 39-45.</bibl>
+<bibl id="POUND1929">Pound, L. 1929. C&aelig;dmon&rsquo;s Dream Song. <title level="m">Studies in English philology: a miscellany in honor of Frederick Klaeber</title>, eds. K. Malone and M. B. Ruud. 232-9. Minneapolis: University of Minnesota Press.</bibl>
+<bibl id="RAHTZ1976">Rahtz, P. 1976. Monastic sites, appendix C: the building plan of the Anglo-Saxon monastery of Whitby Abbey. <title level="m">The archaeology of Anglo-Saxon England</title>, ed. D. M. Wilson. 459-62. London: Meuthen.</bibl>
+<bibl id="RAY1987">Ray, R. 1987. Bede and Cicero. <title level="m">ASE</title> 16: 1-15.</bibl>
+<bibl id="ROBINSONFC1980">Robinson, F. C. 1980. Old English literature in its most immediate context. <title level="m">Old English literature in context: ten essays</title>, ed. J. D. Niles. 11-29. Cambridge: D. S. Brewer.</bibl>
+<bibl id="ROBINSONFC1981">$2500;$2500;$2500;$2500;. 1981. Bede&rsquo;s envoi to the Old English history: an experiment in editing. <title level="m">SP</title> 78: 4-20.</bibl>
+<bibl id="ROBINSONFC1985">$2500;$2500;$2500;$2500;. 1985. <title level="m">Beowulf and the appositive style</title>. The Hodges Lectures. Knoxville: University of Tennessee Press.</bibl>
+<bibl id="ROBINSONFC1990">$2500;$2500;$2500;$2500;. 1990. Old English poetry: the question of authorship. <title level="m">ANQ</title> n.s. 3: 59-64.</bibl>
+<bibl id="ROBINSONFC1993A">$2500;$2500;$2500;$2500;. 1993a. <title level="m">The tomb of Beowulf and other essays on Old English</title>. Cambridge, MA: Blackwell.</bibl>
+<bibl id="ROBINSONFC1993B">$2500;$2500;$2500;$2500;. 1993b. The accentuation of Nu in C&aelig;dmon&rsquo;s Hymn. <title level="m">Heroic poetry in the Anglo-Saxon period: studies in honor of Jess B. Bessinger</title>, ed. H. D&rsquo;Amico. 115-20. Kalamazoo: Medieval Institute Publications.</bibl>
+<bibl id="ROBINSONFCANDSTANLEY1991">$2500;$2500;$2500;$2500; and E. G. Stanley. 1991. <title level="m">Old English verse texts from many sources: a comprehensive collection</title>. Early English Manuscripts in Facsimile, 23. Copenhagen: Rosenkilde & Bagger.</bibl>
+<bibl id="ROBINSONPR1988">Robinson, P. R. 1988. <title level="m">Catalogue of dated and datable manuscripts c. 737-1600 in Cambridge libraries</title>. Cambridge: D. S. Brewer.</bibl>
+<bibl id="ROSS1937">Ross, A. S. C. 1937. <title level="m">Studies in the accidence of the Lindisfarne gospels</title>. Leeds School of English Language Texts and Monographs:  No. II. Kendal: T. Wilson for members of the school of English language in the University of Leeds.</bibl>
+<bibl id="ROSS1949-1950">$2500;$2500;$2500;$2500;. 1949-1950. Miscellaneous notes on C&aelig;dmon&rsquo;s Hymn and Bede&rsquo;s Death Song. <title level="m">English and Germanic Studies</title> 3: 88-96.</bibl>
+<bibl id="ROWLEY2003">Rowley, S. M. 2003. Reassessing exegetical interpretations of Bede&rsquo;s Historia ecclesiastica gentis Anglorum. <title level="m">Literature and Theology</title> 17: 227-43.</bibl>
+<bibl id="RUSSOM1987">Russom, G. 1987. <title level="m">Old English metre and linguistic theory</title>. Cambridge: Cambridge University Press.</bibl>
+<bibl id="SARRAZIN1913">Sarrazin, G. 1913. <title level="m">Von K&auml;dmon bis Kynewulf: eine litterarhistorische Studie</title>. Berlin: Mayer & M&uuml;ller.</bibl>
+<bibl id="SCHIPPER1897">Schipper, J., ed. 1897. <title level="m">K&ouml;nig Alfreds &Uuml;bersetzung von Bedas Kirchengeschichte</title>. Bibliothek der angels&auml;chsichen Prosa, 4ter Band, 1st H&auml;lfte. Leipzig: Wigand.</bibl>
+<bibl id="SCHMID1827">Schmid, R. 1827. Die Sprache der Angelsachsen. <title level="m">Hermes oder kritisches Jahrbuch der Literatur</title> 28: 321-59.</bibl>
+<bibl id="SCHRADER1980">Schrader, R. J. 1980. C&aelig;dmon and the monks: the Beowulf-poet and literary continuity in the early Middle Ages. <title level="m">ABR</title> 31: 39-69.</bibl>
+<bibl id="SCHWAB1972A">Schwab, U. 1972. <title level="m">C&aelig;dmon</title>. Testi e Studi: Pubblicazioni dell&rsquo;Istituto di Lingue e Letterature germanische, Universit&agrave; di Messina. Messina: Peloritana Editrice.</bibl>
+<bibl id="SCHWAB1983B">$2500;$2500;$2500;$2500;. 1983. The miracles of C&aelig;dmon&mdash;revisited. <title level="m">Atti dell&rsquo;Accademia Peloritana, Classe di lettere filosofia e belle arti</title> 59: 5-36.</bibl>
+<bibl id="SCHWAB1984">$2500;$2500;$2500;$2500;. 1984. C&aelig;dmons Carmen: &ldquo;Deo suavis laudatio.&rdquo;  <title level="m">Philologische Untersuchungen gewidmet Elfriede Stutz zum 65. Geburtstag</title>, ed. A. Ebenbauer. 408-61. Vienna: Braum&uuml;ller.</bibl>
+<bibl id="VONSEE1983">von See, K. 1983. C&aelig;dmon und Muhammed. <title level="m">ZfdA</title> 112: 225-33.</bibl>
+<bibl id="SHEPHERD1954">Shepherd, G. 1954. The prophetic C&aelig;dmon. <title level="m">RES</title> n. s. 5: 113-22.</bibl>
+<bibl id="SIEVERS1885">Sievers, E. 1885. Zur Rhythmik des germanischen Alliterationsverses I & II. <title level="m">BGdSL</title> 10: 209-314, 451-545.</bibl>
+<bibl id="SIEVERS1893">$2500;$2500;$2500;$2500;. 1893. <title level="m">Altgermanische Metrik</title>. Sammlung k&uuml;zer Grammatiken germanischer Dialekte, 2. Halle: Max Niemeyer.</bibl>
+<bibl id="SIEVERS1912">$2500;$2500;$2500;$2500;. 1912. Ags. Scepen. <title level="m">EStn</title> 44: 295-6.</bibl>
+<bibl id="SISAMK1953">Sisam, K. 1953. <title level="m">Studies in the history of Old English literature</title>. Oxford: Clarendon Press.</bibl>
+<bibl id="SMITHAH1928">Smith, A. H. 1928. <title level="m">The place-names of the North Riding of Yorkshire</title>. English Place-Name Society, 5. Cambridge: Cambridge University Press.</bibl>
+<bibl id="SMITHAH1978">$2500;$2500;$2500;$2500;, ed. [1938] 1978. <title level="m">Three Northumbrian poems: C&aelig;dmon&rsquo;s Hymn, Bede&rsquo;s Death Song, and the Leiden Riddle</title>. With a bibliography compiled by M. J. Swanton. Revised ed. Exeter Medieval English Texts. Exeter: University of Exeter Press.</bibl>
+<bibl id="SMITHJ1722">Smith, J., ed. 1722. <title level="m">Histori&aelig; ecclesiastic&aelig; gentis Anglorum libri quinque auctore sancto et venerabili Baeda, presbytero Anglo-Saxone una cum reliquis ejus operibus historicis</title>. Cambridge.</bibl>
+<bibl id="SMITHT1984">Smith, T. [1696] 1984. <title level="m">Catalogue of the manuscripts in the Cottonian library (Catalogus librorum manuscriptorum bibliothecae Cottonianae)</title>. Ed. C. G. C. Tite. Cambridge: D. S. Brewer.</bibl>
+<bibl id="SOLOPOVA2000">Solopova, E., ed. 2000. <title level="m">The general prologue on CD-ROM</title>. The Canterbury Tales Project, [2]. Cambridge: Cambridge University Press.</bibl>
+<bibl id="SPERBERGMCQUEENANDBURNARD2001">Sperberg-McQueen, C. M. and L. Burnard. TEI P4: guidelines for electronic text encoding and interchange, XML compatible edition. 2001.  URL: &lt;http://www.tei-c.org/P4X/&gt;. Accessed: 10 November 2004.</bibl>
+<bibl id="STAERK1910">Staerk, A. 1910. <title level="m">Les manuscrits latins du Ve au XIIIe si&egrave;cle conserv&eacute;s &agrave; la biblioth&egrave;que imp&eacute;riale de Saint-P&eacute;tersbourg</title>., I. Petrograd: Publichnia Biblioteka.</bibl>
+<bibl id="STANLEY1971">Stanley, E. G. 1971. Studies in the prosaic vocabulary of Old English verse. <title level="m">NM</title> 72: 385-418.</bibl>
+<bibl id="STANLEY1974">$2500;$2500;$2500;$2500;. 1974. Some observations on the A3 lines in Beowulf. <title level="m">Old English studies in honour of John C. Pope</title>, eds. R. B. Burlin and E. B. Irving. 139-64. Toronto: University of Toronto Press.</bibl>
+<bibl id="STANLEY1987A">$2500;$2500;$2500;$2500;. 1987. <title level="m">A collection of papers with emphasis on Old English literature</title>. Publications of the Dictionary of Old English, 3. Toronto: Pontifical Institute of Mediaeval Studies.</bibl>
+<bibl id="STANLEY1988">$2500;$2500;$2500;$2500;. 1988. Rhymes in English medieval verse from Old English to Middle English. <title level="m">Medieval English studies presented to George Kane</title>, eds. E. D. Kennedy, R. Waldron, and J. S. Wittig. 19-54. Cambridge: D. S. Brewer.</bibl>
+<bibl id="STANLEY1989">$2500;$2500;$2500;$2500;. 1989. Notes on Old English poetry. <title level="m">Leeds Studies in English</title> n.s. 20: 319-44.</bibl>
+<bibl id="STANLEY1995">$2500;$2500;$2500;$2500;. 1995. New formulas for old: C&aelig;dmon&rsquo;s Hymn. <title level="m">Pagans and christians: the interplay between christian Latin and traditional Germanic cultures in Early Medieval Europe.</title>, eds. T. Hofstra, L. A. R. J. Houwen, and A. A. McDonald. 131-48. Groningen: Forsten.</bibl>
+<bibl id="STANLEY1998">$2500;$2500;$2500;$2500;. 1998. St C&aelig;dmon. <title level="m">N&amp;Q</title> 243: 4-5.</bibl>
+<bibl id="STANLEY2002">$2500;$2500;$2500;$2500;. 2002. An anthology of 572 lines of Old English short poems plus The Battle of Maldon [Review of &fulkandpope2001;]. <title level="m">N&amp;Q</title> 247: 2-3.</bibl>
+<bibl id="STEVICK1994">Stevick, R. D. 1994. <title level="m">The earliest Irish and English bookarts, visual and poetic forms before A.D. 1000</title>. Middle Ages Series. Philadelphia: University of Pennsylvania Press.</bibl>
+<bibl id="STROM1939">Str&ouml;m, H. 1939. <title level="m">Old English personal names in Bede&rsquo;s History: an etymological-phonological investigation</title>. Lund Studies in English, 8. Lund: C. W. K. Gleerup.</bibl>
+<bibl id="STUBBS1874">Stubbs, W., ed. 1874. <title level="m">Memorials of Saint Dunstan, Archbishop of Canterbury, edited from various manuscripts</title>. Rerum britannicarum medii &aelig;vi scriptores, or, Chronicles and memorials of Great Britain and Ireland during the Middle Ages., [63]. London.</bibl>
+<bibl id="SWANTON1970">Swanton, M., ed. 1970. <title level="m">The Dream of the Rood</title>. Old and Middle English Texts. Manchester: Manchester University Press.</bibl>
+<bibl id="TANNENHAUS1973">Tannenhaus, G. H., trans. 1973. Concerning figures and tropes [De schematibus et tropis].  <title level="m">Readings in Medieval rhetoric</title>, ed. J. Miller. 96-122. Bloomington: Indiana University Press.</bibl>
+<bibl id="THORPE1832">Thorpe, B. 1832. <title level="m">C&aelig;dmon manuscript: C&aelig;dmon&rsquo;s metrical paraphrase of parts of the Holy Scriptures</title>. London.</bibl>
+<bibl id="THUNDY1989">Thundy, Z. P. 1989. The Qur&rsquo;&amacr;n: source or analogue of Bede&rsquo;s C&aelig;dmon story? <title level="m">Islamic Culture</title> 63: 105-10.</bibl>
+<bibl id="TORKAR1981">Torkar, R. 1981. <title level="m">Eine altenglische &Uuml;bersetzung von Alcuins De virtutibus et vitiis, Kap. 20 (Liebermanns Judex): Untersuchungen und Textausgabe. Mit einem Anhang: Die Gesetze II und V Aethelstan nach Otho B. xi und Add. 43703</title>. M&uuml;nchener Universit&auml;ts-Schriften philosophische Fakult&auml;t: Texte und Untersuchungen zur englischen Philologie. Munich: Fink.</bibl>
+<bibl id="VANDENGHEYN1905">Van den Gheyn,  J.  1905. <title level="m">Catalogue des manuscrits de la Biblioth&egrave;que Royale de Belgique</title>. Bruxelles: Henri Lamertin.</bibl>
+<bibl id="VANHOUTTE1999">Vanhoutte, E. 1999. Where is the editor? Resistance in the creation of an electronic edition. <title level="m">Human IT</title>: n.p. URL: &lt;http://www.hb.se/bhs/ith/1-99/ev.htm&gt; [November 10, 2004].</bibl>
+<bibl id="VANHOUTTE2000">$2500;$2500;$2500;$2500;. 2000. A linkemic approach to textual variation. <title level="m">Human IT</title>: n.p. URL: &lt;http://www.hb.se/bhs/ith/1-00/ev.htm&gt; [November 10, 2004].</bibl>
+<bibl id="VINCENT1946">Vincent, C. J. 1946. A C&aelig;dmon Parallel. <title level="m">MLN</title> 61: 61.</bibl>
+<bibl id="WANLEY1970">Wanley, H., ed. [1705] 1970. <title level="m">Librorum vett. septentrionalium catalogus</title>. Linguarum veterum septentrionalium thesaurus. Menston: Scholar Press.</bibl>
+<bibl id="WARD1976">Ward, B. 1976. Miracles and history: a reconsideration of the miracle stories used by Bede. <title level="m">Famulus Christi: essays in commemoration of the thirteenth centenary of the birth of the Venerable Bede</title>, ed. G. Bonner. 70-6. London: SPCK.</bibl>
+<bibl id="WEBER1983">Weber, R. and B. Fischer. 1985. <title level="m">Biblia sacra iuxta Vulgatam versionem</title>, ed. H. I. Frede [et al.]. Ed. tertia emendata. Stuttgart: Deutsche Bibelgesellschaft.</bibl>
+<bibl id="WEST1976">West, P. J. 1976. Rumination in Bede&rsquo;s account of C&aelig;dmon. <title level="m">Monastic Studies</title> 12: 217-26.</bibl>
+<bibl id="WHELOC1644A">Wheloc, A. 1644. <title level="m">Histori&aelig; ecclesiastic&aelig; gentis Anglorum libri V a Venerabili Beda presbytero scripti</title>. [Revised ed.]. Cambridge.</bibl>
+<bibl id="WHITBREAD1939">Whitbread, L. T. 1939. An analogue of the C&aelig;dmon story. <title level="m">RES</title> 15: 333-5.</bibl>
+<bibl id="WHITE1978">White, L. T. 1978. <title level="m">Medieval religion and technology: collected essays</title>. Publications of the Center for Medieval and Renaissance Studies, UCLA, 13. Berkeley: University of California Press.</bibl>
+<bibl id="WHITELOCK1962">Whitelock, D. 1962. The Old English Bede (Sir Israel Gollancz Memorial Lecture). <title level="m">PBA</title> 48: 57-90.</bibl>
+<bibl id="WIELAND1984">Wieland, G. 1984. C&aelig;dmon, the clean animal. <title level="m">ABR</title> 35: 194-203.</bibl>
+<bibl id="WRENN1946">Wrenn, C. L. 1946. The poetry of C&aelig;dmon (Sir Israel Gollancz Memorial Lecture). <title level="m">PBA</title> 32: 277-95.</bibl>
+<bibl id="WRIGHT1961">Wright, D. H. 1961. The date of the Leningrad Bede. <title level="m">Revue B&eacute;n&eacute;dictine</title> 71: 265-73.</bibl>
+<bibl id="WRIGHT1964">$2500;$2500;$2500;$2500;. 1964. [Review of] Peter Hunter Blair, The Moore Bede [&hunterblair1959;]. <title level="m">Anglia</title> 82: 110-17.</bibl>
+<bibl id="WRIGHTANDCRICK1985-1991">Wright, N. and J. C. Crick, eds. 1985-1991. <title level="m">The historia regum Britannie of Geoffrey of Monmouth</title>. Cambridge: D. S. Brewer.</bibl>
+<bibl id="WUEST1906">Wuest, P. 1906. Zwei neue Handschriften von C&aelig;dmons Hymnus. <title level="m">ZfdA</title> 48: 205-26.</bibl>
+<bibl id="WULKER1876">W&uuml;lker [W&uuml;lcker], R. 1876. Ueber den Hymnus C&aelig;dmons. <title level="m">BGdSL</title> 3: 348-57.</bibl>
+<bibl id="WULKER1885">$2500;$2500;$2500;$2500;. 1885. <title level="m">Grundriss zur Geschichte der angels&auml;chsischen Litteratur</title>. Leipzig: Veit & Comp.</bibl>
+<bibl id="ZUPITZA1878">Zupitza, J. 1878. &Uuml;ber den Hymnus C&auml;dmons. <title level="m">ZfdA</title> 22: 210-23.</bibl>
+<bibl id="ZUPITZA1882">$2500;$2500;$2500;$2500;. 1882. <title level="m">Alt- und mittelenglisches &Uuml;bungsbuch zum Gebrauche bei Universit&auml;ts-Vorlesungen</title>. Zweite vermehrte und verbesserte Auflage. Vienna: Braum&uuml;ller.</bibl>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>

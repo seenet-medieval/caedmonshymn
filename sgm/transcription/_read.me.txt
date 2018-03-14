@@ -1,0 +1,10 @@
+This directory contains the project's diplomatic
+transcriptions. (Actual Old English content used in these files is
+encoded in the text database, sect. 8 of the file 
+< ../SGMRelatedFiles/extensionsHTML.ent >.  See the headers in
+sect. 2 and sect. 8 of that file for a discussion of how these
+references are used in the project).
+
+There is one file per edition. The files are formatted for
+display using the stylesheets in 
+< ../HTMLStyleSheets/dipl*.ssh > or < ../styleSheets/dipl*.ssh >

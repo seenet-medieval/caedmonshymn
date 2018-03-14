@@ -1,0 +1,1053 @@
+<!--
+*******************************************************************
+*              The Electronic Caedmon&rsquo;s Hymn                *
+*                         Table of Contents                       *
+*                                                                 *
+*                         Text and Encoding                       *
+*            (c) Daniel Paul O&rsquo;Donnell, 1997-2003           *
+*                        All Rights Reserved                      *
+*                                                                 *
+*           Encoded and validated to TEI P4 SGML Standard         *
+*             Documentation (URL checked July 7, 2003):           *
+*                     <http://www.tei-c.org/P4X/>                 *
+*                   DTD (URL checked July 7, 2003):               *
+*                   <http://www.tei-c.org/P4X/DTD/>               *
+*                                                                 *
+*******************************************************************
+-->
+<!DOCTYPE TEI.2 PUBLIC "-//TEI Consortium//DTD TEI P4//EN" [ 
+
+<!-- BASE TAG SET DECLARATION (TEI P4 3.2-3.3)-->
+<!ENTITY % TEI.verse 'INCLUDE' >
+
+<!-- ADDITIONAL TAG SET DECLARATION (TEI P4 3.2-3.3) -->
+<!ENTITY % TEI.transcr 'INCLUDE' >
+<!ENTITY % TEI.textcrit 'INCLUDE' >
+<!ENTITY % TEI.linking 'INCLUDE' >
+<!ENTITY % TEI.analysis 'INCLUDE' >
+<!ENTITY % TEI.figures 'INCLUDE' >
+
+<!-- USER DEFINED TAG SET DECLARATIONS (TEI P4 3.2.4 User-Defined Tag Sets) -->
+<!ENTITY % TEI.extensions.ent system "../extensions/extensions.ent" >
+<!ENTITY % TEI.extensions.dtd system "../extensions/extensions.dtd" >
+
+
+]>
+
+<tei.2 id="CH1.TEI">
+ <teiheader>
+  <filedesc>
+   <titlestmt>
+    <title level="m">C&aelig;dmon&rsquo;s Hymn (electronic edition)</title>
+    <title level="a">Table of contents</title>
+    <author>Daniel Paul O&rsquo;Donnell</author>
+    <sponsor>University of Lethbridge</sponsor>
+    <funder>University of Lethbridge Research Fund</funder>
+    <funder>University of Lethbridge Internal SSHRC</funder>
+    <funder>University of Lethbridge, Dean of Arts and Science</funder>
+    <funder>University of Lethbridge, Research Grant in Lieu of Salary</funder>
+    <funder>Social Sciences and Humanities Research Council (Summer Student Assistant Research Grants)</funder>
+    <funder>Government of Canada (SCP Summer Student Employment)</funder>
+   </titlestmt>
+   <editionstmt>
+    <edition>Beta 2.0</edition>
+   </editionstmt>
+   <extent>Approx. 100 kb</extent>
+   <publicationstmt>
+    <authority>Daniel Paul O&rsquo;Donnell</authority>
+    <address>
+     <addrline>Department of English</addrline>
+     <addrline>University of Lethbridge</addrline>
+     <addrline>Lethbridge AB T1J 2X5</addrline>
+     <addrline>Canada</addrline>
+    </address>
+    <availability>
+     <p>&copy; Daniel Paul O&rsquo;Donnell, 1998-2003. Unreleased draft. Please do not recirculate.</p>
+    </availability>
+   </publicationstmt>
+   <sourcedesc>
+    <p>Original Composition</p>
+   </sourcedesc>
+  </filedesc>
+  <encodingdesc>
+   <projectdesc>
+    <p>Table of contents for electronic edition of <title level="m">C&aelig;dmon&rsquo;s Hymn</title>.</p>
+   </projectdesc>
+  </encodingdesc>
+  <profiledesc>
+   <langusage>
+    <language id="ENG">English, Present Day (Canadian Standard Spelling)</language>
+   </langusage>
+   <langusage>
+    <language id="ANG">English, Old (ca. 450-1100)</language>
+   </langusage>
+   <langusage>
+    <language id="GOH">German, Old High (ca. 750-1050)</language>
+   </langusage>
+   <langusage>
+    <language id="SGA">Irish, Old (to 900)</language>
+   </langusage>
+  </profiledesc>
+ </teiheader>
+ <text>
+  <body lang="ENG">
+   <div1 id="TOC">
+    <head id="TOC.HEAD">Table of contents</head>
+    <div2 id="TOC.TOC" type="toc">
+     <div3 id="TOC.TOC.1" type="toc:book">
+      <list type="simple">
+       <item><xref n="u" doc="toc"><label rend="accesskey">U</label>p (Table of Contents)</xref></item>
+       <item><xref n="p" doc="system"><label rend="accesskey">P</label>revious (System requirements)</xref></item>
+       <item><xref n="n" doc="preface"><label rend="accesskey">N</label>ext (Preface)</xref></item>
+       <item><xref n="d" doc="index"><label rend="accesskey">D</label>own (Index)</xref></item>
+       <item rend="greenstone"><xref n="s" doc="search"><label rend="accesskey">S</label>earch</xref></item>
+      </list>
+     </div3>
+     <div3 id="TOC.TOC.2" type="toc:chapter">
+      <list type="simple">
+       <item><ref target="TOC.1">Summary contents</ref>
+	<list type="simple">
+	 <item><ref target="TOC.1.FRONT">Front matter</ref></item>
+	 <item><ref target="TOC.1.INTRODUCTION">Introduction</ref>
+	  <list>
+	   <item><ref target="TOC.1.INTRODUCTION.PARTA">Part A: Literary and historical introduction</ref></item>
+	   <item><ref target="TOC.1.INTRODUCTION.PARTB">Part B: Textual and linguistic introduction</ref></item>
+	   <item><ref target="TOC.1.NOTES">Notes</ref></item>
+	  </list></item>
+	 <item><ref target="TOC.1.TEXTS">Texts</ref>
+	  <list type="simple">
+	   <item><ref target="TOC.1.CRITICALEDITIONS">Critical editions</ref></item>
+	   <item><ref target="TOC.1.WITNESSARCHIVE">Witness archive</ref></item>
+	  </list>
+	 </item>
+	 <item><ref target="TOC.1.BACKMATTER">Back matter</ref></item>
+	</list></item>
+       <item><ref target="TOC.2">Detailed Contents</ref>
+	<list type="simple">
+	 <item><ref target="TOC.2.FRONT">Front matter</ref></item>
+	 <item><ref target="TOC.2.INTRODUCTION">Introduction</ref>
+	  <list>
+	   <item><ref target="TOC.2.INTRODUCTION.PARTA">Part A: Literary and historical introduction</ref></item>
+	   <item><ref target="TOC.2.INTRODUCTION.PARTB">Part B: Textual and linguistic introduction</ref></item>
+	   <item><ref target="TOC.2.NOTES">Notes</ref></item>
+	  </list></item>
+	 <item><ref target="TOC.2.TEXTS">Texts</ref>
+	  <list type="simple">
+	   <item><ref target="TOC.2.CRITICALEDITIONS">Critical editions</ref></item>
+	   <item><ref target="TOC.2.WITNESSARCHIVE">Witness archive</ref></item>
+	  </list>
+	 </item>
+	 <item><ref target="TOC.2.BACKMATTER">Back matter</ref></item>
+	</list>
+       </item>
+      </list>
+     </div3>
+    </div2>
+    <div2 id="TOC.1">
+     <head id="TOC.1.HEAD">Summary contents</head>
+     <list type="simple">
+      <item id="TOC.1.FRONT">Front matter
+       <list type="simple">
+	<item id="TOC.1.FRONT.SYSTEM"><xref doc="system" from="SYSTEM.HEAD">System requirements</xref></item>
+	<item id="TOC.1.FRONT.PREFACE"><xref doc="preface" from="PREFACE">Preface</xref></item>
+	<item id="TOC.1.FRONT.CONVENTIONS"><xref doc="conventions" from="CONVENTIONS.HEAD">Conventions, symbols, and encoding</xref></item>
+       </list></item>
+      <item id="TOC.1.INTRODUCTION">Introduction
+       <list type="simple">
+	<item id="TOC.1.INTRODUCTION.PARTA">Part A: Literary and historical introduction
+	 <list>
+	  <item id="TOC.1.INTRODUCTION.CH1"><xref doc="ch1" from="CH1">Chapter 1: Bede and C&aelig;dmon</xref></item>
+	  <item id="TOC.1.INTRODUCTION.CH2"><xref doc="ch2" from="CH2">Chapter 2: Sources and analogues</xref></item>
+	  <item id="TOC.1.INTRODUCTION.CH3"><xref doc="ch3" from="CH3">Chapter 3: &ch; and Germanic convention</xref></item>
+	 </list></item>
+	<item id="TOC.1.INTRODUCTION.PARTB">Part B: Textual and linguistic introduction
+	 <list>
+	  <item id="TOC.1.INTRODUCTION.CH4"><xref doc="ch4" from="CH4">Chapter 4: Manuscripts</xref></item>
+	  <item id="TOC.1.INTRODUCTION.CH5"><xref doc="ch5" from="CH5">Chapter 5: Filiation and transmission</xref></item>
+	  <item id="TOC.1.INTRODUCTION.CH6"><xref doc="ch6" from="CH6">Chapter 6: Language</xref></item>
+	  <item id="TOC.1.INTRODUCTION.CH7"><xref doc="ch7" from="CH7.HEAD">Chapter 7: Editorial introductions</xref></item>
+	 </list></item>
+	<item id="TOC.1.NOTES">Notes
+	 <list type="simple">
+	  <item id="TOC.1.NOTES.A"><xref doc="notea" from="NOTEA">Note A: The dating of M and P</xref></item>
+	  <item id="TOC.1.NOTES.B"><xref doc="noteb" from="NOTEB">Note B: &ch; and Bede&rsquo;s paraphrase</xref></item>
+	  <item id="TOC.1.NOTES.C"><xref doc="notec" from="NOTEC">Note C: Numerical and geometric patterning in &ch;</xref></item>	
+	  <item id="TOC.1.NOTES.D"><xref doc="noted" from="NOTED">Note D: Memorial performance, transitional literacy, and the transmission of &ch;</xref></item>	
+	  <item id="TOC.1.NOTES.E"><xref doc="notee" from="NOTEE">Note E: Index of proposed analogues to the C&aelig;dmon story</xref></item>
+	 </list>
+	</item>
+       </list></item>
+      <item id="TOC.1.TEXTS">Texts
+       <list type="simple">
+	<item id="TOC.1.CRITICALEDITIONS">Critical editions
+	 <list type="simple">
+	  <item id="TOC.1.ORIGINAL"><xref doc="northumbrianOriginalEdition">&originalxText;</xref></item>
+	  <item id="TOC.1.AELDA">&aeldaxText;</item>
+	  <item id="TOC.1.EORDU">&eorduxText;</item>
+	  <item>&eorthanxText;
+	   <list type="simple">
+	    <item id="TOC.1.EORTHAN">&eorthanxText;</item>
+	    <item id="TOC.1.EORTHANB1">&eorthanB1xText;</item>
+	    <item id="TOC.1.EORTHANO">&eorthanOxText;</item>
+	   </list></item>
+	  <item id="TOC.1.EORTHE">&eorthexText;</item>
+	  <item id="TOC.1.YLDA">&yldaxText;</item>
+	 </list>
+	</item>	       
+	<item id="TOC.1.WITNESSARCHIVE">Witness Archive
+	 <list type="simple">
+	  <item id="TOC.1.B1">&b1Transcriptionxs; &b1Transcriptionxml;</item>
+	  <item id="TOC.1.BD">&bdTranscriptionxs; &bdTranscriptionxml;</item>
+	  <item id="TOC.1.BR">&brTranscriptionxs; &brTranscriptionxml;</item>
+	  <item id="TOC.1.C">&cs; &cml;
+	   <list type="simple">
+	    <item>See <ref target="TOC.1.N">&ns; &nml;</ref> below. </item>
+	   </list>
+	  </item>
+	  <item id="TOC.1.CA">&caTranscriptionxs; &caTranscriptionxml;</item>
+	  <item id="TOC.1.CARMS">&carmsTranscriptionxs; &carmsTranscriptionxml;</item>
+	  <item id="TOC.1.DI">&diTranscriptionxs; &diTranscriptionxml;</item>
+	  <item id="TOC.1.H">&hTranscriptionxs; &hTranscriptionxml;</item>
+	  <item id="TOC.1.HR">&hrTranscriptionxs; &hrTranscriptionxml;</item>
+	  <item id="TOC.1.LD">&ldTranscriptionxs; &ldTranscriptionxml;</item>
+	  <item id="TOC.1.LN">&lnTranscriptionxs; &lnTranscriptionxml;</item>
+	  <item id="TOC.1.M">&mTranscriptionxs; &mTranscriptionxml;</item>
+	  <item id="TOC.1.MG">&mgTranscriptionxs; &mgTranscriptionxml;</item>
+	  <item id="TOC.1.N">&nTranscriptionxs; &nTranscriptionxml;</item>
+	  <item id="TOC.1.O">&oTranscriptionxs; &oTranscriptionxml;</item>
+	  <item id="TOC.1.L">&lTranscriptionxs; &lTranscriptionxml;</item>
+	  <item id="TOC.1.P1">&p1Transcriptionxs; &p1Transcriptionxml;</item>
+	  <item id="TOC.1.SANM">&sanmTranscriptionxs; &sanmTranscriptionxml;</item>
+	  <item id="TOC.1.T1">&t1Transcriptionxs; &t1Transcriptionxml;</item>
+	  <item id="TOC.1.TO">&toTranscriptionxs; &toTranscriptionxml;</item>
+	  <item id="TOC.1.TR1">&tr1Transcriptionxs; &tr1Transcriptionxml;</item>
+	  <item id="TOC.1.W">&wTranscriptionxs; &wTranscriptionxml;</item>
+	 </list>
+	</item>
+       </list></item>
+      <item id="TOC.1.BACKMATTER">Back matter
+       <list type="simple">
+	<item id="TOC.1.GLOSSARY"><xref doc="glossary">Glossary</xref></item>
+	<item id="TOC.1.BIBLIOGRAPHY"><xref doc="bibliography">Works cited</xref></item>
+	<item id="TOC.1.INDEX"><xref doc="index">Index</xref></item>
+       </list></item>
+     </list>
+    </div2>
+    <div2 id="TOC.2">
+     <head id="TOC.2.HEAD">Detailed Contents</head>
+     <list type="simple">
+      <item id="TOC.2.FRONT">Front matter
+       <list type="simple">
+	<item id="TOC.2.FRONT.SYSTEM"><xref doc="system" from="SYSTEM.HEAD">System requirements</xref>
+	 <list>
+	  <item><xref doc="system" from="SYSTEM.1.HEAD">About this edition</xref></item>
+	  <item><xref doc="system" from="SYSTEM.2.HEAD">Software and fonts</xref></item>
+	  <item><xref doc="system" from="SYSTEM.3.HEAD">System test</xref></item>
+	  <item><xref doc="system" from="SYSTEM.4.HEAD">Style sheets</xref></item>
+	  <item><xref doc="system" from="SYSTEM.5.HEAD">Accessibility</xref></item>
+	 </list></item>
+	<item id="TOC.2.FRONT.PREFACE"><xref doc="preface" from="PREFACE">Preface</xref>
+	 <list>
+	  <item><xref doc="preface" from="PREFACE.1.1.HEAD">About this book</xref></item>
+	  <item><xref doc="preface" from="PREFACE.1.6.HEAD">Acknowledgements</xref></item>
+	 </list>
+	</item>
+	<item id="TOC.2.FRONT.CONVENTIONS"><xref doc="conventions" from="CONVENTIONS.HEAD">Conventions, symbols, and encoding</xref>
+	 <list>
+	  <item><xref doc="conventions" from="CONVENTIONS.1.HEAD">Introduction</xref></item>
+	  <item><xref doc="conventions" from="CONVENTIONS.2.HEAD" n="symbols">Conventions and symbols</xref>
+	   <list>
+	    <item><xref doc="conventions" from="CONVENTIONS.2.1.HEAD">Typographical symbols and abbreviations</xref>
+	     <list>
+	      <item><xref doc="conventions" from="CONVENTIONS.2.1.1.HEAD">Manuscript sigla (Print and CD-ROM)</xref></item>
+	      <item><xref doc="conventions" from="CONVENTIONS.2.1.2.HEAD">Linguistic and palaeographic symbols (Print and CD-ROM)</xref></item>
+	      <item><xref doc="conventions" from="CONVENTIONS.2.1.3.HEAD">Diplomatic and editorial symbols (Print and CD-ROM)</xref></item>
+	      <item><xref doc="conventions" from="CONVENTIONS.2.1.4.HEAD">Textual apparatus symbols (CD-ROM only)</xref></item>
+	     </list></item>
+	    <item><xref doc="conventions" from="CONVENTIONS.2.2.HEAD">Colour (CD-ROM only)</xref></item>
+	   </list></item>
+	  <item><xref doc="conventions" from="CONVENTIONS.3.HEAD" n="encoding">Encoding</xref>
+	   <list>
+	    <item><xref doc="conventions" from="CONVENTIONS.3.1.HEAD">New elements</xref></item>
+	    <item><xref doc="conventions" from="CONVENTIONS.3.2.HEAD">Changes in content model</xref>
+	     <list>
+	      <item><xref doc="conventions" from="CONVENTIONS.3.2.1.HEAD">&lt;CELL&gt;</xref></item>
+	      <item><xref doc="conventions" from="CONVENTIONS.3.2.2.HEAD">&lt;CORR&gt;</xref></item>
+	      <item><xref doc="conventions" from="CONVENTIONS.3.2.3.HEAD">&lt;W&gt;</xref></item>
+	     </list></item>
+	    <item><xref doc="conventions" from="CONVENTIONS.3.3.HEAD">Attributes</xref></item>
+	    <item><xref doc="conventions" from="CONVENTIONS.3.4.HEAD" n="syntax">Syntax</xref>
+	     <list>
+	      <item><xref doc="conventions" from="CONVENTIONS.3.4.1.HEAD">Element Nesting</xref>
+	       <list>
+		<item><xref doc="conventions" from="CONVENTIONS.3.4.1.1.HEAD">&lt;CORR&gt;, &lt;EMEND&gt;</xref></item>
+		<item><xref doc="conventions" from="CONVENTIONS.3.4.1.2.HEAD">Readings and reading groups</xref></item>
+	       </list></item>
+	     </list></item>
+	   </list></item>
+	 </list>
+	</item>
+       </list></item>
+      <item id="TOC.2.INTRODUCTION">Introduction
+       <list type="simple">
+	<item id="TOC.2.INTRODUCTION.PARTA">Part A: Literary and historical introduction
+	 <list>
+	  <item id="TOC.2.INTRODUCTION.CH1"><xref doc="ch1" from="CH1">Chapter 1: Bede and C&aelig;dmon</xref>
+	   <list>
+	    <item><xref doc="ch1" from="CH1.1.HEAD">Bede$2019;s account of C$00E6;dmon</xref></item>
+	    <item><xref doc="ch1" from="CH1.1A.HEAD">Bede$2019;s account and modern scholarship</xref></item>
+	    <item><xref doc="ch1" from="CH1.2.HEAD">C$00E6;dmon$2019;s inspiration as <socalled>miracle</socalled> story</xref>
+	     <list>
+	      <item><xref doc="ch1" from="CH1.1.1.HEAD">C$00E6;dmon, Imma, and the vision of Hild$2019;s soul</xref>
+	       <list>
+		<item><xref doc="ch1" from="CH1.1.1.1.HEAD">The vision of Hild$2019;s soul</xref></item>
+		<item><xref doc="ch1" from="CH1.1.1.2.HEAD">Imma$2019;s bonds</xref></item>
+		<item><xref doc="ch1" from="CH1.1.1.3.HEAD">Comparison with the C$00E6;dmon story</xref></item>
+	       </list></item>
+	     </list></item>
+	    <item><xref doc="ch1" from="CH1.3.HEAD">C$00E6;dmon$2019;s career as literary history</xref></item>
+	    <item><xref doc="ch1" from="CH1.4.HEAD">Bede$2019;s account as Christian propaganda</xref></item>
+	    <item><xref doc="ch1" from="CH1.5.HEAD">Did Bede believe C$00E6;dmon$2019;s story?</xref></item>
+	   </list>
+	  </item>
+	  <item id="TOC.2.INTRODUCTION.CH2"><xref doc="ch2" from="CH2">Chapter 2: Sources and analogues</xref>
+	   <list>
+	    <item><xref doc="ch2" from="CH2.1.HEAD">Analogues to the C$00E6;dmon story</xref>
+	     <list>
+	      <item><xref doc="ch2" from="CH2.1.1.HEAD">Mohammed$2019;s call</xref></item>
+	      <item><xref doc="ch2" from="CH2.1.2.HEAD">Aldhelm and Ntsikana</xref>
+	       <list>
+		<item><xref doc="ch2" from="CH2.1.2.1.HEAD">Aldhelm</xref></item>
+		<item><xref doc="ch2" from="CH2.1.2.2.HEAD">Ntsikana</xref></item>
+		<item><xref doc="ch2" from="CH2.1.2.3.HEAD">Aldhelm, Ntsikana, and C$00E6;dmon</xref></item>
+	       </list></item>
+	     </list></item>
+	    <item><xref doc="ch2" from="CH2.2.HEAD">Analogues to the <title level="M">Hymn</title></xref>
+	     <list>
+	      <item><xref doc="ch2" from="CH2.2.1.HEAD">Celtic and Germanic analogues</xref>
+	       <list>
+		<item><xref doc="ch2" from="CH2.2.1.1.HEAD"><title level="M" lang="GOH">Wessobrunner Gebet</title> and <title level="M" lang="SGA">Adram in Coimdid</title></xref>
+		 <list>
+		  <item><xref doc="ch2" from="CH2.2.1.1.1.HEAD"><title level="M">Adram in Coimdid</title></xref></item>
+		  <item><xref doc="ch2" from="CH2.2.1.1.2.HEAD"><title level="M" lang="GOH">Wessobrunner Gebet</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch2" from="CH2.2.1.2.HEAD"><title level="M">Beowulf</title> 90b-98a: <socalled>Song of creation</socalled></xref></item>
+		<item><xref doc="ch2" from="CH2.2.1.3.HEAD"><title level="M">Genesis A</title> 112-116a</xref></item>
+	       </list></item>
+	      <item><xref doc="ch2" from="CH2.2.2.HEAD">Formulaic parallels</xref>
+	       <list>
+		<item><xref doc="ch2" from="CH2.2.2.1.HEAD"><title level="M">Beowulf</title> 64-188</xref></item>
+		<item><xref doc="ch2" from="CH2.2.2.2.HEAD">The Germanic <socalled>creation motif</socalled></xref></item>
+	       </list></item>
+	      <item><xref doc="ch2" from="CH2.2.3.HEAD">Scriptural and liturgical analogues</xref>
+	       <list>
+		<item><xref doc="ch2" from="CH2.2.3.1.HEAD">Psalter</xref></item>
+		<item><xref doc="ch2" from="CH2.2.3.2.HEAD">Liturgical prayers and texts</xref></item>
+		<item><xref doc="ch2" from="CH2.2.3.3.HEAD">Genesis</xref></item>
+	       </list></item>
+	     </list></item>
+	    <item><xref doc="ch2" from="CH2.3.HEAD">Conclusion</xref></item>
+	   </list>
+	  </item>
+	  <item id="TOC.2.INTRODUCTION.CH3"><xref doc="ch3" from="CH3">Chapter 3: &ch; and Germanic convention</xref>
+	   <list>
+	    <item><xref doc="ch3" from="CH3.1.HEAD">Introduction</xref></item>
+	    <item><xref doc="ch3" from="CH3.2.HEAD">Metre</xref></item>
+	    <item><xref doc="ch3" from="CH3.3.HEAD">Alliteration and rhyme</xref></item>
+	    <item><xref doc="ch3" from="CH3.4.HEAD">Variation</xref></item>
+	    <item><xref doc="ch3" from="CH3.5.HEAD">Poetic diction and formulae</xref></item>
+	    <item><xref doc="ch3" from="CH3.6.HEAD">Conclusion</xref></item>
+	   </list>
+	  </item>
+	 </list></item>
+	<item id="TOC.2.INTRODUCTION.PARTB">Part B: Textual and linguistic introduction
+	 <list>
+	  <item id="TOC.2.INTRODUCTION.CH4"><xref doc="ch4" from="CH4">Chapter 4: Manuscripts</xref>
+	   <list>
+	    <item><xref doc="ch4" from="CH4.1.HEAD">Introduction</xref></item>
+	    <item><xref doc="ch4" from="CH4.2.HEAD">Manuscript catalogue</xref>
+	     <list>
+	      <item><xref doc="ch4" from="CH4.2.1.HEAD">Index by city and library</xref></item>
+	      <item><xref doc="ch4" from="CH4.2.2.HEAD">Manuscript descriptions</xref>
+	       <list>
+		<item><xref doc="ch4" from="CH4.2.2.1.HEAD">&b1s; &b1ml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.1.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.1.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.1.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list>
+		</item>
+		<item><xref doc="ch4" from="CH4.2.2.2.HEAD">&bds; &bdml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.2.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.2.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.2.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list>
+		</item>
+		<item><xref doc="ch4" from="CH4.2.2.3.HEAD">&brs; &brml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.3.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.3.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.3.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.4.HEAD">&cs; &cml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.4.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.4.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.4.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.5.HEAD">&cas; &caml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.5.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.5.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.5.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.6.HEAD">&carmss; &carmsml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.6.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.6.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.6.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.7.HEAD">&dis; &diml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.7.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.7.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.7.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.8.HEAD">&hs; &hml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.8.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.8.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.8.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.9.HEAD">&hrs; &hrml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.9.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.9.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.9.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.10.HEAD">&lds; &ldml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.10.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.10.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.10.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.11.HEAD">&lns; &lnml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.11.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.11.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.11.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.12.HEAD">&ms; &mml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.12.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.12.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.12.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.13.HEAD">&mg; &mgml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.13.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.13.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.13.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.14.HEAD">&ns; &nml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.14.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.14.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.14.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.15.HEAD">&os; &oml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.15.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.15.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.15.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.16.HEAD">&ls; &lml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.16.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.16.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.16.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.17.HEAD">&p1s; &p1ml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.17.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.17.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.17.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.18.HEAD">&sanms; &sanmml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.18.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.18.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.18.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.19.HEAD">&t1s; &t1ml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.19.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.19.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.19.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.20.HEAD">&tos; &toml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.20.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.20.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.20.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.21.HEAD">&tr1s; &tr1ml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.21.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.21.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.21.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+		<item><xref doc="ch4" from="CH4.2.2.22.HEAD">&ws; &wml;</xref>
+		 <list>
+		  <item><xref doc="ch4" from="CH4.2.2.22.1.HEAD">Published descriptions and catalogue entries</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.22.2.HEAD">Manuscript</xref></item>
+		  <item><xref doc="ch4" from="CH4.2.2.22.3.HEAD"><title level="M">Hymn</title></xref></item>
+		 </list></item>
+	       </list></item>
+	     </list></item>
+	   </list>
+	  </item>
+	  <item id="TOC.2.INTRODUCTION.CH5"><xref doc="ch5" from="CH5">Chapter 5: Filiation and transmission</xref>
+	   <list>
+	    <item><xref doc="ch5" from="CH5.1.HEAD">Filiation</xref></item>
+	    <item><xref doc="ch5" from="CH5.2.HEAD">Transmission</xref>
+	     <list>
+	      <item><xref doc="ch5" from="CH5.2.1.HEAD">The case against the traditional view of the textual development of <title level="M">C$00E6;dmon$2019;s Hymn</title></xref></item>
+	      <item><xref doc="ch5" from="CH5.2.1.1.HEAD">Dialect and material context</xref></item>
+	      <item><xref doc="ch5" from="CH5.2.1.2.HEAD">Cross-contamination</xref>
+	       <list>
+		<item><xref doc="ch5" from="CH5.2.1.2.1.HEAD">The nominal variation in 5b</xref></item>
+		<item><xref doc="ch5" from="CH5.2.1.2.2.HEAD">The pronominal and prepositional variation in 1a and 9a</xref>
+		 <list>
+		  <item><xref doc="ch5" from="CH5.2.1.2.2.1.HEAD"><mentioned lang="ANG" rend="postemendation">firum foldu</mentioned> : <mentioned lang="ANG" rend="postemendation">firum on foldu</mentioned>, 9a</xref></item>
+		  <item><xref doc="ch5" from="CH5.2.1.2.2.2.HEAD"><mentioned lang="ANG" rend="postemendation">Nu scylun</mentioned> : <mentioned lang="ANG" rend="postemendation">Nu &uue; sciulun</mentioned>, 1a</xref></item>
+		 </list></item>
+	       </list></item>
+	     </list></item>
+	    <item><xref doc="ch5" from="CH5.2.2.HEAD">An alternative hypothesis for the recensional development of <title level="M">C$00E6;dmon$2019;s Hymn</title></xref></item>
+	    <item><xref doc="ch5" from="CH5.3.HEAD">Conclusion: The transmission of <title level="M">C$00E6;dmon$2019;s Hymn</title></xref></item>
+	   </list>
+	  </item>
+	  <item id="TOC.2.INTRODUCTION.CH6"><xref doc="ch6" from="CH6">Chapter 6: Language</xref>
+	   <list>
+	    <item><xref doc="ch6" from="CH6.1.HEAD">Introduction</xref></item>
+	    <item><xref doc="ch6" from="CH6.2.HEAD">Northumbrian features</xref>
+	     <list>
+	      <item><xref doc="ch6" from="CH6.2.1.HEAD">Orthography</xref>
+	       <list>
+		<item><xref doc="ch6" from="CH6.2.1.1.HEAD">Native modifications of the Latin alphabet</xref></item>
+		<item><xref doc="ch6" from="CH6.2.1.2.HEAD"><seg type="linguistic" subtype="phonemic">$00E6;</seg></xref></item>
+		<item><xref doc="ch6" from="CH6.2.1.3.HEAD"><seg type="linguistic" subtype="phonemic">$03C7;</seg></xref></item>
+		<item><xref doc="ch6" from="CH6.2.1.4.HEAD">Germanic *<seg type="linguistic" subtype="phonetic">$03B2;</seg></xref></item>
+		<item><xref doc="ch6" from="CH6.2.1.5.HEAD">Length</xref></item>
+	       </list></item>
+	      <item><xref doc="ch6" from="CH6.2.2.HEAD">Analogic and historical forms</xref>
+	       <list>
+		<item><xref doc="ch6" from="CH6.2.2.1.HEAD"><mentioned lang="ANG">end</mentioned> : <mentioned lang="ANG">and</mentioned></xref></item>
+		<item><xref doc="ch6" from="CH6.2.2.2.HEAD"><mentioned lang="ANG">fadur</mentioned></xref></item>
+		<item><xref doc="ch6" from="CH6.2.2.3.HEAD"><mentioned lang="ANG">astelid$00E6;</mentioned></xref></item>
+		<item><xref doc="ch6" from="CH6.2.2.4.HEAD"><mentioned lang="ANG">hefun</mentioned>/-<mentioned lang="ANG">aen</mentioned>/-<mentioned lang="ANG">en</mentioned></xref></item>
+		<item><xref doc="ch6" from="CH6.2.2.5.HEAD"><mentioned lang="ANG">halig</mentioned> / <mentioned lang="ANG">haleg</mentioned></xref></item>
+		<item><xref doc="ch6" from="CH6.2.2.6.HEAD"><mentioned lang="ANG">swe</mentioned> / <mentioned lang="ANG">sw$00E6;</mentioned></xref></item>
+	       </list></item>
+	      <item><xref doc="ch6" from="CH6.2.3.HEAD">Phonology</xref>
+	       <list>
+		<item><xref doc="ch6" from="CH6.2.3.1.HEAD">Stressed syllables</xref>
+		 <list>
+		  <item><xref doc="ch6" from="CH6.2.3.1.1.HEAD">Germanic *<seg type="linguistic" subtype="phonemic">a</seg></xref>
+		   <list>
+		    <item><xref doc="ch6" from="CH6.2.3.1.1.1.HEAD">Nasalisation and rounding</xref></item>
+		    <item><xref doc="ch6" from="CH6.2.3.1.1.2.HEAD">First fronting, breaking, and retraction</xref></item>
+		   </list></item>
+		  <item><xref doc="ch6" from="CH6.2.3.1.2.HEAD">Palatal diphthongisation</xref></item>
+		  <item><xref doc="ch6" from="CH6.2.3.1.3.HEAD">Anglian smoothing</xref></item>
+		  <item><xref doc="ch6" from="CH6.2.3.1.4.HEAD">Back umlaut</xref></item>
+		 </list></item>
+		<item><xref doc="ch6" from="CH6.2.3.2.HEAD">Unstressed syllables</xref>
+		 <list>
+		  <item><xref doc="ch6" from="CH6.2.3.2.1.HEAD">Loss of final <seg type="linguistic" subtype="phonemic">n</seg></xref></item>
+		  <item><xref doc="ch6" from="CH6.2.3.2.2.HEAD">Preservation of unstressed <seg type="linguistic" subtype="phonemic">u</seg></xref></item>
+		  <item><xref doc="ch6" from="CH6.2.3.2.3.HEAD">Preservation of unstressed <seg type="linguistic" subtype="phonemic">$00E6; </seg> <seg type="linguistic" subtype="phonemic">e</seg> and <seg type="linguistic" subtype="phonemic">i</seg></xref></item>
+		 </list></item>
+	       </list></item>
+	     </list></item>
+	    <item><xref doc="ch6" from="CH6.3.HEAD">West-Saxon features</xref>
+	     <list>
+	      <item><xref doc="ch6" from="CH6.3.1.HEAD">Orthography</xref></item>
+	      <item><xref doc="ch6" from="CH6.3.2.HEAD">Analogic and historical forms</xref>
+	       <list>
+		<item><xref doc="ch6" from="CH6.3.2.1.HEAD"><mentioned lang="ANG">swa</mentioned></xref></item>
+	       </list></item>
+	      <item><xref doc="ch6" from="CH6.3.3.HEAD">Phonology</xref>
+	       <list>
+		<item><xref doc="ch6" from="CH6.3.3.1.HEAD">Stressed syllables</xref>
+		 <list>
+		  <item><xref doc="ch6" from="CH6.3.3.1.1.HEAD">Germanic *<seg type="linguistic" subtype="phonemic">a</seg></xref>
+		   <list>
+		    <item><xref doc="ch6" from="CH6.3.3.1.1.1.HEAD">Nasalisation and rounding</xref></item>
+		    <item><xref doc="ch6" from="CH6.3.3.1.1.2.HEAD">First fronting, breaking</xref></item>
+		   </list></item>
+		  <item><xref doc="ch6" from="CH6.3.3.1.2.HEAD">Palatal diphthongisation</xref></item>
+		  <item><xref doc="ch6" from="CH6.3.3.1.3.HEAD">Back umlaut</xref></item>
+		  <item><xref doc="ch6" from="CH6.3.3.1.4.HEAD">Later changes to Old English diphthongs</xref></item>
+		 </list></item>
+	       </list></item>
+	     </list></item>
+	    <item><xref doc="ch6" from="CH6.4.HEAD">Anglian and Northumbrian features in West-Saxon recensions of the <title level="M">Hymn</title></xref></item>
+	   </list>
+	  </item>
+	  <item id="TOC.2.INTRODUCTION.CH7"><xref doc="ch7" from="CH7.HEAD">Chapter 7: Editorial introductions</xref>
+	   <list>
+	    <item><xref doc="ch7" from="CH7.1.HEAD">Introduction</xref>
+	     <list>
+	      <item><xref doc="ch7" from="CH7.1.1.HEAD">About the critical editions (Print and CD-ROM)</xref></item>
+	      <item><xref doc="ch7" from="CH7.1.2.HEAD">About the transcriptions (Print and CD-ROM)</xref></item>
+	      <item><xref doc="ch7" from="CH7.1.3.HEAD">About the facsimiles (CD-ROM only)</xref></item>
+	     </list></item>
+	    <item><xref doc="ch7" from="CH7.2.HEAD">Introduction to the critical texts</xref>
+	     <list>
+	      <item><xref doc="ch7" from="CH7.2.1.HEAD">The reconstructed Northumbrian archteype</xref>
+	       <list>
+		<item><xref doc="ch7" from="CH7.2.1.1.HEAD">Manuscripts and filiation</xref></item>
+		<item><xref doc="ch7" from="CH7.2.1.2.HEAD">Editorial approach</xref></item>
+		<item><xref doc="ch7" from="CH7.2.1.3.HEAD">Conventions and apparatus</xref></item>
+	       </list></item>
+	      <item><xref doc="ch7" from="CH7.2.2.HEAD">&aelda;</xref>
+	       <list>
+		<item><xref doc="ch7" from="CH7.2.2.1.HEAD">Manuscripts</xref></item>
+		<item><xref doc="ch7" from="CH7.2.2.2.HEAD">Filiation</xref>
+		 <list>
+		  <item><xref doc="ch7" from="CH7.2.2.2.1.HEAD">Latin text</xref></item>
+		  <item><xref doc="ch7" from="CH7.2.2.2.2.HEAD">Old English text</xref></item>
+		 </list></item>
+		<item><xref doc="ch7" from="CH7.2.2.3.HEAD">Editorial approach</xref></item>
+		<item><xref doc="ch7" from="CH7.2.2.4.HEAD">Conventions and apparatus</xref></item>
+	       </list></item>
+	      <item><xref doc="ch7" from="CH7.2.3.HEAD">&eordu;</xref>
+	       <list>
+		<item><xref doc="ch7" from="CH7.2.3.1.HEAD">Manuscripts</xref></item>
+		<item><xref doc="ch7" from="CH7.2.3.2.HEAD">Filiation</xref>
+		 <list>
+		  <item><xref doc="ch7" from="CH7.2.3.2.1.HEAD">Latin text</xref></item>
+		  <item><xref doc="ch7" from="CH7.2.3.2.2.HEAD">Old English text</xref></item>
+		 </list></item>
+		<item><xref doc="ch7" from="CH7.2.3.3.HEAD">Editorial approach</xref>
+		 <list>
+		  <item><xref doc="ch7" from="CH7.2.3.3.1.HEAD">sciulun</xref></item>
+		  <item><xref doc="ch7" from="CH7.2.3.3.2.HEAD"><mentioned rend="postemendation" lang="ANG">&copyOfeo.2b.3;</mentioned>, <mentioned rend="postemendation" lang="ANG">&copyOfeo.5b.1;</mentioned>, and <mentioned rend="postemendation" lang="ANG">&copyOfeo.7a.1;</mentioned></xref></item>
+		  <item><xref doc="ch7" from="CH7.2.3.3.3.HEAD">hefen</xref></item>
+		 </list></item>
+		<item><xref doc="ch7" from="CH7.2.3.4.HEAD">Conventions and apparatus</xref></item>
+	       </list></item>
+	      <item><xref doc="ch7" from="CH7.2.4.HEAD">&ylda;</xref>
+	       <list>
+		<item><xref doc="ch7" from="CH7.2.4.1.HEAD">Manuscripts</xref></item>
+		<item><xref doc="ch7" from="CH7.2.4.2.HEAD">Filiation</xref>
+		 <list>
+		  <item><xref doc="ch7" from="CH7.2.4.2.1.HEAD">Latin text</xref></item>
+		  <item><xref doc="ch7" from="CH7.2.4.2.2.HEAD">Old English text</xref></item>
+		 </list></item>
+		<item><xref doc="ch7" from="CH7.2.4.3.HEAD">Editorial approach</xref></item>
+		<item><xref doc="ch7" from="CH7.2.4.4.HEAD">Conventions and apparatus</xref></item>
+	       </list></item>
+	      <item><xref doc="ch7" from="CH7.2.5.HEAD">&eorthan;</xref>
+	       <list>
+		<item><xref doc="ch7" from="CH7.2.5.1.HEAD">Manuscripts</xref></item>
+		<item><xref doc="ch7" from="CH7.2.5.2.HEAD">Filiation</xref>
+		 <list>
+		  <item><xref doc="ch7" from="CH7.2.5.2.1.HEAD">Framing text</xref></item>
+		  <item><xref doc="ch7" from="CH7.2.5.2.2.HEAD"><title level="M">Hymn</title></xref>
+		   <list>
+		    <item><xref doc="ch7" from="CH7.2.5.2.2.1.HEAD">&t1s; and &cs;/&ns;</xref></item>
+		    <item><xref doc="ch7" from="CH7.2.5.2.2.2.HEAD">&cs;/&ns;-&os;-&cas;</xref></item>
+		    <item><xref doc="ch7" from="CH7.2.5.2.2.3.HEAD">&t1s;-&b1s;-&tos;</xref></item>
+		   </list></item>
+		 </list></item>
+		<item><xref doc="ch7" from="CH7.2.5.3.HEAD">Editorial approach</xref></item>
+		<item><xref doc="ch7" from="CH7.2.5.4.HEAD">Apparatus and conventions</xref></item>
+	       </list></item>
+	      <item><xref doc="ch7" from="CH7.2.6.HEAD">&eorthe;</xref>
+	       <list>
+		<item><xref doc="ch7" from="CH7.2.6.1.HEAD">Manuscripts</xref></item>
+		<item><xref doc="ch7" from="CH7.2.6.2.HEAD">Filiation</xref>
+		 <list>
+		  <item><xref doc="ch7" from="CH7.2.6.2.1.HEAD">Latin text</xref></item>
+		  <item><xref doc="ch7" from="CH7.2.6.2.2.HEAD">Old English text</xref></item>
+		 </list></item>
+		<item><xref doc="ch7" from="CH7.2.6.3.HEAD">Editorial approach</xref>
+		 <list>
+		  <item><xref doc="ch7" from="CH7.2.6.3.1.HEAD">Relationship of the &eorthe; to other versions of the <title level="M">Hymn</title>.</xref></item>
+		  <item><xref doc="ch7" from="CH7.2.6.3.2.HEAD">Textual corruptions</xref></item>
+		 </list></item>
+		<item><xref doc="ch7" from="CH7.2.6.4.HEAD">Conventions and apparatus</xref></item>
+	       </list></item>
+	     </list></item>
+	   </list>
+	  </item>
+	 </list></item>
+	<item id="TOC.2.NOTES">Notes
+	 <list type="simple">
+	  <item id="TOC.2.NOTES.A"><xref doc="notea" from="NOTEA">Note A: The dating of M and P</xref></item>
+	  <item id="TOC.2.NOTES.B"><xref doc="noteb" from="NOTEB">Note B: &ch; and Bede&rsquo;s paraphrase</xref></item>
+	  <item id="TOC.2.NOTES.C"><xref doc="notec" from="NOTEC">Note C: Numerical and geometric patterning in &ch;</xref></item>	
+	  <item id="TOC.2.NOTES.D"><xref doc="noted" from="NOTED">Note D: Memorial performance, transitional literacy, and the transmission of &ch;</xref></item>	
+	  <item id="TOC.2.NOTES.E"><xref doc="notee" from="NOTEE">Note E: Index of proposed analogues to the C&aelig;dmon story</xref>
+	   <list>
+	    <item><xref doc="notee" from="NOTEE.NOTEEENDIX.1.HEAD">Introduction</xref></item>
+	    <item><xref doc="notee" from="NOTEE.NOTEEENDIX.2.HEAD">Analogues</xref>
+	     <list>
+	      <item><xref doc="notee" from="ABID">Ab$012B;d ben al-Abras</xref></item>
+	      <item><xref doc="notee" from="AESCHYLUS">Aeschylus</xref></item>
+	      <item><xref doc="notee" from="ALDHELM">Aldhelm</xref></item>
+	      <item><xref doc="notee" from="ANNUNCIATION">Annunciation and birth of Christ</xref></item>
+	      <item><xref doc="notee" from="BEOWULF">Feast scenes in <title level="M">Beowulf</title></xref></item>
+	      <item><xref doc="notee" from="BLAKE">Blake</xref></item>
+	      <item><xref doc="notee" from="BOY">Boy speaking in tongues</xref></item>
+	      <item><xref doc="notee" from="CENNFAELED">Cennfaeled mac Ailella</xref></item>
+	      <item><xref doc="notee" from="DREAMSONGS">Chippewa dream songs</xref></item>
+	      <item><xref doc="notee" from="COLMANMACLENENI">Colm$00E1;n mac L$00E9;n$00E9;ni</xref></item>
+	      <item><xref doc="notee" from="CYNEWULF">Cynewulf</xref></item>
+	      <item><xref doc="notee" from="DREAM">Dream of Rhonabwy</xref></item>
+	      <item><xref doc="notee" from="DUNSTAN">St. Dunstan</xref></item>
+	      <item><xref doc="notee" from="EGIL">Egil Skalla-Gr$00ED;msson</xref></item>
+	      <item><xref doc="notee" from="ROMANTICPOETS">English Romantic poets</xref></item>
+	      <item><xref doc="notee" from="EQUITIUS">Equitius</xref></item>
+	      <item><xref doc="notee" from="FINN">Finn MacCoul</xref></item>
+	      <item><xref doc="notee" from="FOOL">Fool of Dunmore</xref></item>
+	      <item><xref doc="notee" from="FURSEY">Abbot Fursey</xref></item>
+	      <item><xref doc="notee" from="GODRIC">Godric of Finchale</xref></item>
+	      <item><xref doc="notee" from="GREGORY">Gregory the Great</xref></item>
+	      <item><xref doc="notee" from="HALFDAN">Halfdan the Black</xref></item>
+	      <item><xref doc="notee" from="HALLBJORN">Hallbj$00F6;rn</xref></item>
+	      <item><xref doc="notee" from="HELIAND"><title level="M">Heliand</title> Poet</xref></item>
+	      <item><xref doc="notee" from="HEREWARD">Hereward</xref></item>
+	      <item><xref doc="notee" from="HESIOD">Hesiod</xref></item>
+	      <item><xref doc="notee" from="HOMER">Homer</xref></item>
+	      <item><xref doc="notee" from="ISAIAH">Isaiah</xref></item>
+	      <item><xref doc="notee" from="MANATWAKE">Man at wake</xref></item>
+	      <item><xref doc="notee" from="MILTON">Milton</xref></item>
+	      <item><xref doc="notee" from="MOHAMMED">Mohammed</xref></item>
+	      <item><xref doc="notee" from="MONKOFMELROSE">Monk of Melrose</xref></item>
+	      <item><xref doc="notee" from="MOSES">Moses</xref></item>
+	      <item><xref doc="notee" from="NTSIKANA">Ntsikana</xref></item>
+	      <item><xref doc="notee" from="PINDAR">Pindar</xref></item>
+	      <item><xref doc="notee" from="SABIT">Sabit M$00FC;dam$00EE; Ataman</xref></item>
+	      <item><xref doc="notee" from="SIOUX">Sioux ghost-dance songs</xref></item>
+	      <item><xref doc="notee" from="SOCRATES">Socrates</xref></item>
+	      <item><xref doc="notee" from="THIEF">Thief at the funeral of St. Hugh of Lincoln</xref></item>
+	      <item><xref doc="notee" from="AUSTRALIA">Tribes of South East Australia</xref></item>
+	      <item><xref doc="notee" from="VALMIKI">Valmiki</xref></item>
+	      <item><xref doc="notee" from="VELMA">Velema</xref></item>
+	      <item><xref doc="notee" from="VOLSATHATTR"><title level="M">Volsa Thattr</title></xref></item>
+	      <item><xref doc="notee" from="WALTER">Walter, lay brother at Clairvaux</xref></item>
+	      <item><xref doc="notee" from="WESLEY">Wesley</xref></item>
+	      <item><xref doc="notee" from="WILLIAM">William of Ford</xref></item>
+	     </list></item>
+	   </list></item>
+	 </list></item>
+	<item id="TOC.2.TEXTS">Texts
+	 <list type="outline" teiform="list">
+	  <item id="TOC.2.CRITICALEDITIONS">Critical editions
+	   <list type="simple">
+	    <item id="TOC.2.ORIGINAL"><xref doc="northumbrianOriginalEdition">&originalxText;</xref>
+	     <list type="simple">
+	      <item><xref doc="northumbrianOriginalEdition" n="index">Reading text view</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="significant">Significant recensional variants view</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="substantive">Substantive recensional variants view</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="orthographic">Orthographic recensional variants view</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="analytic">All recensional readings view (analytic apparatus)</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="parallel">All recensional readings view (parallel apparatus)</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="witnesssignificant">Significant witness variants view</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="witnesssubstantive">Substantive witness variants view</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="witnessorthographic">Orthographic witness variants view</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="witnessanalytic">All witness readings view (analytic apparatus)</xref></item>
+	      <item><xref doc="northumbrianOriginalEdition" n="witnessorthographic">All witness readings view (parallel apparatus)</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.AELDA">&aeldaxText;
+	     <list type="simple">
+	      <item><xref doc="aeldaEdition" n="index">Reading text view</xref></item>
+	      <item><xref doc="aeldaEdition" n="significant">Significant variants view</xref></item>
+	      <item><xref doc="aeldaEdition" n="substantive">Substantive variants view</xref></item>
+	      <item><xref doc="aeldaEdition" n="orthographic">Orthographic variants view</xref></item>
+	      <item><xref doc="aeldaEdition" n="analytic">All readings view (analytic apparatus)</xref></item>
+	      <item><xref doc="aeldaEdition" n="parallel">All readings view (prallel apparatus)</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.EORDU">&eorduxText;
+	     <list type="simple">
+	      <item><xref doc="eorduEdition" n="index">Reading text view</xref></item>
+	      <item><xref doc="eorduEdition" n="significant">Significant variants view</xref></item>
+	      <item><xref doc="eorduEdition" n="orthographic">Orthographic variants view</xref></item>
+	      <item><xref doc="eorduEdition" n="analytic">All readings view (analytic apparatus)</xref></item>
+	      <item><xref doc="eorduEdition" n="parallel">All readings view (prallel apparatus)</xref></item>
+	     </list>
+	    </item>
+	    <item>&eorthanxText;
+	     <list type="simple">
+	      <item id="TOC.2.EORTHAN">&eorthanxText;
+	       <list type="simple">
+		<item><xref doc="eorthanEdition" n="index">Reading text view</xref></item>
+		<item><xref doc="eorthanEdition" n="significant">Significant variants view</xref></item>
+		<item><xref doc="eorthanEdition" n="substantive">Substantive variants view</xref></item>
+		<item><xref doc="eorthanEdition" n="orthographic">Orthographic variants view</xref></item>
+		<item><xref doc="eorthanEdition" n="analytic">All readings view (analytic apparatus)</xref></item>
+		<item><xref doc="eorthanEdition" n="parallel">All readings view (prallel apparatus)</xref></item>
+	       </list>
+	      </item>
+	      <item id="TOC.2.EORTHANB1">&eorthanB1xText;
+	       <list type="simple">
+		<item><xref doc="eorthanB1Edition" n="index">Reading text view</xref></item>
+		<item><xref doc="eorthanB1Edition" n="significant">Significant variants view</xref></item>
+		<item><xref doc="eorthanB1Edition" n="substantive">Substantive variants view</xref></item>
+		<item><xref doc="eorthanB1Edition" n="orthographic">Orthographic variants view</xref></item>
+		<item><xref doc="eorthanB1Edition" n="analytic">All readings view (analytic apparatus)</xref></item>
+		<item><xref doc="eorthanB1Edition" n="parallel">All readings view (prallel apparatus)</xref></item>
+	       </list>
+	      </item>
+	      <item id="TOC.2.EORTHANO">&eorthanOxText;
+	       <list type="simple">
+		<item><xref doc="eorthanOEdition" n="index">Reading text view</xref></item>
+		<item><xref doc="eorthanOEdition" n="significant">Significant variants view</xref></item>
+		<item><xref doc="eorthanOEdition" n="substantive">Substantive variants view</xref></item>
+		<item><xref doc="eorthanOEdition" n="orthographic">Orthographic variants view</xref></item>
+		<item><xref doc="eorthanOEdition" n="analytic">All readings view (analytic apparatus)</xref></item>
+		<item><xref doc="eorthanOEdition" n="parallel">All readings view (prallel apparatus)</xref></item>
+	       </list>
+	      </item>
+	     </list></item>
+	    <item id="TOC.2.EORTHE">&eorthexText;
+	     <list type="simple">
+	      <item><xref doc="eortheEdition" n="index">Reading text view</xref></item>
+	      <item><xref doc="eortheEdition" n="significant">Significant variants view</xref></item>
+	      <item><xref doc="eortheEdition" n="substantive">Substantive variants view</xref></item>
+	      <item><xref doc="eortheEdition" n="orthographic">Orthographic variants view</xref></item>
+	      <item><xref doc="eortheEdition" n="analytic">All readings view (analytic apparatus)</xref></item>
+	      <item><xref doc="eortheEdition" n="parallel">All readings view (prallel apparatus)</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.YLDA">&yldaxText;
+	     <list type="simple">
+	      <item><xref doc="yldaEdition" n="index">Reading text view</xref></item>
+	      <item><xref doc="yldaEdition" n="significant">Significant variants view</xref></item>
+	      <item><xref doc="yldaEdition" n="substantive">Substantive variants view</xref></item>
+	      <item><xref doc="yldaEdition" n="orthographic">Orthographic variants view</xref></item>
+	      <item><xref doc="yldaEdition" n="analytic">All readings view (analytic apparatus)</xref></item>
+	      <item><xref doc="yldaEdition" n="parallel">All readings view (prallel apparatus)</xref></item>
+	     </list>
+	    </item>
+	   </list>
+	  </item>	       
+	  <item id="TOC.2.WITNESSARCHIVE">Witness archive
+	   <list type="simple">
+	    <item id="TOC.2.B1">&b1Transcriptionxs; &b1Transcriptionxml;
+	     <list type="simple">
+	      <item><xref doc="b1" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="b1" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="b1" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="b1" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="b1" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.BD">&bdTranscriptionxs; &bdTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="bd" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="bd" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="bd" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="bd" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="bd" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.BR">&brTranscriptionxs; &brTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="br" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="br" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="br" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="br" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="br" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.C">&cs; &cml;
+	     <list type="simple">
+	      <item>See <ref target="TOC.2.N">&ns; &nml;</ref> below. </item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.CA">&caTranscriptionxs; &caTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="ca" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="ca" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="ca" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="ca" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="ca" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.CARMS">&carmsTranscriptionxs; &carmsTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="carms" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="carms" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="carms" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="carms" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="carms" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.DI">&diTranscriptionxs; &diTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="di" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="di" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="di" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="di" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="di" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.H">&hTranscriptionxs; &hTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="h" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="h" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="h" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="h" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="h" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.HR">&hrTranscriptionxs; &hrTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="hr" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="hr" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="hr" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="hr" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="hr" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.LD">&ldTranscriptionxs; &ldTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="ld" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="ld" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="ld" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="ld" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="ld" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.LN">&lnTranscriptionxs; &lnTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="ln" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="ln" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="ln" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="ln" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="ln" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.M">&mTranscriptionxs; &mTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="m" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="m" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="m" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="m" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="m" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.MG">&mgTranscriptionxs; &mgTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="mg" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="mg" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="mg" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="mg" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="mg" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.N">&nTranscriptionxs; &nTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="n" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="n" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="n" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="n" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="n" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.O">&oTranscriptionxs; &oTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="o" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="o" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="o" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="o" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="o" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.L">&lTranscriptionxs; &lTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="l" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="l" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="l" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="l" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="l" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.P1">&p1Transcriptionxs; &p1Transcriptionxml;
+	     <list type="simple">
+	      <item><xref doc="p1" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="p1" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="p1" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="p1" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="p1" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.SANM">&sanmTranscriptionxs; &sanmTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="sanm" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="sanm" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="sanm" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="sanm" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="sanm" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.T1">&t1Transcriptionxs; &t1Transcriptionxml;
+	     <list type="simple">
+	      <item><xref doc="t1" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="t1" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="t1" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="t1" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="t1" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.TO">&toTranscriptionxs; &toTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="to" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="to" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="to" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="to" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="to" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.TR1">&tr1Transcriptionxs; &tr1Transcriptionxml;
+	     <list type="simple">
+	      <item><xref doc="tr1" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="tr1" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="tr1" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="tr1" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="tr1" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	    <item id="TOC.2.W">&wTranscriptionxs; &wTranscriptionxml;
+	     <list type="simple">
+	      <item><xref doc="w" n="index">Diplomatic transcription</xref></item>
+	      <item><xref doc="w" n="semi">Semi-diplomatic transcription</xref></item>
+	      <item><xref doc="w" n="post">Normalised transcription</xref></item>
+	      <item><xref doc="w" n="facsimile">Facsimile</xref></item>
+	      <item><xref doc="w" n="both">Facsimile with diplomatic transcription</xref></item>
+	     </list>
+	    </item>
+	   </list>
+	  </item>
+	 </list></item>
+	<item id="TOC.2.BACKMATTER">Back matter
+	 <list type="outline" teiform="list">
+	  <item id="TOC.2.GLOSSARY"><xref doc="glossary">Glossary</xref></item>
+	  <item id="TOC.2.BIBLIOGRAPHY"><xref doc="bibliography">Works cited</xref></item>
+	  <item id="TOC.2.INDEX"><xref doc="index">Index</xref></item>
+	 </list></item>
+       </list></item>
+     </list>
+    </div2>
+   </div1>
+  </body>
+ </text>
+</tei.2>
