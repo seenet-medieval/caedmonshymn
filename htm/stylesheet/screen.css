@@ -28,14 +28,18 @@ b) Screen Geography
 */
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
+   margin:auto;
+    /*max-width: 70em;*/
+    width:auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    /* display:table; */
+    font-size:1em;
 }
 
 div {					/* controls width and location of all blocks except div.toc and children */
 		    margin-left: 220px;
-		    max-width: 35em;
+		    /* max-width: 35em;*/
 }
 
 div.poem {					/* controls width and location of all blocks except div.toc and children*/
@@ -49,7 +53,7 @@ div.toc {				/* controls width and location of div.toc */
 	margin-left: 0;
 	position: absolute;
 	top: 4px;
-	/* left: 4px;*/
+	left: 4px;
 	
 	width: 200px;
 }

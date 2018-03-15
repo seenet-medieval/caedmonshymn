@@ -39,7 +39,7 @@ img.wide {
 
 body	 {
 	 text-align: justify;
-	 /*  font-size: 13pt; */
+	 font-size: 100%;
 	 line-height: 1.4;
 	 font-family: "junicode", times, serif;
 	 margin-left: auto;
