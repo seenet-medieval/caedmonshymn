@@ -28,121 +28,147 @@ b) Screen Geography
 */
 
 body {
-   margin:auto;
-    /*max-width: 70em;*/
-    width:auto;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: 12em;
+    max-width: 70%;
+    width: auto;
     padding-left: 3em;
     padding-right: 3em;
     /* display:table; */
-    font-size:1em;
+    /* clear:left; */
 }
 
-div {					/* controls width and location of all blocks except div.toc and children */
-		    margin-left: 220px;
-		    /* max-width: 35em;*/
+div { /* controls width and location of all blocks except div.toc and children */
+    /*  margin-left: 220px;*/
+    /* max-width: 35em;*/
 }
 
-div.poem {					/* controls width and location of all blocks except div.toc and children*/
-		    margin-left: 220px;
-		    max-width: none;
-		    font-size: 110%;
+div.poem { /* controls width and location of all blocks except div.toc and children*/
+    margin-left: 220px;
+    max-width: none;
+    font-size: 110%;
 }
 
 
-div.toc {				/* controls width and location of div.toc */
-	margin-left: 0;
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	
-	width: 200px;
+div.toc { /* controls width and location of div.toc */
+    margin-left: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    left: auto;
+    width: 17em;
+    /* float:right; */
+    /* clear:left; */
+    font-size: 0.2em;
+    vertical-align: top;
 }
 
-div.quickmenu, div.thischapter {	/* controls width and location of div.toc children */
-	margin-left: 2px;
+div.quickmenu,
+div.thischapter { /* controls width and location of div.toc children */
+    margin-left: 2px;
 }
 
-div.poem, div.chapter {
-	  margin-bottom: 3em;
+div.poem,
+div.chapter {
+    margin-bottom: 3em;
 }
 
 
 hr {
-   display: none;
+    display: none;
 }
 
 div.footnote {
-	     margin: 0;
+    margin: 0;
 }
 div.footnote p {
-	      line-height: 1.2;
-	      padding: 0;
-	      margin-bottom: 0;
+    line-height: 1.2;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 div.footnote p + p {
-	      text-indent: 2em;
-	      margin-top: 0;
-	      margin-bottom: 0;
+    text-indent: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* c) General Styles */
 
 *[title] {
-	 cursor: help;
+    cursor: help;
 }
 
 p.screenlink {
-     display: block;
-     text-align: right;
-     font-style: normal;
+    display: block;
+    text-align: right;
+    font-style: normal;
 }
 
-.correction, .redlabel {
-	    color: red;
+.correction,
+.redlabel {
+    color: red;
 }
 
 
-.eordulabel, .eordu, .damaged, .teallabel {
-	    color: teal;
+.eordulabel,
+.eordu,
+.damaged,
+.teallabel {
+    color: teal;
 }
 
-.aeldalabel, .aelda, .purplelabel {
-	    color: purple;
+.aeldalabel,
+.aelda,
+.purplelabel {
+    color: purple;
 }
 
-.eorthanlabel, .eorthan, .greenlabel {
-	      color: green;
+.eorthanlabel,
+.eorthan,
+.greenlabel {
+    color: green;
 }
 
-.yldalabel, .ylda, .navylabel {
-	   color: navy;
+.yldalabel,
+.ylda,
+.navylabel {
+    color: navy;
 }
 
-.eorthelabel, .eorthe, .olivelabel {
-	     color: olive;
+.eorthelabel,
+.eorthe,
+.olivelabel {
+    color: olive;
 }
 
-h1, h2, h3, h4, h5, h6, .technicalterm	{
-    color:maroon;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.technicalterm {
+    color: maroon;
 }
 
-a[href]:hover	{
-	cursor: pointer;
-	text-decoration: underline;
-	background-color: #FFEFD5;
-	color:red;
+a[href]:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #FFEFD5;
+    color: red;
 }
 
-a[href]:focus	{
-		font-weight: bold;
-		background-color: yellow;
+a[href]:focus {
+    font-weight: bold;
+    background-color: yellow;
 }
 
 img.thumbnail
-	{
-	border-width: thin;
-	height: 2em;
+{
+    border-width: thin;
+    height: 2em;
 }
 
 
@@ -156,8 +182,8 @@ img.thumbnail
 */
 
 .gaptranscription {
-		  font-size: small;
-		  color: gray;
+    font-size: small;
+    color: gray;
 }
 
 /* .diplomatictext {
@@ -168,104 +194,107 @@ img.thumbnail
 /* table of contents (div.toc) element appearance */
 
 div.toc {
-	font-family: sans-serif;
-	border: thin solid gray;
-	font-size:70%;
-	background-color: #FFEFD5;
-	text-align: left;
-	padding: 2px;
+    font-family: sans-serif;
+    border: thin solid gray;
+    font-size: 70%;
+    background-color: #FFEFD5;
+    text-align: left;
+    padding: 2px;
 }
 
 div.quickmenu {
-	margin-bottom: 1ex;
+    margin-bottom: 1ex;
 }
-div.toc h1, div.toc h2 {
-	display: none;
-	font-size: 110%;	
+div.toc h1,
+div.toc h2 {
+    display: none;
+    font-size: 110%;
 }
 
 div.toc h3 {
-	font-size: 110%;	
-	text-align: left;
-	line-height: 90%;
-	margin-top: 1ex;
-	margin-bottom: 1ex;
+    font-size: 110%;
+    text-align: left;
+    line-height: 90%;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
 }
 
 div.toc select {
-	width: 100%;
-	line-height: 90%;
-	font-size: smaller;
-	margin-top: 0;
-	margin-bottom: 0;
+    width: 100%;
+    line-height: 90%;
+    font-size: smaller;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 div.toc ul {
-	margin-top: 0;
-	margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 div.toc ul li {
-	margin-left: -23px;
-	margin-right: 0;
-	list-style-position: outside;
-	list-style: square;
-	line-height:1.2;
-	margin-top: 0;
-	margin-bottom: 0;
+    margin-left: -23px;
+    margin-right: 0;
+    list-style-position: outside;
+    list-style: square;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 div.toc ul li ul li {
-	margin-left: -23px;
-	margin-right: 0;
-	list-style: disc;
-	margin-top: 0;
-	margin-bottom: 0;	
+    margin-left: -23px;
+    margin-right: 0;
+    list-style: disc;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 div.toc ul li ul li ul li {
-	display: none;
-	margin-left: -23px;
-	margin-right: 0;
-	list-style: disc;
-	margin-top: 0;
-	margin-bottom: 0;	
+    display: none;
+    margin-left: -23px;
+    margin-right: 0;
+    list-style: disc;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 div.toc ul li ul li ul li ul {
-	display: none;
+    display: none;
 }
 
 div.toc ul li ul li ul li ul li ul {
-	display: none;
+    display: none;
 }
 
 div.toc ul li ul li ul li ul li ul li {
-	display: none;
+    display: none;
 }
 
 div.toc a[href]:hover {
-	background-color: white;
-	width: 100%;
+    background-color: white;
+    width: 100%;
 }
 
-td.uniquevariant, td.faciliorvariant {
-		       background-color: black;
-		       border: medium solid black;
-		       color: white;
-		       font-weight:bold;
+td.uniquevariant,
+td.faciliorvariant {
+    background-color: black;
+    border: medium solid black;
+    color: white;
+    font-weight: bold;
 }
 
 td.crossrecensionalvariant1 {
-		       background-color: olive;
-		       border: medium solid black;
-		       font-weight:bold;
+    background-color: olive;
+    border: medium solid black;
+    font-weight: bold;
 }
 
-td.crossrecensionalvariant2, td.uncertainvariant {
-		       background-color: gray;
-		       border: medium solid black;
-		       font-weight:bold;
+td.crossrecensionalvariant2,
+td.uncertainvariant {
+    background-color: gray;
+    border: medium solid black;
+    font-weight: bold;
 }
 
 
