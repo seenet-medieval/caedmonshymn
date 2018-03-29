@@ -1,0 +1,34 @@
+@media screen and (max-width:800px){
+	body {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1em;
+	}
+	div.toc {
+		font-size: 90%;
+		position: relative;
+		top: initial;
+		left: initial;
+		width: auto;
+		max-width: initial;
+		min-width: 60%;
+		margin: 0 auto 1em;
+	}
+	div {
+		margin-left: initial;
+		max-width: initial;
+	}
+	div.poem {
+		margin-left: initial;
+	}
+	ul {
+		padding-left: 1.25em;
+	}
+	div.toc ul li {
+		margin-left: initial;
+	}
+	p.poetry {
+		margin: 0 1em 0 3em;
+		text-indent: -1em;
+	}
+}

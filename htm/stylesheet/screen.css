@@ -19,7 +19,7 @@
 /* a) @import(s) */
 
 @import url(core.css);
-
+@import url(mobile.css);
 
 
 
@@ -27,11 +27,8 @@
 b) Screen Geography
 */
 
-body {
-    
-}
 
-@media only screen and (min-width : 600px) {
+
     body {
         font-size: 1.5rem;
         margin-left: auto;
@@ -43,7 +40,6 @@ body {
         /* display:table; */
         /* clear:left; */
     }
-}
 
 div { /* controls width and location of all blocks except div.toc and children */
     /*  margin-left: 220px;*/
