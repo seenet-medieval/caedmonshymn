@@ -2,10 +2,7 @@
     body {
         display: flex;
         flex-direction: column;
-        padding-left: 1em;
-        padding-right: 1em;
-        margin: 1em;
-        max-width:90%;
+        padding: 0 1em;
     }
     div.toc {
         font-size: 90%;
@@ -15,7 +12,7 @@
         width: auto;
         max-width: initial;
         min-width: 60%;
-        /* margin: 0 auto 1em; */
+        margin: 0 auto 1em;
     }
     div {
         margin-left: initial;
