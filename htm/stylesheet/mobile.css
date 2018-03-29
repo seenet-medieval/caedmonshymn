@@ -1,9 +1,10 @@
-@media screen and (max-width:800px){
+@media screen and only (max-width:1000px){
 	body {
 		display: flex;
 		flex-direction: column;
 		padding-left: 1em;
 padding-right: 1em;
+margin:1em;
 	}
 	div.toc {
 		font-size: 90%;
