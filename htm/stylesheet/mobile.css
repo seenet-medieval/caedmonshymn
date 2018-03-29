@@ -15,7 +15,7 @@
         width: auto;
         max-width: initial;
         min-width: 60%;
-        margin: 0 auto 1em;
+        /* margin: 0 auto 1em; */
     }
     div {
         /* margin-left: initial;
