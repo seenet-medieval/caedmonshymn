@@ -28,7 +28,7 @@ b) Screen Geography
 */
 
 
-@media screen and (min-width : 1501px) {
+@media screen and (min-width : 801px) {
     body {
         font-size: 1.5rem;
         margin-left: auto;
