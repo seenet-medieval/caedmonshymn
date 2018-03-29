@@ -27,16 +27,18 @@
 b) Screen Geography
 */
 
-body {
-    font-size: 1.5rem;
-    margin-left: auto;
-    margin-right: 12em;
-    max-width: 70%;
-    width: auto;
-    padding-left: 3em;
-    padding-right: 3em;
-    /* display:table; */
-    /* clear:left; */
+@media only screen and (min-width : 600px) {
+    body {
+        font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: 12em;
+        max-width: 70%;
+        width: auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        /* display:table; */
+        /* clear:left; */
+    }
 }
 
 div { /* controls width and location of all blocks except div.toc and children */
@@ -62,20 +64,21 @@ div.toc { /* controls width and location of div.toc */
     font-size: 0.2em;
     vertical-align: top; */
 }
-@media screen only (min-width:600px) {
 
-div.toc { /* controls width and location of div.toc */
-    margin-left: 0;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    left: auto;
-    width: 17em;
-    /* float:right; */
-    /* clear:left; */
-    font-size: 0.2em;
-    vertical-align: top;
-}
+@media only screen and (min-width : 600px) {
+
+    div.toc { /* controls width and location of div.toc */
+        margin-left: 0;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        left: auto;
+        width: 17em;
+        /* float:right; */
+        /* clear:left; */
+        font-size: 0.2em;
+        vertical-align: top;
+    }
 }
 
 div.quickmenu,
