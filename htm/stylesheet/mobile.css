@@ -2,7 +2,8 @@
 	body {
 		display: flex;
 		flex-direction: column;
-		padding: 1em;
+		padding-left: 1em;
+padding-right: 1em;
 	}
 	div.toc {
 		font-size: 90%;
