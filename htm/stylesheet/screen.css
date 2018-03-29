@@ -27,6 +27,10 @@
 b) Screen Geography
 */
 
+body {
+    
+}
+
 @media only screen and (min-width : 600px) {
     body {
         font-size: 1.5rem;
