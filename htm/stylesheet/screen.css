@@ -28,7 +28,7 @@ b) Screen Geography
 */
 
 
-@media screen and (min-width : 1001px) {
+
     body {
         font-size: 1.5rem;
         margin-left: auto;
@@ -40,7 +40,7 @@ b) Screen Geography
         /* display:table; */
         /* clear:left; */
     }
-}
+
 
 div { /* controls width and location of all blocks except div.toc and children */
     /*  margin-left: 220px;*/
