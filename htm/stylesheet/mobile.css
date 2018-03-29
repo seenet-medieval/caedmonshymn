@@ -18,8 +18,9 @@
         margin: 0 auto 1em;
     }
     div {
-        margin-left: initial;
-        max-width: initial;
+        /* margin-left: initial;
+        max-width: initial; */
+        max-width:90%;
     }
     div.poem {
         margin-left: initial;
