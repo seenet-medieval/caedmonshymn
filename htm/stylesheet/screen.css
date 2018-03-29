@@ -50,6 +50,19 @@ div.poem { /* controls width and location of all blocks except div.toc and child
     font-size: 110%;
 }
 
+div.toc { /* controls width and location of div.toc */
+    /* margin-left: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    left: auto;
+    width: 17em;
+    float:right;
+    clear:left;
+    font-size: 0.2em;
+    vertical-align: top; */
+}
+@media screen only (min-width:600px) {
 
 div.toc { /* controls width and location of div.toc */
     margin-left: 0;
@@ -62,6 +75,7 @@ div.toc { /* controls width and location of div.toc */
     /* clear:left; */
     font-size: 0.2em;
     vertical-align: top;
+}
 }
 
 div.quickmenu,
