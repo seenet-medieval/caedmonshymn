@@ -48,7 +48,7 @@ b) Screen Geography
     }
 
     div.poem { /* controls width and location of all blocks except div.toc and children*/
-        margin-left: 220px;
+        /* margin-left: 220px; */
         max-width: none;
         font-size: 110%;
     }
