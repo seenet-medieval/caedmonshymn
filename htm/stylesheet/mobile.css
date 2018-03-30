@@ -12,9 +12,9 @@
         position: relative;
         top: initial;
         left: initial;
-        width: auto;
-        max-width: initial;
-        min-width: initial;
+        width: 95%;
+        /* max-width: initial;
+        min-width: initial; */
         margin: 0 auto 1em;
     }
     div {
