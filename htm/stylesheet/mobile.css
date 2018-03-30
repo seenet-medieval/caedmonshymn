@@ -22,14 +22,13 @@
         max-width: initial;
     }
     div.poem {
-        /*  margin-left: initial; */
-        margin-left:0px;
+        margin-left: initial;
     }
     ul {
         padding-left: 1.25em;
     }
     div.toc ul li {
-        margin-left: initial;
+        margin-left:0px; /* initial; */
     }
     p.poetry {
         margin: 0 1em 0 3em;
