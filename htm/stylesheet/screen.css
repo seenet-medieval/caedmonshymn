@@ -346,8 +346,18 @@ td.uncertainvariant {
         padding-left: 1.25em;
     }
     div.toc ul li {
-        margin-left:0px; /* initial; */
+        margin-left:0px;
     }
+
+    div.toc ul li ul li {
+      margin-left:0px;
+    }
+
+    div.toc ul li ul li ul li {
+      margin-left:0px;
+    }
+
+
     p.poetry {
         margin: 0 1em 0 3em;
         text-indent: -1em;
