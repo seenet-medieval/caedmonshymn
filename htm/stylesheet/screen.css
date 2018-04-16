@@ -4,7 +4,7 @@
 	are specific to screen media.  This involves for the most part
 	block layout and (font and background) colours, but also other
 	incidental features.
-	
+
 	The stylesheet is broken into {{}} main parts:
 	    a) @import(s): Imports stylesheet(s) containing core style
 	       information common to most stylesheets in the project.
@@ -12,6 +12,8 @@
 	       the major content blocks).
 	    c) Element appearance: Controls the appearance (mostly
 	       colour) of elements of the screen.
+      d) Media query rules: Overrides styles based on media
+         queries for responsive design.
 	    z) Temporary proofreading styles: Commented out section
 	       that contains styles used to check xhtml coding.
 
@@ -19,9 +21,6 @@
 /* a) @import(s) */
 
 @import url(core.css);
- @import url(mobile.css);
-
-
 
 /*
 b) Screen Geography
@@ -316,7 +315,48 @@ td.uncertainvariant {
     font-weight: bold;
 }
 
+/* d) Media queries */
+@media screen and (max-width : 800px) {
 
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.toc {
+        font-size: 90%;
+        position: relative;
+        top: initial;
+        left: initial;
+        width: 95%;
+        /* max-width: initial;
+        min-width: initial; */
+        margin: 0 auto 1em;
+    }
+    div {
+        margin-left: initial;
+        max-width: initial;
+    }
+    div.poem {
+        margin-left: initial;
+    }
+    ul {
+        padding-left: 1.25em;
+    }
+    div.toc ul li {
+        margin-left:0px; /* initial; */
+    }
+    p.poetry {
+        margin: 0 1em 0 3em;
+        text-indent: -1em;
+    }
+
+    .mobileHide {
+        display:none;
+    }
+}
 
 /* Z) TEMPORARY PROOF READING STYLES
 
