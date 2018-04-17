@@ -84,6 +84,7 @@ body	 {
 	 font-family: "Junicode", times, serif;
 	 margin-left: auto;
 	 margin-right: auto;
+	 padding: 1em;
 }
 
 p.diplomatictext, p.poetry, li {

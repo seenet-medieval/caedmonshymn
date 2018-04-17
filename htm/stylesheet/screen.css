@@ -26,62 +26,6 @@
 b) Screen Geography
 */
 
-
-@media screen and (min-width : 1501px) {
-    body {
-        font-size: 1.5rem;
-        margin-left: auto;
-        margin-right: 12em;
-        max-width: 70%;
-        width: auto;
-        padding-left: 3em;
-        padding-right: 3em;
-        /* display:table; */
-        /* clear:left; */
-    }
-
-
-    div { /* controls width and location of all blocks except div.toc and children */
-        /*  margin-left: 220px;*/
-        /* max-width: 35em;*/
-    }
-
-    div.poem { /* controls width and location of all blocks except div.toc and children*/
-        /* margin-left: 220px; */
-        max-width: none;
-        font-size: 110%;
-    }
-
-    div.toc { /* controls width and location of div.toc */
-        margin-left: 0;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    left: auto;
-    width: 17em;
-    float:right;
-    clear:left;
-    font-size: 90%;
-    vertical-align: top;
-    }
-
-    div.toc ul {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    div.toc ul li {
-        margin-left: -23px;
-        margin-right: 0;
-        list-style-position: outside;
-        list-style: square;
-        line-height: 1.2;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-}
-
 div.quickmenu,
 div.thischapter { /* controls width and location of div.toc children */
     margin-left: 2px;
@@ -316,12 +260,51 @@ td.uncertainvariant {
 }
 
 /* d) Media queries */
+@media screen and (min-width : 1501px) {
+    body {
+        font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: 12em;
+        max-width: 70%;
+        width: auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        /* display:table; */
+        /* clear:left; */
+    }
+
+
+    div { /* controls width and location of all blocks except div.toc and children */
+        /*  margin-left: 220px;*/
+        /* max-width: 35em;*/
+    }
+
+    div.poem { /* controls width and location of all blocks except div.toc and children*/
+        /* margin-left: 220px; */
+        max-width: none;
+        font-size: 110%;
+    }
+
+    div.toc { /* controls width and location of div.toc */
+        margin-left: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    left: auto;
+    width: 17em;
+    float:right;
+    clear:left;
+    /* font-size: 90%; */
+    vertical-align: top;
+    }
+}
+
 @media screen and (max-width : 800px) {
 
     body {
         display: flex;
         flex-direction: column;
-        padding: 1em;
+        /* padding: 1em; */
         margin-left: auto;
         margin-right: auto;
     }
