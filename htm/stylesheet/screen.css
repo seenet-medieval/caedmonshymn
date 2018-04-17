@@ -357,10 +357,13 @@ td.uncertainvariant {
       margin-left:0px;
     }
 
-
     p.poetry {
         margin: 0 1em 0 3em;
         text-indent: -1em;
+    }
+
+    blockquote {
+      margin: auto 1.25em;
     }
 
     .mobileHide {
