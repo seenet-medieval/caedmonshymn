@@ -63,6 +63,7 @@ img.tall {
 
 code {
      font-family: mono
+     font-size:inherit;
 }
 img.wide {
 	 display: block;
