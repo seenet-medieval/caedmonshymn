@@ -27,7 +27,5 @@ documentation
 charge from
 http://www.engl.virginia.edu/OE/junicode/junicode.html. This page also
 contains other versions of the font for use on older systems. The
-Junicode provided on this CD-ROM is version Beta 0.6.5.
-
-
-
+Junicode provided on the CD-ROM was version Beta 0.6.5. The Junicode
+provided with this Internet version is 1.001.

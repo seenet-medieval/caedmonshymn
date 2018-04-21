@@ -6,10 +6,50 @@
 	display:none;
 }
 
+/* FONTS */
+/* On most current browsers, these instructions implement Junicode as a font
+family and download it where applicable. If Junicode is already installed on
+the user's computer, the stylesheet will use that; otherwise, Junicode is
+downloaded. */
+@font-face {
+    font-family:Junicode;
+    src:local("Junicode"), /* The first to produce a match will be selected. If the font is installed locally, default to using that. */
+        url("../../fonts/Junicode.woff") format("woff"), /* We list woff as the first downloadable format since it's specifically designed for embedding... */
+        url("../../fonts/Junicode.ttf") format("truetype"); /* ...but fall back to ttf in the odd event that we encounter a user agent that implements @font-face but doesn't support woff. (This applies to some older versions of iOS Safari and the Android browser.)*/
+}
+@font-face {
+    font-family:Junicode;
+    font-weight:bold;
+    src:local("Junicode Bold"),
+        local("Junicode-Bold"), /* Some user agents retrieve fonts by their PostScript names rather than their full names, so we include the PostScript name as fallback. */
+        url("../../fonts/Junicode-Bold.woff") format("woff"),
+        url("../../fonts/Junicode-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family:Junicode;
+    font-style:italic;
+    src:local("Junicode Italic"),
+        local("Junicode-Italic"),
+        url("../../fonts/Junicode-Italic.woff") format("woff"),
+        url("../../fonts/Junicode-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family:Junicode;
+    font-weight:bold;
+    font-style:italic;
+    src:local("Junicode Bold Italic"),
+        local("Junicode-BoldItalic"),
+        url("../../fonts/Junicode-BoldItalic.woff") format("woff"),
+        url("../../fonts/Junicode-BoldItalic.ttf") format("truetype");
+}
+
 /* PUBLICATION STYLES */
 
 img {
 	 border: none;
+	 width: auto;
+	 height: auto;
+	 max-width: 100%;
 }
 
 img.tall {
@@ -41,9 +81,10 @@ body	 {
 	 text-align: justify;
 	 font-size: 100%;
 	 line-height: 1.4;
-	 font-family: "junicode", times, serif;
+	 font-family: "Junicode", times, serif;
 	 margin-left: auto;
 	 margin-right: auto;
+	 padding: 1em;
 }
 
 p.diplomatictext, p.poetry, li {
@@ -288,6 +329,9 @@ table {
    font-size: 90%;
    margin-left:auto;
    margin-right:auto;
+	 max-width: 100%;
+	 display: block;
+	 overflow-x: scroll;
 }
 
 td {
